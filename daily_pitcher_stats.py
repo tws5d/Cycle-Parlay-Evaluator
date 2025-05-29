@@ -1,93 +1,87 @@
 import requests
+from bs4 import BeautifulSoup
 import pandas as pd
-from datetime import date, timedelta
+from pybaseball import playerid_lookup
+import time
 
-# Get today's date
-today = date.today().isoformat()
+def get_rotowire_probable_pitchers():
+    url = "https://www.rotowire.com/baseball/probable-pitchers.php"
+    r = requests.get(url)
+    soup = BeautifulSoup(r.text, "html.parser")
+    table = soup.find("table", class_="tablesorter")
+    rows = table.find("tbody").find_all("tr")
 
-# Step 1: Get today's games from MLB Stats API
-def get_active_pitchers(team_ids):
-    pitchers = []
-    for team_id in team_ids:
-        url = f"https://statsapi.mlb.com/api/v1/teams/{team_id}/roster/active"
-        r = requests.get(url).json()
-        for player in r.get("roster", []):
-            person = player.get("person", {})
-            position = player.get("position", {}).get("abbreviation")
-            if position == "P":  # Only pitchers
-                pitchers.append({
-                    "id": person.get("id", "N/A"),
-                    "name": person.get("fullName", "TBD"),
-                    "team": player.get("team", {}).get("name", "")
-                })
+    names = []
+    for row in rows:
+        cells = row.find_all("td")
+        if len(cells) < 5:
+            continue
+        away = cells[2].text.strip()
+        home = cells[4].text.strip()
+        names.extend([away, home])
+    return list(set(names))  # Remove duplicates
 
-    # ✅ Debug output (inside the function, right before return)
-    print(f"Found {len(pitchers)} pitchers")
-    for p in pitchers:
-        print(f"{p['name']} ({p['id']}) - {p['team']}")
-    
-    return pitchers
+def get_mlb_id(name):
+    parts = name.replace(".", "").split()
+    if len(parts) < 2:
+        return None
+    first, last = parts[0], parts[-1]
+    try:
+        df = playerid_lookup(last, first)
+        if not df.empty:
+            return int(df.iloc[0]["key_mlbam"])
+    except Exception as e:
+        print(f"Lookup error for {name}: {e}")
+    return None
 
-print(f"Found {len(pitchers)} pitchers")
-for p in pitchers:
-    print(f"{p['name']} ({p['id']}) - {p['team']}")
-
-
-# Step 2: Get recent statcast performance for each pitcher
-def get_pitcher_game_logs(pitcher_id, season="2023"):
-    url = f"https://statsapi.mlb.com/api/v1/people/{pitcher_id}/stats"
+def get_pitcher_logs(mlb_id):
+    url = f"https://statsapi.mlb.com/api/v1/people/{mlb_id}/stats"
     params = {
         "stats": "gameLog",
         "group": "pitching",
-        "season": season,
-        "gameType": "R",
-        "limit": 5
+        "limit": 5,
+        "gameType": "R"
     }
     r = requests.get(url, params=params).json()
     return r.get("stats", [{}])[0].get("splits", [])
 
-# Step 3: Build the CSV
-def build_pitcher_file():
-    # Example: a few team IDs — you can expand this list
-    team_ids = [121, 147, 139, 110]  # NYY, NYM, SEA, BAL — adjust as needed
+def main():
+    names = get_rotowire_probable_pitchers()
+    all_data = []
 
-    pitchers = get_active_pitchers(team_ids)
-    all_rows = []
+    for name in names:
+        print(f"Processing {name}...")
+        mlb_id = get_mlb_id(name)
+        time.sleep(0.5)  # To be nice to API
 
-    for pitcher in pitchers:
-        if pitcher["id"] == "N/A":
+        if not mlb_id:
+            print(f"❌ Could not find ID for {name}")
             continue
-        print(f"Fetching logs for {pitcher['name']} ({pitcher['id']})")
-        logs = get_pitcher_game_logs(pitcher["id"])
+
+        logs = get_pitcher_logs(mlb_id)
+        if not logs:
+            print(f"⚠️ No logs found for {name}")
+            continue
 
         for game in logs:
             stat = game["stat"]
-            all_rows.append({
-                "pitcher_id": pitcher["id"],
-                "pitcher_name": pitcher["name"],
-                "team": pitcher["team"],
+            all_data.append({
+                "pitcher_name": name,
+                "mlb_id": mlb_id,
                 "date": game.get("date", ""),
                 "innings_pitched": stat.get("inningsPitched", "0.0"),
                 "earned_runs": stat.get("earnedRuns", 0),
                 "strike_outs": stat.get("strikeOuts", 0),
-                "base_on_balls": stat.get("baseOnBalls", 0),
+                "walks": stat.get("baseOnBalls", 0),
                 "hits": stat.get("hits", 0),
-                "pitches_thrown": stat.get("numberOfPitches", 0),
-                "whip": stat.get("whip", 0),
-                "era": stat.get("era", 0)
+                "pitches": stat.get("numberOfPitches", 0),
+                "era": stat.get("era", 0),
+                "whip": stat.get("whip", 0)
             })
 
-    df = pd.DataFrame(all_rows)
-    df.to_csv("latest_pitchers.csv", index=False)
-    print(f"Saved {len(df)} pitcher logs to latest_pitchers.csv")
+    df = pd.DataFrame(all_data)
+    df.to_csv("probable_pitcher_game_logs.csv", index=False)
+    print(f"✅ Saved {len(df)} rows to probable_pitcher_game_logs.csv")
 
-# Run it
 if __name__ == "__main__":
-    test_pitcher_id = 592866  # Gerrit Cole
-    logs = get_pitcher_game_logs(test_pitcher_id, season="2023")
-    print(f"Found {len(logs)} logs for Gerrit Cole:")
-    for game in logs:
-        print(f"{game['date']} — {game['stat'].get('inningsPitched')} IP, "
-              f"{game['stat'].get('strikeOuts')} K, ERA: {game['stat'].get('era')}")
-
-
+    main()
