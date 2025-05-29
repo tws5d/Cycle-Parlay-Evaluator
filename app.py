@@ -33,9 +33,42 @@ player_teams = {
 if player_name in player_ids:
     batter_id = player_ids[player_name]
    
+    from pybaseball import playerid_lookup, statcast_pitcher
+
     if pitcher_name:
         st.write(f"🧱 Probable Pitcher: {pitcher_name}")
+
+        # Lookup pitcher ID from name
+        try:
+            pitcher_lookup = playerid_lookup(*pitcher_name.split())
+            pitcher_id = int(pitcher_lookup.iloc[0]['key_mlbam'])
         
+            # Get last 14 days of Statcast data for pitcher
+            df_pitcher = statcast_pitcher(start_date, end_date, pitcher_id)
+
+            if not df_pitcher.empty:
+                # Calculate allowed contact metrics
+                avg_ev_allowed = df_pitcher['launch_speed'].mean()
+                hard_hits_allowed = df_pitcher[df_pitcher['launch_speed'] >= 95].shape[0]
+                total_contact = df_pitcher.shape[0]
+                hard_hit_pct_allowed = round((hard_hits_allowed / total_contact) * 100, 2) if total_contact else 0
+                xba_allowed = round(df_pitcher['estimated_ba_using_speedangle'].mean(), 3)
+
+                st.write(f"📉 **Pitcher xBA Allowed:** {xba_allowed}")
+                st.write(f"📉 **Hard Hit % Allowed:** {hard_hit_pct_allowed}%")
+                st.write(f"📉 **Avg Exit Velo Allowed:** {round(avg_ev_allowed, 1)} mph")
+
+                # Adjust Cycle Score based on pitcher weakness
+                if xba_allowed > 0.280: score += 10
+                if hard_hit_pct_allowed > 40: score += 10
+                if avg_ev_allowed > 89: score += 5
+            
+            else:
+                st.warning("No recent data for pitcher.")
+
+            except:
+                st.warning("Pitcher lookup failed. Check spelling.")
+  
     # Get last 14 days of data
     end_date = datetime.today().strftime('%Y-%m-%d')
     start_date = (datetime.today() - timedelta(days=14)).strftime('%Y-%m-%d')
