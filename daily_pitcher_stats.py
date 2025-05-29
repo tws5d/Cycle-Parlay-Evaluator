@@ -3,7 +3,7 @@ import pandas as pd
 from datetime import date, timedelta
 
 # Get today's date
-today = date.today().isoformat()
+today = "2024-05-29"
 
 # Step 1: Get today's games from MLB Stats API
 def get_today_pitchers():
