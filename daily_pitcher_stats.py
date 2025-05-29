@@ -31,8 +31,8 @@ def main():
                 print(f"✔ {pitcher['fullName']} for {game[f'{side}Name']}", flush=True)
 
     df = pd.DataFrame(rows)
-    df.to_csv('probable_pitchers.csv', index=False)
-    print(f"✅ Saved {len(rows)} rows to probable_pitchers.csv", flush=True)
+    df.to_csv('latest_pitchers.csv', index=False)
+    print(f"✅ Saved {len(rows)} rows to latest_pitchers.csv", flush=True)
 
 if __name__ == "__main__":
     main()
