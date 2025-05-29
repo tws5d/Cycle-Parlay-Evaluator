@@ -12,7 +12,7 @@ end = tomorrow.strftime('%Y-%m-%d')
 print(f"📅 Getting games from {start} to {end}")
 
 # ✅ Get schedule with probable pitchers
-games = statsapi.schedule(start_date=start, end_date=end, sportId=1, hydrate='probablePitcher')
+games = statsapi.schedule(start_date=start, end_date=end, sportId=1)
 print(f"⚾ Found {len(games)} games")
 
 rows = []
