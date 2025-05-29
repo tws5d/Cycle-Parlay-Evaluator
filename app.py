@@ -12,9 +12,8 @@ Enter a hitter's name to pull recent Statcast data and generate a matchup score 
 
 player_name = st.text_input("Enter hitter name (e.g. Juan Soto)")
 
-# Get today's schedule
-today = datetime.today().strftime('%Y-%m-%d')
-schedule = schedule_and_record(datetime.today().year)
+# Manual pitcher input (since schedule lookup is unreliable)
+pitcher_name = st.text_input("Enter opposing pitcher's name (e.g. Zack Wheeler)")
 
 # Define basic player lookup dictionary for testing (add more later)
 player_ids = {
@@ -34,14 +33,8 @@ player_teams = {
 if player_name in player_ids:
     batter_id = player_ids[player_name]
    
-    team = player_teams[player_name]
-    game = schedule[schedule['Tm'] == team]
-
-    if not game.empty:
-        opponent = game.iloc[0]['Opp']
-        probable_pitcher = game.iloc[0]['Probable Pitcher']
-        st.write(f"🧢 Opposing Team: {opponent}")
-        st.write(f"🧱 Probable Pitcher: {probable_pitcher}")
+    if pitcher_name:
+    st.write(f"🧱 Probable Pitcher: {pitcher_name}")
         
     # Get last 14 days of data
     end_date = datetime.today().strftime('%Y-%m-%d')
