@@ -34,7 +34,7 @@ if player_name in player_ids:
     batter_id = player_ids[player_name]
    
     if pitcher_name:
-    st.write(f"🧱 Probable Pitcher: {pitcher_name}")
+        st.write(f"🧱 Probable Pitcher: {pitcher_name}")
         
     # Get last 14 days of data
     end_date = datetime.today().strftime('%Y-%m-%d')
