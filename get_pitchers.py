@@ -1,4 +1,4 @@
-import statsapi
+import mlbstatsapi as statsapi
 import pandas as pd
 from datetime import datetime, timedelta
 
