@@ -11,12 +11,12 @@ end = tomorrow.strftime('%Y-%m-%d')
 # Get schedule
 games = statsapi.schedule(start_date=start, end_date=end, sportId=1, hydrate='probablePitcher')
 
-print(f"Found {len(games)} games")
+print(f"Found {len(games)} games", flush=True)
 for game in games:
-    print("Game:", game['gameDate'][:10], game['awayName'], "at", game['homeName'])
+    print("Game:", game['gameDate'][:10], game['awayName'], "at", game['homeName'], flush=True)
     for side in ['home', 'away']:
         pitcher = game.get(f'{side}ProbablePitcher')
         if pitcher:
-            print(f"{side.title()} pitcher: {pitcher['fullName']} (ID: {pitcher['id']})")
+            print(f"{side.title()} pitcher: {pitcher['fullName']} (ID: {pitcher['id']})", flush=True)
         else:
-            print(f"No probable {side} pitcher listed.")
+            print(f"No probable {side} pitcher listed.", flush=True)
