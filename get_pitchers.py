@@ -1,37 +1,34 @@
-import statsapi
+import requests
 import pandas as pd
 from datetime import datetime, timedelta
 
-# ✅ Get today and tomorrow's dates
-today = datetime.today()
-tomorrow = today + timedelta(days=1)
+today = datetime.today().strftime('%Y-%m-%d')
+tomorrow = (datetime.today() + timedelta(days=1)).strftime('%Y-%m-%d')
 
-start = today.strftime('%Y-%m-%d')
-end = tomorrow.strftime('%Y-%m-%d')
+# MLB Schedule endpoint
+url = f"https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate={today}&endDate={tomorrow}&hydrate=probablePitcher"
 
-print(f"📅 Getting games from {start} to {end}")
-
-# ✅ Get schedule with probable pitchers
-games = statsapi.schedule(start_date=start, end_date=end, sportId=1, hydrate='probablePitcher')
-print(f"⚾ Found {len(games)} games")
+response = requests.get(url)
+data = response.json()
 
 rows = []
 
-# ✅ Extract pitcher data
-for game in games:
-    for side in ['home', 'away']:
-        pitcher = game.get(f'{side}ProbablePitcher')
-        if pitcher:
-            rows.append({
-                'Date': game['gameDate'][:10],
-                'Team': game[f'{side}Name'],
-                'Opponent': game['awayName'] if side == 'home' else game['homeName'],
-                'Pitcher Name': pitcher['fullName'],
-                'MLB ID': pitcher['id']
-            })
-            print(f"✔ {pitcher['fullName']} for {game[f'{side}Name']}")
+for date in data["dates"]:
+    for game in date["games"]:
+        for side in ['home', 'away']:
+            team = game[f"{side}Team"]["name"]
+            opp = game["awayTeam"]["name"] if side == "home" else game["homeTeam"]["name"]
+            pitcher = game.get(f"{side}ProbablePitcher")
+            if pitcher:
+                rows.append({
+                    "Date": game["gameDate"][:10],
+                    "Team": team,
+                    "Opponent": opp,
+                    "Pitcher Name": pitcher["fullName"],
+                    "MLB ID": pitcher["id"]
+                })
+                print(f"✔ {pitcher['fullName']} for {team}")
 
-# ✅ Save to CSV
 df = pd.DataFrame(rows)
-df.to_csv('latest_pitchers.csv', index=False)
+df.to_csv("latest_pitchers.csv", index=False)
 print(f"✅ Saved {len(rows)} pitchers to latest_pitchers.csv")
