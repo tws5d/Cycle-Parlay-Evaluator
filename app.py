@@ -1,25 +1,63 @@
 import streamlit as st
+from pybaseball import statcast_batter
+import pandas as pd
+from datetime import datetime, timedelta
 
-# App title
 st.title("The Cycle Evaluator")
 
 st.markdown("""
-This app helps you evaluate if a hitter is a strong prop play today based on BvP, recent form, pitcher quality, and environmental factors.
+Enter a hitter's name to pull recent Statcast data and generate a matchup score based on current form and conditions.
 """)
 
-# Player input
-player_name = st.text_input("Enter player name (e.g. Juan Soto)")
+player_name = st.text_input("Enter hitter name (e.g. Juan Soto)")
 
-# Placeholder scoring logic
-if player_name:
-    st.subheader(f"Evaluating: {player_name}")
-    score = 78  # Placeholder until we connect live data
+# Define basic player lookup dictionary for testing (add more later)
+player_ids = {
+    "Juan Soto": 665742,
+    "Mookie Betts": 605141,
+    "Aaron Judge": 592450,
+    "Bryce Harper": 547180,
+}
+
+if player_name in player_ids:
+    batter_id = player_ids[player_name]
     
-    st.write(f"🧠 **Cycle Score**: {score}/100")
+    # Get last 14 days of data
+    end_date = datetime.today().strftime('%Y-%m-%d')
+    start_date = (datetime.today() - timedelta(days=14)).strftime('%Y-%m-%d')
     
-    if score >= 85:
-        st.success("🔥 LOCK – Ideal play for your prop cycle.")
-    elif score >= 70:
-        st.info("✅ Lean – Solid option, worth considering.")
+    st.write(f"📅 Date range: {start_date} → {end_date}")
+    
+    df = statcast_batter(start_date, end_date, batter_id)
+    
+    if not df.empty:
+        # Compute xBA and Hard Hit % from available data
+        avg_exit_velo = df['launch_speed'].mean()
+        hard_hits = df[df['launch_speed'] >= 95].shape[0]
+        total_batted_balls = df.shape[0]
+        hard_hit_pct = round((hard_hits / total_batted_balls) * 100, 2) if total_batted_balls else 0
+        xba = round(df['estimated_ba_using_speedangle'].mean(), 3)
+
+        # Display results
+        st.write(f"**Average Exit Velocity:** {round(avg_exit_velo, 1)} mph")
+        st.write(f"**Hard Hit %:** {hard_hit_pct}%")
+        st.write(f"**xBA (Expected BA):** {xba}")
+
+        # Basic score logic
+        score = 50
+        if xba > 0.300: score += 15
+        if hard_hit_pct > 45: score += 15
+        if avg_exit_velo > 91: score += 10
+
+        st.write(f"🧠 **Cycle Score**: {score}/100")
+        if score >= 85:
+            st.success("🔥 LOCK")
+        elif score >= 70:
+            st.info("✅ Lean")
+        else:
+            st.warning("⚠️ Fade")
     else:
-        st.warning("⚠️ Fade – May not be the right spot today.")
+        st.warning("No Statcast data found for this timeframe.")
+        
+elif player_name:
+    st.error("Player not found. Try one of: " + ", ".join(player_ids.keys()))
