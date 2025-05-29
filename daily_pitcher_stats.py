@@ -20,7 +20,18 @@ def get_active_pitchers(team_ids):
                     "name": person.get("fullName", "TBD"),
                     "team": player.get("team", {}).get("name", "")
                 })
+
+    # ✅ Debug output (inside the function, right before return)
+    print(f"Found {len(pitchers)} pitchers")
+    for p in pitchers:
+        print(f"{p['name']} ({p['id']}) - {p['team']}")
+    
     return pitchers
+
+print(f"Found {len(pitchers)} pitchers")
+for p in pitchers:
+    print(f"{p['name']} ({p['id']}) - {p['team']}")
+
 
 # Step 2: Get recent statcast performance for each pitcher
 def get_pitcher_game_logs(pitcher_id):
