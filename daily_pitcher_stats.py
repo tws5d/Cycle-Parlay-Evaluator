@@ -47,11 +47,15 @@ def get_pitcher_logs(mlb_id):
 
 def main():
     names = get_rotowire_probable_pitchers()
+    print(f"✅ Found {len(names)} probable pitchers:")
+    for name in names:
+        print("-", name)
     all_data = []
 
     for name in names:
         print(f"Processing {name}...")
         mlb_id = get_mlb_id(name)
+        print(f"MLB ID for {name}: {mlb_id}")
         time.sleep(0.5)  # To be nice to API
 
         if not mlb_id:
@@ -60,8 +64,9 @@ def main():
 
         logs = get_pitcher_logs(mlb_id)
         if not logs:
-            print(f"⚠️ No logs found for {name}")
+            print(f"⚠️ No logs returned for {name} (ID {mlb_id}) — maybe inactive or not started yet.")
             continue
+
 
         for game in logs:
             stat = game["stat"]
