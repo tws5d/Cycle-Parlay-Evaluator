@@ -16,7 +16,7 @@ def get_today_pitchers():
     for game in games:
         for side in ["home", "away"]:
             team = game["teams"][side]
-            pitcher = team.get("probablePitcher")
+            pitcher = team.get("probablePitcher") or team.get("pitcher")
     
             # Add fallback for missing or partial data
             name = pitcher["fullName"] if isinstance(pitcher, dict) and "fullName" in pitcher else "TBD"
