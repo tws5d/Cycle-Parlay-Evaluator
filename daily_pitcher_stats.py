@@ -7,7 +7,7 @@ today = date.today().isoformat()
 
 # Step 1: Get today's games from MLB Stats API
 def get_today_pitchers():
-    url = "https://statsapi.mlb.com/api/v1/schedule"
+    url = url = "https://statsapi.mlb.com/api/v1/schedule?hydrate=probablePitcher"
     params = {"sportId": 1, "date": today}
     r = requests.get(url, params=params)
     games = r.json().get("dates", [])[0].get("games", [])
@@ -17,7 +17,7 @@ def get_today_pitchers():
     for game in games:
         for side in ["home", "away"]:
             team = game["teams"][side]
-            pitcher = team.get("probablePitcher") or team.get("pitcher")
+            pitcher = team.get("probablePitcher")
     
             # Add fallback for missing or partial data
             name = pitcher["fullName"] if isinstance(pitcher, dict) and "fullName" in pitcher else "TBD"
