@@ -34,13 +34,14 @@ for p in pitchers:
 
 
 # Step 2: Get recent statcast performance for each pitcher
-def get_pitcher_game_logs(pitcher_id):
+def get_pitcher_game_logs(pitcher_id, season="2023"):
     url = f"https://statsapi.mlb.com/api/v1/people/{pitcher_id}/stats"
     params = {
         "stats": "gameLog",
         "group": "pitching",
+        "season": season,
         "gameType": "R",
-        "limit": 5  # Last 5 starts
+        "limit": 5
     }
     r = requests.get(url, params=params).json()
     return r.get("stats", [{}])[0].get("splits", [])
@@ -82,5 +83,11 @@ def build_pitcher_file():
 
 # Run it
 if __name__ == "__main__":
-    build_pitcher_file()
+    test_pitcher_id = 592866  # Gerrit Cole
+    logs = get_pitcher_game_logs(test_pitcher_id, season="2023")
+    print(f"Found {len(logs)} logs for Gerrit Cole:")
+    for game in logs:
+        print(f"{game['date']} — {game['stat'].get('inningsPitched')} IP, "
+              f"{game['stat'].get('strikeOuts')} K, ERA: {game['stat'].get('era')}")
+
 
