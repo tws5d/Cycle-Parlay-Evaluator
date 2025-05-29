@@ -1,46 +1,72 @@
 import requests
-from bs4 import BeautifulSoup
 import pandas as pd
-from pybaseball import playerid_lookup
+from datetime import datetime
 import time
 
-def get_rotowire_probable_pitchers():
-    url = "https://www.rotowire.com/baseball/probable-pitchers.php"
-    r = requests.get(url)
-    soup = BeautifulSoup(r.text, "html.parser")
+def get_probable_pitchers(date_str):
+    url = f"https://statsapi.mlb.com/api/v1/schedule?sportId=1&date={date_str}&hydrate=probablePitcher"
+    response = requests.get(url)
+    data = response.json()
 
-    table = soup.find("table", class_="tablesorter")
-    if not table:
-        print("❌ Could not find the pitchers table on Rotowire.")
-        return []
+    pitchers = []
+    for date_info in data.get("dates", []):
+        for game in date_info.get("games", []):
+            for team_type in ["away", "home"]:
+                team_info = game.get("teams", {}).get(team_type, {})
+                pitcher = team_info.get("probablePitcher")
+                if pitcher:
+                    pitchers.append({
+                        "name": pitcher.get("fullName"),
+                        "id": pitcher.get("id"),
+                        "team": team_info.get("team", {}).get("name"),
+                        "opponent": game.get("teams", {}).get("home" if team_type == "away" else "away", {}).get("team", {}).get("name"),
+                        "game_date": game.get("gameDate")
+                    })
+    return pitchers
 
-    tbody = table.find("tbody")
-    if not tbody:
-        print("❌ No table body found.")
-        return []
+def get_pitcher_game_logs(pitcher_id):
+    url = f"https://statsapi.mlb.com/api/v1/people/{pitcher_id}/stats"
+    params = {
+        "stats": "gameLog",
+        "group": "pitching",
+        "limit": 5,
+        "gameType": "R"
+    }
+    response = requests.get(url, params=params)
+    data = response.json()
+    return data.get("stats", [{}])[0].get("splits", [])
 
-    rows = tbody.find_all("tr")
-    print(f"✅ Found {len(rows)} rows in table.")
+def main():
+    today = datetime.now().strftime("%Y-%m-%d")
+    pitchers = get_probable_pitchers(today)
+    all_data = []
 
-    names = []
-    for row in rows:
-        cells = row.find_all("td")
-        if len(cells) < 5:
-            continue
-        away = cells[2].text.strip()
-        home = cells[4].text.strip()
-        names.extend([away, home])
-    
-    unique_names = list(set(names))
-    print(f"✅ Extracted {len(unique_names)} unique pitcher names.")
-    return unique_names
+    for pitcher in pitchers:
+        print(f"Processing {pitcher['name']} ({pitcher['team']} vs {pitcher['opponent']})")
+        logs = get_pitcher_game_logs(pitcher["id"])
+        time.sleep(0.5)  # To respect API rate limits
 
-def get_mlb_id(name):
-    parts = name.replace(".", "").split()
-    if len(parts) < 2:
-        print(f"⚠️ Not enough parts in name: {name}")
-        return None
-    first, last = parts[0], parts[-1]
-    print(f"🔍 Looking up: first={first}, last={last}")
-    try:
-        df = playerid_lookup(last, fir_
+        for game in logs:
+            stats = game.get("stat", {})
+            all_data.append({
+                "pitcher_name": pitcher["name"],
+                "team": pitcher["team"],
+                "opponent": pitcher["opponent"],
+                "game_date": pitcher["game_date"],
+                "log_date": game.get("date"),
+                "innings_pitched": stats.get("inningsPitched"),
+                "earned_runs": stats.get("earnedRuns"),
+                "strike_outs": stats.get("strikeOuts"),
+                "walks": stats.get("baseOnBalls"),
+                "hits": stats.get("hits"),
+                "pitches": stats.get("numberOfPitches"),
+                "era": stats.get("era"),
+                "whip": stats.get("whip")
+            })
+
+    df = pd.DataFrame(all_data)
+    df.to_csv("probable_pitcher_game_logs.csv", index=False)
+    print(f"Saved {len(df)} records to probable_pitcher_game_logs.csv")
+
+if __name__ == "__main__":
+    main()
