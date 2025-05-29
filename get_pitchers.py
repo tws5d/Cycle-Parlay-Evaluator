@@ -10,6 +10,8 @@ url = f"https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate={today}&end
 
 response = requests.get(url)
 data = response.json()
+import json
+print(json.dumps(data, indent=2)[:2000])  # limit output to first 2000 characters
 
 rows = []
 
