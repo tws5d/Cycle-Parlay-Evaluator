@@ -22,12 +22,29 @@ for date in data["dates"]:
             opp = game["teams"]["away"]["team"]["name"] if side == "home" else game["teams"]["home"]["team"]["name"]
             pitcher = game["teams"][side].get("probablePitcher")
             if pitcher:
+                # Pull last 5 game logs
+                gamelog_url = f"https://statsapi.mlb.com/api/v1/people/{pitcher['id']}/stats?stats=gameLog&group=pitching"
+                gamelog_resp = requests.get(gamelog_url)
+                gamelog_data = gamelog_resp.json()
+
+                games = gamelog_data.get("stats", [{}])[0].get("splits", [])[:5]
+
+                total_ip = total_er = total_so = 0
+                for g in games:
+                    stat = g["stat"]
+                    total_ip += float(stat.get("inningsPitched", 0))
+                    total_er += int(stat.get("earnedRuns", 0))
+                    total_so += int(stat.get("strikeOuts", 0))
+
                 rows.append({
                     "Date": game["gameDate"][:10],
                     "Team": team,
                     "Opponent": opp,
                     "Pitcher Name": pitcher["fullName"],
-                    "MLB ID": pitcher["id"]
+                    "MLB ID": pitcher["id"],
+                    "Last 5 IP": total_ip,
+                    "Last 5 ER": total_er,
+                    "Last 5 SO": total_so
                 })
                 print(f"✔ {pitcher['fullName']} for {team}")
 
