@@ -2,6 +2,7 @@ import streamlit as st
 from pybaseball import statcast_batter
 import pandas as pd
 from datetime import datetime, timedelta
+from pybaseball import schedule_and_record
 
 st.title("The Cycle Evaluator")
 
@@ -11,6 +12,10 @@ Enter a hitter's name to pull recent Statcast data and generate a matchup score 
 
 player_name = st.text_input("Enter hitter name (e.g. Juan Soto)")
 
+# Get today's schedule
+today = datetime.today().strftime('%Y-%m-%d')
+schedule = schedule_and_record(2024, "AL")  # We’ll expand to NL soon
+
 # Define basic player lookup dictionary for testing (add more later)
 player_ids = {
     "Juan Soto": 665742,
@@ -19,9 +24,25 @@ player_ids = {
     "Bryce Harper": 547180,
 }
 
+player_teams = {
+    "Juan Soto": "NYM",
+    "Mookie Betts": "LAD",
+    "Aaron Judge": "NYY",
+    "Bryce Harper": "PHI",
+}
+
 if player_name in player_ids:
     batter_id = player_ids[player_name]
-    
+   
+    team = player_teams[player_name]
+    game = schedule[schedule['Tm'] == team]
+
+    if not game.empty:
+        opponent = game.iloc[0]['Opp']
+        probable_pitcher = game.iloc[0]['Probable Pitcher']
+        st.write(f"🧢 Opposing Team: {opponent}")
+        st.write(f"🧱 Probable Pitcher: {probable_pitcher}")
+        
     # Get last 14 days of data
     end_date = datetime.today().strftime('%Y-%m-%d')
     start_date = (datetime.today() - timedelta(days=14)).strftime('%Y-%m-%d')
