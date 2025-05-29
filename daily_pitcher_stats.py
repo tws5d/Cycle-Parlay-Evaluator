@@ -49,7 +49,11 @@ def build_pitcher_file():
     all_rows = []
 
     for pitcher in pitchers:
+        if pitcher["id"] == "N/A":
+        continue  # Skip if no valid pitcher ID
+        print(f"Fetching logs for {pitcher['name']} ({pitcher['id']})")
         logs = get_pitcher_game_logs(pitcher["id"])
+
         for game in logs:
             stat = game["stat"]
             all_rows.append({
