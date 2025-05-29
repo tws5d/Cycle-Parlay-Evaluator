@@ -1,1 +1,2 @@
+print("✅ Script is running.")
 
