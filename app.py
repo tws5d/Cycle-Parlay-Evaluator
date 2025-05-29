@@ -66,8 +66,8 @@ if player_name in player_ids:
             else:
                 st.warning("No recent data for pitcher.")
 
-            except:
-                st.warning("Pitcher lookup failed. Check spelling.")
+        except:
+            st.warning("Pitcher lookup failed. Check spelling.")
   
     # Get last 14 days of data
     end_date = datetime.today().strftime('%Y-%m-%d')
