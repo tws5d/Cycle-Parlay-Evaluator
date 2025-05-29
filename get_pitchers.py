@@ -16,8 +16,8 @@ rows = []
 for date in data["dates"]:
     for game in date["games"]:
         for side in ['home', 'away']:
-            team = game[f"{side}Team"]["name"]
-            opp = game["awayTeam"]["name"] if side == "home" else game["homeTeam"]["name"]
+            team = game["teams"][side]["team"]["name"]
+            opp = game["teams"]["away"]["team"]["name"] if side == "home" else game["teams"]["home"]["team"]["name"]
             pitcher = game.get(f"{side}ProbablePitcher")
             if pitcher:
                 rows.append({
