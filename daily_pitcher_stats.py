@@ -3,32 +3,23 @@ import pandas as pd
 from datetime import date, timedelta
 
 # Get today's date
-today = "2024-05-05"
+today = date.today().isoformat()
 
 # Step 1: Get today's games from MLB Stats API
-def get_today_pitchers():
-    url = url = "https://statsapi.mlb.com/api/v1/schedule?hydrate=probablePitcher"
-    params = {"sportId": 1, "date": today}
-    r = requests.get(url, params=params)
-    games = r.json().get("dates", [])[0].get("games", [])
-    import json; print(json.dumps(games[0], indent=2))
-    
+def get_active_pitchers(team_ids):
     pitchers = []
-    for game in games:
-        for side in ["home", "away"]:
-            team = game["teams"][side]
-            pitcher = team.get("probablePitcher")
-    
-            # Add fallback for missing or partial data
-            name = pitcher["fullName"] if isinstance(pitcher, dict) and "fullName" in pitcher else "TBD"
-            pitcher_id = pitcher["id"] if isinstance(pitcher, dict) and "id" in pitcher else "N/A"
-
-            pitchers.append({
-                "name": name,
-                "id": pitcher_id,
-                "team": team["team"]["name"]
-            })
-  
+    for team_id in team_ids:
+        url = f"https://statsapi.mlb.com/api/v1/teams/{team_id}/roster/active"
+        r = requests.get(url).json()
+        for player in r.get("roster", []):
+            person = player.get("person", {})
+            position = player.get("position", {}).get("abbreviation")
+            if position == "P":  # Only pitchers
+                pitchers.append({
+                    "id": person.get("id", "N/A"),
+                    "name": person.get("fullName", "TBD"),
+                    "team": player.get("team", {}).get("name", "")
+                })
     return pitchers
 
 # Step 2: Get recent statcast performance for each pitcher
@@ -45,12 +36,15 @@ def get_pitcher_game_logs(pitcher_id):
 
 # Step 3: Build the CSV
 def build_pitcher_file():
-    pitchers = get_today_pitchers()
+    # Example: a few team IDs — you can expand this list
+    team_ids = [121, 147, 139, 110]  # NYY, NYM, SEA, BAL — adjust as needed
+
+    pitchers = get_active_pitchers(team_ids)
     all_rows = []
 
     for pitcher in pitchers:
         if pitcher["id"] == "N/A":
-        continue  # Skip if no valid pitcher ID
+            continue
         print(f"Fetching logs for {pitcher['name']} ({pitcher['id']})")
         logs = get_pitcher_game_logs(pitcher["id"])
 
