@@ -35,7 +35,7 @@ if player_name in player_ids:
     batter_team = player_teams[player_name]
 
     # Try to find opposing pitcher
-    pitcher_row = pitchers_df[pitchers_df["Opponent"] == batter_team]
+    pitcher_row = pitchers_df[pitchers_df["Team"] == batter_team]
     pitcher_name = None
     pitcher_id = None
 
