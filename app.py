@@ -28,7 +28,8 @@ player_teams = {
 }
 
 # Load pitcher data from CSV
-pitchers_df = pd.read_csv("latest_pitchers.csv")
+url = "https://raw.githubusercontent.com/tws5d/Cycle-Parlay-Evaluator/main/latest_pitchers.csv"
+pitchers_df = pd.read_csv(url)
 
 if player_name in player_ids:
     batter_id = player_ids[player_name]
