@@ -14,7 +14,7 @@ player_name = st.text_input("Enter hitter name (e.g. Juan Soto)")
 
 # Get today's schedule
 today = datetime.today().strftime('%Y-%m-%d')
-schedule = schedule_and_record(2025)
+schedule = schedule_and_record(datetime.today().year)
 
 # Define basic player lookup dictionary for testing (add more later)
 player_ids = {
