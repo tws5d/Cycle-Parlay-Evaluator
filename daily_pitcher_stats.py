@@ -17,12 +17,17 @@ def get_today_pitchers():
         for side in ["home", "away"]:
             team = game["teams"][side]
             pitcher = team.get("probablePitcher")
-            if pitcher:
-                pitchers.append({
-                    "name": pitcher["fullName"],
-                    "id": pitcher["id"],
-                    "team": team["team"]["name"]
-                })
+    
+            # Add fallback for missing or partial data
+            name = pitcher["fullName"] if isinstance(pitcher, dict) and "fullName" in pitcher else "TBD"
+            pitcher_id = pitcher["id"] if isinstance(pitcher, dict) and "id" in pitcher else "N/A"
+
+            pitchers.append({
+                "name": name,
+                "id": pitcher_id,
+                "team": team["team"]["name"]
+            })
+  
     return pitchers
 
 # Step 2: Get recent statcast performance for each pitcher
