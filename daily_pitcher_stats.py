@@ -11,6 +11,7 @@ def get_today_pitchers():
     params = {"sportId": 1, "date": today}
     r = requests.get(url, params=params)
     games = r.json().get("dates", [])[0].get("games", [])
+    import json; print(json.dumps(games[0], indent=2))
     
     pitchers = []
     for game in games:
