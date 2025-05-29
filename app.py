@@ -40,7 +40,8 @@ if player_name in player_ids:
 
         # Lookup pitcher ID from name
         try:
-            pitcher_lookup = playerid_lookup(*pitcher_name.split())
+            first, last = pitcher_name.strip().title().split()
+            pitcher_lookup = playerid_lookup(first, last)
             pitcher_id = int(pitcher_lookup.iloc[0]['key_mlbam'])
         
             # Get last 14 days of Statcast data for pitcher
