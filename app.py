@@ -132,6 +132,7 @@ if not pitcher_row.empty:
 
             name_corrections = {
                 "Arizona Diamondbacks": "Diamondbacks",
+                "Baltimore Orioles": "Orioles",
                 "Atlanta Braves": "Braves",
                 "Boston Red Sox": "Red Sox",
                 "Chicago Cubs": "Cubs",
