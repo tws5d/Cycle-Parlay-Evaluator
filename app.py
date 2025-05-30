@@ -36,6 +36,9 @@ pitcher_row = pitchers_df[pitchers_df["Team"] == batter_team_name]
 pitcher_name = None
 pitcher_id = None
 
+st.write(f"Batter team: {batter_team_name}")
+st.write("Pitcher teams available:", pitchers_df["Team"].unique())
+
 # Layout row 1
 col1, col2 = st.columns([1, 2])
 with col1:
