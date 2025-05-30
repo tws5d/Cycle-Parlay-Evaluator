@@ -29,7 +29,6 @@ def load_hitters():
     return pd.read_csv(url)
 
 hitters_df = load_hitters()
-st.write("CSV Columns:", hitters_df.columns.tolist())
 
 unique_players = hitters_df[["player_name", "player_id", "team_id", "team_name"]].drop_duplicates()
 player_name = st.selectbox("Select a hitter:", unique_players["player_name"].unique())
