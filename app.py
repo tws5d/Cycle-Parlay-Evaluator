@@ -1,4 +1,3 @@
-st.write("Debug active")
 import streamlit as st
 import pandas as pd
 from pybaseball import statcast_batter, statcast_pitcher
