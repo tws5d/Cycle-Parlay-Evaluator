@@ -51,7 +51,7 @@ def get_last_10_hitter_games(player_id):
 
 # Step 4: Run it all and save to CSV
 def build_daily_hitter_csv():
-    team_info = {team['id']: team['name'] for team in requests.get('https://statsapi.mlb.com/api/v1/teams?sportId=1').json()['teams']}
+    team_info = {team['id']: team['clubName'] for team in requests.get('https://statsapi.mlb.com/api/v1/teams?sportId=1').json()['teams']}
     all_data = []
 
     teams = get_today_team_ids()
