@@ -219,7 +219,21 @@ if not pitcher_row.empty:
                     wind_deg = weather_data['wind']['deg']
                     wind_text = get_wind_text(wind_speed, wind_deg, team_to_park.get(batter_team_name, "Unknown"))
                     with wind_col:
-                        st.markdown(f"**Wind**  \n{wind_text}")
+                        wind_html = f"""
+                        <div style='
+                            font-size:24px; 
+                            display: flex; 
+                            flex-direction: column; 
+                            justify-content: center; 
+                            height: 100%;
+                            text-align: center;
+                            color: white;
+                        '>
+                            <strong>Wind</strong>
+                            <span>{wind_text}</span>
+                        </div>
+                        """
+                        st.markdown(wind_html, unsafe_allow_html=True)
                 else:
                     with wind_col:
                         st.warning("⚠️ Wind data not available for this location.")
