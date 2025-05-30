@@ -87,6 +87,7 @@ team_to_park = {
     "Rangers": "Globe Life Field"
 }
 
+short_team_name = name_corrections.get(batter_team_name, batter_team_name)
 
 pitchers_url = "https://raw.githubusercontent.com/tws5d/Cycle-Parlay-Evaluator/main/latest_pitchers.csv"
 pitchers_df = pd.read_csv(pitchers_url)
