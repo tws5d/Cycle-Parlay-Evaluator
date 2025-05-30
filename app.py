@@ -62,7 +62,12 @@ team_to_park = {
     "Toronto Blue Jays": "Rogers Centre", "Philadelphia Phillies": "Citizens Bank Park", "New York Yankees": "Yankee Stadium",
     "Chicago Cubs": "Wrigley Field", "Minnesota Twins": "Target Field", "Houston Astros": "Minute Maid Park",
     "St. Louis Cardinals": "Busch Stadium", "Cleveland Guardians": "Progressive Field", "Washington Nationals": "Nationals Park",
-    "Detroit Tigers": "Comerica Park", "Los Angeles Angels": "Angel Stadium"
+    "Detroit Tigers": "Comerica Park", "Los Angeles Angels": "Angel Stadium",
+
+    "New York Mets": "Citi Field",
+    "Chicago White Sox": "Guaranteed Rate Field",
+    "Oakland Athletics": "Oakland Coliseum",
+
 }
 
 pitchers_url = "https://raw.githubusercontent.com/tws5d/Cycle-Parlay-Evaluator/main/latest_pitchers.csv"
