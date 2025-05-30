@@ -122,11 +122,11 @@ if not df.empty:
     total_hits = recent_df["hits"].sum()
     total_rbis = recent_df["rbi"].sum()
     total_hrs = recent_df["home_runs"].sum()
-    total_bases = (recent_df["hits"] + 2 * recent_df["home_runs"]).sum()  # crude approx
+    total_bases = (recent_df["hits"] + 2 * recent_df["home_runs"]).sum()
 
     max_hits = recent_df["hits"].max()
     max_rbis = recent_df["rbi"].max()
-    max_bases = (recent_df["hits"] + 2 * recent_df["home_runs"]).max()  # crude again
+    max_bases = (recent_df["hits"] + 2 * recent_df["home_runs"]).max()
 
     avg = round(recent_df["avg"].mean(), 3)
     obp = round(recent_df["obp"].mean(), 3)
@@ -146,10 +146,14 @@ if not df.empty:
     col2.metric("OBP", f"{obp}")
     col3.metric("SLG", f"{slg}")
 
-    # Rest of Statcast
-    st.write(f"**Average Exit Velocity:** {round(avg_exit_velo, 1)} mph")
-    st.write(f"**Hard Hit %:** {hard_hit_pct}%")
-    st.write(f"**xBA (Expected BA):** {xba}")
+    # Add tags
+    exit_tag = "✅" if avg_exit_velo > 91 else "⚠️"
+    hard_hit_tag = "✅" if hard_hit_pct > 45 else "⚠️"
+    xba_tag = "✅" if xba > 0.300 else "⚠️"
+
+    st.write(f"**Average Exit Velocity:** {round(avg_exit_velo, 1)} mph {exit_tag}")
+    st.write(f"**Hard Hit %:** {hard_hit_pct}% {hard_hit_tag}")
+    st.write(f"**xBA (Expected BA):** {xba} {xba_tag}")
 
     if 'score' not in locals():
         score = 50
