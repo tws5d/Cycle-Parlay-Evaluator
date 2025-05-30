@@ -122,7 +122,16 @@ if not pitcher_row.empty:
             hard_hit_tag = "✅" if hard_hit_pct_allowed > 35 else "⚠️"
             ev_tag = "✅" if avg_ev_allowed > 89 else "⚠️"
 
-            park_name = team_to_park.get(batter_team_name, "Unknown")
+            # Find matchup row for batter's team in pitchers_df
+            matchup_row = pitchers_df[(pitchers_df["Opponent"] == batter_team_name) | (pitchers_df["Team"] == batter_team_name)]
+
+            if not matchup_row.empty:
+                home_team = matchup_row.iloc[0]["Team"]  # Assuming "Team" is home team
+            else:
+                home_team = batter_team_name
+
+            # Get ballpark info for the home team
+            park_name = team_to_park.get(home_team, "Unknown")
             park_type = ballpark_factors.get(park_name, "Unknown")
             park_emoji = "⚾" if park_type == "Hitter-Friendly" else "🛡️" if park_type == "Pitcher-Friendly" else "⚖️"
 
