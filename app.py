@@ -4,61 +4,28 @@ from pybaseball import statcast_batter, statcast_pitcher
 from datetime import datetime, timedelta
 import requests
 
-def get_wind_text_and_indicator(speed, deg):
-    # Define blowing direction based on wind degree relative to batter facing ~90°
+def get_wind_text(speed, deg, park_name):
+    if speed < 3:
+        return "Calm"
+
+    # Approximate batter orientation for Nationals Park (~90° East)
     relative_deg = (deg - 90) % 360
 
-    if speed < 3:
-        blowing = "Calm"
-        indicator = "⚪️"
+    if 45 <= relative_deg <= 135:
+        blowing = "Blowing Left"
+    elif 225 <= relative_deg <= 315:
+        blowing = "Blowing Right"
     else:
-        # Determine blowing type
-        if 45 <= relative_deg <= 135:
-            blowing_dir = "Blowing Left"
-            blowing_out = True
-        elif 225 <= relative_deg <= 315:
-            blowing_dir = "Blowing Right"
-            blowing_out = True
-        else:
-            blowing_dir = "Blowing Center"
-            blowing_out = True if (0 <= relative_deg < 45 or 315 < relative_deg <= 360) else False
+        blowing = "Blowing Center"
 
-        # Determine in/out wording (approx)
-        if 60 <= relative_deg <= 120:
-            in_out = "Blowing Out to"
-        elif 240 <= relative_deg <= 300:
-            in_out = "Blowing In to"
-            blowing_out = False
-        else:
-            in_out = "Blowing"
-
-        blowing = f"{in_out} {blowing_dir}"
-
-        # Determine indicator by your rules
-        if speed >= 10:
-            if blowing_out:
-                indicator = "✅"  # positive
-            else:
-                indicator = "⚠️"  # red flag for blowing in strong
-        elif speed < 5:
-            indicator = "⚪️"  # neutral
-        elif 5 <= speed < 10:
-            if blowing_out:
-                indicator = "🟢"  # slightly positive
-            else:
-                indicator = "🟡"  # slight caution
-        else:
-            indicator = ""
-
-    return f"{blowing} ({speed:.1f} mph)", indicator
-
-def get_ballpark_indicator(factor):
-    if factor == "Hitter-Friendly":
-        return "🔥"
-    elif factor == "Pitcher-Friendly":
-        return "❄️"
+    if 60 <= relative_deg <= 120:
+        in_out = "Blowing Out to"
+    elif 240 <= relative_deg <= 300:
+        in_out = "Blowing In to"
     else:
-        return "⚪️"
+        in_out = "Blowing"
+
+    return f"{in_out} {blowing} ({speed:.1f} mph)"
 
 api_key = "4f676d446a8d39ef55692e6447c5e0f4"
 
@@ -187,10 +154,12 @@ if not pitcher_row.empty:
 
     image_url = f"https://img.mlbstatic.com/mlb-photos/image/upload/v1/people/{batter_id}/headshot/67/current.png"
 
-    col1, col2 = st.columns([1, 4])
+    col1, col2 = st.columns([1, 3])
     with col1:
         st.image(image_url, width=100)
     with col2:
+        # Nested columns inside col2: pitching stats left, wind right
+        stat_col, wind_col = st.columns([3, 1])
         if not df_pitcher.empty:
             avg_ev_allowed = df_pitcher['launch_speed'].mean()
             hard_hits_allowed = df_pitcher[df_pitcher['launch_speed'] >= 95].shape[0]
@@ -202,29 +171,78 @@ if not pitcher_row.empty:
             hard_hit_tag = "✅" if hard_hit_pct_allowed > 35 else "⚠️"
             ev_tag = "✅" if avg_ev_allowed > 89 else "⚠️"
 
-            st.write(f"📉 **Pitcher xBA Allowed:** {xba_allowed} {xba_tag}")
-            st.write(f"📉 **Hard Hit % Allowed:** {hard_hit_pct_allowed}% {hard_hit_tag}")
-            st.write(f"📉 **Avg Exit Velo Allowed:** {round(avg_ev_allowed, 1)} mph {ev_tag}")
+            with stat_col:
+                st.write(f"📉 **Pitcher xBA Allowed:** {xba_allowed} {xba_tag}")
+                st.write(f"📉 **Hard Hit % Allowed:** {hard_hit_pct_allowed}% {hard_hit_tag}")
+                st.write(f"📉 **Avg Exit Velo Allowed:** {round(avg_ev_allowed, 1)} mph {ev_tag}")
+                st.write(f"🏟️ **Ballpark:** {team_to_park.get(batter_team_name, 'Unknown')} ({ballpark_factors.get(team_to_park.get(batter_team_name, 'Unknown'), 'Unknown')})")
 
-            ballpark = team_to_park.get(batter_team_name, "Unknown")
-            ballpark_factor = ballpark_factors.get(ballpark, "Unknown")
-            ballpark_indicator = get_ballpark_indicator(ballpark_factor)
-            st.write(f"🏟️ **Ballpark:** {ballpark} {ballpark_indicator} ({ballpark_factor})")
+            park_coords = {
+                "Chase Field": (33.4458, -112.0669),
+                "Globe Life Field": (32.7473, -97.0831),
+                "Great American Ball Park": (39.0974, -84.5063),
+                "Fenway Park": (42.3467, -71.0972),
+                "Coors Field": (39.7556, -104.9942),
+                "American Family Field": (43.0281, -87.9712),
+                "T-Mobile Park": (47.5914, -122.3325),
+                "Dodger Stadium": (34.0739, -118.2400),
+                "Kauffman Stadium": (39.0517, -94.4803),
+                "Oriole Park at Camden Yards": (39.2839, -76.6219),
+                "PNC Park": (40.4473, -80.0053),
+                "Petco Park": (32.7076, -117.1570),
+                "Tropicana Field": (27.7683, -82.6534),
+                "Oracle Park": (37.7786, -122.3893),
+                "Marlins Park": (25.7781, -80.2195),
+                "Rogers Centre": (43.6414, -79.3894),
+                "Citizens Bank Park": (39.9061, -75.1665),
+                "Yankee Stadium": (40.8296, -73.9262),
+                "Wrigley Field": (41.9484, -87.6553),
+                "Target Field": (44.9817, -93.2777),
+                "Minute Maid Park": (29.7573, -95.3550),
+                "Busch Stadium": (38.6226, -90.1928),
+                "SunTrust Park": (33.8908, -84.4677),
+                "Progressive Field": (41.4954, -81.6854),
+                "Truist Park": (33.8908, -84.4677),
+                "Nationals Park": (38.8730, -77.0074),
+                "Comerica Park": (42.3390, -83.0485),
+                "Angel Stadium": (33.8003, -117.8827)
+            }
+            coords = park_coords.get(team_to_park.get(batter_team_name, "Unknown"), (40.7128, -74.0060))
 
-            # Wind info below Ballpark
-            weather_url = f"http://api.openweathermap.org/data/2.5/weather?lat={park_coords.get(ballpark, (40.7128, -74.0060))[0]}&lon={park_coords.get(ballpark, (40.7128, -74.0060))[1]}&appid={api_key}&units=imperial"
+            weather_url = f"http://api.openweathermap.org/data/2.5/weather?lat={coords[0]}&lon={coords[1]}&appid={api_key}&units=imperial"
+
             try:
                 response = requests.get(weather_url)
                 weather_data = response.json()
                 if 'wind' in weather_data and 'speed' in weather_data['wind'] and 'deg' in weather_data['wind']:
                     wind_speed = weather_data['wind']['speed']
                     wind_deg = weather_data['wind']['deg']
-                    wind_text, wind_indicator = get_wind_text_and_indicator(wind_speed, wind_deg)
-                    st.markdown(f"**Wind:** {wind_text} {wind_indicator}")
+                    wind_text = get_wind_text(wind_speed, wind_deg, team_to_park.get(batter_team_name, "Unknown"))
+                    with wind_col:
+                        wind_html = f"""
+                        <div style='
+                            font-size: 20px; 
+                            color: white; 
+                            height: 100%; 
+                            display: flex; 
+                            flex-direction: column; 
+                            justify-content: center; 
+                            align-items: center;
+                            text-align: center;
+                            gap: 4px;
+                        '>
+                            <strong style='font-size: 28px;'>Wind</strong>
+                            <span>{wind_text.rsplit("(",1)[0].strip()}</span>
+                            <span style='font-weight: 600;'>{wind_text.rsplit("(",1)[1] if "(" in wind_text else ""}</span>
+                        </div>
+                        """
+                        st.markdown(wind_html, unsafe_allow_html=True)
                 else:
-                    st.warning("⚠️ Wind data not available for this location.")
+                    with wind_col:
+                        st.warning("⚠️ Wind data not available for this location.")
             except Exception as e:
-                st.warning(f"⚠️ Could not fetch wind data: {e}")
+                with wind_col:
+                    st.warning(f"⚠️ Could not fetch wind data: {e}")
 
             score = 50
             if xba_allowed > 0.280: score += 10
@@ -290,16 +308,12 @@ if not df.empty:
     if hard_hit_pct > 45: score += 15
     if avg_exit_velo > 91: score += 10
 
-    # Pick labels based on score
+    st.write(f"🧠 **Cycle Score**: {score}/100")
     if score >= 85:
-        pick_label = "Strong Pick"
-        st.success(f"✅ {pick_label}")
+        st.success("🔥 LOCK")
     elif score >= 70:
-        pick_label = "Solid Pick"
-        st.info(f"🟡 {pick_label}")
+        st.info("✅ Lean")
     else:
-        pick_label = "Risky Pick"
-        st.warning(f"⚠️ {pick_label}")
-
+        st.warning("⚠️ Fade")
 else:
     st.warning("No Statcast data found for this timeframe.")
