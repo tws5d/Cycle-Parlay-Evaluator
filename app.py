@@ -94,7 +94,9 @@ pitchers_df = pd.read_csv(pitchers_url)
 st.write("DEBUG pitcher_df Opponents:", pitchers_df["Opponent"].unique())
 st.write(f"DEBUG batter_team_name: {batter_team_name}")
 
-pitcher_row = pitchers_df[pitchers_df["Opponent"] == batter_team_name]
+short_team_name = name_corrections.get(batter_team_name, batter_team_name)
+
+pitcher_row = pitchers_df[pitchers_df["Opponent"] == short_team_name]
 
 if pitcher_row.empty:
     pitcher_row = pitchers_df[pitchers_df["Team"] == batter_team_name]
