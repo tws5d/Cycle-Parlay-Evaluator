@@ -25,19 +25,30 @@ def get_wind_text(speed, deg, park_name):
 api_key = "4f676d446a8d39ef55692e6447c5e0f4"
 
 url = "https://raw.githubusercontent.com/tws5d/Cycle-Parlay-Evaluator/main/latest_hitters.csv"
+@st.cache_data(ttl=60)
 def load_hitters():
     return pd.read_csv(url)
 
 hitters_df = load_hitters()
 
-unique_players = hitters_df[["player_name", "player_id", "team_id", "team_name"]].drop_duplicates()
+unique_players = hitters_df[["player_name", "player_id", "team_id"]].drop_duplicates()
 player_name = st.selectbox("Select a hitter:", unique_players["player_name"].unique())
 
 selected_row = unique_players[unique_players["player_name"] == player_name].iloc[0]
 batter_id = selected_row["player_id"]
 team_id = selected_row["team_id"]
 
-batter_team_name = selected_row["team_name"]
+team_id_map = {
+    109: "Arizona Diamondbacks", 144: "Atlanta Braves", 110: "Baltimore Orioles", 111: "Boston Red Sox",
+    112: "Chicago Cubs", 145: "Chicago White Sox", 113: "Cincinnati Reds", 114: "Cleveland Guardians",
+    115: "Colorado Rockies", 116: "Detroit Tigers", 117: "Houston Astros", 118: "Kansas City Royals",
+    119: "Los Angeles Angels", 137: "Los Angeles Dodgers", 146: "Miami Marlins", 158: "Milwaukee Brewers",
+    121: "Minnesota Twins", 135: "New York Mets", 147: "New York Yankees", 133: "Oakland Athletics",
+    134: "Philadelphia Phillies", 143: "Pittsburgh Pirates", 142: "San Diego Padres",
+    138: "San Francisco Giants", 139: "Seattle Mariners", 140: "Texas Rangers", 141: "Tampa Bay Rays",
+    120: "Washington Nationals", 136: "Toronto Blue Jays"
+}
+batter_team_name = team_id_map.get(team_id, None)
 
 ballpark_factors = {
     "Chase Field": "Hitter-Friendly", "Globe Life Field": "Hitter-Friendly", "Great American Ball Park": "Hitter-Friendly",
@@ -61,8 +72,11 @@ team_to_park = {
     "Toronto Blue Jays": "Rogers Centre", "Philadelphia Phillies": "Citizens Bank Park", "New York Yankees": "Yankee Stadium",
     "Chicago Cubs": "Wrigley Field", "Minnesota Twins": "Target Field", "Houston Astros": "Minute Maid Park",
     "St. Louis Cardinals": "Busch Stadium", "Cleveland Guardians": "Progressive Field", "Washington Nationals": "Nationals Park",
-    "Detroit Tigers": "Comerica Park", "Los Angeles Angels": "Angel Stadium"
+    "Detroit Tigers": "Comerica Park", "Los Angeles Angels": "Angel Stadium", 
+    "Chicago White Sox": "Guaranteed Rate Field", "New York Mets": "Citi Field",
+    "Oakland Athletics": "Oakland Coliseum", "Texas Rangers": "Globe Life Field"
 }
+
 
 pitchers_url = "https://raw.githubusercontent.com/tws5d/Cycle-Parlay-Evaluator/main/latest_pitchers.csv"
 pitchers_df = pd.read_csv(pitchers_url)
