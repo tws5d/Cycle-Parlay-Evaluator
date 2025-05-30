@@ -16,12 +16,47 @@ selected_row = unique_players[unique_players["player_name"] == player_name].iloc
 batter_id = selected_row["player_id"]
 team_id = selected_row["team_id"]
 
+# Map team_id to full team name
+team_id_map = {
+    109: "Arizona Diamondbacks",
+    144: "Atlanta Braves",
+    110: "Baltimore Orioles",
+    111: "Boston Red Sox",
+    112: "Chicago Cubs",
+    145: "Chicago White Sox",
+    113: "Cincinnati Reds",
+    114: "Cleveland Guardians",
+    115: "Colorado Rockies",
+    116: "Detroit Tigers",
+    117: "Houston Astros",
+    118: "Kansas City Royals",
+    119: "Los Angeles Angels",
+    137: "Los Angeles Dodgers",  # Assuming 137 is Dodgers
+    146: "Miami Marlins",
+    158: "Milwaukee Brewers",
+    121: "Minnesota Twins",
+    135: "New York Mets",
+    147: "New York Yankees",
+    133: "Oakland Athletics",
+    134: "Philadelphia Phillies",
+    143: "Pittsburgh Pirates",
+    142: "San Diego Padres",
+    138: "San Francisco Giants",
+    139: "Seattle Mariners",
+    140: "St. Louis Cardinals",
+    141: "Tampa Bay Rays",
+    120: "Texas Rangers",
+    136: "Toronto Blue Jays",    # Changed from 137 to avoid overwrite
+    120: "Washington Nationals"  # Changed from 120: Texas to 136
+}
+batter_team_name = team_id_map.get(team_id, None)
+
 # Load pitcher data
 pitchers_url = "https://raw.githubusercontent.com/tws5d/Cycle-Parlay-Evaluator/main/latest_pitchers.csv"
 pitchers_df = pd.read_csv(pitchers_url)
 
-# Try to find opposing pitcher using team_id match (simple method for now)
-pitcher_row = pitchers_df[pitchers_df["Team"].str.contains(str(team_id), na=False)]
+# Try to find opposing pitcher using team name
+pitcher_row = pitchers_df[pitchers_df["Opponent"] == batter_team_name]
 pitcher_name = None
 pitcher_id = None
 
