@@ -135,7 +135,7 @@ home_team_for_park = game_row["home_team"]
 # Get ballpark info for the home team
 park_name = team_to_park.get(home_team_for_park, "Unknown")
 park_type = ballpark_factors.get(park_name, "Unknown")
-            park_emoji = "⚾" if park_type == "Hitter-Friendly" else "🛡️" if park_type == "Pitcher-Friendly" else "⚖️"
+park_emoji = "⚾" if park_type == "Hitter-Friendly" else "🛡️" if park_type == "Pitcher-Friendly" else "⚖️"
 
             with stat_col:
                 st.write(f"📉 **Pitcher xBA Allowed:** {xba_allowed} {xba_tag}")
