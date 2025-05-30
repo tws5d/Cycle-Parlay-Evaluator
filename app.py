@@ -221,16 +221,19 @@ if not pitcher_row.empty:
                     with wind_col:
                         wind_html = f"""
                         <div style='
-                            font-size:24px; 
+                            font-size: 20px; 
+                            color: white; 
+                            height: 100%; 
                             display: flex; 
                             flex-direction: column; 
                             justify-content: center; 
-                            height: 100%;
+                            align-items: center;
                             text-align: center;
-                            color: white;
+                            gap: 4px;
                         '>
-                            <strong>Wind</strong>
-                            <span>{wind_text}</span>
+                            <strong style='font-size: 28px;'>Wind</strong>
+                            <span>{wind_text.rsplit("(",1)[0].strip()}</span>
+                            <span style='font-weight: 600;'>{wind_text.rsplit("(",1)[1] if "(" in wind_text else ""}</span>
                         </div>
                         """
                         st.markdown(wind_html, unsafe_allow_html=True)
