@@ -49,9 +49,7 @@ if player_name in player_ids:
     # Get pitcher Statcast data if available
     if pitcher_name:
         try:
-            first, last = pitcher_name.strip().title().split()
-            pitcher_lookup = playerid_lookup(first, last)
-            pitcher_id = int(pitcher_lookup.iloc[0]['key_mlbam'])
+            pitcher_id = int(pitcher_row.iloc[0]["MLB ID"])
 
             end_date = datetime.today().strftime('%Y-%m-%d')
             start_date = (datetime.today() - timedelta(days=14)).strftime('%Y-%m-%d')
