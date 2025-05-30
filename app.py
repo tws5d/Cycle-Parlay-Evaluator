@@ -6,17 +6,28 @@ import requests
 import matplotlib.pyplot as plt
 import numpy as np
 
-def generate_wind_compass(speed, direction_deg):
-    fig, ax = plt.subplots(figsize=(2.5, 2.5), subplot_kw={'projection': 'polar'})
-    theta = np.radians(direction_deg)
-    ax.arrow(theta, 0, 0, 1, width=0.05, head_width=0.2, head_length=0.3, fc='blue', ec='blue')
-    ax.set_rticks([])
-    ax.set_xticks([])
-    ax.set_yticks([])
-    ax.set_title(f"{speed} mph", va='bottom', fontsize=10)
-    plt.tight_layout()
-    fig.subplots_adjust(top=0.85)
-    fig.suptitle("Wind Direction", fontsize=12)
+def generate_minimal_wind_indicator(speed, direction_deg):
+    fig, ax = plt.subplots(figsize=(1.5, 0.5))
+    ax.axis('off')
+
+    # Convert wind direction to radians and rotate arrow so 0° = north up
+    theta = np.radians(direction_deg - 90)
+
+    # Draw arrow pointing wind direction horizontally centered
+    ax.arrow(0.5, 0.25, 0.3 * np.cos(theta), 0.3 * np.sin(theta),
+             head_width=0.1, head_length=0.1, fc='blue', ec='blue', length_includes_head=True)
+
+    # Show wind speed text near arrow
+    ax.text(0.1, 0.25, f"{speed:.1f} mph", verticalalignment='center', fontsize=10)
+
+    # Label "Wind" above arrow left
+    ax.text(0.1, 0.75, "Wind", fontsize=12, fontweight='bold', verticalalignment='center')
+
+    # Fix limits and aspect
+    ax.set_xlim(0, 1)
+    ax.set_ylim(0, 1)
+    ax.set_aspect('equal')
+
     return fig
 
 # --- Your API key for OpenWeather ---
@@ -213,7 +224,7 @@ if not pitcher_row.empty:
                 if 'wind' in weather_data and 'speed' in weather_data['wind'] and 'deg' in weather_data['wind']:
                     wind_speed = weather_data['wind']['speed']
                     wind_deg = weather_data['wind']['deg']
-                    fig = generate_wind_compass(wind_speed, wind_deg)
+                    fig = generate_minimal_wind_indicator(wind_speed, wind_deg)
                     st.pyplot(fig)
                 else:
                     st.warning("⚠️ Wind data not available for this location.")
