@@ -113,6 +113,40 @@ if not df.empty:
     hard_hit_pct = round((hard_hits / total_batted_balls) * 100, 2) if total_batted_balls else 0
     xba = round(df['estimated_ba_using_speedangle'].mean(), 3)
 
+    # Load hitter daily stat file for visual summary
+    daily_url = "https://raw.githubusercontent.com/tws5d/Cycle-Parlay-Evaluator/main/latest_hitters.csv"
+    full_df = pd.read_csv(daily_url)
+    recent_df = full_df[(full_df["player_id"] == batter_id) & (full_df["game_date"] >= start_date)]
+
+    total_abs = recent_df["at_bats"].sum()
+    total_hits = recent_df["hits"].sum()
+    total_rbis = recent_df["rbi"].sum()
+    total_hrs = recent_df["home_runs"].sum()
+    total_bases = (recent_df["hits"] + 2 * recent_df["home_runs"]).sum()  # crude approx
+
+    max_hits = recent_df["hits"].max()
+    max_rbis = recent_df["rbi"].max()
+    max_bases = (recent_df["hits"] + 2 * recent_df["home_runs"]).max()  # crude again
+
+    avg = round(recent_df["avg"].mean(), 3)
+    obp = round(recent_df["obp"].mean(), 3)
+    slg = round(recent_df["slg"].mean(), 3)
+
+    # Totals Row
+    col1, col2, col3, col4, col5 = st.columns(5)
+    col1.metric("ABs", total_abs)
+    col2.metric("Hits", f"{total_hits}", f"Max: {max_hits}")
+    col3.metric("Total Bases", f"{total_bases}", f"Max: {max_bases}")
+    col4.metric("RBIs", f"{total_rbis}", f"Max: {max_rbis}")
+    col5.metric("HRs", total_hrs)
+
+    # Averages Row
+    col1, col2, col3 = st.columns(3)
+    col1.metric("AVG", f"{avg}")
+    col2.metric("OBP", f"{obp}")
+    col3.metric("SLG", f"{slg}")
+
+    # Rest of Statcast
     st.write(f"**Average Exit Velocity:** {round(avg_exit_velo, 1)} mph")
     st.write(f"**Hard Hit %:** {hard_hit_pct}%")
     st.write(f"**xBA (Expected BA):** {xba}")
