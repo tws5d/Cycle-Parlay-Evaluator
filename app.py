@@ -163,7 +163,8 @@ if not pitcher_row.empty:
             }
             
             # Get ballpark info for the home team
-            park_name = team_to_park.get(home_team, "Unknown")
+            lookup_name = name_corrections.get(home_team, home_team)
+            park_name = team_to_park.get(lookup_name, "Unknown")
             park_type = ballpark_factors.get(park_name, "Unknown")
             park_emoji = "⚾" if park_type == "Hitter-Friendly" else "🛡️" if park_type == "Pitcher-Friendly" else "⚖️"
 
