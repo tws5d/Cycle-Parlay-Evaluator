@@ -1,17 +1,15 @@
+
 import requests
 import pandas as pd
-from datetime import datetime, timedelta
+from datetime import datetime
 
 today = datetime.today().strftime('%Y-%m-%d')
-tomorrow = (datetime.today() + timedelta(days=1)).strftime('%Y-%m-%d')
 
-# MLB Schedule endpoint
-url = f"https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate={today}&endDate={tomorrow}&hydrate=probablePitcher"
+# MLB Schedule endpoint for only today
+url = f"https://statsapi.mlb.com/api/v1/schedule?sportId=1&date={today}&hydrate=probablePitcher"
 
 response = requests.get(url)
 data = response.json()
-import json
-print(json.dumps(data, indent=2)[:2000])  # limit output to first 2000 characters
 
 rows = []
 
@@ -58,7 +56,7 @@ import datetime
 def git_push_csv(file_path):
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     commit_message = f"Update latest_pitchers.csv ({timestamp})"
-    
+
     try:
         subprocess.run(["git", "add", file_path], check=True)
         subprocess.run(["git", "commit", "-m", commit_message], check=True)
@@ -69,4 +67,3 @@ def git_push_csv(file_path):
 
 # Call it at the end of your script
 git_push_csv("latest_pitchers.csv")
-
