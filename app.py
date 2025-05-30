@@ -210,8 +210,7 @@ if not pitcher_row.empty:
             try:
                 response = requests.get(weather_url)
                 weather_data = response.json()
-                st.write(weather_data)  # Show full response for debugging
-                if 'wind' in weather_data:
+                if 'wind' in weather_data and 'speed' in weather_data['wind'] and 'deg' in weather_data['wind']:
                     wind_speed = weather_data['wind']['speed']
                     wind_deg = weather_data['wind']['deg']
                     fig = generate_wind_compass(wind_speed, wind_deg)
