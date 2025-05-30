@@ -21,10 +21,10 @@ player_ids = {
 }
 
 player_teams = {
-    "Juan Soto": "NYM",
-    "Mookie Betts": "LAD",
-    "Aaron Judge": "NYY",
-    "Bryce Harper": "PHI",
+    "Juan Soto": "New York Mets",
+    "Mookie Betts": "Los Angeles Dodgers",
+    "Aaron Judge": "New York Yankees",
+    "Bryce Harper": "Philadelphia Phillies",
 }
 
 # Load pitcher data from CSV
