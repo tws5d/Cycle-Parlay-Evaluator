@@ -158,6 +158,8 @@ if not pitcher_row.empty:
     with col1:
         st.image(image_url, width=100)
     with col2:
+        # Nested columns inside col2: pitching stats left, wind right
+        stat_col, wind_col = st.columns([3, 1])
         if not df_pitcher.empty:
             avg_ev_allowed = df_pitcher['launch_speed'].mean()
             hard_hits_allowed = df_pitcher[df_pitcher['launch_speed'] >= 95].shape[0]
@@ -169,10 +171,11 @@ if not pitcher_row.empty:
             hard_hit_tag = "✅" if hard_hit_pct_allowed > 35 else "⚠️"
             ev_tag = "✅" if avg_ev_allowed > 89 else "⚠️"
 
-            st.write(f"📉 **Pitcher xBA Allowed:** {xba_allowed} {xba_tag}")
-            st.write(f"📉 **Hard Hit % Allowed:** {hard_hit_pct_allowed}% {hard_hit_tag}")
-            st.write(f"📉 **Avg Exit Velo Allowed:** {round(avg_ev_allowed, 1)} mph {ev_tag}")
-            st.write(f"🏟️ **Ballpark:** {team_to_park.get(batter_team_name, 'Unknown')} ({ballpark_factors.get(team_to_park.get(batter_team_name, 'Unknown'), 'Unknown')})")
+            with stat_col:
+                st.write(f"📉 **Pitcher xBA Allowed:** {xba_allowed} {xba_tag}")
+                st.write(f"📉 **Hard Hit % Allowed:** {hard_hit_pct_allowed}% {hard_hit_tag}")
+                st.write(f"📉 **Avg Exit Velo Allowed:** {round(avg_ev_allowed, 1)} mph {ev_tag}")
+                st.write(f"🏟️ **Ballpark:** {team_to_park.get(batter_team_name, 'Unknown')} ({ballpark_factors.get(team_to_park.get(batter_team_name, 'Unknown'), 'Unknown')})")
 
             park_coords = {
                 "Chase Field": (33.4458, -112.0669),
@@ -215,11 +218,14 @@ if not pitcher_row.empty:
                     wind_speed = weather_data['wind']['speed']
                     wind_deg = weather_data['wind']['deg']
                     wind_text = get_wind_text(wind_speed, wind_deg, team_to_park.get(batter_team_name, "Unknown"))
-                    st.markdown(f"**Wind**  \n{wind_text}")
+                    with wind_col:
+                        st.markdown(f"**Wind**  \n{wind_text}")
                 else:
-                    st.warning("⚠️ Wind data not available for this location.")
+                    with wind_col:
+                        st.warning("⚠️ Wind data not available for this location.")
             except Exception as e:
-                st.warning(f"⚠️ Could not fetch wind data: {e}")
+                with wind_col:
+                    st.warning(f"⚠️ Could not fetch wind data: {e}")
 
             score = 50
             if xba_allowed > 0.280: score += 10
