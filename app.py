@@ -126,6 +126,8 @@ team_to_park = {
 
 pitchers_url = "https://raw.githubusercontent.com/tws5d/Cycle-Parlay-Evaluator/main/latest_pitchers.csv"
 pitchers_df = pd.read_csv(pitchers_url)
+today = datetime.today().strftime('%Y-%m-%d')
+pitchers_df = pitchers_df[pitchers_df["Date"] == today]
 
 st.write("DEBUG pitcher_df Opponents:", pitchers_df["Opponent"].unique())
 st.write(f"DEBUG batter_team_name: {batter_team_name}")
