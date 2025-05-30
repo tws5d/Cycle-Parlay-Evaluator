@@ -126,18 +126,21 @@ team_to_park = {
 
 pitchers_url = "https://raw.githubusercontent.com/tws5d/Cycle-Parlay-Evaluator/main/latest_pitchers.csv"
 pitchers_df = pd.read_csv(pitchers_url)
-today = datetime.today().strftime('%Y-%m-%d')
-pitchers_df = pitchers_df[pitchers_df["Date"] == today]
 
 st.write("DEBUG pitcher_df Opponents:", pitchers_df["Opponent"].unique())
 st.write(f"DEBUG batter_team_name: {batter_team_name}")
 
 short_team_name = name_corrections.get(batter_team_name, batter_team_name)
 
-pitcher_row = pitchers_df[pitchers_df["Opponent"] == short_team_name]
+pitcher_row = pitchers_df[
+    (pitchers_df["Opponent"] == short_team_name) &
+    (pitchers_df["Team"] != short_team_name)
+]
 
 if pitcher_row.empty:
-    pitcher_row = pitchers_df[pitchers_df["Team"] == batter_team_name]
+    fallback = pitchers_df[pitchers_df["Team"] == short_team_name]
+    if not fallback.empty and fallback.iloc[0]["Opponent"] != short_team_name:
+        pitcher_row = fallback
 pitcher_name = None
 pitcher_id = None
 
