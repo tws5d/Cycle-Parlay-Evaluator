@@ -131,6 +131,7 @@ if not pitcher_row.empty:
                 home_team = batter_team_name
 
             # Get ballpark info for the home team
+            st.write(f"DEBUG: home_team = {home_team}")
             park_name = team_to_park.get(home_team, "Unknown")
             park_type = ballpark_factors.get(park_name, "Unknown")
             park_emoji = "⚾" if park_type == "Hitter-Friendly" else "🛡️" if park_type == "Pitcher-Friendly" else "⚖️"
