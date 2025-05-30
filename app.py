@@ -53,22 +53,40 @@ ballpark_factors = {
     "Angel Stadium": "Neutral"
 }
 
+
 team_to_park = {
-    "Arizona Diamondbacks": "Chase Field", "Atlanta Braves": "Truist Park", "Cincinnati Reds": "Great American Ball Park",
-    "Boston Red Sox": "Fenway Park", "Colorado Rockies": "Coors Field", "Milwaukee Brewers": "American Family Field",
-    "Seattle Mariners": "T-Mobile Park", "Los Angeles Dodgers": "Dodger Stadium", "Kansas City Royals": "Kauffman Stadium",
-    "Baltimore Orioles": "Oriole Park at Camden Yards", "Pittsburgh Pirates": "PNC Park", "San Diego Padres": "Petco Park",
-    "Tampa Bay Rays": "Tropicana Field", "San Francisco Giants": "Oracle Park", "Miami Marlins": "Marlins Park",
-    "Toronto Blue Jays": "Rogers Centre", "Philadelphia Phillies": "Citizens Bank Park", "New York Yankees": "Yankee Stadium",
-    "Chicago Cubs": "Wrigley Field", "Minnesota Twins": "Target Field", "Houston Astros": "Minute Maid Park",
-    "St. Louis Cardinals": "Busch Stadium", "Cleveland Guardians": "Progressive Field", "Washington Nationals": "Nationals Park",
-    "Detroit Tigers": "Comerica Park", "Los Angeles Angels": "Angel Stadium",
-
-    "New York Mets": "Citi Field",
-    "Chicago White Sox": "Guaranteed Rate Field",
-    "Oakland Athletics": "Oakland Coliseum",
-
+    "Diamondbacks": "Chase Field",
+    "Braves": "Truist Park",
+    "Reds": "Great American Ball Park",
+    "Red Sox": "Fenway Park",
+    "Rockies": "Coors Field",
+    "Brewers": "American Family Field",
+    "Mariners": "T-Mobile Park",
+    "Dodgers": "Dodger Stadium",
+    "Royals": "Kauffman Stadium",
+    "Orioles": "Oriole Park at Camden Yards",
+    "Pirates": "PNC Park",
+    "Padres": "Petco Park",
+    "Rays": "Tropicana Field",
+    "Giants": "Oracle Park",
+    "Marlins": "Marlins Park",
+    "Blue Jays": "Rogers Centre",
+    "Phillies": "Citizens Bank Park",
+    "Yankees": "Yankee Stadium",
+    "Cubs": "Wrigley Field",
+    "Twins": "Target Field",
+    "Astros": "Minute Maid Park",
+    "Cardinals": "Busch Stadium",
+    "Guardians": "Progressive Field",
+    "Nationals": "Nationals Park",
+    "Tigers": "Comerica Park",
+    "Angels": "Angel Stadium",
+    "Mets": "Citi Field",
+    "White Sox": "Guaranteed Rate Field",
+    "Athletics": "Oakland Coliseum",
+    "Rangers": "Globe Life Field"
 }
+
 
 pitchers_url = "https://raw.githubusercontent.com/tws5d/Cycle-Parlay-Evaluator/main/latest_pitchers.csv"
 pitchers_df = pd.read_csv(pitchers_url)
