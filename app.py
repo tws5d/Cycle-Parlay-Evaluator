@@ -50,6 +50,34 @@ team_id_map = {
 }
 batter_team_name = team_id_map.get(team_id, None)
 
+# Ballpark factor classification
+ballpark_factors = {
+    "Coors Field": "Hitter-Friendly",
+    "Great American Ball Park": "Hitter-Friendly",
+    "Fenway Park": "Hitter-Friendly",
+    "Dodger Stadium": "Neutral",
+    "Wrigley Field": "Neutral",
+    "Yankee Stadium": "Neutral",
+    "Petco Park": "Pitcher-Friendly",
+    "Tropicana Field": "Pitcher-Friendly",
+    "Oracle Park": "Pitcher-Friendly",
+    "Nationals Park": "Neutral"
+}
+
+# Assume home park from team name
+team_to_park = {
+    "Washington Nationals": "Nationals Park",
+    "Colorado Rockies": "Coors Field",
+    "Cincinnati Reds": "Great American Ball Park",
+    "Boston Red Sox": "Fenway Park",
+    "San Diego Padres": "Petco Park",
+    "Tampa Bay Rays": "Tropicana Field",
+    "San Francisco Giants": "Oracle Park"
+}
+
+home_park = team_to_park.get(batter_team_name, "Unknown")
+park_rating = ballpark_factors.get(home_park, "Unknown")
+
 # Load pitcher data
 pitchers_url = "https://raw.githubusercontent.com/tws5d/Cycle-Parlay-Evaluator/main/latest_pitchers.csv"
 pitchers_df = pd.read_csv(pitchers_url)
@@ -91,6 +119,7 @@ if not pitcher_row.empty:
             st.write(f"📉 **Pitcher xBA Allowed:** {xba_allowed} {xba_tag}")
             st.write(f"📉 **Hard Hit % Allowed:** {hard_hit_pct_allowed}% {hard_hit_tag}")
             st.write(f"📉 **Avg Exit Velo Allowed:** {round(avg_ev_allowed, 1)} mph {ev_tag}")
+            st.write(f"🏟️ **Ballpark:** {home_park} ({park_rating})")
 
             score = 50
             if xba_allowed > 0.280: score += 10
