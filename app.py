@@ -35,43 +35,10 @@ unique_players = hitters_df[["player_name", "player_id", "team_id", "team_name"]
 player_name = st.selectbox("Select a hitter:", unique_players["player_name"].unique())
 
 selected_row = unique_players[unique_players["player_name"] == player_name].iloc[0]
-team_name_corrections = {
-    "Angels": "Los Angeles Angels",
-    "Astros": "Houston Astros",
-    "Athletics": "Oakland Athletics",
-    "Blue Jays": "Toronto Blue Jays",
-    "Braves": "Atlanta Braves",
-    "Brewers": "Milwaukee Brewers",
-    "Cardinals": "St. Louis Cardinals",
-    "Cubs": "Chicago Cubs",
-    "Diamondbacks": "Arizona Diamondbacks",
-    "Dodgers": "Los Angeles Dodgers",
-    "Giants": "San Francisco Giants",
-    "Guardians": "Cleveland Guardians",
-    "Mariners": "Seattle Mariners",
-    "Marlins": "Miami Marlins",
-    "Mets": "New York Mets",
-    "Nationals": "Washington Nationals",
-    "Orioles": "Baltimore Orioles",
-    "Padres": "San Diego Padres",
-    "Phillies": "Philadelphia Phillies",
-    "Pirates": "Pittsburgh Pirates",
-    "Rangers": "Texas Rangers",
-    "Rays": "Tampa Bay Rays",
-    "Red Sox": "Boston Red Sox",
-    "Reds": "Cincinnati Reds",
-    "Rockies": "Colorado Rockies",
-    "Royals": "Kansas City Royals",
-    "Tigers": "Detroit Tigers",
-    "Twins": "Minnesota Twins",
-    "White Sox": "Chicago White Sox",
-    "Yankees": "New York Yankees"
-}
-raw_team_name = selected_row["team_name"]
-batter_team_name = team_name_corrections.get(raw_team_name, raw_team_name)
-
 batter_id = selected_row["player_id"]
 team_id = selected_row["team_id"]
+
+batter_team_name = selected_row["team_name"]
 
 ballpark_factors = {
     "Chase Field": "Hitter-Friendly", "Globe Life Field": "Hitter-Friendly", "Great American Ball Park": "Hitter-Friendly",
@@ -95,12 +62,7 @@ team_to_park = {
     "Toronto Blue Jays": "Rogers Centre", "Philadelphia Phillies": "Citizens Bank Park", "New York Yankees": "Yankee Stadium",
     "Chicago Cubs": "Wrigley Field", "Minnesota Twins": "Target Field", "Houston Astros": "Minute Maid Park",
     "St. Louis Cardinals": "Busch Stadium", "Cleveland Guardians": "Progressive Field", "Washington Nationals": "Nationals Park",
-    "Detroit Tigers": "Comerica Park", "Los Angeles Angels": "Angel Stadium",
-
-    "New York Mets": "Citi Field",
-    "Chicago White Sox": "Guaranteed Rate Field",
-    "Oakland Athletics": "Oakland Coliseum",
-
+    "Detroit Tigers": "Comerica Park", "Los Angeles Angels": "Angel Stadium"
 }
 
 pitchers_url = "https://raw.githubusercontent.com/tws5d/Cycle-Parlay-Evaluator/main/latest_pitchers.csv"
@@ -136,8 +98,7 @@ if not pitcher_row.empty:
             xba_tag = "✅" if xba_allowed > 0.280 else "⚠️"
             hard_hit_tag = "✅" if hard_hit_pct_allowed > 35 else "⚠️"
             ev_tag = "✅" if avg_ev_allowed > 89 else "⚠️"
-            
-            st.write(f"DEBUG — Batter team name: {batter_team_name}")
+
             park_name = team_to_park.get(batter_team_name, "Unknown")
             park_type = ballpark_factors.get(park_name, "Unknown")
             park_emoji = "⚾" if park_type == "Hitter-Friendly" else "🛡️" if park_type == "Pitcher-Friendly" else "⚖️"
