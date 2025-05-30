@@ -7,23 +7,19 @@ import requests
 def get_wind_text(speed, deg, park_name):
     if speed < 3:
         return "Calm"
-
     relative_deg = (deg - 90) % 360
-
     if 45 <= relative_deg <= 135:
         blowing = "Blowing Left"
     elif 225 <= relative_deg <= 315:
         blowing = "Blowing Right"
     else:
         blowing = "Blowing Center"
-
     if 60 <= relative_deg <= 120:
         in_out = "Blowing Out to"
     elif 240 <= relative_deg <= 300:
         in_out = "Blowing In to"
     else:
         in_out = "Blowing"
-
     return f"{in_out} {blowing} ({speed:.1f} mph)"
 
 api_key = "4f676d446a8d39ef55692e6447c5e0f4"
