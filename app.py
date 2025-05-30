@@ -8,7 +8,6 @@ def get_wind_text(speed, deg, park_name):
     if speed < 3:
         return "Calm"
 
-    # Approximate batter orientation for Nationals Park (~90° East)
     relative_deg = (deg - 90) % 360
 
     if 45 <= relative_deg <= 135:
@@ -40,100 +39,40 @@ batter_id = selected_row["player_id"]
 team_id = selected_row["team_id"]
 
 team_id_map = {
-    109: "Arizona Diamondbacks",
-    144: "Atlanta Braves",
-    110: "Baltimore Orioles",
-    111: "Boston Red Sox",
-    112: "Chicago Cubs",
-    145: "Chicago White Sox",
-    113: "Cincinnati Reds",
-    114: "Cleveland Guardians",
-    115: "Colorado Rockies",
-    116: "Detroit Tigers",
-    117: "Houston Astros",
-    118: "Kansas City Royals",
-    119: "Los Angeles Angels",
-    137: "Los Angeles Dodgers",
-    146: "Miami Marlins",
-    158: "Milwaukee Brewers",
-    121: "Minnesota Twins",
-    135: "New York Mets",
-    147: "New York Yankees",
-    133: "Oakland Athletics",
-    134: "Philadelphia Phillies",
-    143: "Pittsburgh Pirates",
-    142: "San Diego Padres",
-    138: "San Francisco Giants",
-    139: "Seattle Mariners",
-    140: "St. Louis Cardinals",
-    141: "Tampa Bay Rays",
-    120: "Washington Nationals",
-    136: "Toronto Blue Jays"
+    109: "Arizona Diamondbacks", 144: "Atlanta Braves", 110: "Baltimore Orioles", 111: "Boston Red Sox",
+    112: "Chicago Cubs", 145: "Chicago White Sox", 113: "Cincinnati Reds", 114: "Cleveland Guardians",
+    115: "Colorado Rockies", 116: "Detroit Tigers", 117: "Houston Astros", 118: "Kansas City Royals",
+    119: "Los Angeles Angels", 137: "Los Angeles Dodgers", 146: "Miami Marlins", 158: "Milwaukee Brewers",
+    121: "Minnesota Twins", 135: "New York Mets", 147: "New York Yankees", 133: "Oakland Athletics",
+    134: "Philadelphia Phillies", 143: "Pittsburgh Pirates", 142: "San Diego Padres",
+    138: "San Francisco Giants", 139: "Seattle Mariners", 140: "St. Louis Cardinals", 141: "Tampa Bay Rays",
+    120: "Washington Nationals", 136: "Toronto Blue Jays"
 }
 batter_team_name = team_id_map.get(team_id, None)
 
 ballpark_factors = {
-    "Chase Field": "Hitter-Friendly",
-    "Globe Life Field": "Hitter-Friendly",
-    "Great American Ball Park": "Hitter-Friendly",
-    "Fenway Park": "Hitter-Friendly",
-    "Coors Field": "Hitter-Friendly",
-    "American Family Field": "Neutral",
-    "T-Mobile Park": "Neutral",
-    "Dodger Stadium": "Neutral",
-    "Kauffman Stadium": "Neutral",
-    "Oriole Park at Camden Yards": "Neutral",
-    "PNC Park": "Neutral",
-    "Petco Park": "Pitcher-Friendly",
-    "Tropicana Field": "Pitcher-Friendly",
-    "Oracle Park": "Pitcher-Friendly",
-    "Marlins Park": "Pitcher-Friendly",
-    "Rogers Centre": "Pitcher-Friendly",
-    "Citizens Bank Park": "Neutral",
-    "Yankee Stadium": "Neutral",
-    "Wrigley Field": "Neutral",
-    "Target Field": "Neutral",
-    "Minute Maid Park": "Neutral",
-    "Busch Stadium": "Neutral",
-    "SunTrust Park": "Neutral",
-    "Progressive Field": "Neutral",
-    "Truist Park": "Neutral",
-    "Nationals Park": "Neutral",
-    "Comerica Park": "Neutral",
-    "Angel Stadium": "Neutral",
-    "Petco Park": "Pitcher-Friendly",
-    "Tropicana Field": "Pitcher-Friendly",
+    "Chase Field": "Hitter-Friendly", "Globe Life Field": "Hitter-Friendly", "Great American Ball Park": "Hitter-Friendly",
+    "Fenway Park": "Hitter-Friendly", "Coors Field": "Hitter-Friendly", "American Family Field": "Neutral",
+    "T-Mobile Park": "Neutral", "Dodger Stadium": "Neutral", "Kauffman Stadium": "Neutral",
+    "Oriole Park at Camden Yards": "Neutral", "PNC Park": "Neutral", "Petco Park": "Pitcher-Friendly",
+    "Tropicana Field": "Pitcher-Friendly", "Oracle Park": "Pitcher-Friendly", "Marlins Park": "Pitcher-Friendly",
+    "Rogers Centre": "Pitcher-Friendly", "Citizens Bank Park": "Neutral", "Yankee Stadium": "Neutral",
+    "Wrigley Field": "Neutral", "Target Field": "Neutral", "Minute Maid Park": "Neutral",
+    "Busch Stadium": "Neutral", "SunTrust Park": "Neutral", "Progressive Field": "Neutral",
+    "Truist Park": "Neutral", "Nationals Park": "Neutral", "Comerica Park": "Neutral",
+    "Angel Stadium": "Neutral"
 }
 
 team_to_park = {
-    "Arizona Diamondbacks": "Chase Field",
-    "Atlanta Braves": "Globe Life Field",
-    "Cincinnati Reds": "Great American Ball Park",
-    "Boston Red Sox": "Fenway Park",
-    "Colorado Rockies": "Coors Field",
-    "Milwaukee Brewers": "American Family Field",
-    "Seattle Mariners": "T-Mobile Park",
-    "Los Angeles Dodgers": "Dodger Stadium",
-    "Kansas City Royals": "Kauffman Stadium",
-    "Baltimore Orioles": "Oriole Park at Camden Yards",
-    "Pittsburgh Pirates": "PNC Park",
-    "San Diego Padres": "Petco Park",
-    "Tampa Bay Rays": "Tropicana Field",
-    "San Francisco Giants": "Oracle Park",
-    "Miami Marlins": "Marlins Park",
-    "Toronto Blue Jays": "Rogers Centre",
-    "Philadelphia Phillies": "Citizens Bank Park",
-    "New York Yankees": "Yankee Stadium",
-    "Chicago Cubs": "Wrigley Field",
-    "Minnesota Twins": "Target Field",
-    "Houston Astros": "Minute Maid Park",
-    "St. Louis Cardinals": "Busch Stadium",
-    "Atlanta Braves": "SunTrust Park",
-    "Cleveland Guardians": "Progressive Field",
-    "Atlanta Braves": "Truist Park",
-    "Washington Nationals": "Nationals Park",
-    "Detroit Tigers": "Comerica Park",
-    "Los Angeles Angels": "Angel Stadium"
+    "Arizona Diamondbacks": "Chase Field", "Atlanta Braves": "Truist Park", "Cincinnati Reds": "Great American Ball Park",
+    "Boston Red Sox": "Fenway Park", "Colorado Rockies": "Coors Field", "Milwaukee Brewers": "American Family Field",
+    "Seattle Mariners": "T-Mobile Park", "Los Angeles Dodgers": "Dodger Stadium", "Kansas City Royals": "Kauffman Stadium",
+    "Baltimore Orioles": "Oriole Park at Camden Yards", "Pittsburgh Pirates": "PNC Park", "San Diego Padres": "Petco Park",
+    "Tampa Bay Rays": "Tropicana Field", "San Francisco Giants": "Oracle Park", "Miami Marlins": "Marlins Park",
+    "Toronto Blue Jays": "Rogers Centre", "Philadelphia Phillies": "Citizens Bank Park", "New York Yankees": "Yankee Stadium",
+    "Chicago Cubs": "Wrigley Field", "Minnesota Twins": "Target Field", "Houston Astros": "Minute Maid Park",
+    "St. Louis Cardinals": "Busch Stadium", "Cleveland Guardians": "Progressive Field", "Washington Nationals": "Nationals Park",
+    "Detroit Tigers": "Comerica Park", "Los Angeles Angels": "Angel Stadium"
 }
 
 pitchers_url = "https://raw.githubusercontent.com/tws5d/Cycle-Parlay-Evaluator/main/latest_pitchers.csv"
@@ -158,7 +97,6 @@ if not pitcher_row.empty:
     with col1:
         st.image(image_url, width=100)
     with col2:
-        # Nested columns inside col2: pitching stats left, wind right
         stat_col, wind_col = st.columns([3, 1])
         if not df_pitcher.empty:
             avg_ev_allowed = df_pitcher['launch_speed'].mean()
@@ -171,78 +109,15 @@ if not pitcher_row.empty:
             hard_hit_tag = "✅" if hard_hit_pct_allowed > 35 else "⚠️"
             ev_tag = "✅" if avg_ev_allowed > 89 else "⚠️"
 
+            park_name = team_to_park.get(batter_team_name, "Unknown")
+            park_type = ballpark_factors.get(park_name, "Unknown")
+            park_emoji = "⚾" if park_type == "Hitter-Friendly" else "🛡️" if park_type == "Pitcher-Friendly" else "⚖️"
+
             with stat_col:
                 st.write(f"📉 **Pitcher xBA Allowed:** {xba_allowed} {xba_tag}")
                 st.write(f"📉 **Hard Hit % Allowed:** {hard_hit_pct_allowed}% {hard_hit_tag}")
                 st.write(f"📉 **Avg Exit Velo Allowed:** {round(avg_ev_allowed, 1)} mph {ev_tag}")
-                st.write(f"🏟️ **Ballpark:** {team_to_park.get(batter_team_name, 'Unknown')} ({ballpark_factors.get(team_to_park.get(batter_team_name, 'Unknown'), 'Unknown')})")
-
-            park_coords = {
-                "Chase Field": (33.4458, -112.0669),
-                "Globe Life Field": (32.7473, -97.0831),
-                "Great American Ball Park": (39.0974, -84.5063),
-                "Fenway Park": (42.3467, -71.0972),
-                "Coors Field": (39.7556, -104.9942),
-                "American Family Field": (43.0281, -87.9712),
-                "T-Mobile Park": (47.5914, -122.3325),
-                "Dodger Stadium": (34.0739, -118.2400),
-                "Kauffman Stadium": (39.0517, -94.4803),
-                "Oriole Park at Camden Yards": (39.2839, -76.6219),
-                "PNC Park": (40.4473, -80.0053),
-                "Petco Park": (32.7076, -117.1570),
-                "Tropicana Field": (27.7683, -82.6534),
-                "Oracle Park": (37.7786, -122.3893),
-                "Marlins Park": (25.7781, -80.2195),
-                "Rogers Centre": (43.6414, -79.3894),
-                "Citizens Bank Park": (39.9061, -75.1665),
-                "Yankee Stadium": (40.8296, -73.9262),
-                "Wrigley Field": (41.9484, -87.6553),
-                "Target Field": (44.9817, -93.2777),
-                "Minute Maid Park": (29.7573, -95.3550),
-                "Busch Stadium": (38.6226, -90.1928),
-                "SunTrust Park": (33.8908, -84.4677),
-                "Progressive Field": (41.4954, -81.6854),
-                "Truist Park": (33.8908, -84.4677),
-                "Nationals Park": (38.8730, -77.0074),
-                "Comerica Park": (42.3390, -83.0485),
-                "Angel Stadium": (33.8003, -117.8827)
-            }
-            coords = park_coords.get(team_to_park.get(batter_team_name, "Unknown"), (40.7128, -74.0060))
-
-            weather_url = f"http://api.openweathermap.org/data/2.5/weather?lat={coords[0]}&lon={coords[1]}&appid={api_key}&units=imperial"
-
-            try:
-                response = requests.get(weather_url)
-                weather_data = response.json()
-                if 'wind' in weather_data and 'speed' in weather_data['wind'] and 'deg' in weather_data['wind']:
-                    wind_speed = weather_data['wind']['speed']
-                    wind_deg = weather_data['wind']['deg']
-                    wind_text = get_wind_text(wind_speed, wind_deg, team_to_park.get(batter_team_name, "Unknown"))
-                    with wind_col:
-                        wind_html = f"""
-                        <div style='
-                            font-size: 20px; 
-                            color: white; 
-                            height: 100%; 
-                            display: flex; 
-                            flex-direction: column; 
-                            justify-content: center; 
-                            align-items: center;
-                            text-align: center;
-                            gap: 4px;
-                        '>
-                            <strong style='font-size: 28px;'>Wind</strong>
-                            <span>{wind_text.rsplit("(",1)[0].strip()}</span>
-                            <span style='font-weight: 600;'>{wind_text.rsplit("(",1)[1] if "(" in wind_text else ""}</span>
-                        </div>
-                        """
-                        st.markdown(wind_html, unsafe_allow_html=True)
-                else:
-                    with wind_col:
-                        st.warning("⚠️ Wind data not available for this location.")
-            except Exception as e:
-                with wind_col:
-                    st.warning(f"⚠️ Could not fetch wind data: {e}")
+                st.write(f"🏟️ **Ballpark:** {park_emoji} {park_name} ({park_type})")
 
             score = 50
             if xba_allowed > 0.280: score += 10
@@ -308,12 +183,11 @@ if not df.empty:
     if hard_hit_pct > 45: score += 15
     if avg_exit_velo > 91: score += 10
 
-    st.write(f"🧠 **Cycle Score**: {score}/100")
     if score >= 85:
-        st.success("🔥 LOCK")
+        st.success("🔥 Strong Pick")
     elif score >= 70:
-        st.info("✅ Lean")
+        st.info("✅ Solid Pick")
     else:
-        st.warning("⚠️ Fade")
+        st.warning("⚠️ Risky Pick")
 else:
     st.warning("No Statcast data found for this timeframe.")
