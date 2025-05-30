@@ -6,8 +6,9 @@ import requests
 import matplotlib.pyplot as plt
 import numpy as np
 
-def generate_minimal_wind_indicator(speed, direction_deg):
-    fig, ax = plt.subplots(figsize=(1.5, 0.5))
+def generate_minimal_wind_indicator_dark(speed, direction_deg):
+    fig, ax = plt.subplots(figsize=(1.5, 0.5), facecolor='none')
+    fig.patch.set_alpha(0)  # transparent figure background
     ax.axis('off')
 
     # Convert wind direction to radians and rotate arrow so 0° = north up
@@ -15,13 +16,13 @@ def generate_minimal_wind_indicator(speed, direction_deg):
 
     # Draw arrow pointing wind direction horizontally centered
     ax.arrow(0.5, 0.25, 0.3 * np.cos(theta), 0.3 * np.sin(theta),
-             head_width=0.1, head_length=0.1, fc='blue', ec='blue', length_includes_head=True)
+             head_width=0.1, head_length=0.1, fc='white', ec='white', length_includes_head=True)
 
-    # Show wind speed text near arrow
-    ax.text(0.1, 0.25, f"{speed:.1f} mph", verticalalignment='center', fontsize=10)
+    # Show wind speed text near arrow in white
+    ax.text(0.1, 0.25, f"{speed:.1f} mph", verticalalignment='center', fontsize=10, color='white')
 
-    # Label "Wind" above arrow left
-    ax.text(0.1, 0.75, "Wind", fontsize=12, fontweight='bold', verticalalignment='center')
+    # Label "Wind" above arrow left in white
+    ax.text(0.1, 0.75, "Wind", fontsize=12, fontweight='bold', verticalalignment='center', color='white')
 
     # Fix limits and aspect
     ax.set_xlim(0, 1)
@@ -224,7 +225,7 @@ if not pitcher_row.empty:
                 if 'wind' in weather_data and 'speed' in weather_data['wind'] and 'deg' in weather_data['wind']:
                     wind_speed = weather_data['wind']['speed']
                     wind_deg = weather_data['wind']['deg']
-                    fig = generate_minimal_wind_indicator(wind_speed, wind_deg)
+                    fig = generate_minimal_wind_indicator_dark(wind_speed, wind_deg)
                     st.pyplot(fig)
                 else:
                     st.warning("⚠️ Wind data not available for this location.")
