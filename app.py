@@ -2,21 +2,40 @@ import streamlit as st
 import pandas as pd
 from pybaseball import statcast_batter, statcast_pitcher
 from datetime import datetime, timedelta
+import requests
+import matplotlib.pyplot as plt
+import numpy as np
+
+def generate_wind_compass(speed, direction_deg):
+    fig, ax = plt.subplots(figsize=(2.5, 2.5), subplot_kw={'projection': 'polar'})
+    theta = np.radians(direction_deg)
+    ax.arrow(theta, 0, 0, 1, width=0.05, head_width=0.2, head_length=0.3, fc='blue', ec='blue')
+    ax.set_rticks([])
+    ax.set_xticks([])
+    ax.set_yticks([])
+    ax.set_title(f"{speed} mph", va='bottom', fontsize=10)
+    plt.tight_layout()
+    fig.subplots_adjust(top=0.85)
+    fig.suptitle("Wind Direction", fontsize=12)
+    return fig
+
+# --- Your API key for OpenWeather ---
+api_key = "4f676d446a8d39ef55692e6447c5e0f4"
 
 # Load daily hitter file
 url = "https://raw.githubusercontent.com/tws5d/Cycle-Parlay-Evaluator/main/latest_hitters.csv"
 hitters_df = pd.read_csv(url)
 
-# Get unique hitter list
+# Unique hitter list
 unique_players = hitters_df[["player_name", "player_id", "team_id"]].drop_duplicates()
 player_name = st.selectbox("Select a hitter:", unique_players["player_name"].unique())
 
-# Get ID and team for selected hitter
+# Get batter info
 selected_row = unique_players[unique_players["player_name"] == player_name].iloc[0]
 batter_id = selected_row["player_id"]
 team_id = selected_row["team_id"]
 
-# Map team_id to full team name
+# Team & ballpark maps
 team_id_map = {
     109: "Arizona Diamondbacks",
     144: "Atlanta Braves",
@@ -50,7 +69,6 @@ team_id_map = {
 }
 batter_team_name = team_id_map.get(team_id, None)
 
-# Ballpark factor classification
 ballpark_factors = {
     "Coors Field": "Hitter-Friendly",
     "Great American Ball Park": "Hitter-Friendly",
@@ -64,7 +82,6 @@ ballpark_factors = {
     "Nationals Park": "Neutral"
 }
 
-# Assume home park from team name
 team_to_park = {
     "Washington Nationals": "Nationals Park",
     "Colorado Rockies": "Coors Field",
@@ -82,12 +99,10 @@ park_rating = ballpark_factors.get(home_park, "Unknown")
 pitchers_url = "https://raw.githubusercontent.com/tws5d/Cycle-Parlay-Evaluator/main/latest_pitchers.csv"
 pitchers_df = pd.read_csv(pitchers_url)
 
-# Try to find opposing pitcher using team name
 pitcher_row = pitchers_df[pitchers_df["Opponent"] == batter_team_name]
 pitcher_name = None
 pitcher_id = None
 
-# Display pitcher and player image
 if not pitcher_row.empty:
     pitcher_name = pitcher_row.iloc[0]["Pitcher Name"]
     pitcher_id = int(pitcher_row.iloc[0]["MLB ID"])
@@ -102,7 +117,6 @@ if not pitcher_row.empty:
     col1, col2 = st.columns([1, 3])
     with col1:
         st.image(image_url, width=100)
-
     with col2:
         if not df_pitcher.empty:
             avg_ev_allowed = df_pitcher['launch_speed'].mean()
@@ -111,7 +125,6 @@ if not pitcher_row.empty:
             hard_hit_pct_allowed = round((hard_hits_allowed / total_contact) * 100, 2) if total_contact else 0
             xba_allowed = round(df_pitcher['estimated_ba_using_speedangle'].mean(), 3)
 
-            # Indicators
             xba_tag = "✅" if xba_allowed > 0.280 else "⚠️"
             hard_hit_tag = "✅" if hard_hit_pct_allowed > 35 else "⚠️"
             ev_tag = "✅" if avg_ev_allowed > 89 else "⚠️"
@@ -120,6 +133,21 @@ if not pitcher_row.empty:
             st.write(f"📉 **Hard Hit % Allowed:** {hard_hit_pct_allowed}% {hard_hit_tag}")
             st.write(f"📉 **Avg Exit Velo Allowed:** {round(avg_ev_allowed, 1)} mph {ev_tag}")
             st.write(f"🏟️ **Ballpark:** {home_park} ({park_rating})")
+
+            # Fetch wind data from OpenWeather
+            city = home_park.split()[0]  # crude, but often works (e.g. "Nationals")
+            weather_url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=imperial"
+            try:
+                response = requests.get(weather_url)
+                weather_data = response.json()
+                wind_speed = weather_data['wind']['speed']
+                wind_deg = weather_data['wind']['deg']
+
+                # Generate and display wind compass
+                fig = generate_wind_compass(wind_speed, wind_deg)
+                st.pyplot(fig)
+            except Exception as e:
+                st.warning(f"⚠️ Could not fetch wind data: {e}")
 
             score = 50
             if xba_allowed > 0.280: score += 10
