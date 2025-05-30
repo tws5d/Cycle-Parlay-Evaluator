@@ -3,33 +3,42 @@ import pandas as pd
 from pybaseball import statcast_batter, statcast_pitcher
 from datetime import datetime, timedelta
 import requests
-import matplotlib.pyplot as plt
-import numpy as np
 
-def generate_minimal_wind_indicator_dark(speed, direction_deg):
-    fig, ax = plt.subplots(figsize=(1.5, 0.5), facecolor='none')
-    fig.patch.set_alpha(0)  # transparent figure background
-    ax.axis('off')
+def get_wind_text(speed, deg, park_name):
+    """
+    Returns wind description text based on wind speed, direction, and ballpark.
+    Simplified logic for Nationals Park; can be expanded for other parks.
+    """
+    if speed < 3:
+        return "Calm"
 
-    # Convert wind direction to radians and rotate arrow so 0° = north up
-    theta = np.radians(direction_deg - 90)
+    # Approximate plate orientation for Nationals Park:
+    # Assume 0° = North, 90°=East, 180°=South, 270°=West
+    # Nationals Park batter faces roughly East (approx 90°)
+    # Wind blowing towards plate ~ 270° (blowing in)
+    # Wind blowing away from plate ~ 90° (blowing out)
+    
+    # Calculate relative wind direction to plate orientation (90°)
+    relative_deg = (deg - 90) % 360
 
-    # Draw arrow pointing wind direction horizontally centered
-    ax.arrow(0.5, 0.25, 0.3 * np.cos(theta), 0.3 * np.sin(theta),
-             head_width=0.1, head_length=0.1, fc='white', ec='white', length_includes_head=True)
+    if 45 <= relative_deg <= 135:
+        blowing = "Blowing Left"
+    elif 225 <= relative_deg <= 315:
+        blowing = "Blowing Right"
+    else:
+        blowing = "Blowing Center"
 
-    # Show wind speed text near arrow in white
-    ax.text(0.1, 0.25, f"{speed:.1f} mph", verticalalignment='center', fontsize=10, color='white')
+    # Determine In or Out based on if wind roughly blows in (toward plate) or out
+    # Roughly if wind direction near 270° it's blowing in (towards plate)
+    # near 90° blowing out (away from plate)
+    if 60 <= relative_deg <= 120:
+        in_out = "Blowing Out to"
+    elif 240 <= relative_deg <= 300:
+        in_out = "Blowing In to"
+    else:
+        in_out = "Blowing"
 
-    # Label "Wind" above arrow left in white
-    ax.text(0.1, 0.75, "Wind", fontsize=12, fontweight='bold', verticalalignment='center', color='white')
-
-    # Fix limits and aspect
-    ax.set_xlim(0, 1)
-    ax.set_ylim(0, 1)
-    ax.set_aspect('equal')
-
-    return fig
+    return f"{in_out} {blowing} ({speed:.1f} mph)"
 
 # --- Your API key for OpenWeather ---
 api_key = "4f676d446a8d39ef55692e6447c5e0f4"
@@ -47,7 +56,6 @@ selected_row = unique_players[unique_players["player_name"] == player_name].iloc
 batter_id = selected_row["player_id"]
 team_id = selected_row["team_id"]
 
-# Team & ballpark maps
 team_id_map = {
     109: "Arizona Diamondbacks",
     144: "Atlanta Braves",
@@ -145,7 +153,6 @@ team_to_park = {
     "Los Angeles Angels": "Angel Stadium"
 }
 
-# Load pitcher data
 pitchers_url = "https://raw.githubusercontent.com/tws5d/Cycle-Parlay-Evaluator/main/latest_pitchers.csv"
 pitchers_df = pd.read_csv(pitchers_url)
 
@@ -184,7 +191,7 @@ if not pitcher_row.empty:
             st.write(f"📉 **Avg Exit Velo Allowed:** {round(avg_ev_allowed, 1)} mph {ev_tag}")
             st.write(f"🏟️ **Ballpark:** {team_to_park.get(batter_team_name, 'Unknown')} ({ballpark_factors.get(team_to_park.get(batter_team_name, 'Unknown'), 'Unknown')})")
 
-            # Use lat/lon to fetch wind data
+            # Get wind data and generate text description
             park_coords = {
                 "Chase Field": (33.4458, -112.0669),
                 "Globe Life Field": (32.7473, -97.0831),
@@ -225,8 +232,10 @@ if not pitcher_row.empty:
                 if 'wind' in weather_data and 'speed' in weather_data['wind'] and 'deg' in weather_data['wind']:
                     wind_speed = weather_data['wind']['speed']
                     wind_deg = weather_data['wind']['deg']
-                    fig = generate_minimal_wind_indicator_dark(wind_speed, wind_deg)
-                    st.pyplot(fig)
+                    wind_text = get_wind_text(wind_speed, wind_deg, team_to_park.get(batter_team_name, "Unknown"))
+
+                    # Display wind info below pitching stats in same col
+                    st.markdown(f"**Wind**  \n{wind_text}")
                 else:
                     st.warning("⚠️ Wind data not available for this location.")
             except Exception as e:
@@ -255,7 +264,6 @@ if not df.empty:
     hard_hit_pct = round((hard_hits / total_batted_balls) * 100, 2) if total_batted_balls else 0
     xba = round(df['estimated_ba_using_speedangle'].mean(), 3)
 
-    # Load hitter daily stats
     daily_url = "https://raw.githubusercontent.com/tws5d/Cycle-Parlay-Evaluator/main/latest_hitters.csv"
     full_df = pd.read_csv(daily_url)
     recent_df = full_df[(full_df["player_id"] == batter_id) & (full_df["game_date"] >= start_date)]
@@ -272,7 +280,6 @@ if not df.empty:
     obp = round(recent_df["obp"].mean(), 3)
     slg = round(recent_df["slg"].mean(), 3)
 
-    # Stat Summary - Totals
     col1, col2, col3, col4, col5 = st.columns(5)
     col1.metric("ABs", total_abs)
     col2.metric("Hits", f"{total_hits}", f"Max: {max_hits}")
@@ -280,13 +287,11 @@ if not df.empty:
     col4.metric("RBIs", f"{total_rbis}", f"Max: {max_rbis}")
     col5.metric("HRs", total_hrs)
 
-    # Averages
     col1, col2, col3 = st.columns(3)
     col1.metric("AVG", f"{avg}")
     col2.metric("OBP", f"{obp}")
     col3.metric("SLG", f"{slg}")
 
-    # Add indicators
     exit_tag = "✅" if avg_exit_velo > 91 else "⚠️"
     hard_hit_tag = "✅" if hard_hit_pct > 45 else "⚠️"
     xba_tag = "✅" if xba > 0.300 else "⚠️"
