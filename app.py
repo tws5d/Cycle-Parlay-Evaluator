@@ -1,10 +1,8 @@
-st.title("⚠️ THIS IS THE RIGHT app.py FILE")
 import streamlit as st
 import pandas as pd
 from pybaseball import statcast_batter, statcast_pitcher
 from datetime import datetime, timedelta
 import requests
-st.write("LOADED FILE FROM:", __file__)
 
 def get_wind_text(speed, deg, park_name):
     if speed < 3:
