@@ -3,7 +3,7 @@ import pandas as pd
 from pybaseball import statcast_batter, statcast_pitcher
 from datetime import datetime, timedelta
 
-# Load your daily hitter file (from GitHub)
+# Load daily hitter file
 url = "https://raw.githubusercontent.com/tws5d/Cycle-Parlay-Evaluator/main/latest_hitters.csv"
 hitters_df = pd.read_csv(url)
 
@@ -31,7 +31,7 @@ team_id_map = {
     117: "Houston Astros",
     118: "Kansas City Royals",
     119: "Los Angeles Angels",
-    137: "Los Angeles Dodgers",  # Assuming 137 is Dodgers
+    137: "Los Angeles Dodgers",
     146: "Miami Marlins",
     158: "Milwaukee Brewers",
     121: "Minnesota Twins",
@@ -45,9 +45,8 @@ team_id_map = {
     139: "Seattle Mariners",
     140: "St. Louis Cardinals",
     141: "Tampa Bay Rays",
-    120: "Texas Rangers",
-    136: "Toronto Blue Jays",    # Changed from 137 to avoid overwrite
-    120: "Washington Nationals"  # Changed from 120: Texas to 136
+    120: "Washington Nationals",
+    136: "Toronto Blue Jays"
 }
 batter_team_name = team_id_map.get(team_id, None)
 
@@ -81,9 +80,14 @@ if pitcher_name:
             hard_hit_pct_allowed = round((hard_hits_allowed / total_contact) * 100, 2) if total_contact else 0
             xba_allowed = round(df_pitcher['estimated_ba_using_speedangle'].mean(), 3)
 
-            st.write(f"📉 **Pitcher xBA Allowed:** {xba_allowed}")
-            st.write(f"📉 **Hard Hit % Allowed:** {hard_hit_pct_allowed}%")
-            st.write(f"📉 **Avg Exit Velo Allowed:** {round(avg_ev_allowed, 1)} mph")
+            # Add indicators
+            xba_tag = "✅" if xba_allowed > 0.280 else "⚠️"
+            hard_hit_tag = "✅" if hard_hit_pct_allowed > 35 else "⚠️"
+            ev_tag = "✅" if avg_ev_allowed > 89 else "⚠️"
+
+            st.write(f"📉 **Pitcher xBA Allowed:** {xba_allowed} {xba_tag}")
+            st.write(f"📉 **Hard Hit % Allowed:** {hard_hit_pct_allowed}% {hard_hit_tag}")
+            st.write(f"📉 **Avg Exit Velo Allowed:** {round(avg_ev_allowed, 1)} mph {ev_tag}")
 
             score = 50
             if xba_allowed > 0.280: score += 10
