@@ -5,20 +5,10 @@ from datetime import datetime, timedelta
 import requests
 
 def get_wind_text(speed, deg, park_name):
-    """
-    Returns wind description text based on wind speed, direction, and ballpark.
-    Simplified logic for Nationals Park; can be expanded for other parks.
-    """
     if speed < 3:
         return "Calm"
 
-    # Approximate plate orientation for Nationals Park:
-    # Assume 0° = North, 90°=East, 180°=South, 270°=West
-    # Nationals Park batter faces roughly East (approx 90°)
-    # Wind blowing towards plate ~ 270° (blowing in)
-    # Wind blowing away from plate ~ 90° (blowing out)
-    
-    # Calculate relative wind direction to plate orientation (90°)
+    # Approximate batter orientation for Nationals Park (~90° East)
     relative_deg = (deg - 90) % 360
 
     if 45 <= relative_deg <= 135:
@@ -28,9 +18,6 @@ def get_wind_text(speed, deg, park_name):
     else:
         blowing = "Blowing Center"
 
-    # Determine In or Out based on if wind roughly blows in (toward plate) or out
-    # Roughly if wind direction near 270° it's blowing in (towards plate)
-    # near 90° blowing out (away from plate)
     if 60 <= relative_deg <= 120:
         in_out = "Blowing Out to"
     elif 240 <= relative_deg <= 300:
@@ -40,18 +27,14 @@ def get_wind_text(speed, deg, park_name):
 
     return f"{in_out} {blowing} ({speed:.1f} mph)"
 
-# --- Your API key for OpenWeather ---
 api_key = "4f676d446a8d39ef55692e6447c5e0f4"
 
-# Load daily hitter file
 url = "https://raw.githubusercontent.com/tws5d/Cycle-Parlay-Evaluator/main/latest_hitters.csv"
 hitters_df = pd.read_csv(url)
 
-# Unique hitter list
 unique_players = hitters_df[["player_name", "player_id", "team_id"]].drop_duplicates()
 player_name = st.selectbox("Select a hitter:", unique_players["player_name"].unique())
 
-# Get batter info
 selected_row = unique_players[unique_players["player_name"] == player_name].iloc[0]
 batter_id = selected_row["player_id"]
 team_id = selected_row["team_id"]
@@ -191,7 +174,6 @@ if not pitcher_row.empty:
             st.write(f"📉 **Avg Exit Velo Allowed:** {round(avg_ev_allowed, 1)} mph {ev_tag}")
             st.write(f"🏟️ **Ballpark:** {team_to_park.get(batter_team_name, 'Unknown')} ({ballpark_factors.get(team_to_park.get(batter_team_name, 'Unknown'), 'Unknown')})")
 
-            # Get wind data and generate text description
             park_coords = {
                 "Chase Field": (33.4458, -112.0669),
                 "Globe Life Field": (32.7473, -97.0831),
@@ -222,7 +204,7 @@ if not pitcher_row.empty:
                 "Comerica Park": (42.3390, -83.0485),
                 "Angel Stadium": (33.8003, -117.8827)
             }
-            coords = park_coords.get(team_to_park.get(batter_team_name, "Unknown"), (40.7128, -74.0060))  # default NYC
+            coords = park_coords.get(team_to_park.get(batter_team_name, "Unknown"), (40.7128, -74.0060))
 
             weather_url = f"http://api.openweathermap.org/data/2.5/weather?lat={coords[0]}&lon={coords[1]}&appid={api_key}&units=imperial"
 
@@ -233,8 +215,6 @@ if not pitcher_row.empty:
                     wind_speed = weather_data['wind']['speed']
                     wind_deg = weather_data['wind']['deg']
                     wind_text = get_wind_text(wind_speed, wind_deg, team_to_park.get(batter_team_name, "Unknown"))
-
-                    # Display wind info below pitching stats in same col
                     st.markdown(f"**Wind**  \n{wind_text}")
                 else:
                     st.warning("⚠️ Wind data not available for this location.")
@@ -250,7 +230,6 @@ if not pitcher_row.empty:
 else:
     st.warning("❗ No probable pitcher found for this matchup.")
 
-# Batter Statcast data
 end_date = datetime.today().strftime('%Y-%m-%d')
 start_date = (datetime.today() - timedelta(days=14)).strftime('%Y-%m-%d')
 st.write(f"📅 Date range: {start_date} → {end_date}")
