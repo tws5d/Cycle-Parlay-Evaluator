@@ -59,20 +59,23 @@ pitcher_row = pitchers_df[pitchers_df["Opponent"] == batter_team_name]
 pitcher_name = None
 pitcher_id = None
 
+# Display pitcher and player image
 if not pitcher_row.empty:
     pitcher_name = pitcher_row.iloc[0]["Pitcher Name"]
+    pitcher_id = int(pitcher_row.iloc[0]["MLB ID"])
     st.write(f"🧱 Probable Pitcher: {pitcher_name}")
-else:
-    st.warning("❗ No probable pitcher found for this matchup.")
 
-# Get pitcher Statcast data
-if pitcher_name:
-    try:
-        pitcher_id = int(pitcher_row.iloc[0]["MLB ID"])
-        end_date = datetime.today().strftime('%Y-%m-%d')
-        start_date = (datetime.today() - timedelta(days=14)).strftime('%Y-%m-%d')
-        df_pitcher = statcast_pitcher(start_date, end_date, pitcher_id)
+    end_date = datetime.today().strftime('%Y-%m-%d')
+    start_date = (datetime.today() - timedelta(days=14)).strftime('%Y-%m-%d')
+    df_pitcher = statcast_pitcher(start_date, end_date, pitcher_id)
 
+    image_url = f"https://img.mlbstatic.com/mlb-photos/image/upload/v1/people/{batter_id}/headshot/67/current.png"
+
+    col1, col2 = st.columns([1, 3])
+    with col1:
+        st.image(image_url, width=100)
+
+    with col2:
         if not df_pitcher.empty:
             avg_ev_allowed = df_pitcher['launch_speed'].mean()
             hard_hits_allowed = df_pitcher[df_pitcher['launch_speed'] >= 95].shape[0]
@@ -80,7 +83,7 @@ if pitcher_name:
             hard_hit_pct_allowed = round((hard_hits_allowed / total_contact) * 100, 2) if total_contact else 0
             xba_allowed = round(df_pitcher['estimated_ba_using_speedangle'].mean(), 3)
 
-            # Add indicators
+            # Indicators
             xba_tag = "✅" if xba_allowed > 0.280 else "⚠️"
             hard_hit_tag = "✅" if hard_hit_pct_allowed > 35 else "⚠️"
             ev_tag = "✅" if avg_ev_allowed > 89 else "⚠️"
@@ -95,13 +98,12 @@ if pitcher_name:
             if avg_ev_allowed > 89: score += 5
         else:
             st.warning("No recent data for pitcher.")
-    except:
-        st.warning("Pitcher lookup failed. Check spelling.")
+else:
+    st.warning("❗ No probable pitcher found for this matchup.")
 
-# Get batter Statcast data
+# Batter Statcast data
 end_date = datetime.today().strftime('%Y-%m-%d')
 start_date = (datetime.today() - timedelta(days=14)).strftime('%Y-%m-%d')
-
 st.write(f"📅 Date range: {start_date} → {end_date}")
 
 df = statcast_batter(start_date, end_date, batter_id)
@@ -113,7 +115,7 @@ if not df.empty:
     hard_hit_pct = round((hard_hits / total_batted_balls) * 100, 2) if total_batted_balls else 0
     xba = round(df['estimated_ba_using_speedangle'].mean(), 3)
 
-    # Load hitter daily stat file for visual summary
+    # Load hitter daily stats
     daily_url = "https://raw.githubusercontent.com/tws5d/Cycle-Parlay-Evaluator/main/latest_hitters.csv"
     full_df = pd.read_csv(daily_url)
     recent_df = full_df[(full_df["player_id"] == batter_id) & (full_df["game_date"] >= start_date)]
@@ -123,16 +125,14 @@ if not df.empty:
     total_rbis = recent_df["rbi"].sum()
     total_hrs = recent_df["home_runs"].sum()
     total_bases = (recent_df["hits"] + 2 * recent_df["home_runs"]).sum()
-
     max_hits = recent_df["hits"].max()
     max_rbis = recent_df["rbi"].max()
     max_bases = (recent_df["hits"] + 2 * recent_df["home_runs"]).max()
-
     avg = round(recent_df["avg"].mean(), 3)
     obp = round(recent_df["obp"].mean(), 3)
     slg = round(recent_df["slg"].mean(), 3)
 
-    # Totals Row
+    # Stat Summary - Totals
     col1, col2, col3, col4, col5 = st.columns(5)
     col1.metric("ABs", total_abs)
     col2.metric("Hits", f"{total_hits}", f"Max: {max_hits}")
@@ -140,13 +140,13 @@ if not df.empty:
     col4.metric("RBIs", f"{total_rbis}", f"Max: {max_rbis}")
     col5.metric("HRs", total_hrs)
 
-    # Averages Row
+    # Averages
     col1, col2, col3 = st.columns(3)
     col1.metric("AVG", f"{avg}")
     col2.metric("OBP", f"{obp}")
     col3.metric("SLG", f"{slg}")
 
-    # Add tags
+    # Add indicators
     exit_tag = "✅" if avg_exit_velo > 91 else "⚠️"
     hard_hit_tag = "✅" if hard_hit_pct > 45 else "⚠️"
     xba_tag = "✅" if xba > 0.300 else "⚠️"
@@ -157,7 +157,6 @@ if not df.empty:
 
     if 'score' not in locals():
         score = 50
-
     if xba > 0.300: score += 15
     if hard_hit_pct > 45: score += 15
     if avg_exit_velo > 91: score += 10
