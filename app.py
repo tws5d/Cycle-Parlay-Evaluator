@@ -122,8 +122,19 @@ if not pitcher_row.empty:
             hard_hit_tag = "✅" if hard_hit_pct_allowed > 35 else "⚠️"
             ev_tag = "✅" if avg_ev_allowed > 89 else "⚠️"
 
-            park_name = team_to_park.get(batter_team_name, "Unknown")
-            park_type = ballpark_factors.get(park_name, "Unknown")
+            # Load matchup data CSV
+matchups_url = "https://raw.githubusercontent.com/tws5d/Cycle-Parlay-Evaluator/main/latest_matchups.csv"
+matchups_df = pd.read_csv(matchups_url)
+
+# Find the game where batter's team is playing
+game_row = matchups_df[(matchups_df["home_team"] == batter_team_name) | (matchups_df["away_team"] == batter_team_name)].iloc[0]
+
+# Determine home team for ballpark lookup
+home_team_for_park = game_row["home_team"]
+
+# Get ballpark info for the home team
+park_name = team_to_park.get(home_team_for_park, "Unknown")
+park_type = ballpark_factors.get(park_name, "Unknown")
             park_emoji = "⚾" if park_type == "Hitter-Friendly" else "🛡️" if park_type == "Pitcher-Friendly" else "⚖️"
 
             with stat_col:
