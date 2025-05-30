@@ -25,7 +25,11 @@ def get_wind_text(speed, deg, park_name):
 api_key = "4f676d446a8d39ef55692e6447c5e0f4"
 
 url = "https://raw.githubusercontent.com/tws5d/Cycle-Parlay-Evaluator/main/latest_hitters.csv"
-hitters_df = pd.read_csv(url)
+@st.cache_data(ttl=60)
+def load_hitters():
+    return pd.read_csv(url)
+
+hitters_df = load_hitters()
 
 unique_players = hitters_df[["player_name", "player_id", "team_id"]].drop_duplicates()
 player_name = st.selectbox("Select a hitter:", unique_players["player_name"].unique())
