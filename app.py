@@ -103,7 +103,8 @@ if not pitcher_row.empty:
             xba_tag = "✅" if xba_allowed > 0.280 else "⚠️"
             hard_hit_tag = "✅" if hard_hit_pct_allowed > 35 else "⚠️"
             ev_tag = "✅" if avg_ev_allowed > 89 else "⚠️"
-
+            
+            st.write(f"DEBUG — Batter team name: {batter_team_name}")
             park_name = team_to_park.get(batter_team_name, "Unknown")
             park_type = ballpark_factors.get(park_name, "Unknown")
             park_emoji = "⚾" if park_type == "Hitter-Friendly" else "🛡️" if park_type == "Pitcher-Friendly" else "⚖️"
