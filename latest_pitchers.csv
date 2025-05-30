@@ -1,9 +1,10 @@
 Date,Team,Opponent,Pitcher Name,MLB ID,Last 5 IP,Last 5 ER,Last 5 SO
+2025-05-30,Chicago Cubs,Cincinnati Reds,Colin Rea,607067,12.5,2,12
 2025-05-30,Cincinnati Reds,Chicago Cubs,Andrew Abbott,671096,24.0,6,31
-2025-05-30,Philadelphia Phillies,Milwaukee Brewers,Taijuan Walker,592836,22.2,7,20
-2025-05-30,Milwaukee Brewers,Philadelphia Phillies,DL Hall,669084,2.1,1,1
 2025-05-30,Baltimore Orioles,Chicago White Sox,Zach Eflin,621107,28.1,16,17
-2025-05-30,Chicago White Sox,Baltimore Orioles,Sean Burke,680732,21.2,15,15
+2025-05-30,Chicago White Sox,Baltimore Orioles,Jared Shuster,694363,5.2,3,5
+2025-05-30,Philadelphia Phillies,Milwaukee Brewers,Taijuan Walker,592836,22.2,7,20
+2025-05-30,Milwaukee Brewers,Philadelphia Phillies,DL Hall,669084,3.1,1,2
 2025-05-30,Toronto Blue Jays,Athletics,Chris Bassitt,605135,27.5,6,34
 2025-05-30,Athletics,Toronto Blue Jays,Jeffrey Springs,605488,22.1,14,23
 2025-05-30,Cleveland Guardians,Los Angeles Angels,Luis L. Ortiz,682847,24.5,17,31
@@ -14,6 +15,7 @@ Date,Team,Opponent,Pitcher Name,MLB ID,Last 5 IP,Last 5 ER,Last 5 SO
 2025-05-30,San Francisco Giants,Miami Marlins,Kyle Harrison,690986,9.1,4,11
 2025-05-30,Atlanta Braves,Boston Red Sox,Grant Holmes,656550,21.4,8,22
 2025-05-30,Boston Red Sox,Atlanta Braves,Lucas Giolito,608337,26.4,16,23
+2025-05-31,Texas Rangers,St. Louis Cardinals,Jack Leiter,683004,22.299999999999997,13,18
 2025-05-31,St. Louis Cardinals,Texas Rangers,Matthew Liberatore,669461,30.3,11,28
 2025-05-31,Kansas City Royals,Detroit Tigers,Seth Lugo,607625,28.599999999999998,13,21
 2025-05-31,Detroit Tigers,Kansas City Royals,Casey Mize,663554,28.5,7,23
@@ -27,8 +29,10 @@ Date,Team,Opponent,Pitcher Name,MLB ID,Last 5 IP,Last 5 ER,Last 5 SO
 2025-05-31,Minnesota Twins,Seattle Mariners,Zebby Matthews,805673,7.0,6,14
 2025-05-31,Los Angeles Dodgers,New York Yankees,Tony Gonsolin,664062,25.0,13,28
 2025-05-31,New York Yankees,Los Angeles Dodgers,Max Fried,608331,29.799999999999997,5,30
+2025-05-31,Chicago Cubs,Cincinnati Reds,Drew Pomeranz,519141,5.1,0,4
 2025-05-31,Cincinnati Reds,Chicago Cubs,Nick Lodolo,666157,27.599999999999998,9,18
 2025-05-31,Athletics,Toronto Blue Jays,Gunnar Hoglund,680684,25.4,15,22
+2025-05-31,Texas Rangers,St. Louis Cardinals,Patrick Corbin,571578,23.5,9,17
 2025-05-31,St. Louis Cardinals,Texas Rangers,Sonny Gray,543243,29.0,11,29
 2025-05-31,Baltimore Orioles,Chicago White Sox,Dean Kremer,665152,23.6,19,17
 2025-05-31,Chicago White Sox,Baltimore Orioles,Davis Martin,663436,27.1,12,16
