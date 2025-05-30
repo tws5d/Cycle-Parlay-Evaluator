@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-from pybaseball import statcast_batter, statcast_pitcher
+from pybaseball import statcast_pitcher
 from datetime import datetime, timedelta
 
 # Load your daily hitter file (from GitHub)
@@ -31,7 +31,7 @@ team_id_map = {
     117: "Houston Astros",
     118: "Kansas City Royals",
     119: "Los Angeles Angels",
-    137: "Los Angeles Dodgers",  # Assuming 137 is Dodgers
+    137: "Los Angeles Dodgers",
     146: "Miami Marlins",
     158: "Milwaukee Brewers",
     121: "Minnesota Twins",
@@ -45,9 +45,9 @@ team_id_map = {
     139: "Seattle Mariners",
     140: "St. Louis Cardinals",
     141: "Tampa Bay Rays",
-    120: "Texas Rangers",
-    136: "Toronto Blue Jays",    # Changed from 137 to avoid overwrite
-    120: "Washington Nationals"  # Changed from 120: Texas to 136
+    120: "Texas Rangers",  # We'll assume 120 is used only once here
+    136: "Toronto Blue Jays",
+    150: "Washington Nationals"
 }
 batter_team_name = team_id_map.get(team_id, None)
 
@@ -94,38 +94,29 @@ if pitcher_name:
     except:
         st.warning("Pitcher lookup failed. Check spelling.")
 
-# Get batter Statcast data
-end_date = datetime.today().strftime('%Y-%m-%d')
-start_date = (datetime.today() - timedelta(days=14)).strftime('%Y-%m-%d')
+# Get last 10-game totals for this hitter
+player_games = hitters_df[hitters_df["player_id"] == batter_id].sort_values("game_date", ascending=False).head(10)
 
-st.write(f"📅 Date range: {start_date} → {end_date}")
+if not player_games.empty:
+    total_ab = player_games["at_bats"].sum()
+    total_hits = player_games["hits"].sum()
+    total_hr = player_games["home_runs"].sum()
+    total_rbi = player_games["rbi"].sum()
+    total_bb = player_games["base_on_balls"].sum()
+    total_tb = (
+        player_games["hits"].sum() +  # Crude TB calc: H + HR (assumes rest are singles)
+        player_games["home_runs"].sum()
+    )
 
-df = statcast_batter(start_date, end_date, batter_id)
+    avg = round(total_hits / total_ab, 3) if total_ab else 0
 
-if not df.empty:
-    avg_exit_velo = df['launch_speed'].mean()
-    hard_hits = df[df['launch_speed'] >= 95].shape[0]
-    total_batted_balls = df.shape[0]
-    hard_hit_pct = round((hard_hits / total_batted_balls) * 100, 2) if total_batted_balls else 0
-    xba = round(df['estimated_ba_using_speedangle'].mean(), 3)
-
-    st.write(f"**Average Exit Velocity:** {round(avg_exit_velo, 1)} mph")
-    st.write(f"**Hard Hit %:** {hard_hit_pct}%")
-    st.write(f"**xBA (Expected BA):** {xba}")
-
-    if 'score' not in locals():
-        score = 50
-
-    if xba > 0.300: score += 15
-    if hard_hit_pct > 45: score += 15
-    if avg_exit_velo > 91: score += 10
-
-    st.write(f"🧠 **Cycle Score**: {score}/100")
-    if score >= 85:
-        st.success("🔥 LOCK")
-    elif score >= 70:
-        st.info("✅ Lean")
-    else:
-        st.warning("⚠️ Fade")
+    st.subheader("📊 Last 10 Games (Totals)")
+    st.write(f"**At-Bats (AB):** {total_ab}")
+    st.write(f"**Hits (H):** {total_hits}")
+    st.write(f"**AVG:** {avg}")
+    st.write(f"**Total Bases (TB):** {total_tb}")
+    st.write(f"**Home Runs (HR):** {total_hr}")
+    st.write(f"**Runs Batted In (RBI):** {total_rbi}")
+    st.write(f"**Walks (BB):** {total_bb}")
 else:
-    st.warning("No Statcast data found for this timeframe.")
+    st.warning("No recent game log data found for this hitter.")
