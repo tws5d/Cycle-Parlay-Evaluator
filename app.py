@@ -36,9 +36,6 @@ pitcher_row = pitchers_df[pitchers_df["Team"] == batter_team_name]
 pitcher_name = None
 pitcher_id = None
 
-st.write(f"Batter team: {batter_team_name}")
-st.write("Pitcher teams available:", pitchers_df["Team"].unique())
-
 # Layout row 1
 col1, col2 = st.columns([1, 2])
 with col1:
@@ -92,7 +89,7 @@ if not player_games.empty:
     total_rbi = player_games["rbi"].sum()
     total_bb = player_games["base_on_balls"].sum()
     total_tb = player_games["TB"].sum()
-    total_runs = player_games["rbi"].sum()  # Replace if you add runs column
+    total_runs = player_games["rbi"].sum()  # Update later if you add runs column
 
     slg = round(total_tb / total_ab, 3) if total_ab else 0
     avg = round(total_hits / total_ab, 3) if total_ab else 0
@@ -100,7 +97,7 @@ if not player_games.empty:
     max_hits = player_games["hits"].max()
     max_tb = player_games["TB"].max()
     max_rbi = player_games["rbi"].max()
-    max_runs = player_games["rbi"].max()  # Replace if you add "runs" column
+    max_runs = player_games["rbi"].max()  # Update later if you add runs column
 
     with col3:
         st.subheader("📊 Last 10 Games (Totals)")
