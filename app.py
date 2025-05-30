@@ -16,12 +16,26 @@ selected_row = unique_players[unique_players["player_name"] == player_name].iloc
 batter_id = selected_row["player_id"]
 team_id = selected_row["team_id"]
 
+# Team ID map
+team_id_map = {
+    109: "Arizona Diamondbacks", 144: "Atlanta Braves", 110: "Baltimore Orioles", 111: "Boston Red Sox",
+    112: "Chicago Cubs", 145: "Chicago White Sox", 113: "Cincinnati Reds", 114: "Cleveland Guardians",
+    115: "Colorado Rockies", 116: "Detroit Tigers", 117: "Houston Astros", 118: "Kansas City Royals",
+    119: "Los Angeles Angels", 137: "Los Angeles Dodgers", 146: "Miami Marlins", 158: "Milwaukee Brewers",
+    121: "Minnesota Twins", 135: "New York Mets", 147: "New York Yankees", 133: "Oakland Athletics",
+    134: "Philadelphia Phillies", 143: "Pittsburgh Pirates", 142: "San Diego Padres", 138: "San Francisco Giants",
+    139: "Seattle Mariners", 140: "St. Louis Cardinals", 141: "Tampa Bay Rays", 120: "Texas Rangers",
+    136: "Toronto Blue Jays", 150: "Washington Nationals"
+}
+batter_team_name = team_id_map.get(team_id, None)
+
 # Load pitcher data
 pitchers_url = "https://raw.githubusercontent.com/tws5d/Cycle-Parlay-Evaluator/main/latest_pitchers.csv"
 pitchers_df = pd.read_csv(pitchers_url)
 
-# Match on numeric ID (correct method)
-pitcher_row = pitchers_df[pitchers_df["Opponent_ID"] == team_id]
+# ✅ This is the line that worked
+pitcher_row = pitchers_df[pitchers_df["Opponent"] == batter_team_name]
+
 pitcher_name = None
 pitcher_id = None
 
@@ -78,7 +92,7 @@ if not player_games.empty:
     total_rbi = player_games["rbi"].sum()
     total_bb = player_games["base_on_balls"].sum()
     total_tb = player_games["TB"].sum()
-    total_runs = player_games["rbi"].sum()  # Update if runs column is added
+    total_runs = player_games["rbi"].sum()  # Replace if you add runs column
 
     slg = round(total_tb / total_ab, 3) if total_ab else 0
     avg = round(total_hits / total_ab, 3) if total_ab else 0
@@ -86,7 +100,7 @@ if not player_games.empty:
     max_hits = player_games["hits"].max()
     max_tb = player_games["TB"].max()
     max_rbi = player_games["rbi"].max()
-    max_runs = player_games["rbi"].max()  # Update if runs column is added
+    max_runs = player_games["rbi"].max()  # Replace if you add runs column
 
     with col3:
         st.subheader("📊 Last 10 Games (Totals)")
