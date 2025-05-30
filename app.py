@@ -45,7 +45,7 @@ team_id_map = {
     119: "Los Angeles Angels", 137: "Los Angeles Dodgers", 146: "Miami Marlins", 158: "Milwaukee Brewers",
     121: "Minnesota Twins", 135: "New York Mets", 147: "New York Yankees", 133: "Oakland Athletics",
     134: "Philadelphia Phillies", 143: "Pittsburgh Pirates", 142: "San Diego Padres",
-    138: "San Francisco Giants", 139: "Seattle Mariners", 140: "St. Louis Cardinals", 141: "Tampa Bay Rays",
+    138: "San Francisco Giants", 139: "Seattle Mariners", 140: "Texas Rangers", 141: "Tampa Bay Rays",
     120: "Washington Nationals", 136: "Toronto Blue Jays"
 }
 batter_team_name = team_id_map.get(team_id, None)
