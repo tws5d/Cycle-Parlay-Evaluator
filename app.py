@@ -70,30 +70,68 @@ team_id_map = {
 batter_team_name = team_id_map.get(team_id, None)
 
 ballpark_factors = {
-    "Coors Field": "Hitter-Friendly",
+    "Chase Field": "Hitter-Friendly",
+    "Globe Life Field": "Hitter-Friendly",
     "Great American Ball Park": "Hitter-Friendly",
     "Fenway Park": "Hitter-Friendly",
+    "Coors Field": "Hitter-Friendly",
+    "American Family Field": "Neutral",
+    "T-Mobile Park": "Neutral",
     "Dodger Stadium": "Neutral",
-    "Wrigley Field": "Neutral",
-    "Yankee Stadium": "Neutral",
+    "Kauffman Stadium": "Neutral",
+    "Oriole Park at Camden Yards": "Neutral",
+    "PNC Park": "Neutral",
     "Petco Park": "Pitcher-Friendly",
     "Tropicana Field": "Pitcher-Friendly",
     "Oracle Park": "Pitcher-Friendly",
-    "Nationals Park": "Neutral"
+    "Marlins Park": "Pitcher-Friendly",
+    "Rogers Centre": "Pitcher-Friendly",
+    "Citizens Bank Park": "Neutral",
+    "Yankee Stadium": "Neutral",
+    "Wrigley Field": "Neutral",
+    "Target Field": "Neutral",
+    "Minute Maid Park": "Neutral",
+    "Busch Stadium": "Neutral",
+    "SunTrust Park": "Neutral",
+    "Progressive Field": "Neutral",
+    "Truist Park": "Neutral",
+    "Nationals Park": "Neutral",
+    "Comerica Park": "Neutral",
+    "Angel Stadium": "Neutral",
+    "Petco Park": "Pitcher-Friendly",
+    "Tropicana Field": "Pitcher-Friendly",
 }
 
 team_to_park = {
-    "Washington Nationals": "Nationals Park",
-    "Colorado Rockies": "Coors Field",
+    "Arizona Diamondbacks": "Chase Field",
+    "Atlanta Braves": "Globe Life Field",
     "Cincinnati Reds": "Great American Ball Park",
     "Boston Red Sox": "Fenway Park",
+    "Colorado Rockies": "Coors Field",
+    "Milwaukee Brewers": "American Family Field",
+    "Seattle Mariners": "T-Mobile Park",
+    "Los Angeles Dodgers": "Dodger Stadium",
+    "Kansas City Royals": "Kauffman Stadium",
+    "Baltimore Orioles": "Oriole Park at Camden Yards",
+    "Pittsburgh Pirates": "PNC Park",
     "San Diego Padres": "Petco Park",
     "Tampa Bay Rays": "Tropicana Field",
-    "San Francisco Giants": "Oracle Park"
+    "San Francisco Giants": "Oracle Park",
+    "Miami Marlins": "Marlins Park",
+    "Toronto Blue Jays": "Rogers Centre",
+    "Philadelphia Phillies": "Citizens Bank Park",
+    "New York Yankees": "Yankee Stadium",
+    "Chicago Cubs": "Wrigley Field",
+    "Minnesota Twins": "Target Field",
+    "Houston Astros": "Minute Maid Park",
+    "St. Louis Cardinals": "Busch Stadium",
+    "Atlanta Braves": "SunTrust Park",
+    "Cleveland Guardians": "Progressive Field",
+    "Atlanta Braves": "Truist Park",
+    "Washington Nationals": "Nationals Park",
+    "Detroit Tigers": "Comerica Park",
+    "Los Angeles Angels": "Angel Stadium"
 }
-
-home_park = team_to_park.get(batter_team_name, "Unknown")
-park_rating = ballpark_factors.get(home_park, "Unknown")
 
 # Load pitcher data
 pitchers_url = "https://raw.githubusercontent.com/tws5d/Cycle-Parlay-Evaluator/main/latest_pitchers.csv"
@@ -132,20 +170,53 @@ if not pitcher_row.empty:
             st.write(f"📉 **Pitcher xBA Allowed:** {xba_allowed} {xba_tag}")
             st.write(f"📉 **Hard Hit % Allowed:** {hard_hit_pct_allowed}% {hard_hit_tag}")
             st.write(f"📉 **Avg Exit Velo Allowed:** {round(avg_ev_allowed, 1)} mph {ev_tag}")
-            st.write(f"🏟️ **Ballpark:** {home_park} ({park_rating})")
+            st.write(f"🏟️ **Ballpark:** {team_to_park.get(batter_team_name, 'Unknown')} ({ballpark_factors.get(team_to_park.get(batter_team_name, 'Unknown'), 'Unknown')})")
 
-            # Fetch wind data from OpenWeather
-            city = home_park.split()[0]  # crude, but often works (e.g. "Nationals")
-            weather_url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=imperial"
+            # Use lat/lon to fetch wind data
+            park_coords = {
+                "Chase Field": (33.4458, -112.0669),
+                "Globe Life Field": (32.7473, -97.0831),
+                "Great American Ball Park": (39.0974, -84.5063),
+                "Fenway Park": (42.3467, -71.0972),
+                "Coors Field": (39.7556, -104.9942),
+                "American Family Field": (43.0281, -87.9712),
+                "T-Mobile Park": (47.5914, -122.3325),
+                "Dodger Stadium": (34.0739, -118.2400),
+                "Kauffman Stadium": (39.0517, -94.4803),
+                "Oriole Park at Camden Yards": (39.2839, -76.6219),
+                "PNC Park": (40.4473, -80.0053),
+                "Petco Park": (32.7076, -117.1570),
+                "Tropicana Field": (27.7683, -82.6534),
+                "Oracle Park": (37.7786, -122.3893),
+                "Marlins Park": (25.7781, -80.2195),
+                "Rogers Centre": (43.6414, -79.3894),
+                "Citizens Bank Park": (39.9061, -75.1665),
+                "Yankee Stadium": (40.8296, -73.9262),
+                "Wrigley Field": (41.9484, -87.6553),
+                "Target Field": (44.9817, -93.2777),
+                "Minute Maid Park": (29.7573, -95.3550),
+                "Busch Stadium": (38.6226, -90.1928),
+                "SunTrust Park": (33.8908, -84.4677),
+                "Progressive Field": (41.4954, -81.6854),
+                "Truist Park": (33.8908, -84.4677),
+                "Nationals Park": (38.8730, -77.0074),
+                "Comerica Park": (42.3390, -83.0485),
+                "Angel Stadium": (33.8003, -117.8827)
+            }
+            coords = park_coords.get(team_to_park.get(batter_team_name, "Unknown"), (40.7128, -74.0060))  # default NYC
+
+            weather_url = f"http://api.openweathermap.org/data/2.5/weather?lat={coords[0]}&lon={coords[1]}&appid={api_key}&units=imperial"
+
             try:
                 response = requests.get(weather_url)
                 weather_data = response.json()
-                wind_speed = weather_data['wind']['speed']
-                wind_deg = weather_data['wind']['deg']
-
-                # Generate and display wind compass
-                fig = generate_wind_compass(wind_speed, wind_deg)
-                st.pyplot(fig)
+                if 'wind' in weather_data:
+                    wind_speed = weather_data['wind']['speed']
+                    wind_deg = weather_data['wind']['deg']
+                    fig = generate_wind_compass(wind_speed, wind_deg)
+                    st.pyplot(fig)
+                else:
+                    st.warning("⚠️ Wind data not available for this location.")
             except Exception as e:
                 st.warning(f"⚠️ Could not fetch wind data: {e}")
 
