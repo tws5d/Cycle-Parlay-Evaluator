@@ -352,9 +352,10 @@ if not df.empty:
     max_hits = recent_df["hits"].max()
     max_rbis = recent_df["rbi"].max()
     max_bases = (recent_df["hits"] + 2 * recent_df["home_runs"]).max()
-    avg = round(recent_df["avg"].mean(), 3)
-    obp = round(recent_df["obp"].mean(), 3)
-    slg = round(recent_df["slg"].mean(), 3)
+    avg = round(total_hits / total_abs, 3) if total_abs else 0
+    total_walks = recent_df["walks"].sum() if "walks" in recent_df.columns else 0
+    obp = round((total_hits + total_walks) / (total_abs + total_walks), 3) if (total_abs + total_walks) else 0
+    slg = round(total_bases / total_abs, 3) if total_abs else 0
 
     col1, col2, col3, col4, col5 = st.columns(5)
     col1.metric("ABs", total_abs)
