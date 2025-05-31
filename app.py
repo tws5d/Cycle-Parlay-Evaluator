@@ -353,8 +353,8 @@ if not df.empty:
     max_rbis = recent_df["rbi"].max()
     max_bases = (recent_df["hits"] + 2 * recent_df["home_runs"]).max()
     avg = round(recent_df.sort_values("game_date", ascending=False).iloc[0]["avg"], 3)
-    obp = f"{recent_df['obp'].mean():.3f}"
-    slg = f"{recent_df['slg'].mean():.3f}"
+    obp = round(recent_df.sort_values("game_date", ascending=False).iloc[0]["obp"], 3)
+    slg = round(recent_df.sort_values("game_date", ascending=False).iloc[0]["slg"], 3)
     
 
     col1, col2, col3, col4, col5 = st.columns(5)
