@@ -365,9 +365,9 @@ if not df.empty:
     col5.metric("HRs", total_hrs)
 
     col1, col2, col3 = st.columns(3)
-    col1.metric("AVG", f"{avg}")
-    col2.metric("OBP", f"{obp}")
-    col3.metric("SLG", f"{slg}")
+    col1.metric("Season AVG", f"{avg}")
+    col2.metric("Season OBP", f"{obp}")
+    col3.metric("Season SLG", f"{slg}")
 
     exit_tag = "✅" if avg_exit_velo > 91 else "⚠️"
     hard_hit_tag = "✅" if hard_hit_pct > 45 else "⚠️"
