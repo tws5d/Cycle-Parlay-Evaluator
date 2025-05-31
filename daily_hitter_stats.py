@@ -89,3 +89,12 @@ def build_daily_hitter_csv():
 # Run the script
 if __name__ == "__main__":
     build_daily_hitter_csv()
+
+import subprocess
+
+try:
+    subprocess.run(["git", "add", "latest_pitchers.csv", "latest_hitters.csv"], check=True)
+    subprocess.run(["git", "commit", "-m", "Auto-update daily CSVs"], check=True)
+    subprocess.run(["git", "push", "origin", "main"], check=True)
+except subprocess.CalledProcessError as e:
+    print(f"Git push failed: {e.stderr if hasattr(e, 'stderr') else e}")
