@@ -1,31 +1,31 @@
 Date,Team,Opponent,Pitcher Name,MLB ID,Last 5 IP,Last 5 ER,Last 5 SO
-2025-05-30,Chicago Cubs,Cincinnati Reds,Colin Rea,607067,12.5,2,12
-2025-05-30,Cincinnati Reds,Chicago Cubs,Andrew Abbott,671096,24.0,6,31
-2025-05-30,Baltimore Orioles,Chicago White Sox,Zach Eflin,621107,28.1,16,17
-2025-05-30,Chicago White Sox,Baltimore Orioles,Jared Shuster,694363,5.2,3,5
-2025-05-30,Philadelphia Phillies,Milwaukee Brewers,Taijuan Walker,592836,22.2,7,20
-2025-05-30,Milwaukee Brewers,Philadelphia Phillies,DL Hall,669084,4.1,1,3
-2025-05-30,Toronto Blue Jays,Athletics,Chris Bassitt,605135,27.5,6,34
-2025-05-30,Athletics,Toronto Blue Jays,Jeffrey Springs,605488,22.1,14,23
-2025-05-30,Cleveland Guardians,Los Angeles Angels,Luis L. Ortiz,682847,24.5,17,31
-2025-05-30,Los Angeles Angels,Cleveland Guardians,José Soriano,667755,27.6,14,22
-2025-05-30,New York Mets,Colorado Rockies,David Peterson,656849,26.4,10,28
-2025-05-30,Colorado Rockies,New York Mets,Kyle Freeland,607536,25.299999999999997,14,19
-2025-05-30,Miami Marlins,San Francisco Giants,Cal Quantrill,615698,22.3,20,13
-2025-05-30,San Francisco Giants,Miami Marlins,Kyle Harrison,690986,9.1,4,11
-2025-05-30,Atlanta Braves,Boston Red Sox,Grant Holmes,656550,21.4,8,22
-2025-05-30,Boston Red Sox,Atlanta Braves,Lucas Giolito,608337,26.4,16,23
-2025-05-31,Texas Rangers,St. Louis Cardinals,Jack Leiter,683004,22.299999999999997,13,18
-2025-05-31,St. Louis Cardinals,Texas Rangers,Matthew Liberatore,669461,30.3,11,28
-2025-05-31,Kansas City Royals,Detroit Tigers,Seth Lugo,607625,28.599999999999998,13,21
-2025-05-31,Detroit Tigers,Kansas City Royals,Casey Mize,663554,28.5,7,23
-2025-05-31,Houston Astros,Tampa Bay Rays,Framber Valdez,664285,28.0,14,26
-2025-05-31,Tampa Bay Rays,Houston Astros,Ryan Pepiot,686752,28.0,15,31
-2025-05-31,Arizona Diamondbacks,Washington Nationals,Merrill Kelly,518876,25.5,14,21
-2025-05-31,Washington Nationals,Arizona Diamondbacks,Jake Irvin,663623,29.1,12,27
-2025-05-31,San Diego Padres,Pittsburgh Pirates,Nick Pivetta,601713,30.0,4,30
-2025-05-31,Pittsburgh Pirates,San Diego Padres,Mitch Keller,656605,27.299999999999997,13,20
-2025-05-31,Seattle Mariners,Minnesota Twins,Bryan Woo,693433,32.0,11,30
-2025-05-31,Minnesota Twins,Seattle Mariners,Zebby Matthews,805673,7.0,6,14
-2025-05-31,Los Angeles Dodgers,New York Yankees,Tony Gonsolin,664062,25.0,13,28
-2025-05-31,New York Yankees,Los Angeles Dodgers,Max Fried,608331,29.799999999999997,5,30
+2025-05-31,Chicago Cubs,Cincinnati Reds,Drew Pomeranz,519141,5.1,0,4
+2025-05-31,Cincinnati Reds,Chicago Cubs,Nick Lodolo,666157,27.599999999999998,9,18
+2025-05-31,Toronto Blue Jays,Athletics,Braydon Fisher,680755,4.4,0,6
+2025-05-31,Athletics,Toronto Blue Jays,Gunnar Hoglund,680684,25.4,15,22
+2025-05-31,Texas Rangers,St. Louis Cardinals,Patrick Corbin,571578,23.5,9,17
+2025-05-31,St. Louis Cardinals,Texas Rangers,Sonny Gray,543243,29.0,11,29
+2025-05-31,Baltimore Orioles,Chicago White Sox,Dean Kremer,665152,23.6,19,17
+2025-05-31,Chicago White Sox,Baltimore Orioles,Davis Martin,663436,27.1,12,16
+2025-05-31,Philadelphia Phillies,Milwaukee Brewers,Jesús Luzardo,666200,30.1,7,36
+2025-05-31,Milwaukee Brewers,Philadelphia Phillies,Chad Patrick,694477,20.4,5,20
+2025-05-31,Cleveland Guardians,Los Angeles Angels,Slade Cecconi,677944,11.0,4,14
+2025-05-31,Los Angeles Angels,Cleveland Guardians,Kyle Hendricks,543294,23.0,17,13
+2025-05-31,Kansas City Royals,Detroit Tigers,Michael Wacha,608379,24.6,12,20
+2025-05-31,Detroit Tigers,Kansas City Royals,Tarik Skubal,669373,28.2,9,29
+2025-05-31,New York Mets,Colorado Rockies,Kodai Senga,673540,28.2,4,25
+2025-05-31,Colorado Rockies,New York Mets,Antonio Senzatela,622608,23.4,13,9
+2025-05-31,Houston Astros,Tampa Bay Rays,Colton Gordon,676467,14.2,9,14
+2025-05-31,Tampa Bay Rays,Houston Astros,Zack Littell,641793,29.0,17,21
+2025-05-31,Atlanta Braves,Boston Red Sox,Spencer Schwellenbach,680885,31.2,9,27
+2025-05-31,Boston Red Sox,Atlanta Braves,Walker Buehler,621111,27.2,13,26
+2025-05-31,Miami Marlins,San Francisco Giants,Edward Cabrera,665795,23.4,17,24
+2025-05-31,San Francisco Giants,Miami Marlins,Robbie Ray,592662,24.1,11,25
+2025-05-31,Seattle Mariners,Minnesota Twins,Bryce Miller,682243,24.5,12,25
+2025-05-31,Minnesota Twins,Seattle Mariners,Bailey Ober,641927,24.299999999999997,14,23
+2025-05-31,Los Angeles Dodgers,New York Yankees,Landon Knack,689017,17.4,12,20
+2025-05-31,New York Yankees,Los Angeles Dodgers,Will Warren,701542,20.2,11,21
+2025-06-01,San Diego Padres,Pittsburgh Pirates,Dylan Cease,656302,24.4,17,30
+2025-06-01,Pittsburgh Pirates,San Diego Padres,Bailey Falter,663559,26.0,15,20
+2025-06-01,Arizona Diamondbacks,Washington Nationals,Brandon Pfaadt,694297,29.2,9,23
+2025-06-01,Washington Nationals,Arizona Diamondbacks,Michael Soroka,647336,25.2,16,25
