@@ -305,7 +305,7 @@ if not pitcher_row.empty:
                 if wind_speed and wind_speed > 0:
                     wind_image_path = f"https://raw.githubusercontent.com/tws5d/Cycle-Parlay-Evaluator/main/{wind_image_file}"
                     st.image(wind_image_path, width=100)
-                    st.write(f"{wind_speed:.1f} mph")
+                    st.markdown(f"<div style='text-align: center;'>{wind_speed:.1f} mph</div>", unsafe_allow_html=True)
                 else:
                     wind_image_path = "https://raw.githubusercontent.com/tws5d/Cycle-Parlay-Evaluator/main/No.Wind.Data.Available.png"
                     st.image(wind_image_path, width=100)
