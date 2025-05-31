@@ -262,9 +262,9 @@ if not pitcher_row.empty:
                     st.write("🌐 Raw weather response:", data)
                     wind_speed = data["wind"]["speed"]
                     wind_deg = data["wind"]["deg"]
+                    wind_description = get_wind_text(wind_speed, wind_deg, park_name)
                     st.write("📝 Wind Description:", wind_description)  # For testing only
                     # Get wind text using helper
-                    wind_description = get_wind_text(wind_speed, wind_deg, park_name)
                     st.write(f"💨 Wind Speed: {wind_speed} mph")
                     st.write(f"🧭 Wind Direction: {wind_deg}°")
                 except Exception as e:
