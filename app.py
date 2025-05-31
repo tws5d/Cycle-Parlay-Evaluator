@@ -45,13 +45,12 @@ unique_players["display_name"] = unique_players.apply(
 )
 
 # Dropdown with formatted names, but return real player_name
-player_name = st.selectbox("Select a hitter:", unique_players["display_name"])
-selected_row = unique_players[unique_players["display_name"] == player_name].iloc[0]
+selected_display = st.selectbox("Select a hitter:", unique_players["display_name"])
+selected_row = unique_players[unique_players["display_name"] == selected_display].iloc[0]
 
-selected_row = unique_players[unique_players["player_name"] == player_name].iloc[0]
+player_name = selected_row["player_name"]
 batter_id = selected_row["player_id"]
 team_id = selected_row["team_id"]
-
 batter_team_name = selected_row["team_name"]
 
 name_corrections = {
