@@ -301,11 +301,11 @@ if not pitcher_row.empty:
             
             with wind_col:
                 if wind_speed and wind_speed > 0:
-                    wind_image_path = f"./{wind_image_file}"
+                    wind_image_path = f"https://raw.githubusercontent.com/tws5d/Cycle-Parlay-Evaluator/main/{wind_image_file}"
                     st.image(wind_image_path, width=100)
                     st.write(f"🌬️ Wind Speed: {wind_speed:.2f} mph")
                 else:
-                    wind_image_path = "./No.Wind.Data.Available.png"
+                    wind_image_path = "https://raw.githubusercontent.com/tws5d/Cycle-Parlay-Evaluator/main/No.Wind.Data.Available.png"
                     st.image(wind_image_path, width=100)
 
             with stat_col:
