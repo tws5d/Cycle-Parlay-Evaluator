@@ -127,9 +127,6 @@ team_to_park = {
 pitchers_url = "https://raw.githubusercontent.com/tws5d/Cycle-Parlay-Evaluator/main/latest_pitchers.csv"
 pitchers_df = pd.read_csv(pitchers_url)
 
-st.write("DEBUG pitcher_df Opponents:", pitchers_df["Opponent"].unique())
-st.write(f"DEBUG batter_team_name: {batter_team_name}")
-
 short_team_name = name_corrections.get(batter_team_name, batter_team_name)
 
 pitcher_row = pitchers_df[pitchers_df["Opponent"].str.contains(short_team_name, case=False, na=False)]
