@@ -103,7 +103,7 @@ park_coords = {
     "Great American Ball Park": (39.0972, -84.5078),
     "Guaranteed Rate Field": (41.8309, -87.6345),
     "Kauffman Stadium": (39.0517, -94.4803),
-    "LoanDepot Park": (25.7781, -80.2195),  # Marlins Park
+    "Marlins Park": (25.7781, -80.2195),  # Marlins Park
     "Minute Maid Park": (29.7573, -95.3555),
     "Nationals Park": (38.8728, -77.0074),
     "Oakland Coliseum": (37.7516, -122.2005),
