@@ -213,14 +213,7 @@ if not pitcher_row.empty:
         st.image(image_url, width=100)
     with col2:
         stat_col, wind_col = st.columns([3, 1])
-        with wind_col:
-            if wind_speed and wind_speed > 0:
-                wind_image_path = f"./{wind_image_file}"
-                st.image(wind_image_path, width=100)
-                st.write(f"🌬️ Wind Speed: {wind_speed} mph")
-            else:
-                wind_image_path = "./No.Wind.Data.Available.png"
-                st.image(wind_image_path, width=100)
+        
         if not df_pitcher.empty:
             avg_ev_allowed = df_pitcher['launch_speed'].mean()
             hard_hits_allowed = df_pitcher[df_pitcher['launch_speed'] >= 95].shape[0]
@@ -305,6 +298,15 @@ if not pitcher_row.empty:
 
             park_type = ballpark_factors.get(park_name, "Unknown")
             park_emoji = "⚾" if park_type == "Hitter-Friendly" else "🛡️" if park_type == "Pitcher-Friendly" else "⚖️"
+            
+            with wind_col:
+                if wind_speed and wind_speed > 0:
+                    wind_image_path = f"./{wind_image_file}"
+                    st.image(wind_image_path, width=100)
+                    st.write(f"🌬️ Wind Speed: {wind_speed:.2f} mph")
+                else:
+                    wind_image_path = "./No.Wind.Data.Available.png"
+                    st.image(wind_image_path, width=100)
 
             with stat_col:
                 st.write(f"📉 **Pitcher xBA Allowed:** {xba_allowed} {xba_tag}")
