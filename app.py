@@ -88,6 +88,40 @@ name_corrections = {
 
 short_team_name = name_corrections.get(batter_team_name, batter_team_name)
 
+# Latitude and Longitude for each MLB ballpark
+park_coords = {
+    "Angel Stadium": (33.8003, -117.8827),
+    "Busch Stadium": (38.6226, -90.1928),
+    "Chase Field": (33.4455, -112.0667),
+    "Citizens Bank Park": (39.9057, -75.1665),
+    "Citi Field": (40.7571, -73.8458),
+    "Comerica Park": (42.3390, -83.0485),
+    "Coors Field": (39.7559, -104.9942),
+    "Dodger Stadium": (34.0739, -118.2400),
+    "Fenway Park": (42.3467, -71.0972),
+    "Globe Life Field": (32.7473, -97.0847),
+    "Great American Ball Park": (39.0972, -84.5078),
+    "Guaranteed Rate Field": (41.8309, -87.6345),
+    "Kauffman Stadium": (39.0517, -94.4803),
+    "LoanDepot Park": (25.7781, -80.2195),  # Marlins Park
+    "Minute Maid Park": (29.7573, -95.3555),
+    "Nationals Park": (38.8728, -77.0074),
+    "Oakland Coliseum": (37.7516, -122.2005),
+    "Oracle Park": (37.7786, -122.3893),
+    "Oriole Park at Camden Yards": (39.2839, -76.6217),
+    "Petco Park": (32.7073, -117.1573),
+    "PNC Park": (40.4469, -80.0057),
+    "Progressive Field": (41.4962, -81.6852),
+    "Rogers Centre": (43.6414, -79.3894),
+    "T-Mobile Park": (47.5914, -122.3325),
+    "Target Field": (44.9817, -93.2783),
+    "Tropicana Field": (27.7683, -82.6534),
+    "Truist Park": (33.8909, -84.4677),
+    "Wrigley Field": (41.9484, -87.6553),
+    "Yankee Stadium": (40.8296, -73.9262),
+    "American Family Field": (43.0280, -87.9712)
+}
+
 ballpark_factors = {
     "Chase Field": "Hitter-Friendly", "Globe Life Field": "Hitter-Friendly", "Great American Ball Park": "Hitter-Friendly",
     "Fenway Park": "Hitter-Friendly", "Coors Field": "Hitter-Friendly", "American Family Field": "Neutral",
