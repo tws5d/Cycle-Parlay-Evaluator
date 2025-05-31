@@ -280,11 +280,13 @@ if not pitcher_row.empty:
                     wind_speed = data["wind"]["speed"]
                     wind_deg = data["wind"]["deg"]
                     wind_description = get_wind_text(wind_speed, wind_deg, park_name)
-                    
-                    
+                    wind_image_file = get_wind_image(wind_speed, wind_deg)
                 except Exception as e:
                     st.warning("Failed to fetch wind data.")
                     st.text(e)
+                    wind_speed = None
+                    wind_deg = None
+                    wind_image_file = "No.Wind.Data.Available.png"
 
                 
             else:
