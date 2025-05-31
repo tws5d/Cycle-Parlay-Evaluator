@@ -263,8 +263,7 @@ if not pitcher_row.empty:
                     wind_speed = data["wind"]["speed"]
                     wind_deg = data["wind"]["deg"]
                     wind_description = get_wind_text(wind_speed, wind_deg, park_name)
-                    st.write("📝 Wind Description:", wind_description)  # For testing only
-                    st.write(f"💨 Wind Speed: {wind_speed} mph")
+                    
                     
                 except Exception as e:
                     st.warning("Failed to fetch wind data.")
