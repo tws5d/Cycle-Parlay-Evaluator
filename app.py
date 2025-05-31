@@ -259,6 +259,7 @@ if not pitcher_row.empty:
                 try:
                     response = requests.get(weather_url)
                     data = response.json()
+                    st.write("🌐 Raw weather response:", data)
                     wind_speed = data["wind"]["speed"]
                     wind_deg = data["wind"]["deg"]
                     st.write("📝 Wind Description:", wind_description)  # For testing only
