@@ -256,6 +256,7 @@ if not pitcher_row.empty:
             if coords:
                 lat, lon = coords
                 weather_url = f"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={api_key}&units=imperial"
+                wind_description = None
                 try:
                     response = requests.get(weather_url)
                     data = response.json()
@@ -264,13 +265,12 @@ if not pitcher_row.empty:
                     wind_deg = data["wind"]["deg"]
                     wind_description = get_wind_text(wind_speed, wind_deg, park_name)
                     st.write("📝 Wind Description:", wind_description)  # For testing only
-                    # Get wind text using helper
                     st.write(f"💨 Wind Speed: {wind_speed} mph")
                     st.write(f"🧭 Wind Direction: {wind_deg}°")
                 except Exception as e:
                     st.warning("Failed to fetch wind data.")
                     st.text(e)
-               
+
                 st.write("Weather API URL:", weather_url)  # For testing
             else:
                 st.warning(f"No coordinates found for {park_name}")
