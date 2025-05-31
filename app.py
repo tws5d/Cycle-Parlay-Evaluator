@@ -278,12 +278,13 @@ if not pitcher_row.empty:
             park_name = team_to_park.get(lookup_name, "Unknown")
             # Get coordinates for the current ballpark
             coords = park_coords.get(park_name)
+            wind_speed = None
+            wind_deg = None           
+            
             if coords:
                 lat, lon = coords
                 weather_url = f"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={api_key}&units=imperial"
                 wind_description = None
-                wind_speed = None
-                wind_deg = None
                 try:
                     response = requests.get(weather_url)
                     data = response.json()
