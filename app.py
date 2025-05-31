@@ -260,7 +260,6 @@ if not pitcher_row.empty:
                 try:
                     response = requests.get(weather_url)
                     data = response.json()
-                    st.write("🌐 Raw weather response:", data)
                     wind_speed = data["wind"]["speed"]
                     wind_deg = data["wind"]["deg"]
                     wind_description = get_wind_text(wind_speed, wind_deg, park_name)
@@ -271,7 +270,7 @@ if not pitcher_row.empty:
                     st.warning("Failed to fetch wind data.")
                     st.text(e)
 
-                st.write("Weather API URL:", weather_url)  # For testing
+                
             else:
                 st.warning(f"No coordinates found for {park_name}")
 
