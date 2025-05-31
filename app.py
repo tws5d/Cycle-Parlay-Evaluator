@@ -251,6 +251,15 @@ if not pitcher_row.empty:
             # Get ballpark info for the home team
             lookup_name = name_corrections.get(home_team, home_team)
             park_name = team_to_park.get(lookup_name, "Unknown")
+            # Get coordinates for the current ballpark
+            coords = park_coords.get(park_name)
+            if coords:
+                lat, lon = coords
+                weather_url = f"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={api_key}&units=imperial"
+                st.write("Weather API URL:", weather_url)  # For testing
+            else:
+                st.warning(f"No coordinates found for {park_name}")
+
             park_type = ballpark_factors.get(park_name, "Unknown")
             park_emoji = "⚾" if park_type == "Hitter-Friendly" else "🛡️" if park_type == "Pitcher-Friendly" else "⚖️"
 
