@@ -22,6 +22,23 @@ def get_wind_text(speed, deg, park_name):
         in_out = "Blowing"
     return f"{in_out} {blowing} ({speed:.1f} mph)"
 
+def get_wind_image(speed, deg):
+    if speed is None or speed == 0:
+        return "No.Wind.Data.Available.png"
+    relative_deg = (deg - 90) % 360
+    if 45 <= relative_deg <= 135:
+        return "Blowing.Left.png"
+    elif (135 < relative_deg <= 180) or (0 <= relative_deg < 45):
+        return "Blowing.Out.Center.Left.png"
+    elif (180 <= relative_deg <= 225) or (315 <= relative_deg < 360):
+        return "Blowing.Out.Center.png"
+    elif 225 < relative_deg < 270:
+        return "Blowing.Out.Center.Right.png"
+    elif 270 <= relative_deg <= 315:
+        return "Blowing.Right.png"
+    else:
+        return "Blowing.In.png"
+
 api_key = "4f676d446a8d39ef55692e6447c5e0f4"
 
 url = "https://raw.githubusercontent.com/tws5d/Cycle-Parlay-Evaluator/main/latest_hitters.csv"
