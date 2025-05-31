@@ -95,7 +95,7 @@ import datetime
 
 def git_push_csv(file_path):
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    commit_message = f"Update latest_pitchers.csv ({timestamp})"
+    commit_message = f"Update latest_hitters.csv ({timestamp})"
 
     try:
         subprocess.run(["git", "add", file_path], check=True)
