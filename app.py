@@ -237,7 +237,7 @@ else:
 
 end_date = datetime.today().strftime('%Y-%m-%d')
 start_date = (datetime.today() - timedelta(days=14)).strftime('%Y-%m-%d')
-st.write(f"📅 Date range: {start_date} → {end_date}")
+st.write(f"📅 Two-Week Rolling Stats ({start_date} - {end_date})")
 
 df = statcast_batter(start_date, end_date, batter_id)
 
