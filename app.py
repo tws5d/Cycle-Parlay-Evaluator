@@ -132,10 +132,10 @@ st.write(f"DEBUG batter_team_name: {batter_team_name}")
 
 short_team_name = name_corrections.get(batter_team_name, batter_team_name)
 
-pitcher_row = pitchers_df[pitchers_df["Opponent"] == short_team_name]
+pitcher_row = pitchers_df[pitchers_df["Opponent"].str.contains(short_team_name, case=False, na=False)]
 
 if pitcher_row.empty:
-    pitcher_row = pitchers_df[pitchers_df["Team"] == batter_team_name]
+    pitcher_row = pitchers_df[pitchers_df["Team"].str.contains(batter_team_name, case=False, na=False)]
 pitcher_name = None
 pitcher_id = None
 
