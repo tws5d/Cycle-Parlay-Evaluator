@@ -75,7 +75,6 @@ name_corrections = {
 
 short_team_name = name_corrections.get(batter_team_name, batter_team_name)
 
-
 ballpark_factors = {
     "Chase Field": "Hitter-Friendly", "Globe Life Field": "Hitter-Friendly", "Great American Ball Park": "Hitter-Friendly",
     "Fenway Park": "Hitter-Friendly", "Coors Field": "Hitter-Friendly", "American Family Field": "Neutral",
@@ -88,7 +87,6 @@ ballpark_factors = {
     "Truist Park": "Neutral", "Nationals Park": "Neutral", "Comerica Park": "Neutral",
     "Angel Stadium": "Neutral"
 }
-
 
 team_to_park = {
     "Diamondbacks": "Chase Field",
@@ -122,7 +120,6 @@ team_to_park = {
     "Athletics": "Oakland Coliseum",
     "Rangers": "Globe Life Field"
 }
-
 
 pitchers_url = "https://raw.githubusercontent.com/tws5d/Cycle-Parlay-Evaluator/main/latest_pitchers.csv"
 pitchers_df = pd.read_csv(pitchers_url)
