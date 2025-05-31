@@ -121,7 +121,6 @@ park_coords = {
     "Yankee Stadium": (40.8296, -73.9262),
     "American Family Field": (43.0280, -87.9712)
 }
-st.write("Coors Field coords:", park_coords["Coors Field"])
 
 ballpark_factors = {
     "Chase Field": "Hitter-Friendly", "Globe Life Field": "Hitter-Friendly", "Great American Ball Park": "Hitter-Friendly",
