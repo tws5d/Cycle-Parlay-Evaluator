@@ -327,6 +327,25 @@ if not pitcher_row.empty:
             if xba_allowed > 0.280: score += 10
             if hard_hit_pct_allowed > 40: score += 10
             if avg_ev_allowed > 89: score += 5
+
+            with weather_col:
+                if data:
+                    condition = data["weather"][0]["main"] if "weather" in data else "Unknown"
+                    temperature = round(data["main"]["temp"]) if "main" in data else None
+                    icon_map = {
+                        "Clear": "Sunny.png",
+                        "Clouds": "Cloudy.png",
+                        "Rain": "Rainy.png"
+                        }
+                    icon_file = icon_map.get(condition, "No.Weather.Data.Available.png")
+                    icon_url = f"https://raw.githubusercontent.com/tws5d/Cycle-Parlay-Evaluator/main/{icon_file}"
+
+                    st.markdown("<div style='text-align: center;'>", unsafe_allow_html=True)
+                    st.markdown(f"<img src='{icon_url}' width='75' style='margin-bottom: 4px;'>", unsafe_allow_html=True)
+                    if temperature is not None:
+                        st.markdown(f"<div>{temperature}°F</div>", unsafe_allow_html=True)
+                        st.markdown("</div>", unsafe_allow_html=True)
+            
         else:
             st.warning("No recent data for pitcher.")
 else:
