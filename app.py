@@ -200,7 +200,7 @@ pitcher_id = None
 if not pitcher_row.empty:
     pitcher_name = pitcher_row.iloc[0]["Pitcher Name"]
     pitcher_id = int(pitcher_row.iloc[0]["MLB ID"])
-    st.write(f"🧱 Probable Pitcher: {pitcher_name}")
+    st.write(f"🧱 Opposing Pitcher: {pitcher_name}")
 
     end_date = datetime.today().strftime('%Y-%m-%d')
     start_date = (datetime.today() - timedelta(days=14)).strftime('%Y-%m-%d')
@@ -325,7 +325,7 @@ if not pitcher_row.empty:
         else:
             st.warning("No recent data for pitcher.")
 else:
-    st.warning("❗ No probable pitcher found for this matchup.")
+    st.warning("❗ No opposing pitcher found for this matchup.")
 
 end_date = datetime.today().strftime('%Y-%m-%d')
 start_date = (datetime.today() - timedelta(days=14)).strftime('%Y-%m-%d')
