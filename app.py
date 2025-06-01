@@ -463,7 +463,7 @@ if not df.empty:
         if score >= 85:
             st.markdown("<div style='margin-top: -60px; margin-left: 30px; text-align: right;'><img src='https://raw.githubusercontent.com/tws5d/Cycle-Parlay-Evaluator/main/Elite.png' width='140'></div>", unsafe_allow_html=True)
         elif score >= 70:
-            st.markdown("<div style='margin-top: -10px; margin-left: -10px; text-align: right;'><img src='https://raw.githubusercontent.com/tws5d/Cycle-Parlay-Evaluator/main/Playable.png' width='140'></div>", unsafe_allow_html=True)
+            st.markdown("<div style='margin-top: -20px; margin-left: -50px; text-align: right;'><img src='https://raw.githubusercontent.com/tws5d/Cycle-Parlay-Evaluator/main/Playable.png' width='140'></div>", unsafe_allow_html=True)
         else:
             st.markdown("<div style='margin-top: -60px; margin-left: 30px; text-align: right;'><img src='https://raw.githubusercontent.com/tws5d/Cycle-Parlay-Evaluator/main/Fade.png' width='140'></div>", unsafe_allow_html=True)
 
