@@ -385,7 +385,7 @@ if not df.empty:
     col1.metric("ABs", total_abs)
     with col2:
         st.metric("Hits", total_hits)
-        st.markdown(f"<div style='color: orange; font-size: 13px; margin-top: -16px; margin-left: 2px;'>Max: {max_hits}</div>", unsafe_allow_html=True)
+        st.markdown(f"<div style='color: orange; font-size: 13px; margin-top: -25px; margin-left: 0px;'>Max: {max_hits}</div>", unsafe_allow_html=True)
 
     walks = recent_df["base_on_balls"].sum()
     col3.metric("Walks", walks)
