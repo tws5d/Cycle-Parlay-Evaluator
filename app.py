@@ -343,7 +343,7 @@ if not pitcher_row.empty:
                     st.markdown("<div style='text-align: center; margin-top: 50px;'>", unsafe_allow_html=True)
                     st.markdown(f"<img src='{icon_url}' width='150' style='margin-top: -43px; margin-bottom: 0px;'>", unsafe_allow_html=True)
                     if temperature is not None:
-                        st.markdown(f"<div style='margin-left: 30px; margin-top: -8px;'>{temperature}°F</div>", unsafe_allow_html=True)
+                        st.markdown(f"<div style='margin-left: 50px; margin-top: -8px;'>{temperature}°F</div>", unsafe_allow_html=True)
                         st.markdown("</div>", unsafe_allow_html=True)
             
         else:
