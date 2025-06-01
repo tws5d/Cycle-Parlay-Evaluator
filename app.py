@@ -422,11 +422,13 @@ if not df.empty:
     col1, col2, col3 = st.columns([1.2, 1.2, 1.2])
 
     with col1:
+        st.markdown("<div style='margin-top:8px;'></div>", unsafe_allow_html=True)
         st.markdown(f"**Avg Exit Velocity:** {round(avg_exit_velo, 1)} mph {exit_tag}")
         st.markdown(f"**Hard Hit %:** {hard_hit_pct}% {hard_hit_tag}")
         st.markdown(f"**xBA (Expected BA):** {xba} {xba_tag}")
 
     with col2:
+        st.markdown("<div style='margin-top:8px;'></div>", unsafe_allow_html=True)
         iso = round(slg - avg, 3)
         babip = round((total_hits - total_hrs) / (total_abs - recent_df['strike_outs'].sum() - total_hrs + recent_df['sac_flies'].sum() + 0.01), 3)  # Avoid div/0
         singles = recent_df["hits"].sum() - recent_df["doubles"].sum() - recent_df["triples"].sum() - total_hrs
@@ -451,6 +453,7 @@ if not df.empty:
         st.markdown(f"**wOBA (Wtd. OB Avg):** {woba} {woba_tag}")
 
     with col3:
+        st.markdown("<div style='margin-top:8px;'></div>", unsafe_allow_html=True)
         if 'score' not in locals():
             score = 50
         if xba > 0.300: score += 15
