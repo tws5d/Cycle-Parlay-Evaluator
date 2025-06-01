@@ -448,9 +448,9 @@ if not df.empty:
         woba_tag = "✅" if woba >= 0.350 else "⚠️"
     
         st.markdown("### ")
-        st.markdown(f"**Isolated Power (ISO):** {iso} {iso_tag}")
-        st.markdown(f"**Batting Avg on Balls In Play (BABIP):** {babip} {babip_tag}")
-        st.markdown(f"**Weighted On-Base Avg (wOBA):** {woba} {woba_tag}")
+        st.markdown(f"**ISO (Isolated Power):** {iso} {iso_tag}")
+        st.markdown(f"**BABIP (Balls In Play):** {babip} {babip_tag}")
+        st.markdown(f"**wOBA (Weighted OB Avg):** {woba} {woba_tag}")
 
     with col3:
         st.markdown("### ")
