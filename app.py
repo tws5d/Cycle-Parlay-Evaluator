@@ -399,7 +399,7 @@ if not df.empty:
     
     with col5:
         st.metric("RBIs", total_rbis)
-        st.markdown(f"<div style='color: green; font-size: 12px; margin-top: -10px; margin-left: 6px;'>Max: {max_rbis}</div>", unsafe_allow_html=True)
+        st.markdown(f"<div style='color: orange; font-size: 13px; margin-top: -25px; margin-left: 0px;'>Max: {max_rbis}</div>", unsafe_allow_html=True)
     
     stolen_bases = recent_df["stolen_bases"].sum()
     col6.metric("SBs", stolen_bases)
@@ -407,7 +407,7 @@ if not df.empty:
     
     with col8:
         st.metric("TBs", total_bases)
-        st.markdown(f"<div style='color: green; font-size: 12px; margin-top: -10px; margin-left: 6px;'>Max: {max_bases}</div>", unsafe_allow_html=True)
+        st.markdown(f"<div style='color: orange; font-size: 13px; margin-top: -25px; margin-left: 0px;'>Max: {max_bases}</div>", unsafe_allow_html=True)
     
     col1, col2, col3 = st.columns(3)
     col1.metric("Season AVG", f"{avg:.3f}")
