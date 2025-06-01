@@ -383,8 +383,10 @@ if not df.empty:
 
     col1, col2, col3, col4, col5, col6, col7, col8 = st.columns(8)
     col1.metric("ABs", total_abs)
-    col2.metric("Hits", total_hits)
-    st.markdown(f"<div style='color: green; font-size: 12px; margin-top: -10px; margin-left: 6px;'>Max: {max_hits}</div>", unsafe_allow_html=True)
+    with col2:
+        st.metric("Hits", total_hits)
+        st.markdown(f"<div style='color: green; font-size: 12px; margin-top: -10px; margin-left: 6px;'>Max: {max_hits}</div>", unsafe_allow_html=True)
+
     walks = recent_df["base_on_balls"].sum()
     col3.metric("Walks", walks)
     runs = recent_df["runs"].sum()
