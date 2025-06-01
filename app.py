@@ -461,11 +461,11 @@ if not df.empty:
         if avg_exit_velo > 91: score += 10
 
         if score >= 85:
-            st.image("Elite.png", width=140)
+            st.markdown("<div style='margin-top: -60px; margin-left: 30px; text-align: right;'><img src='Playable.png' width='140'></div>", unsafe_allow_html=True)
         elif score >= 70:
-            st.image("Playable.png", width=140)
+            st.markdown("<div style='margin-top: -60px; margin-left: 30px; text-align: right;'><img src='Playable.png' width='140'></div>", unsafe_allow_html=True)
         else:
-            st.image("Fade.png", width=140)
+            st.markdown("<div style='margin-top: -60px; margin-left: 30px; text-align: right;'><img src='Fade.png' width='140'></div>", unsafe_allow_html=True)
 
     
 else:
