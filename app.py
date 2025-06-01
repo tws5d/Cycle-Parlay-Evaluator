@@ -410,10 +410,14 @@ if not df.empty:
         st.markdown(f"<div style='color: orange; font-size: 13px; margin-top: -25px; margin-left: 0px;'>Max: {max_bases}</div>", unsafe_allow_html=True)
     
     col1, col2, col3, col4 = st.columns(4)
-    col1.metric("Season AVG", f"{avg:.3f}")
-    col2.metric("Season OBP", f"{obp:.3f}")
-    col3.metric("Season SLG", f"{slg:.3f}")
-    col4.metric("Season OPS", f"{(obp + slg):.3f}")
+    col1.markdown(f"<div style='color:#FFA500; font-weight:bold;'>Season AVG</div>", unsafe_allow_html=True)
+    col1.metric(label="", value=f"{avg:.3f}")
+    col2.markdown(f"<div style='color:#FFA500; font-weight:bold;'>Season OBP</div>", unsafe_allow_html=True)
+    col2.metric(label="", value=f"{obp:.3f}")
+    col3.markdown(f"<div style='color:#FFA500; font-weight:bold;'>Season SLG</div>", unsafe_allow_html=True)
+    col3.metric(label="", value=f"{slg:.3f}")
+    col4.markdown(f"<div style='color:#FFA500; font-weight:bold;'>Season OPS</div>", unsafe_allow_html=True)
+    col4.metric(label="", value=f"{(obp + slg):.3f}")
 
     exit_tag = "✅" if avg_exit_velo > 91 else "⚠️"
     hard_hit_tag = "✅" if hard_hit_pct > 45 else "⚠️"
