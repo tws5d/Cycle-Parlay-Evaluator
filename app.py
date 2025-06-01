@@ -216,7 +216,7 @@ if not pitcher_row.empty:
     with col1:
         st.image(image_url, width=100)
     with col2:
-        stat_col, weather_col, wind_col = st.columns([3, 1, 1])
+        stat_col, weather_col, wind_col = st.columns([3, 1.3, 1.3])
         
         if not df_pitcher.empty:
             avg_ev_allowed = df_pitcher['launch_speed'].mean()
