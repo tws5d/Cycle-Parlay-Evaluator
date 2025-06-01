@@ -216,7 +216,7 @@ if not pitcher_row.empty:
     with col1:
         st.image(image_url, width=100)
     with col2:
-        stat_col, weather_col, wind_col = st.columns([3, 1, 1])
+        stat_col, weather_col, wind_col = st.columns([3, 1.3, 1.3])
         
         if not df_pitcher.empty:
             avg_ev_allowed = df_pitcher['launch_speed'].mean()
@@ -308,8 +308,8 @@ if not pitcher_row.empty:
                 
                 if wind_speed and wind_speed > 0:
                     wind_image_path = f"https://raw.githubusercontent.com/tws5d/Cycle-Parlay-Evaluator/main/{wind_image_file}"
-                    st.markdown(f"<img src='{wind_image_path}' width='140' style='margin-top: -20px;'>", unsafe_allow_html=True)
-                    st.markdown(f"<div style='text-align: center; margin-left: -1px; margin-top: -10px;'>{wind_speed:.1f} mph</div>", unsafe_allow_html=True)
+                    st.markdown(f"<img src='{wind_image_path}' width='160' style='margin-top: -40px; margin-left: -10px;'>", unsafe_allow_html=True)
+                    st.markdown(f"<div style='text-align: center; margin-left: -15px; margin-top: -10px;'>{wind_speed:.1f} mph</div>", unsafe_allow_html=True)
                     
                 else:
                     wind_image_path = "https://raw.githubusercontent.com/tws5d/Cycle-Parlay-Evaluator/main/No.Wind.Data.Available.png"
@@ -341,9 +341,9 @@ if not pitcher_row.empty:
                     icon_url = f"https://raw.githubusercontent.com/tws5d/Cycle-Parlay-Evaluator/main/{icon_file}"
 
                     st.markdown("<div style='text-align: center; margin-top: 50px;'>", unsafe_allow_html=True)
-                    st.markdown(f"<img src='{icon_url}' width='90' style='margin-top: -10px; margin-bottom: 4px;'>", unsafe_allow_html=True)
+                    st.markdown(f"<img src='{icon_url}' width='150' style='margin-top: -43px; margin-bottom: 0px;'>", unsafe_allow_html=True)
                     if temperature is not None:
-                        st.markdown(f"<div style='margin-left: 30px; margin-top: -8px;'>{temperature}°F</div>", unsafe_allow_html=True)
+                        st.markdown(f"<div style='margin-left: 45px; margin-top: -8px;'>{temperature}°F</div>", unsafe_allow_html=True)
                         st.markdown("</div>", unsafe_allow_html=True)
             
         else:
@@ -461,11 +461,11 @@ if not df.empty:
         if avg_exit_velo > 91: score += 10
 
         if score >= 85:
-            st.success("🔥 Strong Pick")
+            st.markdown("<div style='margin-top: -15px; margin-right: 15px; text-align: right;'><img src='https://raw.githubusercontent.com/tws5d/Cycle-Parlay-Evaluator/main/Elite.png' width='140'></div>", unsafe_allow_html=True)
         elif score >= 70:
-            st.info("✅ Solid Pick")
+            st.markdown("<div style='margin-top: -15px; margin-right: 15px; text-align: right;'><img src='https://raw.githubusercontent.com/tws5d/Cycle-Parlay-Evaluator/main/Playable.png' width='140'></div>", unsafe_allow_html=True)
         else:
-            st.warning("⚠️ Risky Pick")
+            st.markdown("<div style='margin-top: -15px; margin-right: 15px; text-align: right;'><img src='https://raw.githubusercontent.com/tws5d/Cycle-Parlay-Evaluator/main/Fade.png' width='140'></div>", unsafe_allow_html=True)
 
     
 else:
