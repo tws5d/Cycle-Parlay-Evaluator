@@ -442,11 +442,15 @@ if not df.empty:
                             recent_df["sac_flies"].sum() +
                             recent_df["hit_by_pitch"].sum() + 0.01)
         woba = round(woba_numerator / woba_denominator, 3)
+        
+        iso_tag = "✅" if iso >= 0.180 else "⚠️"
+        babip_tag = "✅" if 0.290 <= babip <= 0.320 else "⚠️"
+        woba_tag = "✅" if woba >= 0.350 else "⚠️"
     
         st.markdown("### ")
-        st.markdown(f"**ISO:** {iso}")
-        st.markdown(f"**BABIP:** {babip}")
-        st.markdown(f"**wOBA:** {woba}")
+        st.markdown(f"**Isolated Power (ISO):** {iso} {iso_tag}")
+        st.markdown(f"**Batting Avg on Balls In Play (BABIP):** {babip} {babip_tag}")
+        st.markdown(f"**Weighted On-Base Avg (wOBA):** {woba} {woba_tag}")
 
     with col3:
         st.markdown("### ")
