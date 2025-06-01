@@ -472,6 +472,6 @@ else:
     st.warning("No Statcast data found for this timeframe.")
     
 st.markdown("---")
-st.markdown("<div style='text-align: center; margin-top: 40px;'>If this helped you, consider buying me a coffee ☕</div>", unsafe_allow_html=True)
-st.image("tipjar_qr.png", width=130)
+st.markdown("<div style='text-align: center; margin-top: 10px;'>If this helped you, consider buying me a coffee ☕</div>", unsafe_allow_html=True)
+st.markdown("<div style='text-align: center;'><img src='tipjar_qr.png' width='130'></div>", unsafe_allow_html=True)
 st.markdown("<div style='text-align: center; margin-top: -10px;'><a href='https://buymeacoffee.com/tws5d' target='_blank'>https://buymeacoffee.com/tws5d</a></div>", unsafe_allow_html=True)
