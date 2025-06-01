@@ -41,9 +41,7 @@ for date in data["dates"]:
                 era = season_stats.get("era", "")
                 baa = season_stats.get("avg", "")
                 opsa = season_stats.get("ops", "")
-                print(f"{pitcher['fullName']} - ERA: {era}, BAA: {baa}, OPSa: {opsa}")
-
-
+                
                 games = gamelog_data.get("stats", [{}])[0].get("splits", [])[:5]
 
                 total_ip = total_er = total_so = 0
