@@ -73,6 +73,11 @@ def build_daily_hitter_csv():
             logs = get_last_10_hitter_games(hitter["player_id"])
             for log in logs:
                 stats = log.get("stat", {})
+                doubles = stats.get("doubles", 0)
+                triples = stats.get("triples", 0)
+                home_runs = stats.get("homeRuns", 0)
+                hits = stats.get("hits", 0)
+                
                 row = {
                     "player_id": hitter["player_id"],
                     "player_name": hitter["full_name"],
@@ -81,10 +86,14 @@ def build_daily_hitter_csv():
                     "game_date": log.get("date", ""),
                     "at_bats": stats.get("atBats", 0),
                     "hits": stats.get("hits", 0),
+                    "doubles": doubles,
+                    "triples": triples,
                     "home_runs": stats.get("homeRuns", 0),
                     "rbi": stats.get("rbi", 0),
                     "strike_outs": stats.get("strikeOuts", 0),
                     "base_on_balls": stats.get("baseOnBalls", 0),
+                    "hit_by_pitch": stats.get("hitByPitch", 0),
+                    "sac_flies": stats.get("sacFlies", 0),
                     "bat_side": hitter.get("bat_side", ""),
                     "avg": stats.get("avg", 0),
                     "obp": stats.get("obp", 0),
