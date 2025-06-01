@@ -48,7 +48,7 @@ def load_hitters():
 
 hitters_df = load_hitters()
 
-unique_players = hitters_df[["player_name", "player_id", "team_id", "team_name"]].drop_duplicates()
+unique_players = hitters_df[["player_name", "player_id", "team_id", "team_name", "bat_side"]].drop_duplicates()
 
 # Add last name for sorting
 unique_players["last_name"] = unique_players["player_name"].apply(lambda x: x.split()[-1])
@@ -58,7 +58,7 @@ unique_players = unique_players.sort_values(by=["team_name", "last_name"])
 
 # Display format: TEAM - First Last
 unique_players["display_name"] = unique_players.apply(
-    lambda row: f"{row['team_name']} - {row['player_name']}", axis=1
+    lambda row: f"{row['team_name']} - {row['player_name']} ({row['bat_side']})", axis=1
 )
 
 # Dropdown with formatted names, but return real player_name
