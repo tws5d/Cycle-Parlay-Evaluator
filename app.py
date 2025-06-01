@@ -300,7 +300,7 @@ if not pitcher_row.empty:
             park_emoji = "⚾" if park_type == "Hitter-Friendly" else "🛡️" if park_type == "Pitcher-Friendly" else "⚖️"
             
             with wind_col:
-                st.markdown("<div style='text-align: center; padding-top: 16px;'>", unsafe_allow_html=True)
+                st.markdown("<div style='text-align: center; padding-top: -10px;'>", unsafe_allow_html=True)
                 
                 if wind_speed and wind_speed > 0:
                     wind_image_path = f"https://raw.githubusercontent.com/tws5d/Cycle-Parlay-Evaluator/main/{wind_image_file}"
