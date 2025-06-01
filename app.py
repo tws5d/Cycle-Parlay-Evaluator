@@ -341,9 +341,9 @@ if not pitcher_row.empty:
                     icon_url = f"https://raw.githubusercontent.com/tws5d/Cycle-Parlay-Evaluator/main/{icon_file}"
 
                     st.markdown("<div style='text-align: center;'>", unsafe_allow_html=True)
-                    st.markdown(f"<img src='{icon_url}' width='75' style='margin-bottom: 4px;'>", unsafe_allow_html=True)
+                    st.markdown(f"<img src='{icon_url}' width='90' style='margin-bottom: 4px;'>", unsafe_allow_html=True)
                     if temperature is not None:
-                        st.markdown(f"<div>{temperature}°F</div>", unsafe_allow_html=True)
+                        st.markdown(f"<div style='margin-left: 5px;'>{temperature}°F</div>", unsafe_allow_html=True)
                         st.markdown("</div>", unsafe_allow_html=True)
             
         else:
