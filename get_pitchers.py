@@ -60,7 +60,7 @@ for date in data["dates"]:
                     "Throws": get_throwing_hand(pitcher["id"]),
                     "Last 5 IP": total_ip,
                     "Last 5 ER": total_er,
-                    "Last 5 SO": total_so
+                    "Last 5 SO": total_so,
                     "ERA": era,
                     "BAA": baa,
                     "OPSa": opsa
