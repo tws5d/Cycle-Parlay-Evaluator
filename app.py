@@ -391,15 +391,23 @@ if not df.empty:
     col3.metric("Walks", walks)
     runs = recent_df["runs"].sum()
     max_runs = recent_df["runs"].max()
-    col4.metric("Runs", runs)
-    st.markdown(f"<div style='color: green; font-size: 12px; margin-top: -10px; margin-left: 6px;'>Max: {max_runs}</div>", unsafe_allow_html=True)
-    col5.metric("RBIs", total_rbis)
-    st.markdown(f"<div style='color: green; font-size: 12px; margin-top: -10px; margin-left: 6px;'>Max: {max_rbis}</div>", unsafe_allow_html=True)
+    
+    with col4:
+        st.metric("Runs", runs)
+        st.markdown(f"<div style='color: green; font-size: 12px; margin-top: -10px; margin-left: 6px;'>Max: {max_runs}</div>", unsafe_allow_html=True)
+    
+    
+    with col5:
+        st.metric("RBIs", total_rbis)
+        st.markdown(f"<div style='color: green; font-size: 12px; margin-top: -10px; margin-left: 6px;'>Max: {max_rbis}</div>", unsafe_allow_html=True)
+    
     stolen_bases = recent_df["stolen_bases"].sum()
     col6.metric("SBs", stolen_bases)
     col7.metric("HRs", total_hrs)
-    col8.metric("TBs", total_bases)
-    st.markdown(f"<div style='color: green; font-size: 12px; margin-top: -10px; margin-left: 6px;'>Max: {max_bases}</div>", unsafe_allow_html=True)
+    
+    with col8:
+        st.metric("TBs", total_bases)
+        st.markdown(f"<div style='color: green; font-size: 12px; margin-top: -10px; margin-left: 6px;'>Max: {max_bases}</div>", unsafe_allow_html=True)
     
     col1, col2, col3 = st.columns(3)
     col1.metric("Season AVG", f"{avg:.3f}")
