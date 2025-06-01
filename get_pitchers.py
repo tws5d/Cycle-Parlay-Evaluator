@@ -32,6 +32,15 @@ for date in data["dates"]:
                 gamelog_resp = requests.get(gamelog_url)
                 gamelog_data = gamelog_resp.json()
 
+                # Pull season stats
+                season_url = f"https://statsapi.mlb.com/api/v1/people/{pitcher['id']}/stats?stats=season&group=pitching"
+                season_resp = requests.get(season_url).json()
+                season_stats = season_resp.get("stats", [{}])[0].get("splits", [{}])[0].get("stat", {})
+                
+                era = season_stats.get("era", "")
+                baa = season_stats.get("battingAverage", "")
+                opsa = season_stats.get("ops", "")
+
                 games = gamelog_data.get("stats", [{}])[0].get("splits", [])[:5]
 
                 total_ip = total_er = total_so = 0
