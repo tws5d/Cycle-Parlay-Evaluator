@@ -104,7 +104,6 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 680862,Willie MacIver,133,Athletics,2025-05-25,4,1,0,1,1,0,R,.250,.250,.250,.500
 680862,Willie MacIver,133,Athletics,2025-05-27,0,0,0,0,0,0,R,.250,.250,.250,.500
 680862,Willie MacIver,133,Athletics,2025-05-29,1,0,0,0,0,0,R,.200,.200,.200,.400
-624428,Adam Frazier,134,Pirates,2025-05-18,3,0,0,0,1,0,L,.217,.287,.295,.582
 624428,Adam Frazier,134,Pirates,2025-05-20,3,1,0,0,0,0,L,.220,.288,.303,.591
 624428,Adam Frazier,134,Pirates,2025-05-21,4,2,0,1,0,0,L,.228,.293,.309,.602
 624428,Adam Frazier,134,Pirates,2025-05-22,3,0,0,0,0,1,L,.223,.292,.302,.594
@@ -114,6 +113,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 624428,Adam Frazier,134,Pirates,2025-05-26,4,2,0,0,1,0,L,.260,.327,.344,.671
 624428,Adam Frazier,134,Pirates,2025-05-27,3,0,0,0,1,1,L,.255,.330,.338,.668
 624428,Adam Frazier,134,Pirates,2025-05-30,4,0,0,0,3,0,L,.248,.322,.329,.651
+624428,Adam Frazier,134,Pirates,2025-05-31,4,1,0,0,0,0,L,.248,.321,.333,.654
 672744,Alexander Canario,134,Pirates,2025-05-19,4,1,0,0,1,0,R,.230,.296,.392,.688
 672744,Alexander Canario,134,Pirates,2025-05-20,4,0,0,0,1,0,R,.218,.282,.372,.654
 672744,Alexander Canario,134,Pirates,2025-05-21,4,0,0,0,1,0,R,.207,.270,.354,.624
@@ -123,7 +123,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 672744,Alexander Canario,134,Pirates,2025-05-26,4,2,0,0,1,0,R,.242,.299,.384,.683
 672744,Alexander Canario,134,Pirates,2025-05-27,5,2,0,0,2,0,R,.250,.304,.385,.689
 672744,Alexander Canario,134,Pirates,2025-05-28,4,0,0,0,2,1,R,.241,.299,.370,.669
-672744,Alexander Canario,134,Pirates,2025-05-31,1,0,0,0,1,0,R,.239,.297,.367,.664
+672744,Alexander Canario,134,Pirates,2025-05-31,5,0,0,0,2,0,R,.230,.287,.354,.641
 457705,Andrew McCutchen,134,Pirates,2025-05-19,4,0,0,0,2,0,R,.241,.340,.358,.698
 457705,Andrew McCutchen,134,Pirates,2025-05-20,3,1,0,0,0,0,R,.243,.344,.357,.701
 457705,Andrew McCutchen,134,Pirates,2025-05-22,2,1,0,0,0,3,R,.246,.357,.359,.716
@@ -133,7 +133,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 457705,Andrew McCutchen,134,Pirates,2025-05-26,3,1,0,0,0,1,R,.261,.371,.369,.740
 457705,Andrew McCutchen,134,Pirates,2025-05-28,5,0,0,1,1,0,R,.253,.361,.358,.719
 457705,Andrew McCutchen,134,Pirates,2025-05-30,4,2,0,0,0,0,R,.259,.364,.367,.731
-457705,Andrew McCutchen,134,Pirates,2025-05-31,0,0,0,0,0,1,R,.259,.367,.367,.734
+457705,Andrew McCutchen,134,Pirates,2025-05-31,4,2,1,1,0,1,R,.265,.370,.388,.758
 668804,Bryan Reynolds,134,Pirates,2025-05-20,4,1,0,1,1,0,S,.206,.273,.328,.601
 668804,Bryan Reynolds,134,Pirates,2025-05-21,3,0,0,1,1,0,S,.203,.268,.323,.591
 668804,Bryan Reynolds,134,Pirates,2025-05-22,3,2,0,1,1,1,S,.210,.280,.338,.618
@@ -143,7 +143,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 668804,Bryan Reynolds,134,Pirates,2025-05-27,4,4,1,3,0,1,S,.223,.292,.360,.652
 668804,Bryan Reynolds,134,Pirates,2025-05-28,5,1,0,1,0,0,S,.222,.290,.366,.656
 668804,Bryan Reynolds,134,Pirates,2025-05-30,3,2,0,1,1,1,S,.228,.298,.370,.668
-668804,Bryan Reynolds,134,Pirates,2025-05-31,1,1,0,1,0,0,S,.232,.301,.373,.674
+668804,Bryan Reynolds,134,Pirates,2025-05-31,5,3,0,2,0,0,S,.237,.304,.379,.683
 682848,Endy Rodríguez,134,Pirates,2025-04-02,4,1,0,1,0,0,S,.125,.300,.188,.488
 682848,Endy Rodríguez,134,Pirates,2025-04-04,4,1,0,0,2,0,S,.150,.292,.250,.542
 682848,Endy Rodríguez,134,Pirates,2025-04-05,3,0,0,1,1,0,S,.130,.259,.217,.476
@@ -163,7 +163,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 680779,Henry Davis,134,Pirates,2025-05-27,3,2,1,2,0,0,R,.204,.291,.347,.638
 680779,Henry Davis,134,Pirates,2025-05-28,5,2,0,1,1,0,R,.222,.300,.352,.652
 680779,Henry Davis,134,Pirates,2025-05-30,4,0,0,0,3,0,R,.207,.281,.328,.609
-680779,Henry Davis,134,Pirates,2025-05-31,1,0,0,0,0,0,R,.203,.277,.322,.599
+680779,Henry Davis,134,Pirates,2025-05-31,3,0,0,0,0,1,R,.197,.279,.311,.590
 643396,Isiah Kiner-Falefa,134,Pirates,2025-05-21,3,1,0,0,0,1,R,.283,.341,.354,.695
 643396,Isiah Kiner-Falefa,134,Pirates,2025-05-22,4,1,0,0,0,0,R,.282,.338,.359,.697
 643396,Isiah Kiner-Falefa,134,Pirates,2025-05-23,5,3,0,0,1,0,R,.294,.347,.368,.715
@@ -173,7 +173,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 643396,Isiah Kiner-Falefa,134,Pirates,2025-05-27,5,1,0,3,0,0,R,.285,.333,.358,.691
 643396,Isiah Kiner-Falefa,134,Pirates,2025-05-28,4,3,0,2,0,0,R,.297,.343,.381,.724
 643396,Isiah Kiner-Falefa,134,Pirates,2025-05-30,3,1,0,0,1,0,R,.297,.343,.380,.723
-643396,Isiah Kiner-Falefa,134,Pirates,2025-05-31,0,0,0,0,0,0,R,.297,.343,.380,.723
+643396,Isiah Kiner-Falefa,134,Pirates,2025-05-31,3,2,0,0,1,0,R,.304,.353,.391,.744
 669707,Jared Triolo,134,Pirates,2025-05-11,4,1,0,0,2,0,R,.149,.216,.239,.455
 669707,Jared Triolo,134,Pirates,2025-05-12,3,1,0,0,1,1,R,.157,.231,.257,.488
 669707,Jared Triolo,134,Pirates,2025-05-13,4,0,0,0,3,0,R,.149,.220,.243,.463
@@ -184,7 +184,6 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 669707,Jared Triolo,134,Pirates,2025-05-23,0,0,0,0,0,0,R,.141,.221,.259,.480
 669707,Jared Triolo,134,Pirates,2025-05-25,3,0,0,0,1,0,R,.136,.214,.250,.464
 669707,Jared Triolo,134,Pirates,2025-05-28,4,2,0,0,1,0,R,.152,.225,.261,.486
-663647,Ke'Bryan Hayes,134,Pirates,2025-05-19,4,0,0,0,2,0,R,.244,.294,.304,.598
 663647,Ke'Bryan Hayes,134,Pirates,2025-05-20,3,1,0,0,0,0,R,.246,.299,.304,.603
 663647,Ke'Bryan Hayes,134,Pirates,2025-05-21,3,1,0,0,0,1,R,.247,.303,.310,.613
 663647,Ke'Bryan Hayes,134,Pirates,2025-05-22,5,1,0,0,0,0,R,.246,.301,.307,.608
@@ -194,6 +193,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 663647,Ke'Bryan Hayes,134,Pirates,2025-05-27,3,0,0,0,1,2,R,.226,.284,.282,.566
 663647,Ke'Bryan Hayes,134,Pirates,2025-05-28,3,1,0,1,1,1,R,.227,.288,.283,.571
 663647,Ke'Bryan Hayes,134,Pirates,2025-05-30,4,0,0,0,4,0,R,.223,.283,.277,.560
+663647,Ke'Bryan Hayes,134,Pirates,2025-05-31,4,1,0,1,2,0,R,.223,.283,.277,.560
 669256,Nick Solak,134,Pirates,2025-05-16,3,1,0,0,1,0,R,.333,.333,.333,.666
 669256,Nick Solak,134,Pirates,2025-05-17,3,0,0,0,1,0,R,.167,.167,.167,.334
 669256,Nick Solak,134,Pirates,2025-05-19,4,0,0,0,0,0,R,.100,.100,.100,.200
@@ -207,7 +207,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 665833,Oneil Cruz,134,Pirates,2025-05-27,5,0,0,0,2,0,L,.231,.356,.479,.835
 665833,Oneil Cruz,134,Pirates,2025-05-28,5,1,1,3,2,0,L,.230,.352,.489,.841
 665833,Oneil Cruz,134,Pirates,2025-05-30,4,0,0,0,0,0,L,.225,.346,.478,.824
-665833,Oneil Cruz,134,Pirates,2025-05-31,1,1,0,0,0,0,L,.229,.349,.486,.835
+665833,Oneil Cruz,134,Pirates,2025-05-31,5,2,0,0,3,0,L,.230,.347,.481,.828
 687462,Spencer Horwitz,134,Pirates,2025-05-21,3,0,0,0,1,1,L,.231,.333,.231,.564
 687462,Spencer Horwitz,134,Pirates,2025-05-22,5,2,1,2,1,0,L,.278,.350,.444,.794
 687462,Spencer Horwitz,134,Pirates,2025-05-23,5,0,0,0,3,0,L,.217,.280,.348,.628
@@ -217,7 +217,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 687462,Spencer Horwitz,134,Pirates,2025-05-27,5,1,0,0,2,0,L,.200,.256,.325,.581
 687462,Spencer Horwitz,134,Pirates,2025-05-28,3,1,0,0,1,1,L,.209,.277,.326,.603
 687462,Spencer Horwitz,134,Pirates,2025-05-30,3,1,0,1,1,1,L,.217,.294,.326,.620
-687462,Spencer Horwitz,134,Pirates,2025-05-31,1,0,0,0,1,0,L,.213,.288,.319,.607
+687462,Spencer Horwitz,134,Pirates,2025-05-31,5,1,0,1,2,0,L,.216,.286,.314,.600
 502054,Tommy Pham,134,Pirates,2025-05-09,0,0,0,0,0,0,R,.183,.259,.221,.480
 502054,Tommy Pham,134,Pirates,2025-05-10,1,0,0,0,0,1,R,.181,.263,.219,.482
 502054,Tommy Pham,134,Pirates,2025-05-11,3,0,0,0,1,1,R,.176,.262,.213,.475
@@ -238,7 +238,6 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 663604,Brandon Lockridge,135,Padres,2025-05-25,0,0,0,0,0,0,R,.197,.258,.262,.520
 663604,Brandon Lockridge,135,Padres,2025-05-27,0,0,0,0,0,0,R,.197,.258,.262,.520
 663604,Brandon Lockridge,135,Padres,2025-05-30,0,0,0,0,0,0,R,.197,.258,.262,.520
-553869,Elias Díaz,135,Padres,2025-05-20,1,0,0,0,0,0,R,.237,.311,.366,.677
 553869,Elias Díaz,135,Padres,2025-05-21,2,1,0,0,0,0,R,.242,.314,.368,.682
 553869,Elias Díaz,135,Padres,2025-05-22,5,0,0,0,2,0,R,.230,.300,.350,.650
 553869,Elias Díaz,135,Padres,2025-05-23,3,1,0,0,1,0,R,.233,.301,.350,.651
@@ -248,6 +247,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 553869,Elias Díaz,135,Padres,2025-05-27,4,0,0,0,1,0,R,.221,.285,.336,.621
 553869,Elias Díaz,135,Padres,2025-05-28,4,1,0,1,0,0,R,.222,.283,.333,.616
 553869,Elias Díaz,135,Padres,2025-05-30,3,0,0,0,1,0,R,.217,.277,.325,.602
+553869,Elias Díaz,135,Padres,2025-05-31,1,0,0,0,1,0,R,.215,.275,.322,.597
 665487,Fernando Tatis Jr.,135,Padres,2025-05-21,4,0,0,0,2,0,R,.296,.365,.542,.907
 665487,Fernando Tatis Jr.,135,Padres,2025-05-22,4,0,0,0,3,1,R,.290,.361,.530,.891
 665487,Fernando Tatis Jr.,135,Padres,2025-05-23,4,1,0,0,2,0,R,.289,.359,.529,.888
@@ -257,7 +257,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 665487,Fernando Tatis Jr.,135,Padres,2025-05-27,5,2,1,1,0,0,R,.278,.344,.512,.856
 665487,Fernando Tatis Jr.,135,Padres,2025-05-28,4,0,0,0,0,1,R,.273,.341,.502,.843
 665487,Fernando Tatis Jr.,135,Padres,2025-05-30,3,0,0,0,0,1,R,.269,.339,.495,.834
-665487,Fernando Tatis Jr.,135,Padres,2025-05-31,1,1,0,0,0,0,R,.272,.342,.498,.840
+665487,Fernando Tatis Jr.,135,Padres,2025-05-31,4,1,0,0,0,0,R,.269,.338,.491,.829
 657757,Gavin Sheets,135,Padres,2025-05-21,4,0,0,0,2,0,L,.275,.325,.451,.776
 657757,Gavin Sheets,135,Padres,2025-05-22,5,3,2,5,0,0,L,.286,.333,.497,.830
 657757,Gavin Sheets,135,Padres,2025-05-23,4,1,1,1,2,0,L,.285,.331,.510,.841
@@ -267,7 +267,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 657757,Gavin Sheets,135,Padres,2025-05-27,4,0,0,0,1,1,L,.268,.315,.488,.803
 657757,Gavin Sheets,135,Padres,2025-05-28,3,2,1,3,0,1,L,.275,.324,.509,.833
 657757,Gavin Sheets,135,Padres,2025-05-30,3,0,0,0,0,0,L,.270,.319,.500,.819
-657757,Gavin Sheets,135,Padres,2025-05-31,0,0,0,0,0,0,L,.270,.319,.500,.819
+657757,Gavin Sheets,135,Padres,2025-05-31,1,0,0,0,0,2,L,.269,.325,.497,.822
 701538,Jackson Merrill,135,Padres,2025-05-21,4,0,0,0,2,0,L,.345,.376,.552,.928
 701538,Jackson Merrill,135,Padres,2025-05-22,4,2,0,0,0,1,L,.352,.388,.549,.937
 701538,Jackson Merrill,135,Padres,2025-05-23,4,0,0,0,1,0,L,.337,.373,.526,.899
@@ -277,8 +277,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 701538,Jackson Merrill,135,Padres,2025-05-27,3,1,1,1,1,2,L,.333,.375,.532,.907
 701538,Jackson Merrill,135,Padres,2025-05-28,4,1,0,0,1,0,L,.330,.371,.530,.901
 701538,Jackson Merrill,135,Padres,2025-05-30,3,1,0,2,0,0,L,.331,.370,.525,.895
-701538,Jackson Merrill,135,Padres,2025-05-31,0,0,0,0,0,0,L,.331,.370,.525,.895
-630105,Jake Cronenworth,135,Padres,2025-05-20,3,0,0,0,1,0,L,.261,.395,.478,.873
+701538,Jackson Merrill,135,Padres,2025-05-31,3,0,0,0,0,0,L,.322,.362,.512,.874
 630105,Jake Cronenworth,135,Padres,2025-05-21,3,0,0,0,1,0,L,.250,.382,.458,.840
 630105,Jake Cronenworth,135,Padres,2025-05-22,3,0,0,0,1,2,L,.240,.383,.440,.823
 630105,Jake Cronenworth,135,Padres,2025-05-23,0,0,0,0,0,1,L,.240,.389,.440,.829
@@ -288,7 +287,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 630105,Jake Cronenworth,135,Padres,2025-05-27,4,2,0,1,0,0,L,.256,.384,.467,.851
 630105,Jake Cronenworth,135,Padres,2025-05-28,3,1,0,2,1,1,L,.258,.388,.473,.861
 630105,Jake Cronenworth,135,Padres,2025-05-30,2,0,0,0,1,1,L,.253,.387,.463,.850
-578428,Jose Iglesias,135,Padres,2025-05-04,4,0,0,0,2,0,R,.241,.300,.289,.589
+630105,Jake Cronenworth,135,Padres,2025-05-31,2,0,0,0,0,1,L,.247,.385,.454,.839
 578428,Jose Iglesias,135,Padres,2025-05-06,2,0,0,0,0,0,R,.235,.293,.282,.575
 578428,Jose Iglesias,135,Padres,2025-05-07,4,0,0,0,0,0,R,.225,.281,.270,.551
 578428,Jose Iglesias,135,Padres,2025-05-09,1,0,0,0,0,0,R,.222,.278,.267,.545
@@ -298,6 +297,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 578428,Jose Iglesias,135,Padres,2025-05-22,4,1,0,0,1,0,R,.240,.290,.280,.570
 578428,Jose Iglesias,135,Padres,2025-05-23,3,1,0,0,0,0,R,.243,.291,.282,.573
 578428,Jose Iglesias,135,Padres,2025-05-26,3,2,0,2,1,1,R,.255,.307,.302,.609
+578428,Jose Iglesias,135,Padres,2025-05-31,1,0,0,0,0,0,R,.252,.304,.299,.603
 650333,Luis Arraez,135,Padres,2025-05-21,4,2,0,0,0,0,L,.301,.337,.434,.771
 650333,Luis Arraez,135,Padres,2025-05-22,5,2,0,1,1,0,L,.304,.339,.439,.778
 650333,Luis Arraez,135,Padres,2025-05-23,3,0,0,0,0,0,L,.299,.333,.431,.764
@@ -307,13 +307,14 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 650333,Luis Arraez,135,Padres,2025-05-27,5,3,0,2,0,0,L,.289,.322,.416,.738
 650333,Luis Arraez,135,Padres,2025-05-28,3,1,0,1,0,1,L,.290,.324,.415,.739
 650333,Luis Arraez,135,Padres,2025-05-30,4,1,0,1,0,0,L,.289,.322,.416,.738
-650333,Luis Arraez,135,Padres,2025-05-31,0,0,0,0,0,0,L,.289,.322,.416,.738
+650333,Luis Arraez,135,Padres,2025-05-31,3,0,0,0,0,0,L,.285,.318,.410,.728
 669134,Luis Campusano,135,Padres,2025-05-03,2,0,0,0,0,1,R,.000,.333,.000,.333
 669134,Luis Campusano,135,Padres,2025-05-04,1,0,0,0,0,2,R,.000,.500,.000,.500
 669134,Luis Campusano,135,Padres,2025-05-05,3,0,0,0,1,1,R,.000,.400,.000,.400
 669134,Luis Campusano,135,Padres,2025-05-24,0,0,0,0,0,1,R,.000,.455,.000,.455
 669134,Luis Campusano,135,Padres,2025-05-25,4,0,0,0,4,0,R,.000,.333,.000,.333
 669134,Luis Campusano,135,Padres,2025-05-26,1,0,0,0,1,1,R,.000,.353,.000,.353
+669134,Luis Campusano,135,Padres,2025-05-31,2,0,0,0,0,0,R,.000,.316,.000,.316
 592518,Manny Machado,135,Padres,2025-05-21,4,2,0,0,0,0,R,.314,.383,.453,.836
 592518,Manny Machado,135,Padres,2025-05-22,5,0,0,0,1,0,R,.305,.374,.441,.815
 592518,Manny Machado,135,Padres,2025-05-23,4,2,1,1,0,0,R,.309,.376,.459,.835
@@ -323,7 +324,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 592518,Manny Machado,135,Padres,2025-05-27,5,1,0,0,1,0,R,.316,.386,.490,.876
 592518,Manny Machado,135,Padres,2025-05-28,5,1,0,1,0,0,R,.313,.382,.483,.865
 592518,Manny Machado,135,Padres,2025-05-30,3,1,0,0,0,0,R,.314,.382,.485,.867
-592518,Manny Machado,135,Padres,2025-05-31,1,0,0,0,0,0,R,.312,.380,.483,.863
+592518,Manny Machado,135,Padres,2025-05-31,4,0,0,0,2,0,R,.308,.375,.476,.851
 455117,Martín Maldonado,135,Padres,2025-05-05,2,0,0,0,1,0,R,.220,.235,.300,.535
 455117,Martín Maldonado,135,Padres,2025-05-07,4,0,0,0,1,0,R,.204,.218,.278,.496
 455117,Martín Maldonado,135,Padres,2025-05-09,4,1,1,2,1,1,R,.207,.233,.328,.561
@@ -333,7 +334,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 455117,Martín Maldonado,135,Padres,2025-05-21,1,0,0,0,0,0,R,.185,.221,.292,.513
 455117,Martín Maldonado,135,Padres,2025-05-25,3,0,0,0,2,0,R,.176,.211,.279,.490
 455117,Martín Maldonado,135,Padres,2025-05-26,2,0,0,0,0,0,R,.171,.205,.271,.476
-455117,Martín Maldonado,135,Padres,2025-05-31,0,0,0,0,0,0,R,.171,.205,.271,.476
+455117,Martín Maldonado,135,Padres,2025-05-31,2,1,0,0,1,0,R,.181,.213,.278,.491
 642180,Tyler Wade,135,Padres,2025-05-11,3,0,0,0,0,0,L,.273,.375,.327,.702
 642180,Tyler Wade,135,Padres,2025-05-12,1,0,0,0,1,0,L,.268,.369,.321,.690
 642180,Tyler Wade,135,Padres,2025-05-13,0,0,0,0,0,0,L,.268,.369,.321,.690
@@ -353,7 +354,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 593428,Xander Bogaerts,135,Padres,2025-05-27,4,3,0,1,0,1,R,.243,.332,.343,.675
 593428,Xander Bogaerts,135,Padres,2025-05-28,4,2,0,0,0,0,R,.249,.335,.346,.681
 593428,Xander Bogaerts,135,Padres,2025-05-30,3,0,0,0,0,0,R,.245,.330,.340,.670
-593428,Xander Bogaerts,135,Padres,2025-05-31,0,0,0,0,0,0,R,.245,.330,.340,.670
+593428,Xander Bogaerts,135,Padres,2025-05-31,3,0,0,0,0,0,R,.241,.326,.335,.661
 810938,Ben Williamson,136,Mariners,2025-05-21,2,0,0,0,1,0,R,.239,.265,.303,.568
 810938,Ben Williamson,136,Mariners,2025-05-22,4,1,0,0,1,0,R,.239,.265,.301,.566
 810938,Ben Williamson,136,Mariners,2025-05-23,3,0,0,0,1,1,R,.233,.264,.293,.557
@@ -373,8 +374,8 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 663728,Cal Raleigh,136,Mariners,2025-05-28,4,1,0,0,0,0,S,.258,.370,.596,.966
 663728,Cal Raleigh,136,Mariners,2025-05-29,2,1,0,0,1,2,S,.260,.379,.595,.974
 663728,Cal Raleigh,136,Mariners,2025-05-30,4,2,2,5,1,0,S,.265,.381,.623,1.004
-663728,Cal Raleigh,136,Mariners,2025-05-31,4,1,1,2,2,0,S,.264,.379,.630,1.009
-702284,Cole Young,136,Mariners,2025-05-31,2,0,0,0,0,1,L,.000,.333,.000,.333
+663728,Cal Raleigh,136,Mariners,2025-05-31,4,1,1,2,2,1,S,.264,.382,.630,1.012
+702284,Cole Young,136,Mariners,2025-05-31,4,1,0,1,0,1,L,.250,.400,.250,.650
 456781,Donovan Solano,136,Mariners,2025-05-13,2,0,0,0,0,0,R,.138,.150,.155,.305
 456781,Donovan Solano,136,Mariners,2025-05-16,2,0,0,0,1,0,R,.133,.145,.150,.295
 456781,Donovan Solano,136,Mariners,2025-05-17,1,0,0,0,1,1,R,.131,.156,.148,.304
@@ -385,7 +386,6 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 456781,Donovan Solano,136,Mariners,2025-05-25,2,1,0,1,0,0,R,.171,.203,.200,.403
 456781,Donovan Solano,136,Mariners,2025-05-27,3,1,0,0,1,1,R,.178,.218,.205,.423
 456781,Donovan Solano,136,Mariners,2025-05-29,2,0,0,0,0,0,R,.173,.213,.200,.413
-664238,Dylan Moore,136,Mariners,2025-05-20,1,0,0,0,1,1,R,.282,.345,.505,.850
 664238,Dylan Moore,136,Mariners,2025-05-21,4,0,0,0,1,0,R,.271,.333,.486,.819
 664238,Dylan Moore,136,Mariners,2025-05-22,4,2,1,1,0,0,R,.279,.339,.514,.853
 664238,Dylan Moore,136,Mariners,2025-05-23,1,0,0,0,1,1,R,.277,.341,.509,.850
@@ -395,6 +395,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 664238,Dylan Moore,136,Mariners,2025-05-28,1,0,0,0,0,0,R,.270,.329,.492,.821
 664238,Dylan Moore,136,Mariners,2025-05-29,2,0,0,0,2,0,R,.266,.324,.484,.808
 664238,Dylan Moore,136,Mariners,2025-05-30,1,0,0,0,0,0,R,.264,.322,.481,.803
+664238,Dylan Moore,136,Mariners,2025-05-31,0,0,0,0,0,0,R,.264,.322,.481,.803
 641487,J.P. Crawford,136,Mariners,2025-05-21,3,0,0,0,0,2,L,.269,.391,.375,.766
 641487,J.P. Crawford,136,Mariners,2025-05-22,4,0,0,0,3,1,L,.262,.386,.366,.752
 641487,J.P. Crawford,136,Mariners,2025-05-23,5,2,0,0,1,0,L,.266,.386,.367,.753
@@ -404,8 +405,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 641487,J.P. Crawford,136,Mariners,2025-05-28,4,0,0,0,1,0,L,.256,.377,.350,.727
 641487,J.P. Crawford,136,Mariners,2025-05-29,3,0,0,0,1,0,L,.251,.372,.344,.716
 641487,J.P. Crawford,136,Mariners,2025-05-30,4,2,0,0,0,1,L,.257,.377,.348,.725
-641487,J.P. Crawford,136,Mariners,2025-05-31,3,2,1,2,1,1,L,.263,.383,.368,.751
-593871,Jorge Polanco,136,Mariners,2025-05-17,4,0,0,0,0,0,S,.313,.360,.626,.986
+641487,J.P. Crawford,136,Mariners,2025-05-31,4,3,1,2,1,1,L,.267,.386,.377,.763
 593871,Jorge Polanco,136,Mariners,2025-05-19,3,1,0,1,0,0,S,.314,.359,.619,.978
 593871,Jorge Polanco,136,Mariners,2025-05-20,3,0,0,0,0,0,S,.306,.351,.603,.954
 593871,Jorge Polanco,136,Mariners,2025-05-21,3,0,0,0,1,1,S,.298,.353,.589,.942
@@ -415,6 +415,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 593871,Jorge Polanco,136,Mariners,2025-05-28,4,0,0,0,0,0,S,.274,.327,.541,.868
 593871,Jorge Polanco,136,Mariners,2025-05-29,4,0,0,0,0,0,S,.266,.318,.525,.843
 593871,Jorge Polanco,136,Mariners,2025-05-30,5,1,0,0,0,0,S,.264,.314,.514,.828
+593871,Jorge Polanco,136,Mariners,2025-05-31,1,0,0,0,0,0,S,.262,.312,.510,.822
 677594,Julio Rodríguez,136,Mariners,2025-05-20,3,0,0,0,0,1,R,.232,.311,.405,.716
 677594,Julio Rodríguez,136,Mariners,2025-05-21,5,1,1,3,1,0,R,.231,.309,.415,.724
 677594,Julio Rodríguez,136,Mariners,2025-05-23,5,1,0,1,1,0,R,.230,.306,.415,.721
@@ -424,7 +425,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 677594,Julio Rodríguez,136,Mariners,2025-05-28,4,0,0,0,0,0,R,.240,.313,.424,.737
 677594,Julio Rodríguez,136,Mariners,2025-05-29,4,0,0,0,1,0,R,.235,.310,.416,.726
 677594,Julio Rodríguez,136,Mariners,2025-05-30,5,2,0,0,0,0,R,.239,.312,.416,.728
-677594,Julio Rodríguez,136,Mariners,2025-05-31,3,1,0,0,1,0,R,.240,.312,.415,.727
+677594,Julio Rodríguez,136,Mariners,2025-05-31,5,2,0,0,2,0,R,.242,.314,.416,.730
 665750,Leody Taveras,136,Mariners,2025-05-21,4,2,1,2,0,0,S,.220,.242,.333,.575
 665750,Leody Taveras,136,Mariners,2025-05-22,4,0,0,0,2,0,S,.213,.235,.323,.558
 665750,Leody Taveras,136,Mariners,2025-05-23,4,3,1,1,0,0,S,.229,.250,.359,.609
@@ -434,8 +435,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 665750,Leody Taveras,136,Mariners,2025-05-28,3,0,0,0,1,0,S,.218,.238,.338,.576
 665750,Leody Taveras,136,Mariners,2025-05-29,4,3,0,1,0,0,S,.233,.252,.349,.601
 665750,Leody Taveras,136,Mariners,2025-05-30,4,0,0,0,1,0,S,.227,.245,.340,.585
-665750,Leody Taveras,136,Mariners,2025-05-31,3,0,0,0,0,0,S,.222,.241,.333,.574
-670156,Miles Mastrobuoni,136,Mariners,2025-05-16,2,0,0,0,1,0,L,.205,.276,.244,.520
+665750,Leody Taveras,136,Mariners,2025-05-31,4,0,0,0,0,0,S,.221,.239,.331,.570
 670156,Miles Mastrobuoni,136,Mariners,2025-05-17,3,0,0,0,2,0,L,.198,.267,.235,.502
 670156,Miles Mastrobuoni,136,Mariners,2025-05-18,2,1,0,1,0,0,L,.205,.272,.241,.513
 670156,Miles Mastrobuoni,136,Mariners,2025-05-20,1,0,0,0,0,0,L,.202,.269,.238,.507
@@ -445,6 +445,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 670156,Miles Mastrobuoni,136,Mariners,2025-05-28,2,2,0,0,0,0,L,.231,.311,.297,.608
 670156,Miles Mastrobuoni,136,Mariners,2025-05-29,1,0,0,0,0,1,L,.228,.314,.293,.607
 670156,Miles Mastrobuoni,136,Mariners,2025-05-30,3,0,0,0,1,0,L,.221,.306,.284,.590
+670156,Miles Mastrobuoni,136,Mariners,2025-05-31,0,0,0,0,0,0,L,.221,.306,.284,.590
 641598,Mitch Garver,136,Mariners,2025-05-16,2,0,0,0,0,0,R,.197,.346,.258,.604
 641598,Mitch Garver,136,Mariners,2025-05-18,4,2,0,1,0,0,R,.214,.353,.271,.624
 641598,Mitch Garver,136,Mariners,2025-05-19,2,1,0,0,0,0,R,.222,.356,.278,.634
@@ -454,7 +455,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 641598,Mitch Garver,136,Mariners,2025-05-24,3,1,0,1,1,1,R,.225,.354,.275,.629
 641598,Mitch Garver,136,Mariners,2025-05-25,3,1,0,2,1,0,R,.229,.354,.289,.643
 641598,Mitch Garver,136,Mariners,2025-05-27,5,0,0,0,1,0,R,.216,.337,.273,.610
-641598,Mitch Garver,136,Mariners,2025-05-31,3,0,0,0,2,0,R,.209,.327,.264,.591
+641598,Mitch Garver,136,Mariners,2025-05-31,5,0,0,0,3,0,R,.204,.321,.258,.579
 668227,Randy Arozarena,136,Mariners,2025-05-21,4,0,0,0,1,0,R,.224,.360,.394,.754
 668227,Randy Arozarena,136,Mariners,2025-05-22,4,2,0,0,1,1,R,.231,.366,.396,.762
 668227,Randy Arozarena,136,Mariners,2025-05-23,4,1,0,0,1,0,R,.231,.364,.399,.763
@@ -464,7 +465,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 668227,Randy Arozarena,136,Mariners,2025-05-28,3,0,0,0,2,0,R,.225,.358,.390,.748
 668227,Randy Arozarena,136,Mariners,2025-05-29,5,0,0,0,3,0,R,.219,.351,.380,.731
 668227,Randy Arozarena,136,Mariners,2025-05-30,4,2,1,1,1,0,R,.224,.353,.398,.751
-668227,Randy Arozarena,136,Mariners,2025-05-31,3,0,0,0,1,0,R,.221,.349,.392,.741
+668227,Randy Arozarena,136,Mariners,2025-05-31,5,0,0,0,1,0,R,.219,.346,.388,.734
 642133,Rowdy Tellez,136,Mariners,2025-05-19,3,0,0,0,1,1,L,.196,.259,.471,.730
 642133,Rowdy Tellez,136,Mariners,2025-05-20,2,0,0,0,0,0,L,.192,.254,.462,.716
 642133,Rowdy Tellez,136,Mariners,2025-05-21,4,1,0,0,2,0,L,.194,.254,.454,.708
@@ -474,7 +475,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 642133,Rowdy Tellez,136,Mariners,2025-05-28,3,1,0,0,0,0,L,.214,.273,.453,.726
 642133,Rowdy Tellez,136,Mariners,2025-05-29,2,0,0,0,1,0,L,.210,.269,.445,.714
 642133,Rowdy Tellez,136,Mariners,2025-05-30,4,0,0,0,1,0,L,.203,.261,.431,.692
-642133,Rowdy Tellez,136,Mariners,2025-05-31,3,1,0,0,0,0,L,.206,.263,.429,.692
+642133,Rowdy Tellez,136,Mariners,2025-05-31,5,1,0,0,0,0,L,.203,.259,.422,.681
 669477,Casey Schmitt,137,Giants,2025-04-09,2,0,0,0,0,0,R,.182,.250,.273,.523
 669477,Casey Schmitt,137,Giants,2025-04-13,4,1,0,0,1,0,R,.200,.250,.333,.583
 669477,Casey Schmitt,137,Giants,2025-04-15,4,1,0,2,1,0,R,.211,.250,.316,.566
@@ -1111,7 +1112,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 686797,Brooks Lee,142,Twins,2025-05-27,3,0,0,1,0,0,S,.230,.274,.348,.622
 686797,Brooks Lee,142,Twins,2025-05-28,4,1,0,0,0,0,S,.230,.273,.345,.618
 686797,Brooks Lee,142,Twins,2025-05-30,5,2,0,1,1,0,S,.236,.277,.347,.624
-686797,Brooks Lee,142,Twins,2025-05-31,4,1,0,0,0,0,S,.236,.277,.345,.622
+686797,Brooks Lee,142,Twins,2025-05-31,6,1,0,0,1,0,S,.233,.273,.340,.613
 621439,Byron Buxton,142,Twins,2025-05-07,4,2,1,3,1,0,R,.274,.306,.541,.847
 621439,Byron Buxton,142,Twins,2025-05-08,2,0,0,0,0,2,R,.270,.311,.533,.844
 621439,Byron Buxton,142,Twins,2025-05-09,3,2,0,0,0,1,R,.279,.322,.550,.872
@@ -1121,7 +1122,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 621439,Byron Buxton,142,Twins,2025-05-14,3,1,0,0,1,2,R,.258,.310,.503,.813
 621439,Byron Buxton,142,Twins,2025-05-15,2,1,1,1,0,0,R,.261,.312,.522,.834
 621439,Byron Buxton,142,Twins,2025-05-30,6,2,0,2,1,0,R,.264,.313,.515,.828
-621439,Byron Buxton,142,Twins,2025-05-31,4,1,0,1,1,0,R,.263,.311,.509,.820
+621439,Byron Buxton,142,Twins,2025-05-31,6,2,0,1,2,0,R,.266,.314,.509,.823
 621043,Carlos Correa,142,Twins,2025-05-14,4,2,0,0,1,0,R,.238,.276,.333,.609
 621043,Carlos Correa,142,Twins,2025-05-15,1,0,0,0,0,0,R,.236,.274,.331,.605
 621043,Carlos Correa,142,Twins,2025-05-23,4,2,1,1,0,0,R,.243,.280,.355,.635
@@ -1151,7 +1152,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 664056,Harrison Bader,142,Twins,2025-05-25,4,0,0,0,1,0,R,.276,.359,.433,.792
 664056,Harrison Bader,142,Twins,2025-05-27,0,0,0,0,0,0,R,.276,.359,.433,.792
 664056,Harrison Bader,142,Twins,2025-05-30,0,0,0,0,0,0,R,.276,.359,.433,.792
-664056,Harrison Bader,142,Twins,2025-05-31,1,1,0,0,0,1,R,.281,.372,.444,.816
+664056,Harrison Bader,142,Twins,2025-05-31,3,1,0,0,0,1,R,.277,.367,.438,.805
 681146,Jonah Bride,142,Twins,2025-05-06,4,1,0,0,0,0,R,.179,.243,.179,.422
 681146,Jonah Bride,142,Twins,2025-05-11,1,0,0,0,0,0,R,.176,.240,.176,.416
 681146,Jonah Bride,142,Twins,2025-05-14,3,0,0,0,2,0,R,.169,.241,.169,.410
@@ -1171,7 +1172,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 665019,Kody Clemens,142,Twins,2025-05-27,4,1,1,1,1,0,L,.288,.373,.661,1.034
 665019,Kody Clemens,142,Twins,2025-05-28,3,0,0,0,2,1,L,.274,.366,.629,.995
 665019,Kody Clemens,142,Twins,2025-05-30,5,0,0,0,1,0,L,.254,.342,.582,.924
-665019,Kody Clemens,142,Twins,2025-05-31,3,0,0,0,1,0,L,.243,.329,.557,.886
+665019,Kody Clemens,142,Twins,2025-05-31,5,1,0,0,1,0,L,.250,.333,.556,.889
 670242,Matt Wallner,142,Twins,2025-04-07,3,2,0,0,1,1,L,.303,.410,.485,.895
 670242,Matt Wallner,142,Twins,2025-04-08,1,0,0,0,0,0,L,.294,.400,.471,.871
 670242,Matt Wallner,142,Twins,2025-04-09,4,1,1,1,3,0,L,.289,.386,.526,.912
@@ -1181,7 +1182,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 670242,Matt Wallner,142,Twins,2025-04-13,4,1,0,1,2,0,L,.231,.355,.423,.778
 670242,Matt Wallner,142,Twins,2025-04-14,4,2,0,0,1,0,L,.250,.364,.464,.828
 670242,Matt Wallner,142,Twins,2025-04-15,1,1,0,0,0,0,L,.263,.373,.474,.847
-670242,Matt Wallner,142,Twins,2025-05-31,3,1,1,2,1,0,L,.267,.371,.517,.888
+670242,Matt Wallner,142,Twins,2025-05-31,4,1,1,2,1,0,L,.262,.375,.508,.883
 668904,Royce Lewis,142,Twins,2025-05-17,4,2,0,0,1,1,R,.200,.263,.229,.492
 668904,Royce Lewis,142,Twins,2025-05-18,4,1,1,1,1,0,R,.205,.262,.308,.570
 668904,Royce Lewis,142,Twins,2025-05-19,4,1,0,0,1,1,R,.209,.277,.326,.603
@@ -1192,7 +1193,6 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 668904,Royce Lewis,142,Twins,2025-05-26,3,0,0,0,0,0,R,.148,.212,.230,.442
 668904,Royce Lewis,142,Twins,2025-05-28,4,0,0,0,0,0,R,.138,.200,.215,.415
 668904,Royce Lewis,142,Twins,2025-05-30,4,0,0,0,1,1,R,.130,.200,.203,.403
-680777,Ryan Jeffers,142,Twins,2025-05-18,5,1,0,0,1,0,R,.268,.345,.409,.754
 680777,Ryan Jeffers,142,Twins,2025-05-19,2,1,0,0,1,3,R,.271,.361,.411,.772
 680777,Ryan Jeffers,142,Twins,2025-05-21,3,1,0,1,0,0,R,.273,.364,.409,.773
 680777,Ryan Jeffers,142,Twins,2025-05-23,4,1,0,0,0,0,R,.272,.361,.412,.773
@@ -1202,6 +1202,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 680777,Ryan Jeffers,142,Twins,2025-05-27,3,0,0,0,1,1,R,.260,.357,.397,.754
 680777,Ryan Jeffers,142,Twins,2025-05-28,4,0,0,0,2,0,R,.253,.349,.387,.736
 680777,Ryan Jeffers,142,Twins,2025-05-30,5,1,0,0,0,0,R,.252,.345,.387,.732
+680777,Ryan Jeffers,142,Twins,2025-05-31,2,1,0,0,0,0,R,.255,.346,.389,.735
 663616,Trevor Larnach,142,Twins,2025-05-19,4,2,0,0,1,0,L,.250,.328,.415,.743
 663616,Trevor Larnach,142,Twins,2025-05-21,1,0,0,0,1,0,L,.249,.327,.412,.739
 663616,Trevor Larnach,142,Twins,2025-05-23,4,0,0,0,2,0,L,.243,.320,.403,.723
@@ -1211,7 +1212,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 663616,Trevor Larnach,142,Twins,2025-05-27,4,1,0,0,2,0,L,.242,.315,.397,.712
 663616,Trevor Larnach,142,Twins,2025-05-28,4,1,0,0,1,0,L,.242,.314,.394,.708
 663616,Trevor Larnach,142,Twins,2025-05-30,6,4,1,4,1,0,L,.255,.323,.422,.745
-663616,Trevor Larnach,142,Twins,2025-05-31,4,0,0,0,3,0,L,.250,.317,.413,.730
+663616,Trevor Larnach,142,Twins,2025-05-31,6,1,0,1,3,0,L,.252,.319,.414,.733
 664034,Ty France,142,Twins,2025-05-18,3,0,0,0,0,0,R,.253,.317,.355,.672
 664034,Ty France,142,Twins,2025-05-19,4,1,0,1,0,0,R,.253,.319,.353,.672
 664034,Ty France,142,Twins,2025-05-23,4,1,1,2,1,0,R,.253,.318,.368,.686
@@ -1221,7 +1222,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 664034,Ty France,142,Twins,2025-05-27,4,1,0,1,1,0,R,.253,.316,.358,.674
 664034,Ty France,142,Twins,2025-05-28,3,1,0,0,0,0,R,.254,.319,.358,.677
 664034,Ty France,142,Twins,2025-05-30,5,2,0,0,1,0,R,.258,.321,.359,.680
-664034,Ty France,142,Twins,2025-05-31,1,0,0,0,1,0,R,.256,.320,.357,.677
+664034,Ty France,142,Twins,2025-05-31,1,0,0,0,1,0,R,.256,.323,.357,.680
 650489,Willi Castro,142,Twins,2025-05-16,1,0,0,0,1,0,S,.235,.306,.367,.673
 650489,Willi Castro,142,Twins,2025-05-19,3,1,0,1,0,1,S,.238,.313,.376,.689
 650489,Willi Castro,142,Twins,2025-05-21,2,0,0,0,1,1,S,.233,.313,.369,.682
@@ -1231,7 +1232,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 650489,Willi Castro,142,Twins,2025-05-26,3,0,0,0,1,0,S,.226,.305,.348,.653
 650489,Willi Castro,142,Twins,2025-05-27,4,1,0,0,2,0,S,.227,.303,.345,.648
 650489,Willi Castro,142,Twins,2025-05-30,3,2,2,3,0,2,S,.238,.321,.402,.723
-650489,Willi Castro,142,Twins,2025-05-31,3,2,0,0,0,0,S,.248,.329,.416,.745
+650489,Willi Castro,142,Twins,2025-05-31,4,3,0,0,0,1,S,.254,.338,.421,.759
 664761,Alec Bohm,143,Phillies,2025-05-21,5,1,0,1,0,0,R,.263,.302,.358,.660
 664761,Alec Bohm,143,Phillies,2025-05-22,3,1,0,0,1,0,R,.264,.303,.363,.666
 664761,Alec Bohm,143,Phillies,2025-05-23,4,2,0,1,0,0,R,.269,.307,.371,.678
@@ -1742,7 +1743,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 592450,Aaron Judge,147,Yankees,2025-05-27,4,1,0,0,2,0,R,.395,.488,.746,1.234
 592450,Aaron Judge,147,Yankees,2025-05-28,2,0,0,0,1,2,R,.391,.488,.739,1.227
 592450,Aaron Judge,147,Yankees,2025-05-30,5,2,1,1,1,0,R,.392,.486,.750,1.236
-592450,Aaron Judge,147,Yankees,2025-05-31,3,2,1,1,0,0,R,.395,.488,.763,1.251
+592450,Aaron Judge,147,Yankees,2025-05-31,4,3,2,2,0,0,R,.398,.490,.778,1.268
 683011,Anthony Volpe,147,Yankees,2025-05-21,3,1,0,0,0,0,R,.237,.322,.434,.756
 683011,Anthony Volpe,147,Yankees,2025-05-22,3,1,0,0,2,0,R,.239,.322,.432,.754
 683011,Anthony Volpe,147,Yankees,2025-05-23,3,0,0,0,2,1,R,.235,.320,.425,.745
@@ -1762,7 +1763,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 669224,Austin Wells,147,Yankees,2025-05-26,3,0,0,1,0,0,L,.205,.272,.437,.709
 669224,Austin Wells,147,Yankees,2025-05-27,4,1,0,0,1,0,L,.206,.271,.432,.703
 669224,Austin Wells,147,Yankees,2025-05-30,3,1,1,1,2,1,L,.209,.276,.449,.725
-669224,Austin Wells,147,Yankees,2025-05-31,3,1,0,0,2,0,L,.211,.277,.447,.724
+669224,Austin Wells,147,Yankees,2025-05-31,4,1,0,0,2,0,L,.210,.276,.444,.720
 700250,Ben Rice,147,Yankees,2025-05-18,1,0,0,0,0,0,L,.250,.348,.529,.877
 700250,Ben Rice,147,Yankees,2025-05-20,3,2,1,2,0,0,L,.259,.352,.552,.904
 700250,Ben Rice,147,Yankees,2025-05-21,4,0,0,0,2,0,L,.252,.343,.537,.880
@@ -1782,7 +1783,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 641355,Cody Bellinger,147,Yankees,2025-05-27,4,0,0,0,0,0,L,.262,.330,.464,.794
 641355,Cody Bellinger,147,Yankees,2025-05-28,3,0,0,0,1,1,L,.258,.329,.457,.786
 641355,Cody Bellinger,147,Yankees,2025-05-30,4,0,0,0,0,1,L,.253,.326,.447,.773
-641355,Cody Bellinger,147,Yankees,2025-05-31,3,1,0,0,0,0,L,.254,.326,.446,.772
+641355,Cody Bellinger,147,Yankees,2025-05-31,4,1,0,0,0,0,L,.253,.324,.443,.767
 518934,DJ LeMahieu,147,Yankees,2025-05-20,3,0,0,0,0,1,R,.267,.353,.467,.820
 518934,DJ LeMahieu,147,Yankees,2025-05-21,3,0,0,1,1,0,R,.222,.300,.389,.689
 518934,DJ LeMahieu,147,Yankees,2025-05-22,1,0,0,0,0,0,R,.211,.286,.368,.654
@@ -1792,7 +1793,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 518934,DJ LeMahieu,147,Yankees,2025-05-27,4,0,0,0,2,0,R,.206,.270,.294,.564
 518934,DJ LeMahieu,147,Yankees,2025-05-28,4,0,0,0,2,0,R,.184,.244,.263,.507
 518934,DJ LeMahieu,147,Yankees,2025-05-30,1,0,0,0,0,0,R,.179,.238,.256,.494
-518934,DJ LeMahieu,147,Yankees,2025-05-31,1,0,0,0,1,2,R,.175,.267,.250,.517
+518934,DJ LeMahieu,147,Yankees,2025-05-31,2,0,0,0,1,2,R,.171,.261,.244,.505
 641555,J.C. Escarra,147,Yankees,2025-05-09,4,2,0,0,0,1,L,.212,.325,.394,.719
 641555,J.C. Escarra,147,Yankees,2025-05-11,0,0,0,0,0,0,L,.212,.325,.394,.719
 641555,J.C. Escarra,147,Yankees,2025-05-14,2,0,0,0,0,0,L,.200,.310,.371,.681
@@ -1802,7 +1803,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 641555,J.C. Escarra,147,Yankees,2025-05-25,4,3,0,2,1,0,L,.244,.352,.400,.752
 641555,J.C. Escarra,147,Yankees,2025-05-28,4,1,0,0,1,0,L,.245,.345,.388,.733
 641555,J.C. Escarra,147,Yankees,2025-05-30,0,0,0,0,0,0,L,.245,.345,.388,.733
-641555,J.C. Escarra,147,Yankees,2025-05-31,0,0,0,0,0,0,L,.245,.345,.388,.733
+641555,J.C. Escarra,147,Yankees,2025-05-31,1,0,0,0,0,0,L,.240,.339,.380,.719
 691176,Jasson Domínguez,147,Yankees,2025-05-18,3,0,0,0,0,1,S,.241,.342,.421,.763
 691176,Jasson Domínguez,147,Yankees,2025-05-21,4,1,1,1,1,0,S,.241,.340,.438,.778
 691176,Jasson Domínguez,147,Yankees,2025-05-22,3,0,0,0,1,0,S,.236,.333,.429,.762
@@ -1812,7 +1813,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 691176,Jasson Domínguez,147,Yankees,2025-05-26,4,0,0,0,1,0,S,.237,.335,.414,.749
 691176,Jasson Domínguez,147,Yankees,2025-05-28,3,1,0,0,2,1,S,.239,.339,.413,.752
 691176,Jasson Domínguez,147,Yankees,2025-05-30,1,1,0,0,0,0,S,.244,.342,.417,.759
-691176,Jasson Domínguez,147,Yankees,2025-05-31,3,0,0,0,3,0,S,.239,.337,.409,.746
+691176,Jasson Domínguez,147,Yankees,2025-05-31,4,1,0,0,3,0,S,.244,.340,.419,.759
 678391,Jorbit Vivas,147,Yankees,2025-05-16,4,1,0,0,0,0,L,.185,.290,.222,.512
 678391,Jorbit Vivas,147,Yankees,2025-05-17,2,0,0,0,1,0,L,.172,.273,.207,.480
 678391,Jorbit Vivas,147,Yankees,2025-05-18,1,0,0,0,0,0,L,.167,.265,.200,.465
@@ -1832,7 +1833,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 672724,Oswald Peraza,147,Yankees,2025-05-27,3,1,1,1,0,1,R,.165,.241,.342,.583
 672724,Oswald Peraza,147,Yankees,2025-05-28,2,0,0,0,1,0,R,.160,.236,.333,.569
 672724,Oswald Peraza,147,Yankees,2025-05-30,2,0,0,0,1,1,R,.157,.239,.325,.564
-672724,Oswald Peraza,147,Yankees,2025-05-31,0,0,0,0,0,0,R,.157,.239,.325,.564
+672724,Oswald Peraza,147,Yankees,2025-05-31,1,0,0,0,0,0,R,.155,.237,.321,.558
 622569,Pablo Reyes,147,Yankees,2025-05-03,1,0,0,0,1,0,R,.176,.263,.176,.439
 622569,Pablo Reyes,147,Yankees,2025-05-04,2,0,0,0,1,0,R,.158,.238,.158,.396
 622569,Pablo Reyes,147,Yankees,2025-05-06,0,0,0,0,0,0,R,.158,.238,.158,.396
@@ -1862,7 +1863,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 663757,Trent Grisham,147,Yankees,2025-05-27,3,0,0,0,0,2,L,.250,.351,.520,.871
 663757,Trent Grisham,147,Yankees,2025-05-28,5,2,0,0,3,0,L,.255,.352,.523,.875
 663757,Trent Grisham,147,Yankees,2025-05-30,5,2,1,2,1,0,L,.259,.354,.538,.892
-663757,Trent Grisham,147,Yankees,2025-05-31,2,0,0,0,1,1,L,.256,.353,.531,.884
+663757,Trent Grisham,147,Yankees,2025-05-31,3,0,0,0,2,1,L,.255,.351,.528,.879
 655316,Andruw Monasterio,158,Brewers,2025-05-13,1,0,0,0,0,1,R,.000,.500,.000,.500
 655316,Andruw Monasterio,158,Brewers,2025-05-14,2,0,0,0,2,0,R,.000,.375,.000,.375
 655316,Andruw Monasterio,158,Brewers,2025-05-16,0,0,0,0,0,0,R,.000,.375,.000,.375
@@ -2114,7 +2115,6 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 687263,Zach Neto,108,Angels,2025-05-28,4,1,0,0,1,0,R,.281,.321,.534,.855
 687263,Zach Neto,108,Angels,2025-05-30,5,1,0,0,3,0,R,.278,.317,.523,.840
 687263,Zach Neto,108,Angels,2025-05-31,5,0,0,0,1,0,R,.269,.307,.506,.813
-677950,Alek Thomas,109,Diamondbacks,2025-05-18,3,0,0,0,1,0,L,.276,.323,.390,.713
 677950,Alek Thomas,109,Diamondbacks,2025-05-19,0,0,0,0,0,0,L,.276,.323,.390,.713
 677950,Alek Thomas,109,Diamondbacks,2025-05-20,2,0,0,0,2,0,L,.272,.319,.384,.703
 677950,Alek Thomas,109,Diamondbacks,2025-05-21,1,0,0,0,0,0,L,.270,.321,.381,.702
@@ -2124,7 +2124,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 677950,Alek Thomas,109,Diamondbacks,2025-05-27,4,1,0,1,2,0,L,.265,.313,.375,.688
 677950,Alek Thomas,109,Diamondbacks,2025-05-28,3,0,0,0,0,0,L,.259,.307,.367,.674
 677950,Alek Thomas,109,Diamondbacks,2025-05-30,2,0,0,0,0,0,L,.255,.303,.362,.665
-682998,Corbin Carroll,109,Diamondbacks,2025-05-19,4,1,0,0,2,1,L,.279,.353,.592,.945
+677950,Alek Thomas,109,Diamondbacks,2025-05-31,4,1,0,0,2,0,L,.255,.301,.359,.660
 682998,Corbin Carroll,109,Diamondbacks,2025-05-20,5,1,1,2,2,0,L,.277,.349,.597,.946
 682998,Corbin Carroll,109,Diamondbacks,2025-05-21,3,1,0,0,1,1,L,.278,.352,.593,.945
 682998,Corbin Carroll,109,Diamondbacks,2025-05-23,5,0,0,0,1,0,L,.271,.345,.579,.924
@@ -2134,7 +2134,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 682998,Corbin Carroll,109,Diamondbacks,2025-05-27,5,1,1,1,3,0,L,.259,.329,.561,.890
 682998,Corbin Carroll,109,Diamondbacks,2025-05-28,4,1,0,0,0,0,L,.259,.328,.560,.888
 682998,Corbin Carroll,109,Diamondbacks,2025-05-30,4,1,0,0,1,0,L,.258,.330,.559,.889
-553993,Eugenio Suárez,109,Diamondbacks,2025-05-19,5,1,0,1,2,0,R,.215,.307,.512,.819
+682998,Corbin Carroll,109,Diamondbacks,2025-05-31,4,0,0,0,0,1,L,.254,.327,.550,.877
 553993,Eugenio Suárez,109,Diamondbacks,2025-05-20,2,0,0,0,0,0,R,.213,.303,.506,.809
 553993,Eugenio Suárez,109,Diamondbacks,2025-05-21,4,2,0,0,0,0,R,.219,.307,.506,.813
 553993,Eugenio Suárez,109,Diamondbacks,2025-05-23,4,1,0,0,1,0,R,.220,.306,.500,.806
@@ -2144,7 +2144,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 553993,Eugenio Suárez,109,Diamondbacks,2025-05-27,3,0,0,0,1,1,R,.228,.314,.508,.822
 553993,Eugenio Suárez,109,Diamondbacks,2025-05-28,3,0,0,0,1,0,R,.225,.310,.500,.810
 553993,Eugenio Suárez,109,Diamondbacks,2025-05-30,4,2,0,1,0,0,R,.230,.313,.505,.818
-672515,Gabriel Moreno,109,Diamondbacks,2025-05-17,5,2,0,0,1,0,R,.265,.333,.342,.675
+553993,Eugenio Suárez,109,Diamondbacks,2025-05-31,4,1,0,0,0,0,R,.231,.312,.500,.812
 672515,Gabriel Moreno,109,Diamondbacks,2025-05-19,4,1,1,2,0,0,R,.264,.331,.364,.695
 672515,Gabriel Moreno,109,Diamondbacks,2025-05-20,3,1,1,1,1,1,R,.266,.336,.387,.723
 672515,Gabriel Moreno,109,Diamondbacks,2025-05-21,4,1,0,0,1,0,R,.266,.333,.383,.716
@@ -2154,7 +2154,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 672515,Gabriel Moreno,109,Diamondbacks,2025-05-26,4,3,0,0,0,0,R,.277,.338,.411,.749
 672515,Gabriel Moreno,109,Diamondbacks,2025-05-27,4,1,0,0,1,0,R,.276,.335,.421,.756
 672515,Gabriel Moreno,109,Diamondbacks,2025-05-30,4,1,0,0,0,0,R,.275,.333,.423,.756
-672695,Geraldo Perdomo,109,Diamondbacks,2025-05-19,2,1,1,3,0,1,S,.302,.403,.488,.891
+672515,Gabriel Moreno,109,Diamondbacks,2025-05-31,3,1,0,1,0,1,R,.276,.337,.421,.758
 672695,Geraldo Perdomo,109,Diamondbacks,2025-05-20,4,2,0,0,0,0,S,.307,.405,.494,.899
 672695,Geraldo Perdomo,109,Diamondbacks,2025-05-21,4,1,0,0,3,0,S,.306,.402,.488,.890
 672695,Geraldo Perdomo,109,Diamondbacks,2025-05-23,4,0,0,0,0,0,S,.299,.394,.477,.871
@@ -2164,6 +2164,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 672695,Geraldo Perdomo,109,Diamondbacks,2025-05-27,5,1,0,2,0,0,S,.296,.394,.460,.854
 672695,Geraldo Perdomo,109,Diamondbacks,2025-05-28,3,0,0,0,0,0,S,.292,.391,.453,.844
 672695,Geraldo Perdomo,109,Diamondbacks,2025-05-30,5,1,0,2,1,0,S,.289,.388,.447,.835
+672695,Geraldo Perdomo,109,Diamondbacks,2025-05-31,5,1,0,0,1,0,S,.287,.384,.441,.825
 645444,Jose Herrera,109,Diamondbacks,2025-04-27,4,0,0,0,1,0,S,.103,.188,.207,.395
 645444,Jose Herrera,109,Diamondbacks,2025-05-01,4,1,0,0,0,0,S,.121,.194,.212,.406
 645444,Jose Herrera,109,Diamondbacks,2025-05-04,4,2,0,2,1,0,S,.162,.225,.270,.495
@@ -2174,7 +2175,6 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 645444,Jose Herrera,109,Diamondbacks,2025-05-18,3,1,0,0,0,0,S,.200,.298,.320,.618
 645444,Jose Herrera,109,Diamondbacks,2025-05-23,1,0,0,0,0,2,S,.196,.317,.314,.631
 645444,Jose Herrera,109,Diamondbacks,2025-05-28,4,1,0,0,3,0,S,.200,.313,.309,.622
-647304,Josh Naylor,109,Diamondbacks,2025-05-19,5,1,0,1,0,0,L,.299,.367,.452,.819
 647304,Josh Naylor,109,Diamondbacks,2025-05-20,5,0,0,0,0,0,L,.291,.358,.440,.798
 647304,Josh Naylor,109,Diamondbacks,2025-05-21,4,1,0,0,3,0,L,.290,.356,.435,.791
 647304,Josh Naylor,109,Diamondbacks,2025-05-23,4,1,0,0,0,0,L,.289,.354,.432,.786
@@ -2184,7 +2184,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 647304,Josh Naylor,109,Diamondbacks,2025-05-27,4,2,0,1,0,0,L,.291,.351,.451,.802
 647304,Josh Naylor,109,Diamondbacks,2025-05-28,4,2,0,0,1,0,L,.295,.353,.452,.805
 647304,Josh Naylor,109,Diamondbacks,2025-05-30,5,2,0,1,0,0,L,.298,.354,.451,.805
-606466,Ketel Marte,109,Diamondbacks,2025-05-17,5,2,0,1,1,0,S,.257,.375,.514,.889
+647304,Josh Naylor,109,Diamondbacks,2025-05-31,4,2,1,2,0,0,L,.301,.357,.470,.827
 606466,Ketel Marte,109,Diamondbacks,2025-05-18,3,2,1,1,0,1,S,.273,.391,.558,.949
 606466,Ketel Marte,109,Diamondbacks,2025-05-19,5,1,0,0,1,0,S,.268,.381,.537,.918
 606466,Ketel Marte,109,Diamondbacks,2025-05-20,3,1,0,0,1,2,S,.271,.392,.529,.921
@@ -2194,6 +2194,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 606466,Ketel Marte,109,Diamondbacks,2025-05-25,5,1,0,0,0,0,S,.275,.383,.569,.952
 606466,Ketel Marte,109,Diamondbacks,2025-05-26,4,2,0,1,0,1,S,.283,.392,.566,.958
 606466,Ketel Marte,109,Diamondbacks,2025-05-30,3,1,0,0,0,2,S,.284,.400,.560,.960
+606466,Ketel Marte,109,Diamondbacks,2025-05-31,4,0,0,0,1,0,S,.274,.393,.540,.933
 666971,Lourdes Gurriel Jr.,109,Diamondbacks,2025-05-19,4,1,1,2,0,1,R,.227,.271,.442,.713
 666971,Lourdes Gurriel Jr.,109,Diamondbacks,2025-05-20,5,1,0,0,2,0,R,.226,.269,.435,.704
 666971,Lourdes Gurriel Jr.,109,Diamondbacks,2025-05-21,2,0,0,0,1,0,R,.223,.267,.430,.697
@@ -2204,7 +2205,6 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 666971,Lourdes Gurriel Jr.,109,Diamondbacks,2025-05-27,4,2,0,1,1,0,R,.245,.284,.435,.719
 666971,Lourdes Gurriel Jr.,109,Diamondbacks,2025-05-28,4,1,0,0,2,0,R,.245,.284,.431,.715
 666971,Lourdes Gurriel Jr.,109,Diamondbacks,2025-05-30,3,2,0,1,0,1,R,.251,.292,.435,.727
-656976,Pavin Smith,109,Diamondbacks,2025-05-18,3,0,0,0,2,0,L,.299,.423,.504,.927
 656976,Pavin Smith,109,Diamondbacks,2025-05-19,4,2,0,0,0,0,L,.306,.425,.504,.929
 656976,Pavin Smith,109,Diamondbacks,2025-05-20,3,0,0,0,2,0,L,.298,.416,.492,.908
 656976,Pavin Smith,109,Diamondbacks,2025-05-21,3,0,0,0,1,0,L,.291,.408,.480,.888
@@ -2214,7 +2214,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 656976,Pavin Smith,109,Diamondbacks,2025-05-27,4,0,0,0,1,0,L,.292,.401,.467,.868
 656976,Pavin Smith,109,Diamondbacks,2025-05-28,4,0,0,0,2,0,L,.284,.392,.454,.846
 656976,Pavin Smith,109,Diamondbacks,2025-05-30,4,2,0,2,2,0,L,.290,.394,.462,.856
-545341,Randal Grichuk,109,Diamondbacks,2025-05-09,1,1,1,1,0,0,R,.214,.267,.411,.678
+656976,Pavin Smith,109,Diamondbacks,2025-05-31,3,1,0,2,2,1,L,.291,.397,.473,.870
 545341,Randal Grichuk,109,Diamondbacks,2025-05-13,4,1,0,0,0,0,R,.217,.266,.400,.666
 545341,Randal Grichuk,109,Diamondbacks,2025-05-16,4,2,0,0,0,0,R,.234,.279,.406,.685
 545341,Randal Grichuk,109,Diamondbacks,2025-05-20,1,0,0,0,0,0,R,.231,.275,.400,.675
@@ -2224,6 +2224,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 545341,Randal Grichuk,109,Diamondbacks,2025-05-25,0,0,0,0,0,1,R,.250,.299,.458,.757
 545341,Randal Grichuk,109,Diamondbacks,2025-05-26,3,1,0,0,0,1,R,.253,.309,.453,.762
 545341,Randal Grichuk,109,Diamondbacks,2025-05-28,1,0,0,0,1,0,R,.250,.305,.447,.752
+545341,Randal Grichuk,109,Diamondbacks,2025-05-31,4,3,1,2,0,0,R,.275,.326,.500,.826
 694374,Tim Tawa,109,Diamondbacks,2025-05-16,3,1,0,1,0,0,R,.228,.315,.456,.771
 694374,Tim Tawa,109,Diamondbacks,2025-05-17,0,0,0,0,0,0,R,.228,.315,.456,.771
 694374,Tim Tawa,109,Diamondbacks,2025-05-19,4,2,0,0,0,0,R,.241,.323,.458,.781
@@ -3308,14 +3309,14 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 681624,Andy Pages,119,Dodgers,2025-05-27,5,2,0,1,0,0,R,.271,.319,.453,.772
 681624,Andy Pages,119,Dodgers,2025-05-28,4,1,0,1,0,0,R,.270,.318,.449,.767
 681624,Andy Pages,119,Dodgers,2025-05-30,4,2,0,3,0,0,R,.275,.321,.450,.771
-681624,Andy Pages,119,Dodgers,2025-05-31,3,1,1,1,0,2,R,.276,.327,.463,.790
+681624,Andy Pages,119,Dodgers,2025-05-31,4,1,1,1,0,2,R,.275,.326,.461,.787
 687221,Dalton Rushing,119,Dodgers,2025-05-15,4,2,0,0,1,1,L,.500,.600,.500,1.100
 687221,Dalton Rushing,119,Dodgers,2025-05-17,5,2,0,2,1,0,L,.444,.500,.556,1.056
 687221,Dalton Rushing,119,Dodgers,2025-05-18,1,0,0,0,1,0,L,.400,.455,.500,.955
 687221,Dalton Rushing,119,Dodgers,2025-05-21,3,0,0,0,3,0,L,.308,.357,.385,.742
 687221,Dalton Rushing,119,Dodgers,2025-05-24,3,0,0,1,2,0,L,.250,.294,.313,.607
 687221,Dalton Rushing,119,Dodgers,2025-05-27,4,1,0,1,3,0,L,.250,.286,.300,.586
-687221,Dalton Rushing,119,Dodgers,2025-05-31,1,0,0,0,0,0,L,.238,.273,.286,.559
+687221,Dalton Rushing,119,Dodgers,2025-05-31,2,1,1,3,0,0,L,.273,.304,.455,.759
 571771,Enrique Hernández,119,Dodgers,2025-05-17,2,2,1,1,0,3,R,.234,.305,.479,.784
 571771,Enrique Hernández,119,Dodgers,2025-05-18,2,0,0,0,1,1,R,.229,.306,.469,.775
 571771,Enrique Hernández,119,Dodgers,2025-05-20,4,0,0,0,2,0,R,.220,.295,.450,.745
@@ -3325,7 +3326,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 571771,Enrique Hernández,119,Dodgers,2025-05-27,0,0,0,0,0,0,R,.226,.297,.443,.740
 571771,Enrique Hernández,119,Dodgers,2025-05-28,4,1,0,0,1,0,R,.227,.295,.445,.740
 571771,Enrique Hernández,119,Dodgers,2025-05-30,2,0,0,1,0,0,R,.223,.290,.438,.728
-571771,Enrique Hernández,119,Dodgers,2025-05-31,1,1,0,0,0,0,R,.230,.296,.442,.738
+571771,Enrique Hernández,119,Dodgers,2025-05-31,2,2,0,0,0,0,R,.237,.302,.447,.749
 518692,Freddie Freeman,119,Dodgers,2025-05-20,4,2,0,0,0,1,L,.371,.431,.671,1.102
 518692,Freddie Freeman,119,Dodgers,2025-05-21,4,1,0,0,1,0,L,.368,.427,.660,1.087
 518692,Freddie Freeman,119,Dodgers,2025-05-23,3,0,0,0,3,2,L,.361,.429,.646,1.075
@@ -3345,7 +3346,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 808975,Hyeseong Kim,119,Dodgers,2025-05-24,0,0,0,0,0,0,L,.395,.425,.500,.925
 808975,Hyeseong Kim,119,Dodgers,2025-05-26,3,0,0,0,1,0,L,.366,.395,.463,.858
 808975,Hyeseong Kim,119,Dodgers,2025-05-30,0,0,0,0,0,0,L,.366,.395,.463,.858
-808975,Hyeseong Kim,119,Dodgers,2025-05-31,3,3,1,2,0,1,L,.409,.447,.568,1.015
+808975,Hyeseong Kim,119,Dodgers,2025-05-31,4,4,1,2,0,1,L,.422,.458,.600,1.058
 571970,Max Muncy,119,Dodgers,2025-05-19,3,0,0,0,0,0,L,.205,.326,.336,.662
 571970,Max Muncy,119,Dodgers,2025-05-20,3,1,0,1,1,1,L,.208,.328,.336,.664
 571970,Max Muncy,119,Dodgers,2025-05-21,2,0,0,0,0,1,L,.205,.328,.331,.659
@@ -3355,7 +3356,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 571970,Max Muncy,119,Dodgers,2025-05-27,4,2,1,3,0,1,L,.212,.337,.345,.682
 571970,Max Muncy,119,Dodgers,2025-05-28,1,0,0,0,0,0,L,.211,.335,.343,.678
 571970,Max Muncy,119,Dodgers,2025-05-30,1,0,0,0,1,1,L,.210,.337,.341,.678
-571970,Max Muncy,119,Dodgers,2025-05-31,5,3,2,7,0,0,L,.221,.343,.384,.727
+571970,Max Muncy,119,Dodgers,2025-05-31,6,3,2,7,0,0,L,.220,.341,.382,.723
 624424,Michael Conforto,119,Dodgers,2025-05-17,3,1,0,0,0,1,L,.175,.307,.285,.592
 624424,Michael Conforto,119,Dodgers,2025-05-18,3,0,0,0,1,0,L,.171,.305,.279,.584
 624424,Michael Conforto,119,Dodgers,2025-05-19,3,0,0,0,0,1,L,.168,.304,.273,.577
@@ -3375,7 +3376,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 500743,Miguel Rojas,119,Dodgers,2025-05-26,1,0,0,0,0,0,R,.247,.275,.325,.600
 500743,Miguel Rojas,119,Dodgers,2025-05-28,2,0,0,0,0,0,R,.241,.268,.316,.584
 500743,Miguel Rojas,119,Dodgers,2025-05-30,4,0,0,0,0,0,R,.229,.256,.301,.557
-500743,Miguel Rojas,119,Dodgers,2025-05-31,1,0,0,0,0,0,R,.226,.253,.298,.551
+500743,Miguel Rojas,119,Dodgers,2025-05-31,2,0,0,0,0,0,R,.224,.250,.294,.544
 605141,Mookie Betts,119,Dodgers,2025-05-18,3,0,0,0,1,1,R,.257,.347,.407,.754
 605141,Mookie Betts,119,Dodgers,2025-05-19,4,2,2,2,0,0,R,.263,.350,.444,.794
 605141,Mookie Betts,119,Dodgers,2025-05-20,5,1,0,0,0,0,R,.261,.347,.438,.785
@@ -3405,7 +3406,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 669242,Tommy Edman,119,Dodgers,2025-05-27,4,1,0,0,1,0,S,.232,.278,.457,.735
 669242,Tommy Edman,119,Dodgers,2025-05-28,4,0,0,0,2,0,S,.225,.271,.444,.715
 669242,Tommy Edman,119,Dodgers,2025-05-30,4,1,0,0,1,0,S,.226,.270,.445,.715
-669242,Tommy Edman,119,Dodgers,2025-05-31,4,3,0,2,0,0,S,.240,.282,.467,.749
+669242,Tommy Edman,119,Dodgers,2025-05-31,5,4,0,2,0,0,S,.245,.287,.470,.757
 669257,Will Smith,119,Dodgers,2025-05-17,1,1,0,0,0,0,R,.336,.441,.483,.924
 669257,Will Smith,119,Dodgers,2025-05-18,2,1,1,3,0,2,R,.339,.449,.508,.957
 669257,Will Smith,119,Dodgers,2025-05-19,3,1,0,0,0,1,R,.339,.450,.504,.954
@@ -3415,7 +3416,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 669257,Will Smith,119,Dodgers,2025-05-26,3,2,1,1,0,2,R,.333,.456,.511,.967
 669257,Will Smith,119,Dodgers,2025-05-28,4,2,0,1,1,0,R,.338,.457,.518,.975
 669257,Will Smith,119,Dodgers,2025-05-30,4,2,0,0,0,0,R,.343,.458,.517,.975
-669257,Will Smith,119,Dodgers,2025-05-31,5,1,0,1,1,0,R,.338,.451,.507,.958
+669257,Will Smith,119,Dodgers,2025-05-31,6,2,0,1,1,0,R,.342,.454,.517,.971
 669743,Alex Call,120,Nationals,2025-05-14,4,0,0,0,2,0,R,.296,.406,.370,.776
 669743,Alex Call,120,Nationals,2025-05-15,4,1,0,0,0,0,R,.294,.400,.376,.776
 669743,Alex Call,120,Nationals,2025-05-16,4,0,0,0,1,0,R,.281,.385,.360,.745
@@ -3436,7 +3437,6 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 642708,Amed Rosario,120,Nationals,2025-05-22,1,1,0,1,0,0,R,.305,.337,.439,.776
 642708,Amed Rosario,120,Nationals,2025-05-24,4,1,0,0,1,0,R,.302,.333,.442,.775
 642708,Amed Rosario,120,Nationals,2025-05-25,3,1,0,0,1,0,R,.303,.333,.449,.782
-682928,CJ Abrams,120,Nationals,2025-05-18,5,3,2,2,0,0,L,.312,.368,.574,.942
 682928,CJ Abrams,120,Nationals,2025-05-20,3,1,0,0,0,0,L,.313,.371,.569,.940
 682928,CJ Abrams,120,Nationals,2025-05-22,4,1,0,1,1,1,L,.311,.372,.561,.933
 682928,CJ Abrams,120,Nationals,2025-05-23,4,0,0,0,0,0,L,.303,.363,.546,.909
@@ -3446,6 +3446,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 682928,CJ Abrams,120,Nationals,2025-05-28,4,0,0,0,0,0,L,.280,.341,.506,.847
 682928,CJ Abrams,120,Nationals,2025-05-29,4,1,0,0,2,1,L,.279,.342,.506,.848
 682928,CJ Abrams,120,Nationals,2025-05-30,4,0,0,0,1,1,L,.273,.338,.494,.832
+682928,CJ Abrams,120,Nationals,2025-05-31,3,1,0,0,0,0,L,.274,.348,.492,.840
 695734,Daylen Lile,120,Nationals,2025-05-23,2,1,0,0,0,0,L,.500,.500,.500,1.000
 695734,Daylen Lile,120,Nationals,2025-05-24,3,1,0,0,0,0,L,.400,.400,.400,.800
 695734,Daylen Lile,120,Nationals,2025-05-25,3,0,0,0,3,0,L,.250,.250,.250,.500
@@ -3453,7 +3454,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 695734,Daylen Lile,120,Nationals,2025-05-28,3,1,0,0,0,1,L,.214,.267,.286,.553
 695734,Daylen Lile,120,Nationals,2025-05-29,3,0,0,1,1,0,L,.176,.211,.235,.446
 695734,Daylen Lile,120,Nationals,2025-05-30,4,0,0,0,1,0,L,.143,.174,.190,.364
-695578,James Wood,120,Nationals,2025-05-18,4,2,0,2,2,0,L,.279,.373,.536,.909
+695734,Daylen Lile,120,Nationals,2025-05-31,3,2,0,1,0,1,L,.208,.286,.375,.661
 695578,James Wood,120,Nationals,2025-05-20,3,2,0,0,0,1,L,.285,.380,.538,.918
 695578,James Wood,120,Nationals,2025-05-22,3,2,0,3,0,2,L,.291,.389,.545,.934
 695578,James Wood,120,Nationals,2025-05-23,4,0,0,0,0,0,L,.285,.382,.534,.916
@@ -3463,7 +3464,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 695578,James Wood,120,Nationals,2025-05-28,4,2,1,3,1,1,L,.287,.380,.569,.949
 695578,James Wood,120,Nationals,2025-05-29,3,1,0,2,2,2,L,.288,.385,.571,.956
 695578,James Wood,120,Nationals,2025-05-30,4,1,1,1,1,1,L,.287,.385,.579,.964
-677588,José Tena,120,Nationals,2025-05-16,2,0,0,0,1,2,L,.228,.299,.329,.628
+695578,James Wood,120,Nationals,2025-05-31,6,2,0,1,2,0,L,.288,.384,.572,.956
 677588,José Tena,120,Nationals,2025-05-17,3,1,0,1,0,0,L,.232,.297,.329,.626
 677588,José Tena,120,Nationals,2025-05-18,4,2,0,0,2,0,L,.244,.305,.349,.654
 677588,José Tena,120,Nationals,2025-05-20,4,1,0,0,1,0,L,.244,.303,.344,.647
@@ -3473,7 +3474,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 677588,José Tena,120,Nationals,2025-05-28,4,2,0,2,0,0,L,.260,.310,.375,.685
 677588,José Tena,120,Nationals,2025-05-29,4,0,0,0,1,1,L,.250,.305,.361,.666
 677588,José Tena,120,Nationals,2025-05-30,3,2,0,0,1,1,L,.261,.320,.387,.707
-605137,Josh Bell,120,Nationals,2025-05-17,4,1,0,0,1,0,S,.153,.242,.285,.527
+677588,José Tena,120,Nationals,2025-05-31,4,1,0,2,1,1,L,.261,.323,.391,.714
 605137,Josh Bell,120,Nationals,2025-05-18,4,1,1,1,0,0,S,.156,.242,.305,.547
 605137,Josh Bell,120,Nationals,2025-05-20,1,0,0,0,1,2,S,.155,.255,.303,.558
 605137,Josh Bell,120,Nationals,2025-05-22,5,1,0,0,2,0,S,.156,.253,.299,.552
@@ -3483,7 +3484,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 605137,Josh Bell,120,Nationals,2025-05-28,5,3,1,1,0,0,S,.166,.264,.318,.582
 605137,Josh Bell,120,Nationals,2025-05-29,5,2,1,3,0,0,S,.173,.268,.340,.608
 605137,Josh Bell,120,Nationals,2025-05-30,4,2,1,3,1,1,S,.181,.277,.361,.638
-660688,Keibert Ruiz,120,Nationals,2025-05-17,5,2,0,2,1,0,S,.283,.331,.368,.699
+605137,Josh Bell,120,Nationals,2025-05-31,3,1,0,0,1,1,S,.183,.285,.361,.646
 660688,Keibert Ruiz,120,Nationals,2025-05-18,5,1,0,1,1,0,S,.280,.327,.363,.690
 660688,Keibert Ruiz,120,Nationals,2025-05-20,4,1,0,1,0,0,S,.280,.326,.366,.692
 660688,Keibert Ruiz,120,Nationals,2025-05-22,5,2,0,2,0,0,S,.283,.328,.373,.701
@@ -3493,7 +3494,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 660688,Keibert Ruiz,120,Nationals,2025-05-27,3,0,0,0,0,0,S,.275,.317,.360,.677
 660688,Keibert Ruiz,120,Nationals,2025-05-28,5,0,0,0,1,0,S,.268,.309,.350,.659
 660688,Keibert Ruiz,120,Nationals,2025-05-29,5,1,0,0,0,0,S,.266,.307,.346,.653
-671277,Luis García Jr.,120,Nationals,2025-05-18,4,1,1,1,1,0,L,.229,.280,.361,.641
+660688,Keibert Ruiz,120,Nationals,2025-05-31,5,2,0,2,0,0,S,.269,.309,.352,.661
 671277,Luis García Jr.,120,Nationals,2025-05-20,4,1,0,1,0,0,L,.230,.279,.358,.637
 671277,Luis García Jr.,120,Nationals,2025-05-22,5,0,0,1,1,0,L,.222,.271,.346,.617
 671277,Luis García Jr.,120,Nationals,2025-05-23,3,2,0,0,0,1,L,.231,.282,.365,.647
@@ -3503,6 +3504,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 671277,Luis García Jr.,120,Nationals,2025-05-28,4,1,1,1,0,1,L,.234,.285,.383,.668
 671277,Luis García Jr.,120,Nationals,2025-05-29,5,4,0,2,0,0,L,.250,.298,.401,.699
 671277,Luis García Jr.,120,Nationals,2025-05-30,5,2,0,0,0,0,L,.254,.301,.407,.708
+671277,Luis García Jr.,120,Nationals,2025-05-31,5,1,0,3,0,0,L,.253,.299,.407,.706
 683083,Nasim Nuñez,120,Nationals,2025-04-28,1,1,0,1,0,0,S,.172,.250,.207,.457
 683083,Nasim Nuñez,120,Nationals,2025-04-29,0,0,0,0,0,0,S,.172,.250,.207,.457
 683083,Nasim Nuñez,120,Nationals,2025-05-06,1,0,0,0,0,0,S,.167,.242,.200,.442
@@ -3513,7 +3515,6 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 683083,Nasim Nuñez,120,Nationals,2025-05-20,1,0,0,0,0,0,S,.176,.263,.206,.469
 683083,Nasim Nuñez,120,Nationals,2025-05-25,2,1,0,0,0,0,S,.194,.275,.222,.497
 683083,Nasim Nuñez,120,Nationals,2025-05-28,0,0,0,0,0,0,S,.194,.275,.222,.497
-663993,Nathaniel Lowe,120,Nationals,2025-05-18,5,0,0,0,2,0,L,.221,.299,.398,.697
 663993,Nathaniel Lowe,120,Nationals,2025-05-20,3,1,0,1,1,0,L,.223,.298,.397,.695
 663993,Nathaniel Lowe,120,Nationals,2025-05-22,5,1,0,0,0,0,L,.222,.295,.392,.687
 663993,Nathaniel Lowe,120,Nationals,2025-05-23,4,1,0,0,0,0,L,.223,.294,.389,.683
@@ -3523,6 +3524,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 663993,Nathaniel Lowe,120,Nationals,2025-05-28,4,0,0,0,2,1,L,.220,.290,.378,.668
 663993,Nathaniel Lowe,120,Nationals,2025-05-29,5,2,0,1,2,0,L,.224,.292,.379,.671
 663993,Nathaniel Lowe,120,Nationals,2025-05-30,3,2,0,2,0,2,L,.230,.303,.382,.685
+663993,Nathaniel Lowe,120,Nationals,2025-05-31,5,1,0,2,1,0,L,.230,.301,.383,.684
 656180,Riley Adams,120,Nationals,2025-04-17,3,0,0,0,1,0,R,.000,.000,.000,.000
 656180,Riley Adams,120,Nationals,2025-04-20,4,1,0,0,2,0,R,.083,.083,.083,.166
 656180,Riley Adams,120,Nationals,2025-04-27,3,1,1,3,2,0,R,.133,.133,.333,.466
@@ -3541,6 +3543,7 @@ player_id,player_name,team_id,team_name,game_date,at_bats,hits,home_runs,rbi,str
 690987,Robert Hassell III,120,Nationals,2025-05-28,5,3,1,2,2,0,L,.227,.227,.364,.591
 690987,Robert Hassell III,120,Nationals,2025-05-29,5,1,0,0,0,0,L,.222,.222,.333,.555
 690987,Robert Hassell III,120,Nationals,2025-05-30,5,2,0,3,2,0,L,.250,.250,.344,.594
+690987,Robert Hassell III,120,Nationals,2025-05-31,5,2,0,0,0,0,L,.270,.270,.351,.621
 607043,Brandon Nimmo,121,Mets,2025-05-18,3,0,0,0,1,1,L,.225,.289,.420,.709
 607043,Brandon Nimmo,121,Mets,2025-05-19,4,0,0,0,1,0,L,.220,.283,.410,.693
 607043,Brandon Nimmo,121,Mets,2025-05-20,4,0,0,0,2,0,L,.215,.277,.401,.678
