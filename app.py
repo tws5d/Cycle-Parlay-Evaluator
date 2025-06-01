@@ -411,13 +411,10 @@ if not df.empty:
     
     col1, col2, col3, col4 = st.columns(4)
     col1.markdown(f"<div style='text-align:center; line-height:1; margin-top:-10px;'><div style='color:#93E9BE; font-weight:bold;'>Season AVG</div><div style='font-size:32px; margin-top:4px;'>{avg:.3f}</div></div>", unsafe_allow_html=True)
-    col2.markdown(f"<div style='color:#93E9BE; font-weight:bold;'>Season OBP</div>", unsafe_allow_html=True)
-    col2.metric(label="", value=f"{obp:.3f}")
-    col3.markdown(f"<div style='color:#93E9BE; font-weight:bold;'>Season SLG</div>", unsafe_allow_html=True)
-    col3.metric(label="", value=f"{slg:.3f}")
-    col4.markdown(f"<div style='color:#93E9BE; font-weight:bold;'>Season OPS</div>", unsafe_allow_html=True)
-    col4.metric(label="", value=f"{(obp + slg):.3f}")
-
+    col2.markdown(f"<div style='text-align:center; line-height:1; margin-top:-10px;'><div style='color:#93E9BE; font-weight:bold;'>Season OBP</div><div style='font-size:32px; margin-top:4px;'>{obp:.3f}</div></div>", unsafe_allow_html=True)
+    col3.markdown(f"<div style='text-align:center; line-height:1; margin-top:-10px;'><div style='color:#93E9BE; font-weight:bold;'>Season SLG</div><div style='font-size:32px; margin-top:4px;'>{slg:.3f}</div></div>", unsafe_allow_html=True)
+    col4.markdown(f"<div style='text-align:center; line-height:1; margin-top:-10px;'><div style='color:#93E9BE; font-weight:bold;'>Season OPS</div><div style='font-size:32px; margin-top:4px;'>{(obp + slg):.3f}</div></div>", unsafe_allow_html=True)
+    
     exit_tag = "✅" if avg_exit_velo > 91 else "⚠️"
     hard_hit_tag = "✅" if hard_hit_pct > 45 else "⚠️"
     xba_tag = "✅" if xba > 0.300 else "⚠️"
