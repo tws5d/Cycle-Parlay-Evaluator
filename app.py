@@ -340,7 +340,7 @@ if not pitcher_row.empty:
                     icon_file = icon_map.get(condition, "No.Weather.Data.Available.png")
                     icon_url = f"https://raw.githubusercontent.com/tws5d/Cycle-Parlay-Evaluator/main/{icon_file}"
 
-                    st.markdown("<div style='text-align: center; margin-bottom: -5px;'>", unsafe_allow_html=True)
+                    st.markdown("<div style='text-align: center; margin-bottom: -10px;'>", unsafe_allow_html=True)
                     st.markdown(f"<img src='{icon_url}' width='90' style='margin-top: -10px; margin-bottom: 4px;'>", unsafe_allow_html=True)
                     if temperature is not None:
                         st.markdown(f"<div style='margin-left: 30px; margin-top: -8px;'>{temperature}°F</div>", unsafe_allow_html=True)
