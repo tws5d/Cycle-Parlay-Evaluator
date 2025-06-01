@@ -422,7 +422,7 @@ if not df.empty:
     col1, col2, col3 = st.columns([1.2, 1.2, 1.2])
 
     with col1:
-        st.markdown("### ")
+        st.markdown("# ")
         st.markdown(f"**Avg Exit Velocity:** {round(avg_exit_velo, 1)} mph {exit_tag}")
         st.markdown(f"**Hard Hit %:** {hard_hit_pct}% {hard_hit_tag}")
         st.markdown(f"**xBA (Expected BA):** {xba} {xba_tag}")
@@ -447,13 +447,13 @@ if not df.empty:
         babip_tag = "✅" if 0.290 <= babip <= 0.320 else "⚠️"
         woba_tag = "✅" if woba >= 0.350 else "⚠️"
     
-        st.markdown("### ")
+        st.markdown("# ")
         st.markdown(f"**ISO (Isolated Power):** {iso} {iso_tag}")
         st.markdown(f"**BABIP (Balls In Play):** {babip} {babip_tag}")
         st.markdown(f"**wOBA (Wtd. OB Avg):** {woba} {woba_tag}")
 
     with col3:
-        st.markdown("### ")
+        st.markdown("# ")
         if 'score' not in locals():
             score = 50
         if xba > 0.300: score += 15
