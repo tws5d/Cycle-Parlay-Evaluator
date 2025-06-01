@@ -1,9 +1,16 @@
-
 import requests
 import pandas as pd
 from datetime import datetime
 
 today = datetime.today().strftime('%Y-%m-%d')
+def get_throwing_hand(pitcher_id):
+    try:
+        url = f"https://statsapi.mlb.com/api/v1/people/{pitcher_id}"
+        response = requests.get(url)
+        data = response.json()
+        return data["people"][0]["pitchHand"]["code"]  # "R", "L", or "S"
+    except:
+        return "?"
 
 # MLB Schedule endpoint for only today
 url = f"https://statsapi.mlb.com/api/v1/schedule?sportId=1&date={today}&hydrate=probablePitcher"
@@ -40,6 +47,7 @@ for date in data["dates"]:
                     "Opponent": opp,
                     "Pitcher Name": pitcher["fullName"],
                     "MLB ID": pitcher["id"],
+                    "Throws": get_throwing_hand(pitcher["id"]),
                     "Last 5 IP": total_ip,
                     "Last 5 ER": total_er,
                     "Last 5 SO": total_so
