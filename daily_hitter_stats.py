@@ -90,6 +90,9 @@ def build_daily_hitter_csv():
                     "obp": stats.get("obp", 0),
                     "slg": stats.get("slg", 0),
                     "ops": stats.get("ops", 0),
+                    "runs": stats.get("runs", 0),
+                    "stolen_bases": stats.get("stolenBases", 0),
+                    "total_bases": stats.get("totalBases", 0),
                 }
                 all_data.append(row)
 
