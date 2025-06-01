@@ -450,7 +450,7 @@ if not df.empty:
         st.markdown("### ")
         st.markdown(f"**ISO (Isolated Power):** {iso} {iso_tag}")
         st.markdown(f"**BABIP (Balls In Play):** {babip} {babip_tag}")
-        st.markdown(f"**wOBA (Weighted OB Avg):** {woba} {woba_tag}")
+        st.markdown(f"**wOBA (Wtd. OB Avg):** {woba} {woba_tag}")
 
     with col3:
         st.markdown("### ")
