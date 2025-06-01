@@ -35,7 +35,8 @@ for date in data["dates"]:
                 # Pull season stats
                 season_url = f"https://statsapi.mlb.com/api/v1/people/{pitcher['id']}/stats?stats=season&group=pitching"
                 season_resp = requests.get(season_url).json()
-                season_stats = season_resp.get("stats", [{}])[0].get("splits", [{}])[0].get("stat", {})
+                splits = season_resp.get("stats", [{}])[0].get("splits", [])
+                season_stats = splits[0].get("stat", {}) if splits else {}
                 
                 era = season_stats.get("era", "")
                 baa = season_stats.get("battingAverage", "")
