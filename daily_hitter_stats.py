@@ -29,7 +29,8 @@ def get_team_hitters(team_id):
             hitters.append({
                 "player_id": player["person"]["id"],
                 "full_name": player["person"]["fullName"],
-                "team_id": team_id
+                "team_id": team_id,
+                "bat_side": handedness
             })
     return hitters
 
@@ -75,6 +76,7 @@ def build_daily_hitter_csv():
                     "rbi": stats.get("rbi", 0),
                     "strike_outs": stats.get("strikeOuts", 0),
                     "base_on_balls": stats.get("baseOnBalls", 0),
+                    "bat_side": hitter.get("bat_side", ""),
                     "avg": stats.get("avg", 0),
                     "obp": stats.get("obp", 0),
                     "slg": stats.get("slg", 0),
