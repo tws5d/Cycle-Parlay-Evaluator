@@ -394,7 +394,7 @@ if not df.empty:
     
     with col4:
         st.metric("Runs", runs)
-        st.markdown(f"<div style='color: green; font-size: 12px; margin-top: -10px; margin-left: 6px;'>Max: {max_runs}</div>", unsafe_allow_html=True)
+        st.markdown(f"<div style='color: orange; font-size: 13px; margin-top: -25px; margin-left: 0px;'>Max: {max_runs}</div>", unsafe_allow_html=True)
     
     
     with col5:
