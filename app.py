@@ -200,8 +200,12 @@ pitcher_id = None
 if not pitcher_row.empty:
     pitcher_name = pitcher_row.iloc[0]["Pitcher Name"]
     pitcher_id = int(pitcher_row.iloc[0]["MLB ID"])
-    st.write(f"🧤 Opposing Pitcher: {pitcher_name} ({pitcher_row.iloc[0]['Throws']})")
+    era = pitcher_row.iloc[0].get("ERA", "")
+    baa = pitcher_row.iloc[0].get("BAA", "")
+    opsa = pitcher_row.iloc[0].get("OPSa", "")
 
+    st.write(f"🧤 Opposing Pitcher: {pitcher_name} ({pitcher_row.iloc[0]['Throws']}) | ERA: {era} | BAA: {baa} | OPSa: {opsa}")
+    
     end_date = datetime.today().strftime('%Y-%m-%d')
     start_date = (datetime.today() - timedelta(days=14)).strftime('%Y-%m-%d')
     df_pitcher = statcast_pitcher(start_date, end_date, pitcher_id)
