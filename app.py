@@ -461,11 +461,11 @@ if not df.empty:
         if avg_exit_velo > 91: score += 10
 
         if score >= 85:
-            st.success("🔥 Strong Pick")
+            st.image("Elite.png", width=140)
         elif score >= 70:
-            st.info("✅ Solid Pick")
+            st.image("Playable.png", width=140)
         else:
-            st.warning("⚠️ Risky Pick")
+            st.image("Fade.png", width=140)
 
     
 else:
