@@ -39,7 +39,7 @@ for date in data["dates"]:
                 season_stats = splits[0].get("stat", {}) if splits else {}
                 
                 era = season_stats.get("era", "")
-                baa = season_stats.get("battingAverage", "")
+                baa = season_stats.get("avg", "")
                 opsa = season_stats.get("ops", "")
                 print(f"{pitcher['fullName']} - ERA: {era}, BAA: {baa}, OPSa: {opsa}")
 
