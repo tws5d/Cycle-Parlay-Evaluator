@@ -419,21 +419,50 @@ if not df.empty:
     hard_hit_tag = "✅" if hard_hit_pct > 45 else "⚠️"
     xba_tag = "✅" if xba > 0.300 else "⚠️"
 
-    st.write(f"**Average Exit Velocity:** {round(avg_exit_velo, 1)} mph {exit_tag}")
-    st.write(f"**Hard Hit %:** {hard_hit_pct}% {hard_hit_tag}")
-    st.write(f"**xBA (Expected BA):** {xba} {xba_tag}")
+    col1, col2, col3 = st.columns([1.2, 1.2, 1.2])
 
-    if 'score' not in locals():
-        score = 50
-    if xba > 0.300: score += 15
-    if hard_hit_pct > 45: score += 15
-    if avg_exit_velo > 91: score += 10
+    with col1:
+        st.markdown("### ")
+        st.markdown(f"**Avg Exit Velocity:** {round(avg_exit_velo, 1)} mph {exit_tag}")
+        st.markdown(f"**Hard Hit %:** {hard_hit_pct}% {hard_hit_tag}")
+        st.markdown(f"**xBA (Expected BA):** {xba} {xba_tag}")
 
-    if score >= 85:
-        st.success("🔥 Strong Pick")
-    elif score >= 70:
-        st.info("✅ Solid Pick")
-    else:
-        st.warning("⚠️ Risky Pick")
+    with col2:
+        iso = round(slg - avg, 3)
+        babip = round((total_hits - total_hrs) / (total_abs - recent_df['strike_outs'].sum() - total_hrs + recent_df['sac_flies'].sum() + 0.01), 3)  # Avoid div/0
+        singles = recent_df["hits"].sum() - recent_df["doubles"].sum() - recent_df["triples"].sum() - total_hrs
+        woba_numerator = (0.7 * recent_df["base_on_balls"].sum() +
+                          0.9 * singles +
+                          1.25 * recent_df["doubles"].sum() +
+                          1.6 * recent_df["triples"].sum() +
+                          2.0 * total_hrs +
+                          0.75 * recent_df["hit_by_pitch"].sum())
+        woba_denominator = (recent_df["at_bats"].sum() +
+                            recent_df["base_on_balls"].sum() +
+                            recent_df["sac_flies"].sum() +
+                            recent_df["hit_by_pitch"].sum() + 0.01)
+        woba = round(woba_numerator / woba_denominator, 3)
+    
+        st.markdown("### ")
+        st.markdown(f"**ISO:** {iso}")
+        st.markdown(f"**BABIP:** {babip}")
+        st.markdown(f"**wOBA:** {woba}")
+
+    with col3:
+        st.markdown("### ")
+        if 'score' not in locals():
+            score = 50
+        if xba > 0.300: score += 15
+        if hard_hit_pct > 45: score += 15
+        if avg_exit_velo > 91: score += 10
+
+        if score >= 85:
+            st.success("🔥 Strong Pick")
+        elif score >= 70:
+            st.info("✅ Solid Pick")
+        else:
+            st.warning("⚠️ Risky Pick")
+
+    
 else:
     st.warning("No Statcast data found for this timeframe.")
