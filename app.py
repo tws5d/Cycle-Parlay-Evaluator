@@ -410,7 +410,7 @@ if not df.empty:
         st.markdown(f"<div style='color: orange; font-size: 13px; margin-top: -25px; margin-left: 0px;'>Max: {max_bases}</div>", unsafe_allow_html=True)
     
     col1, col2, col3, col4 = st.columns(4)
-    col1.markdown(f"<div style='color:#93E9BE; font-weight:bold;'>Season AVG</div>", unsafe_allow_html=True)
+    col1.markdown(f"<div style='text-align:center; line-height:1; margin-top:-10px;'><div style='color:#93E9BE; font-weight:bold;'>Season AVG</div><div style='font-size:24px; margin-top:-6px;'>{avg:.3f}</div></div>", unsafe_allow_html=True)
     col1.metric(label="", value=f"{avg:.3f}")
     col2.markdown(f"<div style='color:#93E9BE; font-weight:bold;'>Season OBP</div>", unsafe_allow_html=True)
     col2.metric(label="", value=f"{obp:.3f}")
