@@ -26,12 +26,21 @@ def get_team_hitters(team_id):
     for player in roster:
         pos = player["position"]["abbreviation"]
         if pos in ["1B", "2B", "3B", "SS", "LF", "CF", "RF", "C", "DH"]:
+            person_id = player["person"]["id"]
+            handedness = ""
+            try:
+                details = requests.get(f"https://statsapi.mlb.com/api/v1/people/{person_id}").json()
+                handedness = details["people"][0]["batSide"]["code"]
+            except Exception as e:
+                print(f"⚠️ Could not fetch handedness for {person_id}: {e}")
+
             hitters.append({
-                "player_id": player["person"]["id"],
+                "player_id": person_id,
                 "full_name": player["person"]["fullName"],
                 "team_id": team_id,
                 "bat_side": handedness
             })
+                       
     return hitters
 
 # Step 3: Get last 10 game logs for a hitter
