@@ -61,6 +61,9 @@ for date in data["dates"]:
                     "Last 5 IP": total_ip,
                     "Last 5 ER": total_er,
                     "Last 5 SO": total_so
+                    "ERA": era,
+                    "BAA": baa,
+                    "OPSa": opsa
                 })
                 print(f"✔ {pitcher['fullName']} for {team}")
 
