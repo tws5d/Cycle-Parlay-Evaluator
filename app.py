@@ -217,6 +217,14 @@ if not pitcher_row.empty:
         st.image(image_url, width=100)
     with col2:
         stat_col, weather_col, wind_col = st.columns([3, 1.3, 1.3])
+        # Get ballpark info for the home team
+        lookup_name = name_corrections.get(home_team, home_team)
+        park_name = team_to_park.get(lookup_name, "Unknown")
+        park_type = ballpark_factors.get(park_name, "Unknown")
+        # Get coordinates for the current ballpark
+        coords = park_coords.get(park_name)
+        wind_speed = None
+        wind_deg = None   
         
         if not df_pitcher.empty:
             avg_ev_allowed = df_pitcher['launch_speed'].mean()
@@ -269,15 +277,7 @@ if not pitcher_row.empty:
                 "Toronto Blue Jays": "Blue Jays",
                 "Washington Nationals": "Nationals"
             }
-            
-            # Get ballpark info for the home team
-            lookup_name = name_corrections.get(home_team, home_team)
-            park_name = team_to_park.get(lookup_name, "Unknown")
-            # Get coordinates for the current ballpark
-            coords = park_coords.get(park_name)
-            wind_speed = None
-            wind_deg = None           
-            
+                       
             if coords:
                 lat, lon = coords
                 weather_url = f"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={api_key}&units=imperial"
