@@ -149,7 +149,7 @@ ballpark_factors = {
     "Wrigley Field": "Neutral", "Target Field": "Neutral", "Minute Maid Park": "Neutral",
     "Busch Stadium": "Neutral", "SunTrust Park": "Neutral", "Progressive Field": "Neutral",
     "Truist Park": "Neutral", "Nationals Park": "Neutral", "Comerica Park": "Neutral",
-    "Angel Stadium": "Neutral"
+    "Angel Stadium": "Neutral", "Oakland Coliseum": "Neutral"
 }
 
 team_to_park = {
