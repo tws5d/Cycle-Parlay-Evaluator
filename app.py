@@ -458,7 +458,7 @@ if not df.empty:
         score = 50
 
         # Pitcher stats
-        if 'xba_allowed' in locals():
+        if not df_pitcher.empty:
             if xba_allowed > 0.280: score += 10
             if hard_hit_pct_allowed > 40: score += 10
             if avg_ev_allowed > 89: score += 5
