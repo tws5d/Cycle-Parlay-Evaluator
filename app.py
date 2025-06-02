@@ -301,6 +301,7 @@ if not pitcher_row.empty:
                 st.warning(f"No coordinates found for {park_name}")
 
             park_type = ballpark_factors.get(park_name, "Unknown")
+            park_name = team_to_park.get(lookup_name, "Unknown")
             park_emoji = "⚾" if park_type == "Hitter-Friendly" else "🛡️" if park_type == "Pitcher-Friendly" else "⚖️"
             
             with wind_col:
