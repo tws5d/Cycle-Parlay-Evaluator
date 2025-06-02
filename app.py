@@ -454,12 +454,37 @@ if not df.empty:
 
     with col3:
         st.markdown("<div style='margin-top:8px;'></div>", unsafe_allow_html=True)
-        if 'score' not in locals():
-            score = 50
+        # 🔢 SCORING LOGIC STARTS HERE
+        score = 50
+
+        # Pitcher stats
+        if xba_allowed > 0.280: score += 10
+        if hard_hit_pct_allowed > 40: score += 10
+        if avg_ev_allowed > 89: score += 5
+
+        # Batter stats
         if xba > 0.300: score += 15
         if hard_hit_pct > 45: score += 15
         if avg_exit_velo > 91: score += 10
 
+        # Advanced metrics
+        if woba >= 0.350: score += 5
+        if iso >= 0.180: score += 5
+        if 0.290 <= babip <= 0.320: score += 5
+
+        # Ballpark adjustment
+        if park_type == "Hitter-Friendly": score += 5
+        elif park_type == "Pitcher-Friendly": score -= 5
+
+        # Handedness matchup
+        if pitcher_row.iloc[0]["Throws"] != selected_row["bat_side"]:
+            score += 5
+        else:
+            score -= 5
+
+        # Small sample size penalty
+        if total_abs < 8: score -= 10
+       
         if score >= 85:
             st.markdown("<div style='margin-top: -15px; margin-right: 15px; text-align: right;'><img src='https://raw.githubusercontent.com/tws5d/Cycle-Parlay-Evaluator/main/Elite.png' width='140'></div>", unsafe_allow_html=True)
         elif score >= 70:
