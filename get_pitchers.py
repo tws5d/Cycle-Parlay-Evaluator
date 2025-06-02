@@ -43,7 +43,9 @@ for date in data["dates"]:
                 baa = season_stats.get("avg", "")
                 opsa = season_stats.get("ops", "")
                 
-                games = gamelog_data.get("stats", [{}])[0].get("splits", [])[:5]
+                stats = gamelog_data.get("stats", [])
+                splits = stats[0].get("splits", []) if stats else []
+                games = splits[:5]
 
                 total_ip = total_er = total_so = 0
                 for g in games:
