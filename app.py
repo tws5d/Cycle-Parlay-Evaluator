@@ -217,6 +217,13 @@ if not pitcher_row.empty:
         st.image(image_url, width=100)
     with col2:
         stat_col, weather_col, wind_col = st.columns([3, 1.3, 1.3])
+        # Find matchup row for batter's team in pitchers_df
+        matchup_row = pitchers_df[(pitchers_df["Opponent"] == batter_team_name) | (pitchers_df["Team"] == batter_team_name)]
+
+        if not matchup_row.empty:
+            home_team = matchup_row.iloc[0]["Team"]  # Assuming "Team" is home team
+        else:
+            home_team = batter_team_name
         # Get ballpark info for the home team
         lookup_name = name_corrections.get(home_team, home_team)
         park_name = team_to_park.get(lookup_name, "Unknown")
@@ -236,15 +243,7 @@ if not pitcher_row.empty:
             xba_tag = "✅" if xba_allowed > 0.280 else "⚠️"
             hard_hit_tag = "✅" if hard_hit_pct_allowed > 35 else "⚠️"
             ev_tag = "✅" if avg_ev_allowed > 89 else "⚠️"
-
-            # Find matchup row for batter's team in pitchers_df
-            matchup_row = pitchers_df[(pitchers_df["Opponent"] == batter_team_name) | (pitchers_df["Team"] == batter_team_name)]
-
-            if not matchup_row.empty:
-                home_team = matchup_row.iloc[0]["Team"]  # Assuming "Team" is home team
-            else:
-                home_team = batter_team_name
-
+        
             name_corrections = {
                 "Arizona Diamondbacks": "Diamondbacks",
                 "Baltimore Orioles": "Orioles",
