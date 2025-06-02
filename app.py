@@ -457,7 +457,7 @@ if not df.empty:
         st.markdown("<div style='margin-top:8px;'></div>", unsafe_allow_html=True)
         # 🔢 SCORING LOGIC STARTS HERE
         score = 50
-        park_type = ballpark_factors.get(park_name, "Unknown")
+        
         # Pitcher stats
         if not df_pitcher.empty:
             if xba_allowed > 0.280: score += 10
