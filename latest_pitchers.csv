@@ -1,31 +1,15 @@
 Date,Team,Opponent,Pitcher Name,MLB ID,Throws,Last 5 IP,Last 5 ER,Last 5 SO,ERA,BAA,OPSa
-2025-06-01,Texas Rangers,St. Louis Cardinals,Jacob deGrom,594798,R,26.299999999999997,10,26,2.42,.203,.615
-2025-06-01,St. Louis Cardinals,Texas Rangers,Erick Fedde,607200,R,27.0,10,13,3.90,.239,.690
-2025-06-01,Atlanta Braves,Boston Red Sox,Bryce Elder,693821,R,27.0,16,16,4.50,.255,.776
-2025-06-01,Boston Red Sox,Atlanta Braves,Garrett Crochet,676979,L,31.299999999999997,4,35,2.04,.204,.567
-2025-06-01,Baltimore Orioles,Chicago White Sox,Charlie Morton,450203,R,20.200000000000003,25,21,7.09,.280,.865
-2025-06-01,Chicago White Sox,Baltimore Orioles,Adrian Houser,605288,R,12.0,0,8,0.00,.128,.388
-2025-06-01,Philadelphia Phillies,Milwaukee Brewers,Ranger Suárez,624133,L,29.4,10,31,2.97,.226,.584
-2025-06-01,Milwaukee Brewers,Philadelphia Phillies,Jose Quintana,500779,L,28.2,9,21,2.65,.246,.696
-2025-06-01,Toronto Blue Jays,Athletics,Kevin Gausman,592332,R,31.1,11,26,3.68,.209,.608
-2025-06-01,Athletics,Toronto Blue Jays,JP Sears,676664,L,27.3,10,23,5.18,.267,.813
-2025-06-01,Cleveland Guardians,Los Angeles Angels,Gavin Williams,668909,R,25.299999999999997,12,26,4.27,.255,.766
-2025-06-01,Los Angeles Angels,Cleveland Guardians,Jack Kochanowicz,686799,R,25.4,16,13,5.07,.276,.781
-2025-06-01,New York Mets,Colorado Rockies,Clay Holmes,605280,R,24.5,9,34,2.98,.234,.649
-2025-06-01,Colorado Rockies,New York Mets,Carson Palmquist,687223,L,13.1,13,6,8.78,.352,.971
-2025-06-01,Miami Marlins,San Francisco Giants,Ryan Weathers,677960,L,15.2,2,15,1.15,.175,.546
-2025-06-01,San Francisco Giants,Miami Marlins,Hayden Birdsong,806185,R,10.0,2,9,2.48,.244,.732
-2025-06-01,Kansas City Royals,Detroit Tigers,Kris Bubic,663460,L,30.299999999999997,5,33,1.45,.199,.545
-2025-06-01,Detroit Tigers,Kansas City Royals,Keider Montero,672456,R,24.3,13,18,4.54,.265,.772
-2025-06-01,Houston Astros,Tampa Bay Rays,Hunter Brown,686613,R,31.0,4,31,2.00,.194,.553
-2025-06-01,Tampa Bay Rays,Houston Astros,Taj Bradley,671737,R,28.1,16,27,4.38,.237,.715
-2025-06-01,Chicago Cubs,Cincinnati Reds,Jameson Taillon,592791,R,26.200000000000003,14,24,3.86,.226,.736
-2025-06-01,Cincinnati Reds,Chicago Cubs,Nick Martinez,607259,R,24.799999999999997,16,23,3.48,.248,.695
-2025-06-01,Arizona Diamondbacks,Washington Nationals,Corbin Burnes,669203,R,26.200000000000003,12,25,2.72,.209,.657
-2025-06-01,Washington Nationals,Arizona Diamondbacks,Mitchell Parker,680730,L,32.1,5,20,4.65,.240,.700
-2025-06-01,Seattle Mariners,Minnesota Twins,Luis Castillo,622491,R,26.1,13,23,3.32,.249,.670
-2025-06-01,Minnesota Twins,Seattle Mariners,Chris Paddack,663978,R,22.1,16,20,3.92,.236,.653
-2025-06-01,San Diego Padres,Pittsburgh Pirates,Randy Vásquez,681190,R,22.2,10,9,3.58,.240,.700
-2025-06-01,Pittsburgh Pirates,San Diego Padres,Andrew Heaney,571760,L,31.1,6,31,3.41,.222,.695
-2025-06-01,Los Angeles Dodgers,New York Yankees,Yoshinobu Yamamoto,808967,R,29.0,3,38,1.97,.170,.518
-2025-06-01,New York Yankees,Los Angeles Dodgers,Ryan Yarbrough,642232,L,6.6000000000000005,5,12,3.06,.203,.614
+2025-06-02,Miami Marlins,Colorado Rockies,Max Meyer,676974,R,29.299999999999997,7,41,4.53,.262,.754
+2025-06-02,Colorado Rockies,Miami Marlins,Germán Márquez,608566,R,19.4,21,14,7.13,.309,.838
+2025-06-02,Boston Red Sox,Los Angeles Angels,Richard Fitts,690916,R,20.0,6,15,2.70,.222,.603
+2025-06-02,Los Angeles Angels,Boston Red Sox,Tyler Anderson,542881,L,27.2,8,22,3.39,.216,.703
+2025-06-02,Cincinnati Reds,Milwaukee Brewers,Brady Singer,663903,R,27.1,11,32,4.60,.246,.718
+2025-06-02,Milwaukee Brewers,Cincinnati Reds,Aaron Civale,650644,R,12.0,8,9,6.00,.244,.898
+2025-06-02,Chicago White Sox,Detroit Tigers,Jonathan Cannon,686563,R,23.4,13,22,4.15,.266,.761
+2025-06-02,Detroit Tigers,Chicago White Sox,Jack Flaherty,656427,R,25.7,8,34,3.94,.215,.693
+2025-06-03,San Francisco Giants,San Diego Padres,Logan Webb,657277,R,30.0,8,38,2.82,.257,.659
+2025-06-03,San Diego Padres,San Francisco Giants,Stephen Kolek,663568,R,30.200000000000003,14,24,4.11,.259,.663
+2025-06-03,Athletics,Minnesota Twins,Luis Severino,622663,R,32.2,12,22,3.89,.240,.646
+2025-06-03,Minnesota Twins,Athletics,Joe Ryan,657746,R,27.0,12,28,2.57,.191,.592
+2025-06-03,Los Angeles Dodgers,New York Mets,Dustin May,669160,R,27.1,12,22,4.20,.233,.693
+2025-06-03,New York Mets,Los Angeles Dodgers,Paul Blackburn,621112,R,0.0,0,0,,,
