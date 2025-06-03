@@ -1,15 +1,28 @@
 Date,Team,Opponent,Pitcher Name,MLB ID,Throws,Last 5 IP,Last 5 ER,Last 5 SO,ERA,BAA,OPSa
-2025-06-02,Miami Marlins,Colorado Rockies,Max Meyer,676974,R,29.299999999999997,7,41,4.53,.262,.754
-2025-06-02,Colorado Rockies,Miami Marlins,Germán Márquez,608566,R,19.4,21,14,7.13,.309,.838
-2025-06-02,Boston Red Sox,Los Angeles Angels,Richard Fitts,690916,R,20.0,6,15,2.70,.222,.603
-2025-06-02,Los Angeles Angels,Boston Red Sox,Tyler Anderson,542881,L,27.2,8,22,3.39,.216,.703
-2025-06-02,Cincinnati Reds,Milwaukee Brewers,Brady Singer,663903,R,27.1,11,32,4.60,.246,.718
-2025-06-02,Milwaukee Brewers,Cincinnati Reds,Aaron Civale,650644,R,12.0,8,9,6.00,.244,.898
-2025-06-02,Chicago White Sox,Detroit Tigers,Jonathan Cannon,686563,R,23.4,13,22,4.15,.266,.761
-2025-06-02,Detroit Tigers,Chicago White Sox,Jack Flaherty,656427,R,25.7,8,34,3.94,.215,.693
-2025-06-03,San Francisco Giants,San Diego Padres,Logan Webb,657277,R,30.0,8,38,2.82,.257,.659
-2025-06-03,San Diego Padres,San Francisco Giants,Stephen Kolek,663568,R,30.200000000000003,14,24,4.11,.259,.663
-2025-06-03,Athletics,Minnesota Twins,Luis Severino,622663,R,32.2,12,22,3.89,.240,.646
-2025-06-03,Minnesota Twins,Athletics,Joe Ryan,657746,R,27.0,12,28,2.57,.191,.592
-2025-06-03,Los Angeles Dodgers,New York Mets,Dustin May,669160,R,27.1,12,22,4.20,.233,.693
-2025-06-03,New York Mets,Los Angeles Dodgers,Paul Blackburn,621112,R,0.0,0,0,,,
+2025-06-03,Pittsburgh Pirates,Houston Astros,Paul Skenes,694973,R,31.1,10,30,2.15,.187,.528
+2025-06-03,Houston Astros,Pittsburgh Pirates,Lance McCullers Jr.,621121,R,17.4,12,26,5.89,.260,.816
+2025-06-03,Miami Marlins,Colorado Rockies,Sandy Alcantara,645261,R,22.4,17,17,8.47,.279,.827
+2025-06-03,Washington Nationals,Chicago Cubs,Trevor Williams,592866,R,24.2,14,21,5.69,.291,.767
+2025-06-03,Chicago Cubs,Washington Nationals,Cade Horton,690990,R,20.1,9,16,3.98,.266,.748
+2025-06-03,New York Yankees,Cleveland Guardians,Carlos Rodón,607074,L,28.3,14,37,2.60,.164,.529
+2025-06-03,Cleveland Guardians,New York Yankees,Tanner Bibee,676440,R,24.599999999999998,15,20,3.86,.249,.765
+2025-06-03,Toronto Blue Jays,Philadelphia Phillies,Bowden Francis,670102,R,26.5,11,22,5.04,.271,.843
+2025-06-03,Philadelphia Phillies,Toronto Blue Jays,Cristopher Sánchez,650911,L,25.4,10,33,3.32,.246,.691
+2025-06-03,Boston Red Sox,Los Angeles Angels,Brayan Bello,678394,R,25.599999999999998,7,17,3.83,.281,.794
+2025-06-03,Los Angeles Angels,Boston Red Sox,Yusei Kikuchi,579328,L,29.1,11,28,3.06,.256,.723
+2025-06-03,Cincinnati Reds,Milwaukee Brewers,Hunter Greene,668881,R,30.2,8,35,2.63,.195,.614
+2025-06-03,Milwaukee Brewers,Cincinnati Reds,Freddy Peralta,642547,R,28.1,6,33,2.77,.208,.623
+2025-06-03,Atlanta Braves,Arizona Diamondbacks,Spencer Strider,675911,R,13.3,7,15,4.50,.240,.807
+2025-06-03,Arizona Diamondbacks,Atlanta Braves,Zac Gallen,668678,R,26.4,17,29,5.54,.238,.744
+2025-06-03,Tampa Bay Rays,Texas Rangers,Drew Rasmussen,656876,R,25.2,6,27,2.33,.199,.573
+2025-06-03,Texas Rangers,Tampa Bay Rays,Tyler Mahle,641816,R,26.2,2,25,1.64,.192,.518
+2025-06-03,Chicago White Sox,Detroit Tigers,Shane Smith,681343,R,26.4,7,22,2.68,.204,.620
+2025-06-03,St. Louis Cardinals,Kansas City Royals,Andre Pallante,669467,R,26.200000000000003,12,16,4.23,.254,.751
+2025-06-03,Kansas City Royals,St. Louis Cardinals,Michael Lorenzen,547179,R,26.5,12,24,4.33,.274,.791
+2025-06-04,Seattle Mariners,Baltimore Orioles,George Kirby,669923,R,8.2,11,8,11.42,.361,1.123
+2025-06-04,Baltimore Orioles,Seattle Mariners,Tomoyuki Sugano,608372,R,27.3,11,9,3.23,.238,.691
+2025-06-04,San Francisco Giants,San Diego Padres,Landen Roupp,694738,R,25.2,13,31,3.54,.268,.734
+2025-06-04,San Diego Padres,San Francisco Giants,Ryan Bergert,686701,R,4.0,0,2,0.00,.077,.220
+2025-06-04,Minnesota Twins,Athletics,Pablo López,641154,R,27.299999999999997,7,26,2.75,.224,.603
+2025-06-04,Los Angeles Dodgers,New York Mets,Clayton Kershaw,477132,L,11.0,6,6,4.91,.275,.812
+2025-06-04,New York Mets,Los Angeles Dodgers,Tylor Megill,656731,R,24.200000000000003,3,30,3.52,.227,.645
