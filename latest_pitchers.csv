@@ -1,31 +1,17 @@
 Date,Team,Opponent,Pitcher Name,MLB ID,Throws,Last 5 IP,Last 5 ER,Last 5 SO,ERA,BAA,OPSa
-2025-06-11,Pittsburgh Pirates,Miami Marlins,Bailey Falter,663559,L,26.0,15,20,3.49,.220,.635
-2025-06-11,Miami Marlins,Pittsburgh Pirates,Cal Quantrill,615698,R,22.3,20,13,5.63,.300,.858
-2025-06-11,Philadelphia Phillies,Chicago Cubs,Jesús Luzardo,666200,L,30.1,7,36,4.46,.282,.746
-2025-06-11,Chicago Cubs,Philadelphia Phillies,Ben Brown,676962,R,21.2,11,26,5.37,.275,.736
-2025-06-11,Cleveland Guardians,Cincinnati Reds,Logan Allen,671106,L,23.799999999999997,12,18,4.42,.280,.767
-2025-06-11,Cincinnati Reds,Cleveland Guardians,Nick Lodolo,666157,L,27.599999999999998,9,18,3.21,.239,.677
-2025-06-11,Milwaukee Brewers,Atlanta Braves,Chad Patrick,694477,R,20.4,5,20,2.84,.241,.655
-2025-06-11,Atlanta Braves,Milwaukee Brewers,Spencer Schwellenbach,680885,R,31.2,9,27,3.24,.231,.642
-2025-06-11,St. Louis Cardinals,Toronto Blue Jays,Matthew Liberatore,669461,L,30.3,11,28,3.82,.249,.660
-2025-06-11,Toronto Blue Jays,St. Louis Cardinals,Eric Lauer,641778,L,15.4,6,16,2.08,.157,.568
-2025-06-11,Arizona Diamondbacks,Seattle Mariners,Eduardo Rodriguez,593958,L,27.499999999999996,14,34,6.70,.308,.886
-2025-06-11,Seattle Mariners,Arizona Diamondbacks,Bryan Woo,693433,R,32.0,11,30,3.07,.218,.600
-2025-06-11,Los Angeles Angels,Athletics,Kyle Hendricks,543294,R,23.0,17,13,5.40,.263,.794
-2025-06-11,Athletics,Los Angeles Angels,JP Sears,676664,L,27.3,10,23,5.21,.269,.820
-2025-06-11,San Diego Padres,Los Angeles Dodgers,Randy Vásquez,681190,R,22.2,10,9,3.69,.244,.729
-2025-06-11,Los Angeles Dodgers,San Diego Padres,Justin Wrobleski,680736,L,15.0,12,13,7.20,.268,.779
-2025-06-11,Baltimore Orioles,Detroit Tigers,Zach Eflin,621107,R,28.1,16,17,4.47,.260,.792
-2025-06-11,Detroit Tigers,Baltimore Orioles,Casey Mize,663554,R,28.5,7,23,2.91,.244,.684
-2025-06-11,New York Mets,Washington Nationals,David Peterson,656849,L,26.4,10,28,2.80,.240,.655
-2025-06-11,Washington Nationals,New York Mets,Jake Irvin,663623,R,29.1,12,27,4.02,.243,.703
-2025-06-11,Boston Red Sox,Tampa Bay Rays,Walker Buehler,621111,R,27.2,13,26,5.18,.277,.820
-2025-06-11,Tampa Bay Rays,Boston Red Sox,Zack Littell,641793,R,29.0,17,21,3.68,.254,.747
-2025-06-11,Minnesota Twins,Texas Rangers,David Festa,701581,R,15.5,10,21,5.40,.273,.799
-2025-06-11,Texas Rangers,Minnesota Twins,Jack Leiter,683004,R,22.299999999999997,13,18,3.48,.193,.601
-2025-06-11,Kansas City Royals,New York Yankees,Kris Bubic,663460,L,30.299999999999997,5,33,1.43,.196,.543
-2025-06-11,New York Yankees,Kansas City Royals,Clarke Schmidt,657376,R,26.2,14,25,4.04,.233,.704
-2025-06-12,Houston Astros,Chicago White Sox,Ryan Gusto,687473,R,12.0,4,15,4.78,.284,.806
-2025-06-12,Chicago White Sox,Houston Astros,Sean Burke,680732,R,21.2,15,15,4.03,.241,.749
-2025-06-12,Colorado Rockies,San Francisco Giants,Kyle Freeland,607536,L,25.299999999999997,14,19,5.19,.320,.819
-2025-06-12,San Francisco Giants,Colorado Rockies,Robbie Ray,592662,L,24.1,11,25,2.44,.191,.566
+2025-06-12,New York Mets,Washington Nationals,Kodai Senga,673540,R,28.2,4,25,1.59,.206,.633
+2025-06-12,Washington Nationals,New York Mets,Michael Soroka,647336,R,25.2,16,25,4.86,.238,.722
+2025-06-12,Minnesota Twins,Texas Rangers,Bailey Ober,641927,R,24.299999999999997,14,23,3.78,.271,.753
+2025-06-12,Texas Rangers,Minnesota Twins,Patrick Corbin,571578,L,23.5,9,17,3.52,.239,.712
+2025-06-12,Colorado Rockies,San Francisco Giants,Antonio Senzatela,622608,R,23.4,13,9,6.68,.367,.971
+2025-06-12,San Francisco Giants,Colorado Rockies,Hayden Birdsong,806185,R,10.0,2,9,2.55,.234,.695
+2025-06-12,Baltimore Orioles,Detroit Tigers,Dean Kremer,665152,R,23.6,19,17,4.98,.283,.784
+2025-06-12,Detroit Tigers,Baltimore Orioles,Tarik Skubal,669373,L,28.2,9,29,2.16,.202,.512
+2025-06-12,Kansas City Royals,New York Yankees,Seth Lugo,607625,R,28.599999999999998,13,21,3.46,.239,.726
+2025-06-12,New York Yankees,Kansas City Royals,Will Warren,701542,R,20.2,11,21,5.34,.240,.717
+2025-06-12,Milwaukee Brewers,St. Louis Cardinals,Jacob Misiorowski,694819,R,0.0,0,0,,,
+2025-06-12,St. Louis Cardinals,Milwaukee Brewers,Sonny Gray,543243,R,29.0,11,29,3.35,.247,.669
+2025-06-13,Chicago Cubs,Pittsburgh Pirates,Jameson Taillon,592791,R,26.200000000000003,14,24,3.54,.214,.690
+2025-06-13,Pittsburgh Pirates,Chicago Cubs,Andrew Heaney,571760,L,31.1,6,31,3.24,.221,.693
+2025-06-13,Houston Astros,Chicago White Sox,Framber Valdez,664285,L,28.0,14,26,3.07,.209,.603
+2025-06-13,Chicago White Sox,Houston Astros,Davis Martin,663436,R,27.1,12,16,3.62,.257,.750
