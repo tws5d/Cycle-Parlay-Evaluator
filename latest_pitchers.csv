@@ -1,17 +1,28 @@
 Date,Team,Opponent,Pitcher Name,MLB ID,Throws,Last 5 IP,Last 5 ER,Last 5 SO,ERA,BAA,OPSa
-2025-06-12,New York Mets,Washington Nationals,Kodai Senga,673540,R,28.2,4,25,1.59,.206,.633
-2025-06-12,Washington Nationals,New York Mets,Michael Soroka,647336,R,25.2,16,25,4.86,.238,.722
-2025-06-12,Minnesota Twins,Texas Rangers,Bailey Ober,641927,R,24.299999999999997,14,23,3.78,.271,.753
-2025-06-12,Texas Rangers,Minnesota Twins,Patrick Corbin,571578,L,23.5,9,17,3.52,.239,.712
-2025-06-12,Colorado Rockies,San Francisco Giants,Antonio Senzatela,622608,R,23.4,13,9,6.68,.367,.971
-2025-06-12,San Francisco Giants,Colorado Rockies,Hayden Birdsong,806185,R,10.0,2,9,2.55,.234,.695
-2025-06-12,Baltimore Orioles,Detroit Tigers,Dean Kremer,665152,R,23.6,19,17,4.98,.283,.784
-2025-06-12,Detroit Tigers,Baltimore Orioles,Tarik Skubal,669373,L,28.2,9,29,2.16,.202,.512
-2025-06-12,Kansas City Royals,New York Yankees,Seth Lugo,607625,R,28.599999999999998,13,21,3.46,.239,.726
-2025-06-12,New York Yankees,Kansas City Royals,Will Warren,701542,R,20.2,11,21,5.34,.240,.717
-2025-06-12,Milwaukee Brewers,St. Louis Cardinals,Jacob Misiorowski,694819,R,0.0,0,0,,,
-2025-06-12,St. Louis Cardinals,Milwaukee Brewers,Sonny Gray,543243,R,29.0,11,29,3.35,.247,.669
-2025-06-13,Chicago Cubs,Pittsburgh Pirates,Jameson Taillon,592791,R,26.200000000000003,14,24,3.54,.214,.690
-2025-06-13,Pittsburgh Pirates,Chicago Cubs,Andrew Heaney,571760,L,31.1,6,31,3.24,.221,.693
-2025-06-13,Houston Astros,Chicago White Sox,Framber Valdez,664285,L,28.0,14,26,3.07,.209,.603
-2025-06-13,Chicago White Sox,Houston Astros,Davis Martin,663436,R,27.1,12,16,3.62,.257,.750
+2025-06-13,Chicago Cubs,Pittsburgh Pirates,Cade Horton,690990,R,25.200000000000003,10,19,4.11,.273,.726
+2025-06-13,Pittsburgh Pirates,Chicago Cubs,Paul Skenes,694973,R,31.1,10,30,1.88,.173,.498
+2025-06-13,Philadelphia Phillies,Toronto Blue Jays,Ranger Suárez,624133,L,29.4,10,31,2.70,.232,.607
+2025-06-13,Toronto Blue Jays,Philadelphia Phillies,Kevin Gausman,592332,R,31.1,11,26,3.87,.221,.637
+2025-06-13,Washington Nationals,Miami Marlins,Mitchell Parker,680730,L,32.1,5,20,4.44,.231,.672
+2025-06-13,Miami Marlins,Washington Nationals,Edward Cabrera,665795,R,23.4,17,24,3.99,.267,.754
+2025-06-13,Baltimore Orioles,Los Angeles Angels,Charlie Morton,450203,R,20.200000000000003,25,21,6.59,.286,.854
+2025-06-13,Los Angeles Angels,Baltimore Orioles,Jack Kochanowicz,686799,R,25.4,16,13,5.61,.297,.830
+2025-06-13,Cincinnati Reds,Detroit Tigers,Nick Martinez,607259,R,24.799999999999997,16,23,3.70,.256,.719
+2025-06-13,New York Mets,Tampa Bay Rays,Clay Holmes,605280,R,24.5,9,34,2.95,.235,.661
+2025-06-13,Tampa Bay Rays,New York Mets,Taj Bradley,671737,R,28.1,16,27,4.58,.234,.696
+2025-06-13,Boston Red Sox,New York Yankees,Garrett Crochet,676979,L,31.299999999999997,4,35,2.35,.207,.581
+2025-06-13,New York Yankees,Boston Red Sox,Ryan Yarbrough,642232,L,6.6000000000000005,5,12,4.17,.229,.690
+2025-06-13,Atlanta Braves,Colorado Rockies,Bryce Elder,693821,R,27.0,16,16,4.08,.238,.722
+2025-06-13,Colorado Rockies,Atlanta Braves,Germán Márquez,608566,R,19.4,21,14,7.00,.318,.880
+2025-06-14,Chicago White Sox,Texas Rangers,Adrian Houser,605288,R,24.1,4,20,1.48,.221,.595
+2025-06-14,Kansas City Royals,Athletics,Michael Wacha,608379,R,24.6,12,20,3.01,.240,.653
+2025-06-14,Athletics,Kansas City Royals,Luis Severino,622663,R,32.2,12,22,4.77,.256,.697
+2025-06-14,Houston Astros,Minnesota Twins,Colton Gordon,676467,L,24.2,14,25,5.11,.304,.830
+2025-06-14,Minnesota Twins,Houston Astros,Chris Paddack,663978,R,22.1,16,20,3.53,.221,.626
+2025-06-14,Milwaukee Brewers,St. Louis Cardinals,Freddy Peralta,642547,R,28.1,6,33,2.69,.206,.623
+2025-06-14,St. Louis Cardinals,Milwaukee Brewers,Erick Fedde,607200,R,27.0,10,13,3.54,.232,.673
+2025-06-14,Arizona Diamondbacks,San Diego Padres,Ryne Nelson,669194,R,9.5,10,12,4.60,.207,.635
+2025-06-14,San Diego Padres,Arizona Diamondbacks,Stephen Kolek,663568,R,30.200000000000003,14,24,3.00,.237,.621
+2025-06-14,Cleveland Guardians,Seattle Mariners,Gavin Williams,668909,R,25.299999999999997,12,26,3.86,.234,.710
+2025-06-14,Los Angeles Dodgers,San Francisco Giants,Yoshinobu Yamamoto,808967,R,29.0,3,38,2.20,.186,.551
+2025-06-14,San Francisco Giants,Los Angeles Dodgers,Logan Webb,657277,R,30.0,8,38,2.58,.252,.643
