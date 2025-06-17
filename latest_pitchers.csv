@@ -1,14 +1,30 @@
 Date,Team,Opponent,Pitcher Name,MLB ID,Throws,Last 5 IP,Last 5 ER,Last 5 SO,ERA,BAA,OPSa
-2025-06-16,Miami Marlins,Philadelphia Phillies,Sandy Alcantara,645261,R,22.4,17,17,7.14,.258,.758
-2025-06-16,Philadelphia Phillies,Miami Marlins,Mick Abel,690953,R,15.1,4,14,2.35,.241,.710
-2025-06-16,Washington Nationals,Colorado Rockies,Jake Irvin,663623,R,29.1,12,27,4.21,.243,.723
-2025-06-16,Colorado Rockies,Washington Nationals,Carson Palmquist,687223,L,21.3,19,16,7.77,.310,.977
-2025-06-16,New York Yankees,Los Angeles Angels,Clarke Schmidt,657376,R,26.2,14,25,3.60,.221,.669
-2025-06-16,Los Angeles Angels,New York Yankees,José Soriano,667755,R,27.6,14,22,3.86,.269,.693
-2025-06-16,Tampa Bay Rays,Baltimore Orioles,Ryan Pepiot,686752,R,28.0,15,31,3.31,.230,.714
-2025-06-16,Baltimore Orioles,Tampa Bay Rays,Zach Eflin,621107,R,28.1,16,17,4.08,.252,.752
-2025-06-17,Seattle Mariners,Boston Red Sox,Logan Gilbert,669302,R,26.4,8,41,2.37,.164,.505
-2025-06-17,Boston Red Sox,Seattle Mariners,Lucas Giolito,608337,R,26.4,16,23,5.45,.301,.823
-2025-06-17,Houston Astros,Athletics,Lance McCullers Jr.,621121,R,17.4,12,26,4.91,.224,.726
-2025-06-17,Los Angeles Dodgers,San Diego Padres,Shohei Ohtani,660271,R,0.0,0,0,,,
-2025-06-17,San Diego Padres,Los Angeles Dodgers,Dylan Cease,656302,R,24.4,17,30,4.28,.241,.705
+2025-06-17,Miami Marlins,Philadelphia Phillies,Cal Quantrill,615698,R,22.3,20,13,5.61,.300,.855
+2025-06-17,Philadelphia Phillies,Miami Marlins,Jesús Luzardo,666200,L,30.1,7,36,4.23,.277,.729
+2025-06-17,Detroit Tigers,Pittsburgh Pirates,Casey Mize,663554,R,28.5,7,23,2.95,.254,.712
+2025-06-17,Pittsburgh Pirates,Detroit Tigers,Bailey Falter,663559,L,26.0,15,20,3.36,.223,.646
+2025-06-17,Washington Nationals,Colorado Rockies,Michael Soroka,647336,R,25.2,16,25,5.14,.230,.732
+2025-06-17,Colorado Rockies,Washington Nationals,Antonio Senzatela,622608,R,23.4,13,9,7.23,.373,.984
+2025-06-17,New York Yankees,Los Angeles Angels,Will Warren,701542,R,20.2,11,21,4.86,.237,.702
+2025-06-17,Los Angeles Angels,New York Yankees,Kyle Hendricks,543294,R,23.0,17,13,5.20,.266,.801
+2025-06-17,Toronto Blue Jays,Arizona Diamondbacks,Chris Bassitt,605135,R,27.5,6,34,3.70,.267,.725
+2025-06-17,Arizona Diamondbacks,Toronto Blue Jays,Brandon Pfaadt,694297,R,29.2,9,23,5.50,.288,.851
+2025-06-17,Cincinnati Reds,Minnesota Twins,Andrew Abbott,671096,L,24.0,6,31,1.87,.184,.554
+2025-06-17,Minnesota Twins,Cincinnati Reds,David Festa,701581,R,21.5,12,25,4.76,.244,.760
+2025-06-17,Atlanta Braves,New York Mets,Spencer Schwellenbach,680885,R,31.2,9,27,3.11,.225,.631
+2025-06-17,New York Mets,Atlanta Braves,David Peterson,656849,L,26.4,10,28,2.49,.235,.632
+2025-06-17,Tampa Bay Rays,Baltimore Orioles,Zack Littell,641793,R,29.0,17,21,3.84,.258,.781
+2025-06-17,Baltimore Orioles,Tampa Bay Rays,Dean Kremer,665152,R,23.6,19,17,4.99,.277,.778
+2025-06-17,Chicago White Sox,St. Louis Cardinals,Shane Smith,681343,R,26.4,7,22,2.37,.212,.616
+2025-06-17,St. Louis Cardinals,Chicago White Sox,Matthew Liberatore,669461,L,30.3,11,28,4.17,.262,.689
+2025-06-18,Texas Rangers,Kansas City Royals,Jack Leiter,683004,R,22.299999999999997,13,18,3.88,.203,.643
+2025-06-18,Kansas City Royals,Texas Rangers,Seth Lugo,607625,R,28.599999999999998,13,21,3.18,.231,.702
+2025-06-18,Chicago Cubs,Milwaukee Brewers,Ben Brown,676962,R,21.2,11,26,5.71,.279,.759
+2025-06-18,Milwaukee Brewers,Chicago Cubs,Chad Patrick,694477,R,20.4,5,20,3.25,.246,.680
+2025-06-18,Seattle Mariners,Boston Red Sox,Bryan Woo,693433,R,32.0,11,30,3.39,.224,.623
+2025-06-18,Boston Red Sox,Seattle Mariners,Walker Buehler,621111,R,27.2,13,26,5.01,.272,.803
+2025-06-18,San Francisco Giants,Cleveland Guardians,Robbie Ray,592662,L,24.1,11,25,2.55,.199,.581
+2025-06-18,Cleveland Guardians,San Francisco Giants,Slade Cecconi,677944,R,25.1,12,28,4.26,.260,.821
+2025-06-18,Athletics,Houston Astros,JP Sears,676664,L,27.3,10,23,5.08,.265,.791
+2025-06-18,Houston Astros,Athletics,Jason Alexander,669920,R,5.300000000000001,12,5,18.00,.400,1.353
+2025-06-18,San Diego Padres,Los Angeles Dodgers,Randy Vásquez,681190,R,22.2,10,9,3.57,.236,.717
