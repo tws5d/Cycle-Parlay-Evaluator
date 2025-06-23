@@ -1,31 +1,19 @@
 Date,Team,Opponent,Pitcher Name,MLB ID,Throws,Last 5 IP,Last 5 ER,Last 5 SO,ERA,BAA,OPSa
-2025-06-22,New York Yankees,Baltimore Orioles,Will Warren,701542,R,20.2,11,21,4.83,.238,.688
-2025-06-22,Baltimore Orioles,New York Yankees,Dean Kremer,665152,R,23.6,19,17,4.80,.275,.769
-2025-06-22,Tampa Bay Rays,Detroit Tigers,Zack Littell,641793,R,29.0,17,21,3.88,.260,.777
-2025-06-22,Detroit Tigers,Tampa Bay Rays,Casey Mize,663554,R,28.5,7,23,2.96,.251,.691
-2025-06-22,Pittsburgh Pirates,Texas Rangers,Bailey Falter,663559,L,26.0,15,20,3.49,.225,.666
-2025-06-22,Texas Rangers,Pittsburgh Pirates,Jack Leiter,683004,R,22.299999999999997,13,18,4.40,.216,.696
-2025-06-22,Toronto Blue Jays,Chicago White Sox,Chris Bassitt,605135,R,27.5,6,34,3.75,.266,.724
-2025-06-22,Chicago White Sox,Toronto Blue Jays,Adrian Houser,605288,R,29.1,7,22,2.15,.238,.661
-2025-06-22,Miami Marlins,Atlanta Braves,Sandy Alcantara,645261,R,22.4,17,17,6.88,.258,.773
-2025-06-22,Atlanta Braves,Miami Marlins,Bryce Elder,693821,R,27.0,16,16,4.45,.252,.767
-2025-06-22,Minnesota Twins,Milwaukee Brewers,David Festa,701581,R,21.5,12,25,4.78,.230,.730
-2025-06-22,Milwaukee Brewers,Minnesota Twins,Quinn Priester,682990,R,23.1,15,17,3.46,.231,.672
-2025-06-22,St. Louis Cardinals,Cincinnati Reds,Miles Mikolas,571945,R,22.5,15,13,4.35,.268,.711
-2025-06-22,Cincinnati Reds,St. Louis Cardinals,Andrew Abbott,671096,L,24.0,6,31,1.84,.197,.588
-2025-06-22,Chicago Cubs,Seattle Mariners,Colin Rea,607067,R,12.5,2,12,3.84,.275,.751
-2025-06-22,Seattle Mariners,Chicago Cubs,Logan Gilbert,669302,R,26.4,8,41,2.55,.164,.526
-2025-06-22,Colorado Rockies,Arizona Diamondbacks,Antonio Senzatela,622608,R,23.4,13,9,6.72,.361,.956
-2025-06-22,Arizona Diamondbacks,Colorado Rockies,Brandon Pfaadt,694297,R,29.2,9,23,5.38,.283,.849
-2025-06-22,Athletics,Cleveland Guardians,JP Sears,676664,L,27.3,10,23,5.45,.269,.828
-2025-06-22,Cleveland Guardians,Athletics,Slade Cecconi,677944,R,25.1,12,28,4.15,.254,.794
-2025-06-22,San Francisco Giants,Boston Red Sox,Robbie Ray,592662,L,24.1,11,25,2.68,.201,.593
-2025-06-22,Boston Red Sox,San Francisco Giants,Lucas Giolito,608337,R,26.4,16,23,4.73,.284,.769
-2025-06-22,Los Angeles Angels,Houston Astros,Kyle Hendricks,543294,R,23.0,17,13,4.79,.260,.775
-2025-06-22,Houston Astros,Los Angeles Angels,Ryan Gusto,687473,R,12.0,4,15,4.31,.274,.771
-2025-06-22,Los Angeles Dodgers,Washington Nationals,Shohei Ohtani,660271,R,1.0,1,0,9.00,.500,.900
-2025-06-22,Washington Nationals,Los Angeles Dodgers,Michael Soroka,647336,R,25.2,16,25,5.06,.230,.756
-2025-06-22,San Diego Padres,Kansas City Royals,Randy Vásquez,681190,R,22.2,10,9,3.70,.235,.726
-2025-06-22,Kansas City Royals,San Diego Padres,Seth Lugo,607625,R,28.599999999999998,13,21,3.05,.225,.681
-2025-06-22,Philadelphia Phillies,New York Mets,Jesús Luzardo,666200,L,30.1,7,36,4.41,.279,.738
-2025-06-22,New York Mets,Philadelphia Phillies,David Peterson,656849,L,26.4,10,28,2.60,.232,.620
+2025-06-23,Baltimore Orioles,Texas Rangers,Trevor Rogers,669432,L,8.2,3,9,3.12,.212,.539
+2025-06-23,Texas Rangers,Baltimore Orioles,Patrick Corbin,571578,L,23.5,9,17,3.91,.247,.723
+2025-06-23,New York Mets,Atlanta Braves,Paul Blackburn,621112,R,12.3,10,8,6.92,.327,.894
+2025-06-23,Atlanta Braves,New York Mets,Spencer Schwellenbach,680885,R,31.2,9,27,3.26,.227,.645
+2025-06-23,Cincinnati Reds,New York Yankees,Nick Lodolo,666157,L,27.599999999999998,9,18,3.71,.238,.688
+2025-06-23,New York Yankees,Cincinnati Reds,Allan Winans,642216,R,0.0,0,0,,,
+2025-06-23,Minnesota Twins,Seattle Mariners,Bailey Ober,641927,R,24.299999999999997,14,23,4.54,.280,.806
+2025-06-23,Seattle Mariners,Minnesota Twins,Bryan Woo,693433,R,32.0,11,30,3.12,.213,.597
+2025-06-23,Chicago White Sox,Arizona Diamondbacks,Shane Smith,681343,R,26.4,7,22,2.85,.219,.630
+2025-06-23,Arizona Diamondbacks,Chicago White Sox,Eduardo Rodriguez,593958,L,27.499999999999996,14,34,5.93,.303,.876
+2025-06-23,Milwaukee Brewers,Pittsburgh Pirates,Chad Patrick,694477,R,20.4,5,20,3.50,.250,.700
+2025-06-23,Pittsburgh Pirates,Milwaukee Brewers,Braxton Ashcraft,677952,R,7.199999999999999,1,6,1.54,.209,.632
+2025-06-23,St. Louis Cardinals,Chicago Cubs,Matthew Liberatore,669461,L,30.3,11,28,4.08,.260,.678
+2025-06-23,Chicago Cubs,St. Louis Cardinals,Ben Brown,676962,R,21.2,11,26,5.57,.280,.772
+2025-06-24,Los Angeles Angels,Boston Red Sox,Jack Kochanowicz,686799,R,25.4,16,13,5.38,.284,.827
+2025-06-24,Boston Red Sox,Los Angeles Angels,Walker Buehler,621111,R,27.2,13,26,5.95,.286,.847
+2025-06-24,San Diego Padres,Washington Nationals,Stephen Kolek,663568,R,30.200000000000003,14,24,3.59,.253,.690
+2025-06-24,Washington Nationals,San Diego Padres,Mitchell Parker,680730,L,32.1,5,20,4.59,.247,.723
