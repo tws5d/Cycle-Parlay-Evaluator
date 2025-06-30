@@ -1,30 +1,17 @@
 Date,Team,Opponent,Pitcher Name,MLB ID,Throws,Last 5 IP,Last 5 ER,Last 5 SO,ERA,BAA,OPSa
-2025-06-29,Cleveland Guardians,St. Louis Cardinals,Logan Allen,671106,L,23.799999999999997,12,18,4.25,.272,.752
-2025-06-29,St. Louis Cardinals,Cleveland Guardians,Matthew Liberatore,669461,L,30.3,11,28,3.96,.258,.671
-2025-06-29,Pittsburgh Pirates,New York Mets,Mike Burrows,681347,R,22.4,11,25,4.45,.263,.787
-2025-06-29,New York Mets,Pittsburgh Pirates,Frankie Montas,593423,R,5.0,0,5,0.00,.176,.476
-2025-06-29,Baltimore Orioles,Tampa Bay Rays,Dean Kremer,665152,R,23.6,19,17,4.60,.272,.758
-2025-06-29,Tampa Bay Rays,Baltimore Orioles,Taj Bradley,671737,R,28.1,16,27,4.57,.235,.703
-2025-06-29,Boston Red Sox,Toronto Blue Jays,Walker Buehler,621111,R,27.2,13,26,6.29,.281,.854
-2025-06-29,Toronto Blue Jays,Boston Red Sox,Eric Lauer,641778,L,15.4,6,16,2.21,.188,.616
-2025-06-29,Atlanta Braves,Philadelphia Phillies,Spencer Strider,675911,R,24.3,15,24,4.07,.205,.663
-2025-06-29,Philadelphia Phillies,Atlanta Braves,Ranger Suárez,624133,L,29.4,10,31,2.08,.214,.570
-2025-06-29,New York Yankees,Athletics,Marcus Stroman,573186,R,8.399999999999999,12,7,11.57,.300,.979
-2025-06-29,Athletics,New York Yankees,Luis Severino,622663,R,32.2,12,22,4.83,.264,.718
-2025-06-29,Cincinnati Reds,San Diego Padres,Nick Lodolo,666157,L,27.599999999999998,9,18,3.63,.241,.697
-2025-06-29,San Diego Padres,Cincinnati Reds,Stephen Kolek,663568,R,30.200000000000003,14,24,3.95,.256,.688
-2025-06-29,Houston Astros,Chicago Cubs,Framber Valdez,664285,L,28.0,14,26,2.88,.214,.615
-2025-06-29,Chicago Cubs,Houston Astros,Jameson Taillon,592791,R,26.200000000000003,14,24,4.47,.235,.749
-2025-06-29,Kansas City Royals,Los Angeles Dodgers,Kris Bubic,663460,L,30.299999999999997,5,33,2.18,.225,.618
-2025-06-29,Chicago White Sox,San Francisco Giants,Jonathan Cannon,686563,R,23.4,13,22,4.66,.268,.796
-2025-06-29,San Francisco Giants,Chicago White Sox,Justin Verlander,434378,R,23.5,15,23,4.52,.263,.777
-2025-06-29,Milwaukee Brewers,Colorado Rockies,Chad Patrick,694477,R,20.4,5,20,3.72,.260,.723
-2025-06-29,Colorado Rockies,Milwaukee Brewers,Germán Márquez,608566,R,19.4,21,14,5.79,.313,.847
-2025-06-29,Texas Rangers,Seattle Mariners,Jack Leiter,683004,R,22.299999999999997,13,18,4.55,.222,.700
-2025-06-29,Seattle Mariners,Texas Rangers,Luis Castillo,622491,R,26.1,13,23,3.69,.245,.716
-2025-06-29,Los Angeles Angels,Washington Nationals,Jack Kochanowicz,686799,R,25.4,16,13,5.49,.288,.828
-2025-06-29,Washington Nationals,Los Angeles Angels,Mitchell Parker,680730,L,32.1,5,20,4.59,.247,.729
-2025-06-29,Arizona Diamondbacks,Miami Marlins,Eduardo Rodriguez,593958,L,27.499999999999996,14,34,5.40,.297,.854
-2025-06-29,Miami Marlins,Arizona Diamondbacks,Cal Quantrill,615698,R,22.3,20,13,5.56,.293,.845
-2025-06-29,Detroit Tigers,Minnesota Twins,Tarik Skubal,669373,L,28.2,9,29,2.29,.205,.531
-2025-06-29,Minnesota Twins,Detroit Tigers,Chris Paddack,663978,R,22.1,16,20,4.64,.250,.698
+2025-06-30,Philadelphia Phillies,San Diego Padres,Zack Wheeler,554430,R,31.1,13,41,2.45,.186,.558
+2025-06-30,San Diego Padres,Philadelphia Phillies,Matt Waldron,663362,R,0.0,0,0,,,
+2025-06-30,Pittsburgh Pirates,St. Louis Cardinals,Andrew Heaney,571760,L,31.1,6,31,4.48,.241,.751
+2025-06-30,St. Louis Cardinals,Pittsburgh Pirates,Erick Fedde,607200,R,27.0,10,13,4.11,.245,.710
+2025-06-30,Toronto Blue Jays,New York Yankees,Max Scherzer,453286,R,8.0,5,5,5.63,.300,.931
+2025-06-30,New York Yankees,Toronto Blue Jays,Carlos Rodón,607074,L,28.3,14,37,2.92,.180,.581
+2025-06-30,Boston Red Sox,Cincinnati Reds,Garrett Crochet,676979,L,31.299999999999997,4,35,2.06,.201,.560
+2025-06-30,Cincinnati Reds,Boston Red Sox,Chase Burns,695505,R,5.0,3,8,5.40,.286,.810
+2025-06-30,Tampa Bay Rays,Athletics,Drew Rasmussen,656876,R,25.2,6,27,2.45,.204,.574
+2025-06-30,Athletics,Tampa Bay Rays,Jacob Lopez,682052,L,12.600000000000001,4,17,3.56,.236,.727
+2025-07-01,Texas Rangers,Baltimore Orioles,Patrick Corbin,571578,L,23.5,9,17,4.24,.258,.742
+2025-07-01,Baltimore Orioles,Texas Rangers,Trevor Rogers,669432,L,16.2,3,13,1.62,.167,.402
+2025-07-01,Seattle Mariners,Kansas City Royals,George Kirby,669923,R,25.2,17,30,5.40,.270,.786
+2025-07-01,Kansas City Royals,Seattle Mariners,Michael Wacha,608379,R,24.6,12,20,3.33,.249,.665
+2025-07-01,Arizona Diamondbacks,San Francisco Giants,Ryne Nelson,669194,R,9.5,10,12,3.71,.194,.610
+2025-07-01,San Francisco Giants,Arizona Diamondbacks,Logan Webb,657277,R,30.0,8,38,2.52,.245,.634
