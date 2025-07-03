@@ -1,38 +1,21 @@
 Date,Team,Opponent,Pitcher Name,MLB ID,Throws,Last 5 IP,Last 5 ER,Last 5 SO,ERA,BAA,OPSa
-2025-07-02,Tampa Bay Rays,Athletics,Ryan Pepiot,686752,R,28.0,15,31,3.36,.229,.710
-2025-07-02,Athletics,Tampa Bay Rays,Mitch Spence,687765,R,9.5,8,15,3.82,.252,.717
-2025-07-02,Pittsburgh Pirates,St. Louis Cardinals,Mitch Keller,656605,R,27.299999999999997,13,20,3.90,.248,.662
-2025-07-02,St. Louis Cardinals,Pittsburgh Pirates,Sonny Gray,543243,R,29.0,11,29,3.36,.241,.660
-2025-07-02,Washington Nationals,Detroit Tigers,Trevor Williams,592866,R,24.2,14,21,5.65,.298,.786
-2025-07-02,Detroit Tigers,Washington Nationals,Tyler Holton,663947,L,5.4,2,6,4.34,.275,.779
-2025-07-02,Washington Nationals,Detroit Tigers,MacKenzie Gore,669022,L,29.0,11,45,3.09,.241,.672
-2025-07-02,Detroit Tigers,Washington Nationals,Jack Flaherty,656427,R,25.7,8,34,4.80,.220,.723
-2025-07-02,Philadelphia Phillies,San Diego Padres,Mick Abel,690953,R,23.1,9,18,3.47,.253,.819
-2025-07-02,San Diego Padres,Philadelphia Phillies,Nick Pivetta,601713,R,30.0,4,30,3.36,.210,.617
-2025-07-02,Philadelphia Phillies,San Diego Padres,Cristopher Sánchez,650911,L,25.4,10,33,2.79,.229,.628
-2025-07-02,San Diego Padres,Philadelphia Phillies,Dylan Cease,656302,R,24.4,17,30,4.53,.244,.715
-2025-07-02,New York Mets,Milwaukee Brewers,Clay Holmes,605280,R,24.5,9,34,2.97,.228,.662
-2025-07-02,Milwaukee Brewers,New York Mets,Freddy Peralta,642547,R,28.1,6,33,2.90,.208,.634
-2025-07-02,New York Mets,Milwaukee Brewers,Blade Tidwell,694918,R,9.5,12,7,10.13,.375,.987
-2025-07-02,Milwaukee Brewers,New York Mets,Jacob Misiorowski,694819,R,16.0,2,19,1.13,.061,.301
-2025-07-02,Boston Red Sox,Cincinnati Reds,Richard Fitts,690916,R,21.0,11,15,4.68,.250,.794
-2025-07-02,Cincinnati Reds,Boston Red Sox,Brady Singer,663903,R,27.1,11,32,4.31,.243,.727
-2025-07-02,Miami Marlins,Minnesota Twins,Janson Junk,676083,R,22.2,7,20,3.73,.276,.649
-2025-07-02,Minnesota Twins,Miami Marlins,Simeon Woods Richardson,680573,R,23.4,11,26,4.63,.261,.744
-2025-07-02,Toronto Blue Jays,New York Yankees,José Berríos,621244,R,28.2,16,24,3.26,.231,.691
-2025-07-02,New York Yankees,Toronto Blue Jays,Will Warren,701542,R,20.2,11,21,4.37,.232,.674
-2025-07-02,Cincinnati Reds,Boston Red Sox,Nick Martinez,607259,R,24.799999999999997,16,23,4.12,.250,.741
-2025-07-02,Atlanta Braves,Los Angeles Angels,Didier Fuentes,800311,R,8.1,10,4,10.80,.378,1.076
-2025-07-02,Los Angeles Angels,Atlanta Braves,Yusei Kikuchi,579328,L,29.1,11,28,2.79,.242,.692
-2025-07-03,Chicago Cubs,Cleveland Guardians,Shota Imanaga,684007,L,28.1,7,21,2.54,.198,.616
-2025-07-03,Cleveland Guardians,Chicago Cubs,Tanner Bibee,676440,R,24.599999999999998,15,20,3.90,.241,.708
-2025-07-03,Texas Rangers,Baltimore Orioles,Nathan Eovaldi,543135,R,30.2,9,31,1.87,.195,.531
-2025-07-03,Baltimore Orioles,Texas Rangers,Tomoyuki Sugano,608372,R,27.3,11,9,4.06,.266,.762
-2025-07-03,Colorado Rockies,Houston Astros,Austin Gomber,596295,L,14.2,10,5,6.14,.305,.898
-2025-07-03,Houston Astros,Colorado Rockies,Hunter Brown,686613,R,31.0,4,31,1.74,.175,.518
-2025-07-03,Seattle Mariners,Kansas City Royals,Logan Gilbert,669302,R,26.4,8,41,3.55,.199,.635
-2025-07-03,Kansas City Royals,Seattle Mariners,Noah Cameron,702070,L,30.5,3,19,2.79,.183,.578
-2025-07-03,Arizona Diamondbacks,San Francisco Giants,Merrill Kelly,518876,R,25.5,14,21,3.49,.215,.638
-2025-07-03,San Francisco Giants,Arizona Diamondbacks,Landen Roupp,694738,R,25.2,13,31,3.43,.261,.714
-2025-07-03,Los Angeles Dodgers,Chicago White Sox,Clayton Kershaw,477132,L,20.2,10,15,3.03,.232,.703
-2025-07-03,Chicago White Sox,Los Angeles Dodgers,Brandon Eisert,685126,L,4.5,4,9,4.33,.277,.808
+2025-07-03,Miami Marlins,Minnesota Twins,Eury Pérez,691587,R,15.299999999999999,11,14,6.19,.230,.694
+2025-07-03,Minnesota Twins,Miami Marlins,David Festa,701581,R,21.5,12,25,5.40,.259,.771
+2025-07-03,Colorado Rockies,Houston Astros,Kyle Freeland,607536,L,25.299999999999997,14,19,5.56,.327,.847
+2025-07-03,Houston Astros,Colorado Rockies,Brandon Walter,687888,L,29.2,11,30,3.34,.246,.711
+2025-07-03,Washington Nationals,Detroit Tigers,Jake Irvin,663623,R,29.1,12,27,4.73,.254,.776
+2025-07-03,Detroit Tigers,Washington Nationals,Dietrich Enns,608650,L,5.0,0,4,0.00,.067,.243
+2025-07-03,Toronto Blue Jays,New York Yankees,Chris Bassitt,605135,R,27.5,6,34,4.29,.272,.740
+2025-07-03,New York Yankees,Toronto Blue Jays,Clarke Schmidt,657376,R,26.2,14,25,3.09,.193,.601
+2025-07-03,New York Mets,Milwaukee Brewers,David Peterson,656849,L,26.4,10,28,3.30,.244,.665
+2025-07-03,Milwaukee Brewers,New York Mets,Jose Quintana,500779,L,28.2,9,21,3.30,.253,.697
+2025-07-03,Atlanta Braves,Los Angeles Angels,Bryce Elder,693821,R,27.0,16,16,5.82,.281,.859
+2025-07-03,Los Angeles Angels,Atlanta Braves,José Soriano,667755,R,27.6,14,22,3.99,.268,.690
+2025-07-04,Chicago Cubs,Cleveland Guardians,Cade Horton,690990,R,25.200000000000003,10,19,4.80,.287,.780
+2025-07-04,Cleveland Guardians,Chicago Cubs,Luis L. Ortiz,682847,R,24.5,17,31,4.36,.237,.708
+2025-07-04,Arizona Diamondbacks,San Francisco Giants,Brandon Pfaadt,694297,R,29.2,9,23,5.38,.280,.828
+2025-07-04,San Francisco Giants,Arizona Diamondbacks,Robbie Ray,592662,L,24.1,11,25,2.75,.209,.624
+2025-07-04,Seattle Mariners,Kansas City Royals,Bryan Woo,693433,R,32.0,11,30,2.93,.215,.613
+2025-07-04,Kansas City Royals,Seattle Mariners,Seth Lugo,607625,R,28.599999999999998,13,21,2.74,.214,.645
+2025-07-04,Los Angeles Dodgers,Chicago White Sox,Dustin May,669160,R,27.1,12,22,4.68,.248,.767
+2025-07-04,Chicago White Sox,Los Angeles Dodgers,Aaron Civale,650644,R,21.3,12,19,4.74,.277,.839
