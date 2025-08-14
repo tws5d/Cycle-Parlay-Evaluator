@@ -1,30 +1,15 @@
 Date,Team,Opponent,Pitcher Name,MLB ID,Throws,Last 5 IP,Last 5 ER,Last 5 SO,ERA,BAA,OPSa
-2025-08-13,Kansas City Royals,Washington Nationals,Seth Lugo,607625,R,28.599999999999998,13,21,3.46,.234,.718
-2025-08-13,Washington Nationals,Kansas City Royals,Jake Irvin,663623,R,29.1,12,27,4.90,.259,.787
-2025-08-13,Chicago White Sox,Detroit Tigers,Shane Smith,681343,R,26.4,7,22,4.22,.228,.696
-2025-08-13,Milwaukee Brewers,Pittsburgh Pirates,Brandon Woodruff,605540,R,28.1,7,37,2.29,.139,.514
-2025-08-13,Pittsburgh Pirates,Milwaukee Brewers,Mitch Keller,656605,R,27.299999999999997,13,20,3.86,.249,.690
-2025-08-13,St. Louis Cardinals,Colorado Rockies,Michael McGreevy,700241,R,27.4,11,17,4.40,.271,.696
-2025-08-13,Colorado Rockies,St. Louis Cardinals,Austin Gomber,596295,L,23.4,16,11,6.52,.305,.917
-2025-08-13,Texas Rangers,Arizona Diamondbacks,Merrill Kelly,518876,R,25.5,14,21,3.38,.208,.640
-2025-08-13,Arizona Diamondbacks,Texas Rangers,Zac Gallen,668678,R,26.4,17,29,5.31,.256,.772
-2025-08-13,San Francisco Giants,San Diego Padres,Kai-Wei Teng,678906,R,8.1,5,8,5.40,.226,.688
-2025-08-13,San Diego Padres,San Francisco Giants,Nick Pivetta,601713,R,30.0,4,30,2.94,.193,.572
-2025-08-13,Cincinnati Reds,Philadelphia Phillies,Hunter Greene,668881,R,30.2,8,35,2.72,.200,.631
-2025-08-13,Philadelphia Phillies,Cincinnati Reds,Cristopher Sánchez,650911,L,25.4,10,33,2.36,.224,.592
-2025-08-13,Baltimore Orioles,Seattle Mariners,Trevor Rogers,669432,L,27.499999999999996,5,24,1.44,.168,.451
-2025-08-13,Seattle Mariners,Baltimore Orioles,Logan Gilbert,669302,R,26.4,8,41,3.35,.197,.609
-2025-08-13,Cleveland Guardians,Miami Marlins,Gavin Williams,668909,R,25.299999999999997,12,26,3.17,.211,.668
-2025-08-13,Miami Marlins,Cleveland Guardians,Eury Pérez,691587,R,21.299999999999997,11,21,3.25,.184,.592
-2025-08-13,New York Yankees,Minnesota Twins,Cam Schlittler,693645,R,24.2,12,24,4.38,.296,.888
-2025-08-13,Minnesota Twins,New York Yankees,Joe Ryan,657746,R,27.0,12,28,2.79,.203,.598
-2025-08-13,Toronto Blue Jays,Chicago Cubs,Kevin Gausman,592332,R,31.1,11,26,3.85,.214,.640
-2025-08-13,Chicago Cubs,Toronto Blue Jays,Cade Horton,690990,R,25.200000000000003,10,19,3.18,.246,.671
-2025-08-13,Houston Astros,Boston Red Sox,Hunter Brown,686613,R,31.0,4,31,2.51,.195,.570
-2025-08-13,Boston Red Sox,Houston Astros,Walker Buehler,621111,R,27.2,13,26,5.40,.279,.828
-2025-08-13,New York Mets,Atlanta Braves,David Peterson,656849,L,26.4,10,28,2.98,.239,.651
-2025-08-13,Atlanta Braves,New York Mets,Carlos Carrasco,471911,R,20.2,15,15,6.18,.302,.877
-2025-08-14,Los Angeles Angels,Los Angeles Dodgers,Kyle Hendricks,543294,R,23.0,17,13,4.63,.257,.751
-2025-08-14,Los Angeles Dodgers,Los Angeles Angels,Shohei Ohtani,660271,R,9.0,1,10,2.37,.225,.555
-2025-08-14,Athletics,Tampa Bay Rays,J.T. Ginn,669372,R,19.5,11,27,4.39,.241,.757
-2025-08-14,Tampa Bay Rays,Athletics,Drew Rasmussen,656876,R,25.2,6,27,2.66,.216,.587
+2025-08-14,Baltimore Orioles,Seattle Mariners,Tomoyuki Sugano,608372,R,27.3,11,9,4.24,.266,.761
+2025-08-14,Seattle Mariners,Baltimore Orioles,Logan Evans,688138,R,27.0,10,21,4.36,.266,.801
+2025-08-14,Toronto Blue Jays,Chicago Cubs,Max Scherzer,453286,R,23.0,12,24,4.21,.234,.743
+2025-08-14,Chicago Cubs,Toronto Blue Jays,Matthew Boyd,571510,L,28.1,8,24,2.45,.230,.619
+2025-08-14,Cleveland Guardians,Miami Marlins,Tanner Bibee,676440,R,24.599999999999998,15,20,4.60,.254,.743
+2025-08-14,Miami Marlins,Cleveland Guardians,Edward Cabrera,665795,R,23.4,17,24,3.08,.218,.648
+2025-08-14,Washington Nationals,Philadelphia Phillies,Brad Lord,695418,R,9.1,5,5,3.28,.239,.656
+2025-08-14,Philadelphia Phillies,Washington Nationals,Jesús Luzardo,666200,L,30.1,7,36,4.20,.260,.705
+2025-08-14,New York Mets,Atlanta Braves,Kodai Senga,673540,R,28.2,4,25,2.30,.205,.666
+2025-08-14,Atlanta Braves,New York Mets,Bryce Elder,693821,R,27.0,16,16,6.12,.290,.850
+2025-08-14,Minnesota Twins,Detroit Tigers,Bailey Ober,641927,R,24.299999999999997,14,23,5.16,.284,.835
+2025-08-14,Detroit Tigers,Minnesota Twins,Tarik Skubal,669373,L,28.2,9,29,2.35,.198,.537
+2025-08-15,Colorado Rockies,Arizona Diamondbacks,Bradley Blalock,687134,R,15.3,23,8,7.89,.337,.914
+2025-08-15,Arizona Diamondbacks,Colorado Rockies,Eduardo Rodriguez,593958,L,27.499999999999996,14,34,5.68,.306,.880
