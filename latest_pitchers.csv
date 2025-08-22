@@ -1,19 +1,27 @@
 Date,Team,Opponent,Pitcher Name,MLB ID,Throws,Last 5 IP,Last 5 ER,Last 5 SO,ERA,BAA,OPSa
-2025-08-21,Minnesota Twins,Athletics,José Ureña,570632,R,12.1,10,6,4.06,.275,.808
-2025-08-21,Athletics,Minnesota Twins,Jack Perkins,678022,R,12.2,4,14,4.28,.195,.614
-2025-08-21,Kansas City Royals,Texas Rangers,Michael Lorenzen,547179,R,26.5,12,24,4.43,.257,.771
-2025-08-21,Texas Rangers,Kansas City Royals,Patrick Corbin,571578,L,23.5,9,17,4.45,.270,.765
-2025-08-21,Chicago Cubs,Milwaukee Brewers,Shota Imanaga,684007,L,28.1,7,21,3.06,.208,.638
-2025-08-21,Milwaukee Brewers,Chicago Cubs,Quinn Priester,682990,R,23.1,15,17,3.48,.243,.720
-2025-08-21,Colorado Rockies,Los Angeles Dodgers,Chase Dollander,801403,R,23.599999999999998,18,25,6.43,.273,.806
-2025-08-21,Los Angeles Dodgers,Colorado Rockies,Clayton Kershaw,477132,L,20.2,10,15,3.01,.251,.690
-2025-08-21,Washington Nationals,New York Mets,MacKenzie Gore,669022,L,29.0,11,45,4.04,.255,.722
-2025-08-21,New York Mets,Washington Nationals,Sean Manaea,640455,L,22.3,9,25,4.78,.240,.733
-2025-08-21,San Diego Padres,San Francisco Giants,Dylan Cease,656302,R,24.4,17,30,4.61,.235,.705
-2025-08-21,San Francisco Giants,San Diego Padres,Justin Verlander,434378,R,23.5,15,23,4.23,.273,.767
-2025-08-21,Baltimore Orioles,Houston Astros,Brandon Young,687064,R,21.299999999999997,15,21,5.68,.283,.851
-2025-08-21,Houston Astros,Baltimore Orioles,Jason Alexander,669920,R,11.3,14,9,4.74,.238,.739
-2025-08-21,New York Yankees,Boston Red Sox,Luis Gil,661563,R,13.299999999999999,8,14,5.14,.288,.819
-2025-08-21,Boston Red Sox,New York Yankees,Lucas Giolito,608337,R,26.4,16,23,3.63,.246,.711
-2025-08-21,Tampa Bay Rays,St. Louis Cardinals,Joe Boyle,671212,R,19.0,3,18,4.68,.176,.673
-2025-08-21,St. Louis Cardinals,Tampa Bay Rays,Sonny Gray,543243,R,29.0,11,29,4.30,.262,.721
+2025-08-22,Pittsburgh Pirates,Colorado Rockies,Braxton Ashcraft,677952,R,7.199999999999999,1,6,3.02,.248,.661
+2025-08-22,Colorado Rockies,Pittsburgh Pirates,Antonio Senzatela,622608,R,23.4,13,9,7.00,.354,.958
+2025-08-22,Philadelphia Phillies,Washington Nationals,Taijuan Walker,592836,R,22.2,7,20,3.34,.251,.723
+2025-08-22,Washington Nationals,Philadelphia Phillies,Cade Cavalli,676917,R,16.1,4,14,2.20,.266,.648
+2025-08-22,Baltimore Orioles,Houston Astros,Cade Povich,700249,L,23.6,14,23,4.98,.273,.779
+2025-08-22,Houston Astros,Baltimore Orioles,Lance McCullers Jr.,621121,R,17.4,12,26,6.90,.267,.864
+2025-08-22,New York Yankees,Boston Red Sox,Max Fried,608331,L,29.799999999999997,5,30,3.26,.228,.644
+2025-08-22,Boston Red Sox,New York Yankees,Brayan Bello,678394,R,25.599999999999998,7,17,3.23,.244,.680
+2025-08-22,Detroit Tigers,Kansas City Royals,Casey Mize,663554,R,28.5,7,23,3.63,.255,.730
+2025-08-22,Kansas City Royals,Detroit Tigers,Ryan Bergert,686701,R,9.0,2,4,2.75,.189,.601
+2025-08-22,Toronto Blue Jays,Miami Marlins,Shane Bieber,669456,R,0.0,0,0,,,
+2025-08-22,Atlanta Braves,New York Mets,Joey Wentz,666214,L,7.1,1,7,4.72,.241,.702
+2025-08-22,New York Mets,Atlanta Braves,Nolan McLean,690997,R,5.1,0,8,0.00,.118,.404
+2025-08-22,Tampa Bay Rays,St. Louis Cardinals,Adrian Houser,605288,R,29.1,7,22,2.67,.264,.708
+2025-08-22,St. Louis Cardinals,Tampa Bay Rays,Miles Mikolas,571945,R,22.5,15,13,4.99,.267,.781
+2025-08-22,Chicago White Sox,Minnesota Twins,Aaron Civale,650644,R,21.3,12,19,4.88,.257,.770
+2025-08-22,Minnesota Twins,Chicago White Sox,Zebby Matthews,805673,R,23.0,16,31,5.06,.278,.783
+2025-08-23,Texas Rangers,Cleveland Guardians,Nathan Eovaldi,543135,R,30.2,9,31,1.76,.196,.551
+2025-08-23,Cleveland Guardians,Texas Rangers,Slade Cecconi,677944,R,25.1,12,28,4.50,.264,.787
+2025-08-23,Milwaukee Brewers,San Francisco Giants,Jose Quintana,500779,L,28.2,9,21,3.32,.244,.694
+2025-08-23,San Francisco Giants,Milwaukee Brewers,Carson Whisenhunt,687931,L,14.1,8,12,5.02,.232,.871
+2025-08-23,Arizona Diamondbacks,Cincinnati Reds,Ryne Nelson,669194,R,9.5,10,12,3.58,.215,.658
+2025-08-23,Cincinnati Reds,Arizona Diamondbacks,Zack Littell,641793,R,29.0,17,21,3.52,.249,.722
+2025-08-23,San Diego Padres,Los Angeles Dodgers,Yu Darvish,506433,R,22.5,17,18,5.97,.234,.748
+2025-08-23,Los Angeles Dodgers,San Diego Padres,Blake Snell,605483,L,25.0,5,25,1.80,.242,.709
+2025-08-23,Athletics,Seattle Mariners,Luis Morales,806960,R,9.2,2,9,1.86,.235,.666
