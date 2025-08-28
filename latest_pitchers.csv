@@ -1,31 +1,16 @@
 Date,Team,Opponent,Pitcher Name,MLB ID,Throws,Last 5 IP,Last 5 ER,Last 5 SO,ERA,BAA,OPSa
-2025-08-27,New York Yankees,Washington Nationals,Max Fried,608331,L,29.799999999999997,5,30,3.14,.227,.638
-2025-08-27,Washington Nationals,New York Yankees,Cade Cavalli,676917,R,22.1,7,18,2.82,.270,.691
-2025-08-27,Cleveland Guardians,Tampa Bay Rays,Slade Cecconi,677944,R,25.1,12,28,4.41,.259,.781
-2025-08-27,Tampa Bay Rays,Cleveland Guardians,Drew Rasmussen,656876,R,25.2,6,27,2.62,.213,.590
-2025-08-27,Miami Marlins,Atlanta Braves,Ryan Gusto,687473,R,12.0,4,15,5.05,.272,.766
-2025-08-27,Atlanta Braves,Miami Marlins,Joey Wentz,666214,L,7.1,1,7,5.25,.258,.737
-2025-08-27,Seattle Mariners,San Diego Padres,Bryan Woo,693433,R,32.0,11,30,2.94,.205,.612
-2025-08-27,San Diego Padres,Seattle Mariners,Yu Darvish,506433,R,22.5,17,18,5.36,.214,.705
-2025-08-27,Baltimore Orioles,Boston Red Sox,Dietrich Enns,608650,L,15.3,7,13,4.97,.303,.781
-2025-08-27,Boston Red Sox,Baltimore Orioles,Brayan Bello,678394,R,25.599999999999998,7,17,3.07,.239,.664
-2025-08-27,Toronto Blue Jays,Minnesota Twins,Eric Lauer,641778,L,15.4,6,16,2.76,.215,.651
-2025-08-27,Minnesota Twins,Toronto Blue Jays,Simeon Woods Richardson,680573,R,23.4,11,26,4.24,.252,.741
-2025-08-27,New York Mets,Philadelphia Phillies,Nolan McLean,690997,R,12.1,2,15,1.46,.146,.483
-2025-08-27,Philadelphia Phillies,New York Mets,Taijuan Walker,592836,R,22.2,7,20,3.44,.249,.723
-2025-08-27,Chicago White Sox,Kansas City Royals,Aaron Civale,650644,R,21.3,12,19,5.02,.258,.775
-2025-08-27,Kansas City Royals,Chicago White Sox,Ryan Bergert,686701,R,9.0,2,4,2.79,.186,.601
-2025-08-27,Milwaukee Brewers,Arizona Diamondbacks,Quinn Priester,682990,R,23.1,15,17,3.44,.242,.718
-2025-08-27,Arizona Diamondbacks,Milwaukee Brewers,Ryne Nelson,669194,R,9.5,10,12,3.63,.213,.654
-2025-08-27,St. Louis Cardinals,Pittsburgh Pirates,Sonny Gray,543243,R,29.0,11,29,4.33,.263,.724
-2025-08-27,Pittsburgh Pirates,St. Louis Cardinals,Carmen Mlodzinski,669387,R,21.299999999999997,17,18,3.89,.266,.733
-2025-08-28,Texas Rangers,Los Angeles Angels,Jacob Latz,656641,L,7.3999999999999995,4,4,3.05,.223,.660
-2025-08-28,Los Angeles Angels,Texas Rangers,Jack Kochanowicz,686799,R,25.4,16,13,6.19,.302,.848
-2025-08-28,Houston Astros,Colorado Rockies,Framber Valdez,664285,L,28.0,14,26,3.32,.234,.652
-2025-08-28,Colorado Rockies,Houston Astros,Chase Dollander,801403,R,23.599999999999998,18,25,6.91,.285,.839
-2025-08-28,Los Angeles Dodgers,Cincinnati Reds,Shohei Ohtani,660271,R,9.0,1,10,4.61,.278,.682
-2025-08-28,Cincinnati Reds,Los Angeles Dodgers,Nick Lodolo,666157,L,27.599999999999998,9,18,3.05,.226,.651
-2025-08-28,San Francisco Giants,Chicago Cubs,Carson Whisenhunt,687931,L,18.1,10,13,4.91,.243,.867
-2025-08-28,Chicago Cubs,San Francisco Giants,Colin Rea,607067,R,12.5,2,12,3.96,.261,.748
-2025-08-28,Athletics,Detroit Tigers,Luis Morales,806960,R,15.2,3,15,1.72,.185,.564
-2025-08-28,Detroit Tigers,Athletics,Casey Mize,663554,R,28.5,7,23,3.68,.262,.734
+2025-08-28,Baltimore Orioles,Boston Red Sox,Cade Povich,700249,L,23.6,14,23,5.13,.270,.774
+2025-08-28,Boston Red Sox,Baltimore Orioles,Garrett Crochet,676979,L,31.299999999999997,4,35,2.38,.218,.604
+2025-08-28,Houston Astros,Colorado Rockies,Jason Alexander,669920,R,11.3,14,9,4.59,.250,.748
+2025-08-28,Colorado Rockies,Houston Astros,Kyle Freeland,607536,L,25.299999999999997,14,19,5.31,.306,.836
+2025-08-28,Milwaukee Brewers,Arizona Diamondbacks,Jose Quintana,500779,L,28.2,9,21,3.32,.239,.691
+2025-08-28,Arizona Diamondbacks,Milwaukee Brewers,Nabil Crismatt,622503,R,9.0,1,9,1.00,.206,.524
+2025-08-28,St. Louis Cardinals,Pittsburgh Pirates,Miles Mikolas,571945,R,22.5,15,13,5.17,.278,.809
+2025-08-28,Pittsburgh Pirates,St. Louis Cardinals,Braxton Ashcraft,677952,R,7.199999999999999,1,6,2.70,.233,.622
+2025-08-28,San Francisco Giants,Chicago Cubs,Logan Webb,657277,R,30.0,8,38,3.13,.260,.687
+2025-08-28,Chicago Cubs,San Francisco Giants,Shota Imanaga,684007,L,28.1,7,21,3.03,.203,.629
+2025-08-28,Philadelphia Phillies,Atlanta Braves,Aaron Nola,605400,R,27.300000000000004,20,31,6.52,.300,.868
+2025-08-28,Atlanta Braves,Philadelphia Phillies,Cal Quantrill,615698,R,22.3,20,13,5.51,.280,.821
+2025-08-28,New York Mets,Miami Marlins,Clay Holmes,605280,R,24.5,9,34,3.60,.245,.684
+2025-08-28,Chicago White Sox,New York Yankees,Davis Martin,663436,R,27.1,12,16,3.93,.252,.751
+2025-08-28,New York Yankees,Chicago White Sox,Will Warren,701542,R,20.2,11,21,4.47,.249,.728
