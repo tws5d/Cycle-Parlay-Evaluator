@@ -1,31 +1,13 @@
 Date,Team,Opponent,Pitcher Name,MLB ID,Throws,Last 5 IP,Last 5 ER,Last 5 SO,ERA,BAA,OPSa
-2025-09-03,Washington Nationals,Miami Marlins,Mitchell Parker,680730,L,32.1,5,20,5.94,.275,.811
-2025-09-03,Miami Marlins,Washington Nationals,Eury Pérez,691587,R,21.299999999999997,11,21,4.04,.184,.612
-2025-09-03,Detroit Tigers,New York Mets,Casey Mize,663554,R,28.5,7,23,3.95,.268,.751
-2025-09-03,New York Mets,Detroit Tigers,Clay Holmes,605280,R,24.5,9,34,3.60,.244,.679
-2025-09-03,Arizona Diamondbacks,Texas Rangers,Zac Gallen,668678,R,26.4,17,29,4.94,.246,.746
-2025-09-03,Texas Rangers,Arizona Diamondbacks,Jack Leiter,683004,R,22.299999999999997,13,18,3.77,.219,.663
-2025-09-03,San Diego Padres,Baltimore Orioles,Nestor Cortes,641482,L,21.599999999999998,15,22,5.06,.242,.843
-2025-09-03,Baltimore Orioles,San Diego Padres,Cade Povich,700249,L,23.6,14,23,5.04,.274,.787
-2025-09-03,Pittsburgh Pirates,Los Angeles Dodgers,Braxton Ashcraft,677952,R,7.199999999999999,1,6,2.58,.230,.607
-2025-09-03,Los Angeles Dodgers,Pittsburgh Pirates,Shohei Ohtani,660271,R,9.0,1,10,4.18,.256,.657
-2025-09-03,Cincinnati Reds,Toronto Blue Jays,Zack Littell,641793,R,29.0,17,21,3.63,.250,.729
-2025-09-03,Toronto Blue Jays,Cincinnati Reds,Shane Bieber,669456,R,11.1,3,15,2.38,.175,.520
-2025-09-03,Boston Red Sox,Cleveland Guardians,Brennan Bernardino,657514,L,5.1,1,6,3.08,.202,.561
-2025-09-03,Cleveland Guardians,Boston Red Sox,Joey Cantillo,676282,L,9.1,1,12,3.93,.231,.707
-2025-09-03,Tampa Bay Rays,Seattle Mariners,Adrian Houser,605288,R,29.1,7,22,2.85,.268,.717
-2025-09-03,Seattle Mariners,Tampa Bay Rays,George Kirby,669923,R,25.2,17,30,3.94,.241,.671
-2025-09-03,Kansas City Royals,Los Angeles Angels,Ryan Bergert,686701,R,9.0,2,4,2.67,.192,.609
-2025-09-03,Los Angeles Angels,Kansas City Royals,Caden Dana,702674,R,6.0,5,6,7.50,.304,1.023
-2025-09-03,Chicago Cubs,Atlanta Braves,Cade Horton,690990,R,25.200000000000003,10,19,2.92,.236,.657
-2025-09-03,Atlanta Braves,Chicago Cubs,Bryce Elder,693821,R,27.0,16,16,5.85,.277,.805
-2025-09-03,Minnesota Twins,Chicago White Sox,Zebby Matthews,805673,R,23.0,16,31,5.06,.290,.791
-2025-09-03,Chicago White Sox,Minnesota Twins,Yoendrys Gómez,672782,R,6.3,2,5,5.20,.230,.729
-2025-09-03,Milwaukee Brewers,Philadelphia Phillies,Jose Quintana,500779,L,28.2,9,21,3.69,.241,.697
-2025-09-03,Philadelphia Phillies,Milwaukee Brewers,Aaron Nola,605400,R,27.300000000000004,20,31,6.47,.292,.850
-2025-09-03,St. Louis Cardinals,Athletics,Matthew Liberatore,669461,L,30.3,11,28,4.32,.269,.742
-2025-09-03,Athletics,St. Louis Cardinals,Jeffrey Springs,605488,L,22.1,14,23,4.17,.232,.716
-2025-09-04,Houston Astros,New York Yankees,Jason Alexander,669920,R,11.3,14,9,4.61,.256,.767
-2025-09-04,New York Yankees,Houston Astros,Will Warren,701542,R,20.2,11,21,4.30,.248,.728
-2025-09-04,Colorado Rockies,San Francisco Giants,Germán Márquez,608566,R,19.4,21,14,6.14,.314,.897
-2025-09-04,San Francisco Giants,Colorado Rockies,Robbie Ray,592662,L,24.1,11,25,3.18,.212,.659
+2025-09-04,Milwaukee Brewers,Philadelphia Phillies,Freddy Peralta,642547,R,28.1,6,33,2.58,.192,.594
+2025-09-04,Philadelphia Phillies,Milwaukee Brewers,Ranger Suárez,624133,L,29.4,10,31,3.02,.246,.648
+2025-09-04,Pittsburgh Pirates,Los Angeles Dodgers,Paul Skenes,694973,R,31.1,10,30,2.05,.198,.560
+2025-09-04,Los Angeles Dodgers,Pittsburgh Pirates,Blake Snell,605483,L,25.0,5,25,2.41,.244,.699
+2025-09-04,Tampa Bay Rays,Cleveland Guardians,Ryan Pepiot,686752,R,28.0,15,31,3.70,.222,.708
+2025-09-04,Cleveland Guardians,Tampa Bay Rays,Logan Allen,671106,L,23.799999999999997,12,18,4.42,.265,.762
+2025-09-04,Kansas City Royals,Los Angeles Angels,Noah Cameron,702070,L,30.5,3,19,2.92,.216,.629
+2025-09-04,Los Angeles Angels,Kansas City Royals,Kyle Hendricks,543294,R,23.0,17,13,4.89,.267,.771
+2025-09-04,Minnesota Twins,Chicago White Sox,Taj Bradley,671737,R,28.1,16,27,4.82,.239,.693
+2025-09-04,Chicago White Sox,Minnesota Twins,Fraser Ellard,686642,L,4.300000000000001,3,6,4.82,.037,.334
+2025-09-04,Houston Astros,New York Yankees,Cristian Javier,664299,R,16.0,6,16,3.38,.161,.498
+2025-09-04,New York Yankees,Houston Astros,Carlos Rodón,607074,L,28.3,14,37,3.18,.188,.599
