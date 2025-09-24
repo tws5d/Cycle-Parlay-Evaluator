@@ -1,29 +1,31 @@
 Date,Team,Opponent,Pitcher Name,MLB ID,Throws,Last 5 IP,Last 5 ER,Last 5 SO,ERA,BAA,OPSa
-2025-09-23,Baltimore Orioles,Tampa Bay Rays,Dean Kremer,665152,R,23.6,19,17,4.39,.257,.726
-2025-09-23,Tampa Bay Rays,Baltimore Orioles,Ryan Pepiot,686752,R,28.0,15,31,3.77,.220,.701
-2025-09-23,Cleveland Guardians,Detroit Tigers,Gavin Williams,668909,R,25.299999999999997,12,26,3.06,.212,.672
-2025-09-23,Detroit Tigers,Cleveland Guardians,Tarik Skubal,669373,L,28.2,9,29,2.23,.200,.559
-2025-09-23,Cincinnati Reds,Pittsburgh Pirates,Brady Singer,663903,R,27.1,11,32,3.86,.232,.700
-2025-09-23,Pittsburgh Pirates,Cincinnati Reds,Johan Oviedo,670912,R,20.0,6,24,3.52,.189,.644
-2025-09-23,Philadelphia Phillies,Miami Marlins,Cristopher Sánchez,650911,L,25.4,10,33,2.66,.233,.613
-2025-09-23,Miami Marlins,Philadelphia Phillies,Edward Cabrera,665795,R,23.4,17,24,3.57,.234,.678
-2025-09-23,New York Yankees,Chicago White Sox,Luis Gil,661563,R,23.299999999999997,10,22,3.33,.237,.703
-2025-09-23,Chicago White Sox,New York Yankees,Shane Smith,681343,R,26.4,7,22,4.06,.220,.686
-2025-09-23,Toronto Blue Jays,Boston Red Sox,Kevin Gausman,592332,R,31.1,11,26,3.38,.205,.607
-2025-09-23,Boston Red Sox,Toronto Blue Jays,Lucas Giolito,608337,R,26.4,16,23,3.46,.242,.692
-2025-09-23,Atlanta Braves,Washington Nationals,Hurston Waldrep,694462,R,29.299999999999997,3,24,3.04,.220,.607
-2025-09-23,Washington Nationals,Atlanta Braves,Brad Lord,695418,R,9.1,5,5,4.18,.257,.715
-2025-09-23,Chicago Cubs,New York Mets,Cade Horton,690990,R,25.200000000000003,10,19,2.66,.220,.613
-2025-09-23,New York Mets,Chicago Cubs,David Peterson,656849,L,26.4,10,28,3.98,.254,.690
-2025-09-24,Texas Rangers,Minnesota Twins,Patrick Corbin,571578,L,23.5,9,17,4.33,.266,.759
-2025-09-24,Minnesota Twins,Texas Rangers,Zebby Matthews,805673,R,23.0,16,31,5.97,.304,.817
-2025-09-24,Los Angeles Angels,Kansas City Royals,Sam Aldegheri,691951,L,4.1,5,4,10.38,.333,.980
-2025-09-24,Kansas City Royals,Los Angeles Angels,Cole Ragans,666142,L,27.2,11,42,5.16,.241,.715
-2025-09-24,Arizona Diamondbacks,Los Angeles Dodgers,Brandon Pfaadt,694297,R,29.2,9,23,5.02,.281,.792
-2025-09-24,Los Angeles Dodgers,Arizona Diamondbacks,Shohei Ohtani,660271,R,9.0,1,10,3.29,.227,.590
-2025-09-24,San Diego Padres,Milwaukee Brewers,Randy Vásquez,681190,R,22.2,10,9,3.94,.253,.725
-2025-09-24,Milwaukee Brewers,San Diego Padres,Bruce Zimmermann,669145,L,0.0,0,0,,,
-2025-09-24,San Francisco Giants,St. Louis Cardinals,Logan Webb,657277,R,30.0,8,38,3.27,.264,.695
-2025-09-24,St. Louis Cardinals,San Francisco Giants,Andre Pallante,669467,R,26.200000000000003,12,16,5.29,.270,.771
-2025-09-24,Athletics,Houston Astros,Jeffrey Springs,605488,L,22.1,14,23,4.17,.238,.725
-2025-09-24,Houston Astros,Athletics,Cristian Javier,664299,R,20.1,10,20,4.45,.218,.637
+2025-09-24,Atlanta Braves,Washington Nationals,Bryce Elder,693821,R,27.0,16,16,5.36,.273,.779
+2025-09-24,Washington Nationals,Atlanta Braves,Andrew Alvarez,674841,L,18.3,6,15,2.84,.194,.539
+2025-09-24,San Diego Padres,Milwaukee Brewers,Dylan Cease,656302,R,24.4,17,30,4.64,.237,.716
+2025-09-24,Milwaukee Brewers,San Diego Padres,Chad Patrick,694477,R,20.4,5,20,3.66,.251,.707
+2025-09-24,Baltimore Orioles,Tampa Bay Rays,Tyler Wells,669330,R,17.2,4,14,2.04,.161,.514
+2025-09-24,Tampa Bay Rays,Baltimore Orioles,Shane Baz,669358,R,29.1,8,36,4.99,.254,.769
+2025-09-24,Cleveland Guardians,Detroit Tigers,Tanner Bibee,676440,R,24.599999999999998,15,20,4.34,.246,.726
+2025-09-24,Detroit Tigers,Cleveland Guardians,Jack Flaherty,656427,R,25.7,8,34,4.60,.239,.714
+2025-09-24,Cincinnati Reds,Pittsburgh Pirates,Hunter Greene,668881,R,30.2,8,35,2.74,.189,.610
+2025-09-24,Pittsburgh Pirates,Cincinnati Reds,Paul Skenes,694973,R,31.1,10,30,2.03,.199,.563
+2025-09-24,Philadelphia Phillies,Miami Marlins,Jesús Luzardo,666200,L,30.1,7,36,4.08,.244,.669
+2025-09-24,Miami Marlins,Philadelphia Phillies,Ryan Weathers,677960,L,24.2,9,23,3.21,.238,.665
+2025-09-24,New York Yankees,Chicago White Sox,Max Fried,608331,L,29.799999999999997,5,30,2.92,.224,.621
+2025-09-24,Chicago White Sox,New York Yankees,Fraser Ellard,686642,L,4.300000000000001,3,6,4.50,.157,.603
+2025-09-24,Toronto Blue Jays,Boston Red Sox,Max Scherzer,453286,R,23.0,12,24,5.06,.251,.795
+2025-09-24,Boston Red Sox,Toronto Blue Jays,Garrett Crochet,676979,L,31.299999999999997,4,35,2.69,.220,.628
+2025-09-25,Chicago Cubs,New York Mets,Matthew Boyd,571510,L,28.1,8,24,3.20,.238,.661
+2025-09-25,New York Mets,Chicago Cubs,Jonah Tong,804636,R,16.2,11,21,5.94,.262,.760
+2025-09-25,Texas Rangers,Minnesota Twins,Jacob deGrom,594798,R,26.299999999999997,10,26,3.01,.197,.599
+2025-09-25,Minnesota Twins,Texas Rangers,Taj Bradley,671737,R,28.1,16,27,5.20,.249,.728
+2025-09-25,Los Angeles Angels,Kansas City Royals,Yusei Kikuchi,579328,L,29.1,11,28,4.05,.266,.762
+2025-09-25,Kansas City Royals,Los Angeles Angels,Stephen Kolek,663568,R,30.200000000000003,14,24,3.54,.237,.635
+2025-09-25,Arizona Diamondbacks,Los Angeles Dodgers,Ryne Nelson,669194,R,9.5,10,12,3.34,.214,.649
+2025-09-25,Los Angeles Dodgers,Arizona Diamondbacks,Blake Snell,605483,L,25.0,5,25,2.44,.229,.629
+2025-09-25,Seattle Mariners,Colorado Rockies,Luis Castillo,622491,R,26.1,13,23,3.63,.251,.715
+2025-09-25,Colorado Rockies,Seattle Mariners,Tanner Gordon,685299,R,25.3,14,15,6.00,.294,.834
+2025-09-25,San Francisco Giants,St. Louis Cardinals,JT Brubaker,664141,R,4.300000000000001,5,2,3.65,.218,.600
+2025-09-25,St. Louis Cardinals,San Francisco Giants,Sonny Gray,543243,R,29.0,11,29,4.33,.262,.722
+2025-09-25,Athletics,Houston Astros,Luis Severino,622663,R,32.2,12,22,4.72,.261,.725
+2025-09-25,Houston Astros,Athletics,Hunter Brown,686613,R,31.0,4,31,2.30,.198,.584
