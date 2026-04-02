@@ -1,31 +1,9 @@
 Date,Team,Opponent,Pitcher Name,MLB ID,Throws,Last 5 IP,Last 5 ER,Last 5 SO,ERA,BAA,OPSa
-2026-04-01,Atlanta Braves,Athletics,Chris Sale,519242,L,6.0,0,6,0.00,.158,.462
-2026-04-01,Athletics,Atlanta Braves,Luis Severino,622663,R,5.0,2,3,3.60,.176,.653
-2026-04-01,Baltimore Orioles,Texas Rangers,Trevor Rogers,669432,L,7.0,0,5,0.00,.136,.432
-2026-04-01,Texas Rangers,Baltimore Orioles,Nathan Eovaldi,543135,R,4.2,5,7,9.64,.364,1.046
-2026-04-01,Cincinnati Reds,Pittsburgh Pirates,Andrew Abbott,671096,L,6.0,0,4,0.00,.304,.637
-2026-04-01,Pittsburgh Pirates,Cincinnati Reds,Paul Skenes,694973,R,0.2,5,1,67.50,.800,2.178
-2026-04-01,Philadelphia Phillies,Washington Nationals,Cristopher Sánchez,650911,L,6.0,0,10,0.00,.143,.333
-2026-04-01,Washington Nationals,Philadelphia Phillies,Cade Cavalli,676917,R,3.2,2,5,4.91,.214,.639
-2026-04-01,Toronto Blue Jays,Colorado Rockies,Kevin Gausman,592332,R,6.0,1,11,1.50,.053,.264
-2026-04-01,Colorado Rockies,Toronto Blue Jays,Kyle Freeland,607536,L,4.1,2,2,4.15,.278,.770
-2026-04-01,Miami Marlins,Chicago White Sox,Sandy Alcantara,645261,R,7.0,0,5,0.00,.174,.414
-2026-04-01,Chicago White Sox,Miami Marlins,Shane Smith,681343,R,1.2,3,2,16.20,.375,1.125
-2026-04-01,St. Louis Cardinals,New York Mets,Matthew Liberatore,669461,L,5.0,1,2,1.80,.318,.830
-2026-04-01,New York Mets,St. Louis Cardinals,Freddy Peralta,642547,R,5.0,4,7,7.20,.286,.905
-2026-04-01,Milwaukee Brewers,Tampa Bay Rays,Jacob Misiorowski,694819,R,5.0,1,11,1.80,.118,.544
-2026-04-01,Tampa Bay Rays,Milwaukee Brewers,Drew Rasmussen,656876,R,5.0,1,2,1.80,.200,.550
-2026-04-01,Houston Astros,Boston Red Sox,Mike Burrows,681347,R,5.2,5,6,7.94,.375,1.131
-2026-04-01,Boston Red Sox,Houston Astros,Garrett Crochet,676979,L,6.0,0,8,0.00,.136,.390
-2026-04-01,Chicago Cubs,Los Angeles Angels,Matthew Boyd,571510,L,3.2,6,7,14.73,.375,1.037
-2026-04-01,Los Angeles Angels,Chicago Cubs,Yusei Kikuchi,579328,L,4.1,2,3,4.15,.381,.980
-2026-04-01,Arizona Diamondbacks,Detroit Tigers,Zac Gallen,668678,R,4.0,4,2,9.00,.294,.839
-2026-04-01,Detroit Tigers,Arizona Diamondbacks,Tarik Skubal,669373,L,6.0,0,6,0.00,.136,.318
-2026-04-01,San Diego Padres,San Francisco Giants,Nick Pivetta,601713,R,3.0,6,4,18.00,.438,1.089
-2026-04-01,San Francisco Giants,San Diego Padres,Adrian Houser,605288,R,0.0,0,0,,,
-2026-04-01,Seattle Mariners,New York Yankees,George Kirby,669923,R,6.0,1,6,1.50,.105,.490
-2026-04-01,New York Yankees,Seattle Mariners,Cam Schlittler,693645,R,5.1,0,8,0.00,.059,.177
-2026-04-01,Kansas City Royals,Minnesota Twins,Noah Cameron,702070,L,0.0,0,0,,,
-2026-04-01,Minnesota Twins,Kansas City Royals,Joe Ryan,657746,R,5.1,0,7,0.00,.059,.217
-2026-04-02,Los Angeles Dodgers,Cleveland Guardians,Yoshinobu Yamamoto,808967,R,6.0,2,6,3.00,.238,.667
-2026-04-02,Cleveland Guardians,Los Angeles Dodgers,Gavin Williams,668909,R,5.0,3,7,5.40,.125,.802
+2026-04-02,Kansas City Royals,Minnesota Twins,Cole Ragans,666142,L,4.0,4,5,9.00,.353,1.358
+2026-04-02,Minnesota Twins,Kansas City Royals,Taj Bradley,671737,R,4.1,1,9,2.08,.188,.566
+2026-04-03,Arizona Diamondbacks,Atlanta Braves,Ryne Nelson,669194,R,4.2,4,4,7.71,.125,.763
+2026-04-03,Atlanta Braves,Arizona Diamondbacks,Reynaldo López,625643,R,6.0,1,3,1.50,.150,.527
+2026-04-03,San Francisco Giants,New York Mets,Robbie Ray,592662,L,5.1,2,4,3.38,.238,.667
+2026-04-03,New York Mets,San Francisco Giants,David Peterson,656849,L,5.1,0,3,0.00,.261,.581
+2026-04-02,Chicago White Sox,Toronto Blue Jays,Sean Burke,680732,R,4.0,3,5,6.75,.368,.874
+2026-04-02,Toronto Blue Jays,Chicago White Sox,Dylan Cease,656302,R,5.1,1,12,1.69,.150,.427
