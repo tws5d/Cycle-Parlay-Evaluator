@@ -1,12 +1,31 @@
 Date,Team,Opponent,Pitcher Name,MLB ID,Throws,Last 5 IP,Last 5 ER,Last 5 SO,ERA,BAA,OPSa
-2026-04-09,Miami Marlins,Cincinnati Reds,Max Meyer,676974,R,9.2,5,11,4.66,.205,.654
-2026-04-09,Cincinnati Reds,Miami Marlins,Rhett Lowder,695076,R,11.0,2,9,1.64,.154,.464
-2026-04-09,New York Yankees,Athletics,Ryan Weathers,677960,L,7.3,4,11,4.50,.303,.759
-2026-04-09,Athletics,New York Yankees,Jeffrey Springs,605488,L,11.1,3,9,2.38,.184,.493
-2026-04-09,Minnesota Twins,Detroit Tigers,Mick Abel,690953,R,7.1,9,7,11.05,.424,1.093
-2026-04-09,Detroit Tigers,Minnesota Twins,Jack Flaherty,656427,R,8.1,7,8,7.56,.226,.719
-2026-04-09,New York Mets,Arizona Diamondbacks,Nolan McLean,690997,R,10.1,3,12,2.61,.139,.522
-2026-04-09,Arizona Diamondbacks,New York Mets,Eduardo Rodriguez,593958,L,12.0,0,8,0.00,.186,.425
-2026-04-09,Kansas City Royals,Chicago White Sox,Seth Lugo,607625,R,11.1,2,10,1.59,.209,.546
-2026-04-09,Chicago White Sox,Kansas City Royals,Anthony Kay,641743,L,8.3,4,5,4.00,.176,.712
-2026-04-10,San Diego Padres,Colorado Rockies,Randy Vásquez,681190,R,12.0,1,11,0.75,.195,.529
+2026-04-10,Chicago Cubs,Pittsburgh Pirates,Shota Imanaga,684007,L,10.0,5,11,4.50,.237,.740
+2026-04-10,Pittsburgh Pirates,Chicago Cubs,Carmen Mlodzinski,669387,R,8.3,4,13,4.00,.297,.692
+2026-04-10,Philadelphia Phillies,Arizona Diamondbacks,Jesús Luzardo,666200,L,12.2,7,18,4.97,.229,.620
+2026-04-10,Arizona Diamondbacks,Philadelphia Phillies,Michael Soroka,647336,R,10.0,1,13,0.90,.216,.607
+2026-04-10,Detroit Tigers,Miami Marlins,Keider Montero,672456,R,4.1,2,3,4.15,.188,.423
+2026-04-10,Miami Marlins,Detroit Tigers,Chris Paddack,663978,R,8.2,8,10,8.31,.297,.895
+2026-04-10,Cincinnati Reds,Los Angeles Angels,Chase Burns,695505,R,11.0,1,16,0.82,.154,.464
+2026-04-10,Los Angeles Angels,Cincinnati Reds,Jack Kochanowicz,686799,R,9.2,5,10,4.66,.211,.622
+2026-04-10,Toronto Blue Jays,Minnesota Twins,Patrick Corbin,571578,L,0.0,0,0,,,
+2026-04-10,Minnesota Twins,Toronto Blue Jays,Simeon Woods Richardson,680573,R,11.2,3,6,2.31,.233,.678
+2026-04-10,New York Mets,Athletics,Clay Holmes,605280,R,12.2,2,9,1.42,.159,.495
+2026-04-10,Athletics,New York Mets,J.T. Ginn,669372,R,6.300000000000001,4,4,5.14,.240,.686
+2026-04-10,Tampa Bay Rays,New York Yankees,Steven Matz,571927,L,11.0,5,10,4.09,.200,.556
+2026-04-10,New York Yankees,Tampa Bay Rays,Luis Gil,661563,R,0.0,0,0,,,
+2026-04-10,Baltimore Orioles,San Francisco Giants,Shane Baz,669358,R,10.3,5,9,4.09,.275,.748
+2026-04-10,San Francisco Giants,Baltimore Orioles,Landen Roupp,694738,R,10.2,5,14,4.22,.220,.517
+2026-04-10,Atlanta Braves,Cleveland Guardians,Bryce Elder,693821,R,13.0,0,13,0.00,.200,.456
+2026-04-10,Cleveland Guardians,Atlanta Braves,Slade Cecconi,677944,R,10.1,6,11,5.23,.184,.627
+2026-04-10,Kansas City Royals,Chicago White Sox,Kris Bubic,663460,L,11.0,5,12,4.09,.158,.694
+2026-04-10,Chicago White Sox,Kansas City Royals,Davis Martin,663436,R,11.0,3,12,2.45,.231,.677
+2026-04-10,Milwaukee Brewers,Washington Nationals,Chad Patrick,694477,R,9.1,1,7,0.96,.257,.790
+2026-04-10,Washington Nationals,Milwaukee Brewers,Jake Irvin,663623,R,9.0,8,11,8.00,.289,.833
+2026-04-11,St. Louis Cardinals,Boston Red Sox,Dustin May,669160,R,7.1,13,7,15.95,.486,1.382
+2026-04-11,Boston Red Sox,St. Louis Cardinals,Connelly Early,813349,L,9.1,3,10,2.89,.235,.644
+2026-04-11,San Diego Padres,Colorado Rockies,Walker Buehler,621111,R,6.2,7,7,9.45,.296,.943
+2026-04-11,Colorado Rockies,San Diego Padres,Tomoyuki Sugano,608372,R,10.2,2,9,1.69,.158,.588
+2026-04-11,Seattle Mariners,Houston Astros,Emerson Hancock,676106,R,12.2,1,14,0.71,.146,.430
+2026-04-11,Houston Astros,Seattle Mariners,Tatsuya Imai,837227,R,7.4,4,13,4.32,.200,.584
+2026-04-11,Los Angeles Dodgers,Texas Rangers,Tyler Glasnow,607192,R,12.0,4,15,3.00,.186,.536
+2026-04-11,Texas Rangers,Los Angeles Dodgers,Kumar Rocker,677958,R,5.0,2,3,3.60,.273,.577
