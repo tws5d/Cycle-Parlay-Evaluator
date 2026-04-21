@@ -1,20 +1,28 @@
 Date,Team,Opponent,Pitcher Name,MLB ID,Throws,Last 5 IP,Last 5 ER,Last 5 SO,ERA,BAA,OPSa
-2026-04-20,Boston Red Sox,Detroit Tigers,Sonny Gray,543243,R,20.1,10,11,4.43,.265,.741
-2026-04-20,Detroit Tigers,Boston Red Sox,Jack Flaherty,656427,R,19.3,9,21,4.05,.200,.656
-2026-04-20,Cleveland Guardians,Houston Astros,Slade Cecconi,677944,R,19.2,11,18,5.03,.227,.714
-2026-04-20,Houston Astros,Cleveland Guardians,Spencer Arrighetti,681293,R,6.0,1,10,1.50,.143,.571
-2026-04-20,Cincinnati Reds,Tampa Bay Rays,Rhett Lowder,695076,R,22.3,9,15,3.52,.218,.599
-2026-04-20,Miami Marlins,St. Louis Cardinals,Max Meyer,676974,R,19.2,9,20,4.12,.215,.662
-2026-04-20,St. Louis Cardinals,Miami Marlins,Michael McGreevy,700241,R,21.2,6,12,2.49,.190,.562
-2026-04-20,Washington Nationals,Atlanta Braves,Jake Irvin,663623,R,19.0,13,21,6.16,.230,.711
-2026-04-20,Atlanta Braves,Washington Nationals,Bryce Elder,693821,R,22.4,2,23,0.77,.205,.552
-2026-04-20,Kansas City Royals,Baltimore Orioles,Seth Lugo,607625,R,23.4,4,21,1.48,.212,.543
-2026-04-20,Baltimore Orioles,Kansas City Royals,Kyle Bradish,680694,R,19.2,12,21,5.49,.286,.819
-2026-04-20,Chicago Cubs,Philadelphia Phillies,Colin Rea,607067,R,17.1,7,15,3.63,.222,.598
-2026-04-20,Philadelphia Phillies,Chicago Cubs,Aaron Nola,605400,R,22.1,10,24,4.03,.264,.749
-2026-04-21,Colorado Rockies,Los Angeles Dodgers,Jose Quintana,500779,L,7.3,5,3,5.63,.280,.937
-2026-04-21,Los Angeles Dodgers,Colorado Rockies,Justin Wrobleski,680736,L,17.0,4,6,2.12,.138,.361
-2026-04-21,Los Angeles Angels,Toronto Blue Jays,Reid Detmers,672282,L,21.5,9,26,3.57,.212,.606
-2026-04-21,Toronto Blue Jays,Los Angeles Angels,Dylan Cease,656302,R,20.2,4,32,1.74,.184,.500
-2026-04-21,Seattle Mariners,Athletics,Emerson Hancock,676106,R,23.2,6,25,2.28,.175,.512
-2026-04-21,Athletics,Seattle Mariners,J.T. Ginn,669372,R,15.4,6,11,3.31,.164,.545
+2026-04-21,Cleveland Guardians,Houston Astros,Parker Messick,800048,L,25.2,3,25,1.05,.151,.436
+2026-04-21,Houston Astros,Cleveland Guardians,Ryan Weiss,680802,R,10.299999999999999,9,15,6.75,.323,.982
+2026-04-21,Tampa Bay Rays,Cincinnati Reds,Steven Matz,571927,L,21.1,9,21,3.80,.208,.609
+2026-04-21,Cincinnati Reds,Tampa Bay Rays,Chase Burns,695505,R,22.1,6,22,2.42,.190,.589
+2026-04-21,Miami Marlins,St. Louis Cardinals,Chris Paddack,663978,R,18.4,12,18,5.59,.288,.800
+2026-04-21,St. Louis Cardinals,Miami Marlins,Dustin May,669160,R,19.1,15,15,6.98,.351,.938
+2026-04-21,Detroit Tigers,Milwaukee Brewers,Keider Montero,672456,R,16.1,6,15,3.31,.200,.522
+2026-04-21,Milwaukee Brewers,Detroit Tigers,Kyle Harrison,690986,L,14.2,5,15,3.07,.222,.670
+2026-04-21,Washington Nationals,Atlanta Braves,Foster Griffin,656492,L,20.2,7,19,3.05,.241,.702
+2026-04-21,Atlanta Braves,Washington Nationals,Reynaldo López,625643,R,20.2,5,19,2.18,.203,.664
+2026-04-21,Boston Red Sox,New York Yankees,Connelly Early,813349,L,19.2,5,20,2.29,.211,.617
+2026-04-21,New York Yankees,Boston Red Sox,Luis Gil,661563,R,9.0,7,7,7.00,.229,.941
+2026-04-21,New York Mets,Minnesota Twins,Nolan McLean,690997,R,23.2,6,28,2.28,.125,.426
+2026-04-21,Minnesota Twins,New York Mets,Simeon Woods Richardson,680573,R,20.2,14,11,6.10,.310,.899
+2026-04-21,Kansas City Royals,Baltimore Orioles,Kris Bubic,663460,L,22.2,10,26,3.97,.177,.624
+2026-04-21,Baltimore Orioles,Kansas City Royals,Shane Baz,669358,R,21.3,12,19,4.91,.302,.859
+2026-04-21,Chicago Cubs,Philadelphia Phillies,Shota Imanaga,684007,L,22.0,6,31,2.45,.156,.519
+2026-04-21,Philadelphia Phillies,Chicago Cubs,Jesús Luzardo,666200,L,21.5,20,30,7.94,.301,.789
+2026-04-22,San Diego Padres,Colorado Rockies,Randy Vásquez,681190,R,21.2,6,25,2.49,.250,.710
+2026-04-22,Los Angeles Angels,Toronto Blue Jays,Jack Kochanowicz,686799,R,22.4,9,18,3.47,.167,.543
+2026-04-22,Toronto Blue Jays,Los Angeles Angels,Patrick Corbin,571578,L,9.2,5,9,4.66,.286,.864
+2026-04-22,Seattle Mariners,Athletics,Luis Castillo,622491,R,17.4,11,17,5.40,.329,.834
+2026-04-22,Athletics,Seattle Mariners,Jacob Lopez,682052,L,18.1,13,16,6.38,.264,.831
+2026-04-22,Arizona Diamondbacks,Chicago White Sox,Merrill Kelly,518876,R,5.1,2,3,3.38,.263,.865
+2026-04-22,Chicago White Sox,Arizona Diamondbacks,Sean Burke,680732,R,20.1,10,17,4.43,.253,.719
+2026-04-22,San Francisco Giants,Los Angeles Dodgers,Landen Roupp,694738,R,22.2,6,24,2.38,.185,.502
+2026-04-22,Los Angeles Dodgers,San Francisco Giants,Yoshinobu Yamamoto,808967,R,25.2,6,21,2.10,.198,.595
