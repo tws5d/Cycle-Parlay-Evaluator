@@ -1,19 +1,29 @@
 Date,Team,Opponent,Pitcher Name,MLB ID,Throws,Last 5 IP,Last 5 ER,Last 5 SO,ERA,BAA,OPSa
-2026-04-23,Washington Nationals,Atlanta Braves,Cade Cavalli,676917,R,18.5,9,18,4.12,.282,.744
-2026-04-23,Atlanta Braves,Washington Nationals,JR Ritchie,702275,R,0.0,0,0,,,
-2026-04-23,Detroit Tigers,Milwaukee Brewers,Tarik Skubal,669373,L,29.4,7,33,2.08,.209,.563
-2026-04-23,Milwaukee Brewers,Detroit Tigers,Brandon Sproat,687075,R,15.600000000000001,13,16,6.88,.295,.944
-2026-04-23,Chicago Cubs,Philadelphia Phillies,Edward Cabrera,665795,R,22.2,6,17,2.38,.231,.604
-2026-04-23,Philadelphia Phillies,Chicago Cubs,Cristopher Sánchez,650911,L,28.1,5,39,1.59,.278,.699
-2026-04-23,Colorado Rockies,San Diego Padres,Ryan Feltner,663372,R,17.3,12,14,6.00,.278,.925
-2026-04-23,San Diego Padres,Colorado Rockies,Matt Waldron,663362,R,3.2,6,4,14.73,.421,1.160
-2026-04-23,Arizona Diamondbacks,Chicago White Sox,Michael Soroka,647336,R,22.2,7,28,2.78,.217,.666
-2026-04-23,Chicago White Sox,Arizona Diamondbacks,Davis Martin,663436,R,25.0,6,19,2.16,.218,.645
-2026-04-23,San Francisco Giants,Los Angeles Dodgers,Logan Webb,657277,R,30.0,17,27,5.10,.261,.698
-2026-04-23,Los Angeles Dodgers,San Francisco Giants,Tyler Glasnow,607192,R,25.0,9,29,3.24,.170,.539
-2026-04-23,Boston Red Sox,New York Yankees,Payton Tolle,801139,L,0.0,0,0,,,
-2026-04-23,New York Yankees,Boston Red Sox,Cam Schlittler,693645,R,27.2,6,36,1.95,.178,.440
-2026-04-23,New York Mets,Minnesota Twins,Christian Scott,681035,R,0.0,0,0,,,
-2026-04-23,Minnesota Twins,New York Mets,Joe Ryan,657746,R,27.1,10,28,3.29,.184,.529
-2026-04-24,Texas Rangers,Pittsburgh Pirates,Jacob deGrom,594798,R,19.2,5,25,2.29,.208,.630
-2026-04-24,Pittsburgh Pirates,Texas Rangers,Bubba Chandler,696149,R,19.299999999999997,7,17,3.15,.183,.616
+2026-04-24,Cincinnati Reds,Detroit Tigers,Andrew Abbott,671096,L,23.499999999999996,16,15,5.84,.314,.799
+2026-04-24,Detroit Tigers,Cincinnati Reds,Framber Valdez,664285,L,30.0,11,20,3.30,.231,.599
+2026-04-24,Baltimore Orioles,Boston Red Sox,Brandon Young,687064,R,5.0,0,2,0.00,.125,.347
+2026-04-24,Boston Red Sox,Baltimore Orioles,Brayan Bello,678394,R,17.5,14,13,6.75,.312,.890
+2026-04-24,Toronto Blue Jays,Cleveland Guardians,Max Scherzer,453286,R,16.1,13,10,7.16,.262,.799
+2026-04-24,Cleveland Guardians,Toronto Blue Jays,Gavin Williams,668909,R,29.2,7,40,2.12,.133,.547
+2026-04-24,New York Mets,Colorado Rockies,Freddy Peralta,642547,R,25.5,12,28,4.05,.192,.612
+2026-04-24,Colorado Rockies,New York Mets,Michael Lorenzen,547179,R,15.5,15,13,7.48,.381,1.016
+2026-04-24,Tampa Bay Rays,Minnesota Twins,Drew Rasmussen,656876,R,19.2,6,20,2.75,.141,.500
+2026-04-24,Minnesota Twins,Tampa Bay Rays,Taj Bradley,671737,R,27.2,5,34,1.63,.229,.591
+2026-04-24,Atlanta Braves,Philadelphia Phillies,Grant Holmes,656550,R,25.4,10,21,3.42,.189,.576
+2026-04-24,Philadelphia Phillies,Atlanta Braves,Andrew Painter,691725,R,18.1,9,20,4.42,.292,.746
+2026-04-24,Kansas City Royals,Los Angeles Angels,Noah Cameron,702070,L,19.299999999999997,12,17,5.40,.277,.856
+2026-04-24,Los Angeles Angels,Kansas City Royals,Yusei Kikuchi,579328,L,23.3,15,27,5.63,.289,.824
+2026-04-24,Chicago White Sox,Washington Nationals,Bryan Hudson,663542,L,2.8,2,4,1.69,.270,.707
+2026-04-24,Washington Nationals,Chicago White Sox,Miles Mikolas,571945,R,19.2,20,15,9.15,.333,.973
+2026-04-24,Milwaukee Brewers,Pittsburgh Pirates,Brandon Woodruff,605540,R,23.2,9,20,3.42,.207,.601
+2026-04-24,Pittsburgh Pirates,Milwaukee Brewers,Paul Skenes,694973,R,21.3,8,23,3.27,.169,.552
+2026-04-25,Texas Rangers,Athletics,Nathan Eovaldi,543135,R,26.2,15,29,5.06,.295,.808
+2026-04-25,Athletics,Texas Rangers,Luis Severino,622663,R,24.200000000000003,17,27,6.20,.250,.843
+2026-04-25,Houston Astros,New York Yankees,Lance McCullers Jr.,621121,R,20.1,14,21,6.20,.253,.762
+2026-04-25,New York Yankees,Houston Astros,Will Warren,701542,R,23.7,7,31,2.49,.224,.623
+2026-04-25,St. Louis Cardinals,Seattle Mariners,Andre Pallante,669467,R,20.0,9,12,4.05,.231,.700
+2026-04-25,Seattle Mariners,St. Louis Cardinals,George Kirby,669923,R,32.4,11,27,2.97,.225,.621
+2026-04-25,Los Angeles Dodgers,Chicago Cubs,Emmet Sheehan,686218,R,19.3,13,18,5.85,.260,.832
+2026-04-25,Chicago Cubs,Los Angeles Dodgers,Jameson Taillon,592791,R,22.2,10,21,3.97,.235,.810
+2026-04-25,San Francisco Giants,Miami Marlins,Adrian Houser,605288,R,20.5,13,11,5.40,.293,.807
+2026-04-25,Miami Marlins,San Francisco Giants,Sandy Alcantara,645261,R,35.1,11,23,2.80,.189,.563
