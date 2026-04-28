@@ -1,17 +1,27 @@
 Date,Team,Opponent,Pitcher Name,MLB ID,Throws,Last 5 IP,Last 5 ER,Last 5 SO,ERA,BAA,OPSa
-2026-04-27,Cleveland Guardians,Tampa Bay Rays,Parker Messick,800048,L,30.2,6,29,1.76,.183,.498
-2026-04-27,Tampa Bay Rays,Cleveland Guardians,Steven Matz,571927,L,24.1,13,25,4.81,.222,.737
-2026-04-27,Pittsburgh Pirates,St. Louis Cardinals,Mason Montgomery,682254,L,3.5000000000000004,5,10,3.97,.244,.689
-2026-04-27,St. Louis Cardinals,Pittsburgh Pirates,Dustin May,669160,R,24.200000000000003,16,20,5.84,.337,.897
-2026-04-27,Toronto Blue Jays,Boston Red Sox,Dylan Cease,656302,R,25.2,6,44,2.10,.200,.527
-2026-04-27,Boston Red Sox,Toronto Blue Jays,Ranger Suarez,624133,L,26.3,12,19,4.00,.235,.647
-2026-04-27,Minnesota Twins,Seattle Mariners,Connor Prielipp,687570,L,4.0,2,6,4.50,.235,.588
-2026-04-27,Seattle Mariners,Minnesota Twins,Luis Castillo,622491,R,22.4,13,23,5.01,.316,.829
-2026-04-27,Chicago White Sox,Los Angeles Angels,Anthony Kay,641743,L,18.9,13,13,5.57,.247,.819
-2026-04-27,Los Angeles Angels,Chicago White Sox,Jack Kochanowicz,686799,R,27.599999999999998,10,19,3.10,.184,.555
-2026-04-28,Texas Rangers,New York Yankees,Jack Leiter,683004,R,24.4,14,29,4.97,.260,.719
-2026-04-28,New York Yankees,Texas Rangers,Max Fried,608331,L,32.4,11,23,2.40,.155,.437
-2026-04-28,San Diego Padres,Chicago Cubs,Randy Vásquez,681190,R,28.2,6,30,1.88,.223,.619
-2026-04-28,Chicago Cubs,San Diego Padres,Matthew Boyd,571510,L,12.600000000000001,9,22,5.79,.245,.626
-2026-04-28,Los Angeles Dodgers,Miami Marlins,Yoshinobu Yamamoto,808967,R,32.2,9,28,2.48,.207,.580
-2026-04-28,Miami Marlins,Los Angeles Dodgers,Chris Paddack,663978,R,22.599999999999998,17,25,6.38,.301,.840
+2026-04-28,Cleveland Guardians,Tampa Bay Rays,Tanner Bibee,676440,R,23.4,13,23,4.45,.275,.778
+2026-04-28,Tampa Bay Rays,Cleveland Guardians,Nick Martinez,607259,R,29.299999999999997,7,20,2.10,.221,.615
+2026-04-28,Baltimore Orioles,Houston Astros,Shane Baz,669358,R,27.4,16,23,5.08,.309,.865
+2026-04-28,Houston Astros,Baltimore Orioles,Kai-Wei Teng,678906,R,6.5,2,7,2.16,.155,.544
+2026-04-28,Cincinnati Reds,Colorado Rockies,Chase Burns,695505,R,27.3,8,30,2.57,.190,.590
+2026-04-28,St. Louis Cardinals,Pittsburgh Pirates,Kyle Leahy,681517,R,24.0,15,15,5.63,.299,.867
+2026-04-28,Philadelphia Phillies,San Francisco Giants,Jesús Luzardo,666200,L,25.7,21,33,6.91,.295,.772
+2026-04-28,San Francisco Giants,Philadelphia Phillies,Tyler Mahle,641816,R,25.2,15,26,5.26,.273,.848
+2026-04-28,Toronto Blue Jays,Boston Red Sox,Trey Yesavage,702056,R,0.0,0,0,,,
+2026-04-28,Boston Red Sox,Toronto Blue Jays,Payton Tolle,801139,L,6.0,1,11,1.50,.143,.468
+2026-04-28,New York Mets,Washington Nationals,Clay Holmes,605280,R,29.299999999999997,7,19,2.10,.194,.591
+2026-04-28,Washington Nationals,New York Mets,Zack Littell,641793,R,25.0,21,15,7.56,.315,1.007
+2026-04-28,Atlanta Braves,Detroit Tigers,Martín Pérez,527048,L,23.1,7,14,2.70,.198,.650
+2026-04-28,Detroit Tigers,Atlanta Braves,Casey Mize,663554,R,27.5,8,32,2.51,.221,.637
+2026-04-28,Minnesota Twins,Seattle Mariners,Joe Ryan,657746,R,27.1,10,28,3.90,.208,.632
+2026-04-28,Seattle Mariners,Minnesota Twins,Logan Gilbert,669302,R,28.299999999999997,13,32,4.36,.278,.776
+2026-04-28,Chicago White Sox,Los Angeles Angels,Davis Martin,663436,R,31.1,7,26,2.01,.227,.635
+2026-04-28,Los Angeles Angels,Chicago White Sox,José Soriano,667755,R,32.2,1,39,0.24,.143,.398
+2026-04-28,Milwaukee Brewers,Arizona Diamondbacks,Chad Patrick,694477,R,22.3,6,11,2.35,.247,.697
+2026-04-29,Texas Rangers,New York Yankees,Jacob deGrom,594798,R,24.4,6,35,2.13,.213,.629
+2026-04-29,New York Yankees,Texas Rangers,Cam Schlittler,693645,R,27.2,6,36,1.77,.172,.447
+2026-04-29,Kansas City Royals,Athletics,Kris Bubic,663460,L,28.2,13,29,4.08,.190,.643
+2026-04-29,San Diego Padres,Chicago Cubs,Walker Buehler,621111,R,19.4,13,20,5.75,.293,.772
+2026-04-29,Chicago Cubs,San Diego Padres,Edward Cabrera,665795,R,29.2,9,22,2.73,.229,.630
+2026-04-29,Los Angeles Dodgers,Miami Marlins,Shohei Ohtani,660271,R,24.0,1,25,0.38,.141,.419
+2026-04-29,Miami Marlins,Los Angeles Dodgers,Janson Junk,676083,R,26.299999999999997,11,17,3.67,.238,.650
