@@ -1,23 +1,21 @@
 Date,Team,Opponent,Pitcher Name,MLB ID,Throws,Last 5 IP,Last 5 ER,Last 5 SO,ERA,BAA,OPSa
-2026-05-04,Colorado Rockies,New York Mets,Tomoyuki Sugano,608372,R,25.4,10,19,2.84,.233,.707
-2026-05-04,Detroit Tigers,Boston Red Sox,Tarik Skubal,669373,L,29.4,7,33,2.70,.222,.582
-2026-05-04,Boston Red Sox,Detroit Tigers,Payton Tolle,801139,L,10.2,4,15,3.38,.162,.532
-2026-05-04,Tampa Bay Rays,Toronto Blue Jays,Nick Martinez,607259,R,29.299999999999997,7,20,1.70,.206,.569
-2026-05-04,Miami Marlins,Philadelphia Phillies,Janson Junk,676083,R,26.299999999999997,11,17,3.00,.220,.590
-2026-05-04,Philadelphia Phillies,Miami Marlins,Aaron Nola,605400,R,26.200000000000003,15,29,6.03,.286,.858
-2026-05-04,New York Yankees,Baltimore Orioles,Cam Schlittler,693645,R,27.2,6,36,1.51,.168,.442
-2026-05-04,Baltimore Orioles,New York Yankees,Shane Baz,669358,R,27.4,16,23,4.50,.301,.842
-2026-05-04,Chicago Cubs,Cincinnati Reds,Edward Cabrera,665795,R,29.2,9,22,3.06,.234,.645
-2026-05-04,Cincinnati Reds,Chicago Cubs,Chase Petty,695534,R,0.0,0,0,,,
-2026-05-04,Kansas City Royals,Cleveland Guardians,Michael Wacha,608379,R,32.1,9,28,3.13,.212,.657
-2026-05-04,Cleveland Guardians,Kansas City Royals,Tanner Bibee,676440,R,23.4,13,23,4.08,.266,.750
-2026-05-04,St. Louis Cardinals,Milwaukee Brewers,Kyle Leahy,681517,R,24.0,15,15,5.52,.317,.908
-2026-05-04,Milwaukee Brewers,St. Louis Cardinals,Chad Patrick,694477,R,22.3,6,11,2.57,.222,.653
-2026-05-05,Houston Astros,Los Angeles Dodgers,Steven Okert,595345,L,4.300000000000001,3,4,4.20,.226,.715
-2026-05-05,Los Angeles Dodgers,Houston Astros,Yoshinobu Yamamoto,808967,R,32.2,9,28,2.87,.213,.625
-2026-05-05,Los Angeles Angels,Chicago White Sox,José Soriano,667755,R,32.2,1,39,0.84,.164,.480
-2026-05-05,Chicago White Sox,Los Angeles Angels,Davis Martin,663436,R,31.1,7,26,1.95,.239,.643
-2026-05-05,Seattle Mariners,Atlanta Braves,Logan Gilbert,669302,R,28.299999999999997,13,32,4.03,.277,.778
-2026-05-05,Atlanta Braves,Seattle Mariners,JR Ritchie,702275,R,12.1,4,11,2.92,.222,.758
-2026-05-05,San Francisco Giants,San Diego Padres,Trevor McDonald,686790,R,0.0,0,0,,,
-2026-05-05,San Diego Padres,San Francisco Giants,Randy Vásquez,681190,R,28.2,6,30,2.94,.228,.665
+2026-05-07,New York Yankees,Texas Rangers,Paul Blackburn,621112,R,5.3,2,4,3.21,.268,.638
+2026-05-07,Texas Rangers,New York Yankees,MacKenzie Gore,669022,L,25.3,12,35,4.67,.223,.689
+2026-05-07,Washington Nationals,Minnesota Twins,Jake Irvin,663623,R,24.0,16,25,4.93,.224,.676
+2026-05-07,Minnesota Twins,Washington Nationals,Simeon Woods Richardson,680573,R,25.2,17,13,6.49,.324,.940
+2026-05-07,Kansas City Royals,Cleveland Guardians,Seth Lugo,607625,R,30.4,4,28,2.68,.256,.666
+2026-05-07,Cleveland Guardians,Kansas City Royals,Slade Cecconi,677944,R,24.2,17,20,6.56,.297,.863
+2026-05-07,Chicago Cubs,Cincinnati Reds,Shota Imanaga,684007,L,29.0,7,32,2.40,.169,.524
+2026-05-07,Cincinnati Reds,Chicago Cubs,Rhett Lowder,695076,R,28.3,10,18,5.09,.252,.673
+2026-05-07,Colorado Rockies,New York Mets,Jose Quintana,500779,L,23.4,11,12,4.07,.247,.788
+2026-05-07,New York Mets,Colorado Rockies,Christian Scott,681035,R,6.1,3,9,4.26,.136,.618
+2026-05-07,Arizona Diamondbacks,Pittsburgh Pirates,Zac Gallen,668678,R,25.2,10,14,4.45,.302,.776
+2026-05-07,Pittsburgh Pirates,Arizona Diamondbacks,Mitch Keller,656605,R,29.0,9,19,2.85,.208,.545
+2026-05-07,Philadelphia Phillies,Athletics,Andrew Painter,691725,R,23.3,14,21,5.28,.308,.798
+2026-05-07,Athletics,Philadelphia Phillies,J.T. Ginn,669372,R,15.4,6,11,4.30,.215,.702
+2026-05-07,Miami Marlins,Baltimore Orioles,Max Meyer,676974,R,24.299999999999997,11,28,2.68,.182,.551
+2026-05-07,Baltimore Orioles,Miami Marlins,Cade Povich,700249,L,15.4,8,11,4.41,.254,.769
+2026-05-07,Boston Red Sox,Tampa Bay Rays,Jake Bennett,687562,L,5.0,1,3,1.80,.278,.794
+2026-05-07,Tampa Bay Rays,Boston Red Sox,Griffin Jax,643377,R,3.3,5,1,5.14,.240,.790
+2026-05-08,San Diego Padres,St. Louis Cardinals,Michael King,650633,R,27.2,7,26,2.95,.200,.621
+2026-05-08,St. Louis Cardinals,San Diego Padres,Matthew Liberatore,669461,L,27.0,11,16,4.50,.291,.848
