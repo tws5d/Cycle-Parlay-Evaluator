@@ -1,12 +1,29 @@
 Date,Team,Opponent,Pitcher Name,MLB ID,Throws,Last 5 IP,Last 5 ER,Last 5 SO,ERA,BAA,OPSa
-2026-05-11,Cleveland Guardians,Los Angeles Angels,Joey Cantillo,676282,L,23.7,9,30,3.43,.246,.745
-2026-05-11,Baltimore Orioles,New York Yankees,Brandon Young,687064,R,20.2,10,14,4.35,.262,.728
-2026-05-11,New York Yankees,Baltimore Orioles,Ryan Weathers,677960,L,27.4,10,36,3.03,.245,.701
-2026-05-11,Toronto Blue Jays,Tampa Bay Rays,Kevin Gausman,592332,R,28.1,8,35,3.09,.213,.590
-2026-05-11,Tampa Bay Rays,Toronto Blue Jays,Drew Rasmussen,656876,R,25.2,7,26,2.95,.200,.581
-2026-05-12,Texas Rangers,Arizona Diamondbacks,Nathan Eovaldi,543135,R,26.2,15,29,4.15,.247,.725
-2026-05-12,Arizona Diamondbacks,Texas Rangers,Michael Soroka,647336,R,27.2,8,34,4.14,.284,.785
-2026-05-12,Houston Astros,Seattle Mariners,Peter Lambert,663567,R,22.1,6,23,2.42,.188,.539
-2026-05-12,Seattle Mariners,Houston Astros,George Kirby,669923,R,32.4,11,27,2.94,.237,.615
-2026-05-12,Los Angeles Dodgers,San Francisco Giants,Roki Sasaki,808963,R,22.2,16,22,5.97,.287,.940
-2026-05-12,San Francisco Giants,Los Angeles Dodgers,Trevor McDonald,686790,R,7.0,1,8,1.29,.087,.342
+2026-05-12,Cleveland Guardians,Los Angeles Angels,Slade Cecconi,677944,R,24.2,17,20,6.15,.297,.855
+2026-05-12,Los Angeles Angels,Cleveland Guardians,Walbert Ureña,700712,R,15.4,7,17,3.22,.226,.657
+2026-05-12,New York Yankees,Baltimore Orioles,Will Warren,701542,R,23.7,7,31,3.46,.242,.678
+2026-05-12,Cincinnati Reds,Washington Nationals,Brady Singer,663903,R,23.2,14,16,5.63,.323,.914
+2026-05-12,Washington Nationals,Cincinnati Reds,Miles Mikolas,571945,R,19.2,20,15,7.44,.291,.879
+2026-05-12,Pittsburgh Pirates,Colorado Rockies,Paul Skenes,694973,R,21.3,8,23,2.36,.156,.469
+2026-05-12,Colorado Rockies,Pittsburgh Pirates,Michael Lorenzen,547179,R,15.5,15,13,6.92,.356,.974
+2026-05-12,Philadelphia Phillies,Boston Red Sox,Zack Wheeler,554430,R,17.1,6,18,3.12,.180,.561
+2026-05-12,Toronto Blue Jays,Tampa Bay Rays,Patrick Corbin,571578,L,23.5,10,20,3.60,.269,.730
+2026-05-12,Tampa Bay Rays,Toronto Blue Jays,Shane McClanahan,663556,L,22.299999999999997,10,25,2.60,.183,.518
+2026-05-12,New York Mets,Detroit Tigers,Freddy Peralta,642547,R,25.5,12,28,3.12,.207,.598
+2026-05-12,Detroit Tigers,New York Mets,Jack Flaherty,656427,R,22.400000000000002,9,24,5.56,.236,.790
+2026-05-12,Atlanta Braves,Chicago Cubs,Grant Holmes,656550,R,25.4,10,21,4.34,.225,.686
+2026-05-12,Chicago Cubs,Atlanta Braves,Colin Rea,607067,R,23.3,8,20,4.03,.265,.692
+2026-05-12,Chicago White Sox,Kansas City Royals,Erick Fedde,607200,R,25.4,10,16,3.79,.219,.715
+2026-05-12,Kansas City Royals,Chicago White Sox,Stephen Kolek,663568,R,6.0,3,3,4.50,.182,.500
+2026-05-12,Minnesota Twins,Miami Marlins,Bailey Ober,641927,R,25.299999999999997,12,24,4.19,.221,.674
+2026-05-12,Miami Marlins,Minnesota Twins,Eury Pérez,691587,R,26.0,12,27,5.01,.242,.806
+2026-05-12,Milwaukee Brewers,San Diego Padres,Brandon Sproat,687075,R,20.700000000000003,16,20,5.87,.264,.872
+2026-05-12,San Diego Padres,Milwaukee Brewers,Matt Waldron,663362,R,18.2,16,15,7.71,.308,.929
+2026-05-13,Texas Rangers,Arizona Diamondbacks,MacKenzie Gore,669022,L,25.3,12,35,5.18,.230,.721
+2026-05-13,Arizona Diamondbacks,Texas Rangers,Zac Gallen,668678,R,25.2,10,14,4.70,.292,.780
+2026-05-13,Houston Astros,Seattle Mariners,Tatsuya Imai,837227,R,7.5,7,13,7.27,.219,.682
+2026-05-13,Seattle Mariners,Houston Astros,Bryan Woo,693433,R,32.0,8,26,4.02,.224,.636
+2026-05-13,Athletics,St. Louis Cardinals,Jeffrey Springs,605488,L,29.200000000000003,11,27,3.89,.232,.702
+2026-05-13,St. Louis Cardinals,Athletics,Andre Pallante,669467,R,25.1,12,20,4.34,.240,.711
+2026-05-13,Los Angeles Dodgers,San Francisco Giants,Yoshinobu Yamamoto,808967,R,32.2,9,28,3.09,.215,.626
+2026-05-13,San Francisco Giants,Los Angeles Dodgers,Adrian Houser,605288,R,24.5,21,14,6.19,.298,.891
