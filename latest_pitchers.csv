@@ -1,15 +1,30 @@
 Date,Team,Opponent,Pitcher Name,MLB ID,Throws,Last 5 IP,Last 5 ER,Last 5 SO,ERA,BAA,OPSa
-2026-05-21,Detroit Tigers,Cleveland Guardians,Casey Mize,663554,R,27.5,8,32,2.43,.211,.610
-2026-05-21,Cleveland Guardians,Detroit Tigers,Joey Cantillo,676282,L,23.7,9,30,3.40,.242,.733
-2026-05-21,St. Louis Cardinals,Pittsburgh Pirates,Dustin May,669160,R,24.200000000000003,16,20,4.81,.292,.778
-2026-05-21,Pittsburgh Pirates,St. Louis Cardinals,Braxton Ashcraft,677952,R,29.2,8,32,3.09,.222,.628
-2026-05-21,Washington Nationals,New York Mets,Cade Cavalli,676917,R,18.5,9,18,4.05,.287,.758
-2026-05-21,New York Mets,Washington Nationals,David Peterson,656849,L,22.4,14,22,5.40,.287,.755
-2026-05-21,Miami Marlins,Atlanta Braves,Sandy Alcantara,645261,R,35.1,11,23,3.53,.244,.661
-2026-05-21,Atlanta Braves,Miami Marlins,Spencer Strider,675911,R,14.2,4,18,2.45,.167,.623
-2026-05-21,New York Yankees,Toronto Blue Jays,Carlos Rodón,607074,L,7.3,5,10,5.63,.185,.637
-2026-05-21,Toronto Blue Jays,New York Yankees,Braydon Fisher,680755,R,4.7,0,6,3.08,.205,.638
-2026-05-22,Los Angeles Angels,Athletics,José Soriano,667755,R,32.2,1,39,2.41,.181,.535
-2026-05-22,Athletics,Los Angeles Angels,Luis Severino,622663,R,24.200000000000003,17,27,4.45,.267,.805
-2026-05-22,Arizona Diamondbacks,Colorado Rockies,Eduardo Rodriguez,593958,L,28.0,9,18,2.53,.224,.643
-2026-05-22,Colorado Rockies,Arizona Diamondbacks,Zach Agnos,688642,R,7.4,7,7,5.59,.274,.765
+2026-05-22,Chicago Cubs,Houston Astros,Jameson Taillon,592791,R,27.2,14,25,4.97,.230,.818
+2026-05-22,Houston Astros,Chicago Cubs,Spencer Arrighetti,681293,R,28.2,6,30,1.50,.176,.543
+2026-05-22,Cincinnati Reds,St. Louis Cardinals,Chris Paddack,663978,R,22.599999999999998,17,25,7.07,.305,.831
+2026-05-22,St. Louis Cardinals,Cincinnati Reds,Kyle Leahy,681517,R,24.0,15,15,3.94,.282,.805
+2026-05-22,Philadelphia Phillies,Cleveland Guardians,Cristopher Sánchez,650911,L,28.1,5,39,1.82,.251,.631
+2026-05-22,Cleveland Guardians,Philadelphia Phillies,Gavin Williams,668909,R,29.2,7,40,3.67,.225,.701
+2026-05-22,New York Yankees,Tampa Bay Rays,Gerrit Cole,543037,R,0.0,0,0,,,
+2026-05-22,Tampa Bay Rays,New York Yankees,Nick Martinez,607259,R,29.299999999999997,7,20,1.51,.224,.598
+2026-05-22,Toronto Blue Jays,Pittsburgh Pirates,Kevin Gausman,592332,R,28.1,8,35,3.45,.233,.623
+2026-05-22,Pittsburgh Pirates,Toronto Blue Jays,Bubba Chandler,696149,R,23.299999999999997,13,21,5.14,.213,.763
+2026-05-22,Boston Red Sox,Minnesota Twins,Payton Tolle,801139,L,30.2,7,30,2.05,.160,.502
+2026-05-22,Minnesota Twins,Boston Red Sox,Connor Prielipp,687570,L,25.0,8,29,2.88,.169,.592
+2026-05-22,Miami Marlins,New York Mets,Eury Pérez,691587,R,26.0,12,27,5.33,.234,.811
+2026-05-22,New York Mets,Miami Marlins,Tobias Myers,668964,R,10.3,4,7,3.41,.222,.680
+2026-05-22,Baltimore Orioles,Detroit Tigers,Chris Bassitt,605135,R,20.4,16,10,5.44,.312,.824
+2026-05-22,Detroit Tigers,Baltimore Orioles,Jack Flaherty,656427,R,22.400000000000002,9,24,5.77,.246,.787
+2026-05-22,Washington Nationals,Atlanta Braves,Miles Mikolas,571945,R,19.2,20,15,6.91,.282,.857
+2026-05-22,Kansas City Royals,Seattle Mariners,Noah Cameron,702070,L,25.4,15,23,5.40,.287,.805
+2026-05-22,Seattle Mariners,Kansas City Royals,Logan Gilbert,669302,R,28.299999999999997,13,32,4.45,.247,.768
+2026-05-22,Milwaukee Brewers,Los Angeles Dodgers,Logan Henderson,701656,R,18.0,7,23,3.50,.235,.665
+2026-05-22,Los Angeles Dodgers,Milwaukee Brewers,Justin Wrobleski,680736,L,30.0,5,15,2.49,.212,.557
+2026-05-23,Los Angeles Angels,Texas Rangers,Grayson Rodriguez,680570,R,3.2,7,4,17.18,.438,.962
+2026-05-23,Texas Rangers,Los Angeles Angels,Jacob deGrom,594798,R,24.4,6,35,3.02,.201,.626
+2026-05-23,Arizona Diamondbacks,Colorado Rockies,Michael Soroka,647336,R,27.2,8,34,3.49,.266,.726
+2026-05-23,Colorado Rockies,Arizona Diamondbacks,Tomoyuki Sugano,608372,R,25.4,10,19,4.02,.254,.794
+2026-05-23,San Diego Padres,Athletics,Walker Buehler,621111,R,19.4,13,20,5.01,.256,.694
+2026-05-23,Athletics,San Diego Padres,Jeffrey Springs,605488,L,29.200000000000003,11,27,3.93,.239,.703
+2026-05-23,San Francisco Giants,Chicago White Sox,Trevor McDonald,686790,R,18.3,5,17,2.37,.225,.642
+2026-05-23,Chicago White Sox,San Francisco Giants,Davis Martin,663436,R,31.1,7,26,1.61,.223,.607
