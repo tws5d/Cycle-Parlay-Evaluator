@@ -1,13 +1,30 @@
 Date,Team,Opponent,Pitcher Name,MLB ID,Throws,Last 5 IP,Last 5 ER,Last 5 SO,ERA,BAA,OPSa
-2026-05-28,Detroit Tigers,Los Angeles Angels,Jack Flaherty,656427,R,22.400000000000002,9,24,5.94,.263,.834
-2026-05-28,Los Angeles Angels,Detroit Tigers,Grayson Rodriguez,680570,R,8.4,11,9,10.61,.359,.973
-2026-05-28,Chicago White Sox,Minnesota Twins,Davis Martin,663436,R,31.1,7,26,2.04,.226,.610
-2026-05-28,Minnesota Twins,Chicago White Sox,Kendry Rojas,696070,L,14.1,2,14,1.26,.224,.632
-2026-05-28,Boston Red Sox,Atlanta Braves,Payton Tolle,801139,L,30.2,7,30,2.45,.163,.494
-2026-05-28,Atlanta Braves,Boston Red Sox,Chris Sale,519242,L,29.0,9,29,1.89,.181,.526
-2026-05-28,Baltimore Orioles,Toronto Blue Jays,Chris Bassitt,605135,R,20.4,16,10,5.51,.311,.822
-2026-05-28,Toronto Blue Jays,Baltimore Orioles,Patrick Corbin,571578,L,23.5,10,20,3.86,.290,.775
-2026-05-28,Pittsburgh Pirates,Chicago Cubs,Paul Skenes,694973,R,21.3,8,23,3.00,.185,.549
-2026-05-28,Chicago Cubs,Pittsburgh Pirates,Colin Rea,607067,R,23.3,8,20,4.83,.268,.739
-2026-05-29,Texas Rangers,Houston Astros,Nathan Eovaldi,543135,R,26.2,15,29,3.65,.237,.700
-2026-05-29,Houston Astros,Texas Rangers,Spencer Arrighetti,681293,R,28.2,6,30,1.32,.169,.541
+2026-05-29,Cincinnati Reds,Atlanta Braves,Chris Paddack,663978,R,22.599999999999998,17,25,6.86,.309,.822
+2026-05-29,Atlanta Braves,Cincinnati Reds,Grant Holmes,656550,R,25.4,10,21,3.78,.222,.709
+2026-05-29,Washington Nationals,San Diego Padres,Paxton Schultz,687606,R,7.3,4,7,5.30,.286,.753
+2026-05-29,San Diego Padres,Washington Nationals,Lucas Giolito,608337,R,10.0,3,5,2.70,.156,.497
+2026-05-29,Pittsburgh Pirates,Minnesota Twins,Jared Jones,683003,R,0.0,0,0,,,
+2026-05-29,Minnesota Twins,Pittsburgh Pirates,Taj Bradley,671737,R,27.2,5,34,2.77,.216,.648
+2026-05-29,Baltimore Orioles,Toronto Blue Jays,Trevor Rogers,669432,L,28.2,13,25,6.96,.295,.834
+2026-05-29,Cleveland Guardians,Boston Red Sox,Slade Cecconi,677944,R,24.2,17,20,5.18,.286,.797
+2026-05-29,Boston Red Sox,Cleveland Guardians,Tyler Samaniego,701719,L,5.5,0,8,1.04,.213,.609
+2026-05-29,Tampa Bay Rays,Los Angeles Angels,Nick Martinez,607259,R,29.299999999999997,7,20,1.51,.239,.636
+2026-05-29,Los Angeles Angels,Tampa Bay Rays,Walbert Ureña,700712,R,15.4,7,17,2.58,.217,.622
+2026-05-29,New York Mets,Miami Marlins,Freddy Peralta,642547,R,25.5,12,28,3.52,.220,.667
+2026-05-29,Miami Marlins,New York Mets,Max Meyer,676974,R,24.299999999999997,11,28,2.52,.188,.572
+2026-05-29,St. Louis Cardinals,Chicago Cubs,Andre Pallante,669467,R,25.1,12,20,3.76,.234,.682
+2026-05-29,Chicago Cubs,St. Louis Cardinals,Shota Imanaga,684007,L,29.0,7,32,4.04,.215,.665
+2026-05-29,Chicago White Sox,Detroit Tigers,Erick Fedde,607200,R,25.4,10,16,5.47,.272,.846
+2026-05-29,Detroit Tigers,Chicago White Sox,Troy Melton,675512,R,5.2,1,3,1.59,.111,.338
+2026-05-30,Texas Rangers,Kansas City Royals,MacKenzie Gore,669022,L,25.3,12,35,4.42,.206,.655
+2026-05-30,Kansas City Royals,Texas Rangers,Stephen Kolek,663568,R,25.299999999999997,8,14,2.77,.185,.539
+2026-05-30,Houston Astros,Milwaukee Brewers,Kai-Wei Teng,678906,R,6.5,2,7,2.19,.188,.580
+2026-05-30,Milwaukee Brewers,Houston Astros,Coleman Crow,689441,R,10.1,3,7,2.61,.189,.495
+2026-05-30,Colorado Rockies,San Francisco Giants,Michael Lorenzen,547179,R,15.5,15,13,7.21,.353,.967
+2026-05-30,San Francisco Giants,Colorado Rockies,Logan Webb,657277,R,30.0,17,27,5.06,.275,.751
+2026-05-30,Athletics,New York Yankees,Luis Severino,622663,R,24.200000000000003,17,27,4.23,.253,.766
+2026-05-30,New York Yankees,Athletics,Carlos Rodón,607074,L,12.3,6,17,4.15,.178,.612
+2026-05-30,Seattle Mariners,Arizona Diamondbacks,George Kirby,669923,R,32.4,11,27,3.54,.259,.669
+2026-05-30,Arizona Diamondbacks,Seattle Mariners,Zac Gallen,668678,R,25.2,10,14,4.80,.280,.771
+2026-05-30,Los Angeles Dodgers,Philadelphia Phillies,Justin Wrobleski,680736,L,30.0,5,15,3.07,.229,.601
+2026-05-30,Philadelphia Phillies,Los Angeles Dodgers,Zack Wheeler,554430,R,31.200000000000003,7,30,1.67,.176,.487
