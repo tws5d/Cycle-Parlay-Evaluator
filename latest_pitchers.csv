@@ -1,29 +1,16 @@
 Date,Team,Opponent,Pitcher Name,MLB ID,Throws,Last 5 IP,Last 5 ER,Last 5 SO,ERA,BAA,OPSa
-2026-06-10,Tampa Bay Rays,Boston Red Sox,Drew Rasmussen,656876,R,25.2,7,26,3.00,.201,.560
-2026-06-10,Boston Red Sox,Tampa Bay Rays,Jake Bennett,687562,L,10.1,5,4,4.35,.297,.735
-2026-06-10,Cleveland Guardians,New York Yankees,Parker Messick,800048,L,30.2,6,29,2.40,.215,.624
-2026-06-10,New York Yankees,Cleveland Guardians,Carlos Rodón,607074,L,24.3,8,27,2.88,.165,.548
-2026-06-10,San Francisco Giants,Washington Nationals,Robbie Ray,592662,L,27.4,9,31,4.12,.239,.779
-2026-06-10,Washington Nationals,San Francisco Giants,Foster Griffin,656492,L,26.2,10,22,3.63,.216,.697
-2026-06-10,San Diego Padres,Cincinnati Reds,Michael King,650633,R,27.2,7,26,3.41,.208,.640
-2026-06-10,Cincinnati Reds,San Diego Padres,Brady Singer,663903,R,23.2,14,16,5.89,.316,.964
-2026-06-10,Baltimore Orioles,Seattle Mariners,Brandon Young,687064,R,25.299999999999997,12,19,3.47,.257,.713
-2026-06-10,Seattle Mariners,Baltimore Orioles,George Kirby,669923,R,32.4,11,27,4.04,.272,.700
-2026-06-10,Pittsburgh Pirates,Los Angeles Dodgers,Jared Jones,683003,R,9.1,5,10,4.82,.289,.857
-2026-06-10,Los Angeles Dodgers,Pittsburgh Pirates,Shohei Ohtani,660271,R,30.0,2,34,0.74,.144,.435
-2026-06-10,Detroit Tigers,Minnesota Twins,Framber Valdez,664285,L,30.0,11,20,4.21,.245,.687
-2026-06-10,Miami Marlins,Arizona Diamondbacks,Ryan Gusto,687473,R,5.0,6,5,10.80,.348,.853
-2026-06-10,Arizona Diamondbacks,Miami Marlins,Ryne Nelson,669194,R,18.800000000000004,16,20,4.60,.230,.737
-2026-06-10,Toronto Blue Jays,Philadelphia Phillies,Max Scherzer,453286,R,18.200000000000003,20,10,9.64,.297,.977
-2026-06-10,Philadelphia Phillies,Toronto Blue Jays,Jesús Luzardo,666200,L,25.7,21,33,4.56,.270,.743
-2026-06-10,New York Mets,St. Louis Cardinals,Austin Warren,681810,R,5.4,1,8,2.01,.200,.624
-2026-06-10,St. Louis Cardinals,New York Mets,Andre Pallante,669467,R,25.1,12,20,3.96,.244,.696
-2026-06-10,Kansas City Royals,Texas Rangers,Seth Lugo,607625,R,30.4,4,28,3.91,.271,.754
-2026-06-10,Texas Rangers,Kansas City Royals,MacKenzie Gore,669022,L,25.3,12,35,4.23,.221,.678
-2026-06-10,Atlanta Braves,Chicago White Sox,Chris Sale,519242,L,29.0,9,29,2.23,.211,.592
-2026-06-11,Colorado Rockies,Chicago Cubs,Michael Lorenzen,547179,R,15.5,15,13,8.01,.364,.979
-2026-06-11,Chicago Cubs,Colorado Rockies,Shota Imanaga,684007,L,29.0,7,32,4.74,.221,.732
-2026-06-11,Athletics,Milwaukee Brewers,Jack Perkins,678022,R,8.4,4,12,6.19,.252,.672
-2026-06-11,Milwaukee Brewers,Athletics,Brandon Sproat,687075,R,20.700000000000003,16,20,6.17,.270,.859
-2026-06-11,Los Angeles Angels,Houston Astros,Reid Detmers,672282,L,27.5,13,31,4.26,.218,.631
-2026-06-11,Houston Astros,Los Angeles Angels,Peter Lambert,663567,R,29.1,9,29,3.55,.212,.622
+2026-06-11,New York Mets,St. Louis Cardinals,Christian Scott,681035,R,18.5,9,25,2.50,.218,.619
+2026-06-11,St. Louis Cardinals,New York Mets,Hunter Dobbins,690928,R,12.3,4,14,2.77,.217,.647
+2026-06-11,Detroit Tigers,Minnesota Twins,Keider Montero,672456,R,26.3,12,23,3.95,.214,.649
+2026-06-11,Minnesota Twins,Detroit Tigers,Zebby Matthews,805673,R,30.1,14,26,4.15,.223,.689
+2026-06-11,Miami Marlins,Arizona Diamondbacks,Tyler Phillips,663969,R,10.2,1,12,2.08,.226,.644
+2026-06-11,Arizona Diamondbacks,Miami Marlins,Merrill Kelly,518876,R,25.299999999999997,22,20,5.71,.271,.870
+2026-06-11,Kansas City Royals,Texas Rangers,Michael Wacha,608379,R,32.1,9,28,3.44,.223,.681
+2026-06-11,Texas Rangers,Kansas City Royals,Kumar Rocker,677958,R,26.2,10,22,3.54,.237,.675
+2026-06-11,Colorado Rockies,Chicago Cubs,Ryan Feltner,663372,R,19.3,14,17,4.22,.227,.737
+2026-06-11,Chicago Cubs,Colorado Rockies,Edward Cabrera,665795,R,29.2,9,22,4.99,.276,.801
+2026-06-11,Pittsburgh Pirates,Los Angeles Dodgers,Mitch Keller,656605,R,29.0,9,19,4.81,.243,.670
+2026-06-11,Los Angeles Dodgers,Pittsburgh Pirates,Justin Wrobleski,680736,L,30.0,5,15,2.62,.214,.566
+2026-06-11,Baltimore Orioles,Seattle Mariners,Kyle Bradish,680694,R,24.299999999999997,11,28,3.89,.261,.775
+2026-06-11,Seattle Mariners,Baltimore Orioles,Bryan Woo,693433,R,32.0,8,26,3.74,.220,.589
+2026-06-11,Atlanta Braves,Chicago White Sox,Martín Pérez,527048,L,23.1,7,14,3.02,.201,.644
