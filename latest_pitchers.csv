@@ -1,16 +1,29 @@
 Date,Team,Opponent,Pitcher Name,MLB ID,Throws,Last 5 IP,Last 5 ER,Last 5 SO,ERA,BAA,OPSa
-2026-06-11,New York Mets,St. Louis Cardinals,Christian Scott,681035,R,18.5,9,25,2.50,.218,.619
-2026-06-11,St. Louis Cardinals,New York Mets,Hunter Dobbins,690928,R,12.3,4,14,2.77,.217,.647
-2026-06-11,Detroit Tigers,Minnesota Twins,Keider Montero,672456,R,26.3,12,23,3.95,.214,.649
-2026-06-11,Minnesota Twins,Detroit Tigers,Zebby Matthews,805673,R,30.1,14,26,4.15,.223,.689
-2026-06-11,Miami Marlins,Arizona Diamondbacks,Tyler Phillips,663969,R,10.2,1,12,2.08,.226,.644
-2026-06-11,Arizona Diamondbacks,Miami Marlins,Merrill Kelly,518876,R,25.299999999999997,22,20,5.71,.271,.870
-2026-06-11,Kansas City Royals,Texas Rangers,Michael Wacha,608379,R,32.1,9,28,3.44,.223,.681
-2026-06-11,Texas Rangers,Kansas City Royals,Kumar Rocker,677958,R,26.2,10,22,3.54,.237,.675
-2026-06-11,Colorado Rockies,Chicago Cubs,Ryan Feltner,663372,R,19.3,14,17,4.22,.227,.737
-2026-06-11,Chicago Cubs,Colorado Rockies,Edward Cabrera,665795,R,29.2,9,22,4.99,.276,.801
-2026-06-11,Pittsburgh Pirates,Los Angeles Dodgers,Mitch Keller,656605,R,29.0,9,19,4.81,.243,.670
-2026-06-11,Los Angeles Dodgers,Pittsburgh Pirates,Justin Wrobleski,680736,L,30.0,5,15,2.62,.214,.566
-2026-06-11,Baltimore Orioles,Seattle Mariners,Kyle Bradish,680694,R,24.299999999999997,11,28,3.89,.261,.775
-2026-06-11,Seattle Mariners,Baltimore Orioles,Bryan Woo,693433,R,32.0,8,26,3.74,.220,.589
-2026-06-11,Atlanta Braves,Chicago White Sox,Martín Pérez,527048,L,23.1,7,14,3.02,.201,.644
+2026-06-12,Pittsburgh Pirates,Miami Marlins,Braxton Ashcraft,677952,R,29.2,8,32,3.28,.235,.652
+2026-06-12,Miami Marlins,Pittsburgh Pirates,Sandy Alcantara,645261,R,35.1,11,23,4.33,.264,.722
+2026-06-12,Washington Nationals,Seattle Mariners,Zack Littell,641793,R,25.0,21,15,4.76,.255,.784
+2026-06-12,Seattle Mariners,Washington Nationals,Bryce Miller,682243,R,26.3,4,29,1.33,.172,.504
+2026-06-12,Baltimore Orioles,San Diego Padres,Shane Baz,669358,R,27.4,16,23,4.09,.262,.764
+2026-06-12,San Diego Padres,Baltimore Orioles,Griffin Canning,656288,R,21.5,19,24,6.34,.254,.796
+2026-06-12,Cleveland Guardians,Detroit Tigers,Tanner Bibee,676440,R,23.4,13,23,4.09,.246,.722
+2026-06-12,Detroit Tigers,Cleveland Guardians,Jack Flaherty,656427,R,22.400000000000002,9,24,5.31,.265,.803
+2026-06-12,Boston Red Sox,Texas Rangers,Sonny Gray,543243,R,22.3,11,13,3.20,.252,.720
+2026-06-12,Texas Rangers,Boston Red Sox,Jack Leiter,683004,R,24.4,14,29,4.69,.240,.730
+2026-06-12,Cincinnati Reds,Arizona Diamondbacks,Nick Lodolo,666157,L,26.5,16,22,5.51,.289,.920
+2026-06-12,Arizona Diamondbacks,Cincinnati Reds,Eduardo Rodriguez,593958,L,28.0,9,18,2.52,.224,.657
+2026-06-12,New York Mets,Atlanta Braves,Nolan McLean,690997,R,29.4,9,38,3.98,.202,.631
+2026-06-12,Atlanta Braves,New York Mets,Spencer Strider,675911,R,25.299999999999997,10,32,4.00,.213,.744
+2026-06-12,New York Yankees,Toronto Blue Jays,Ryan Weathers,677960,L,27.4,10,36,3.86,.231,.690
+2026-06-12,Chicago White Sox,Los Angeles Dodgers,Anthony Kay,641743,L,18.9,13,13,4.40,.265,.801
+2026-06-12,Los Angeles Dodgers,Chicago White Sox,Roki Sasaki,808963,R,22.2,16,22,4.03,.235,.743
+2026-06-12,Milwaukee Brewers,Philadelphia Phillies,Jacob Misiorowski,694819,R,26.200000000000003,9,42,1.50,.151,.442
+2026-06-12,Philadelphia Phillies,Milwaukee Brewers,Andrew Painter,691725,R,23.3,14,21,6.21,.308,.859
+2026-06-13,Kansas City Royals,Houston Astros,Luinder Avila,679883,R,11.0,9,11,4.02,.272,.803
+2026-06-13,Houston Astros,Kansas City Royals,Tatsuya Imai,837227,R,15.7,16,21,5.24,.205,.685
+2026-06-13,Minnesota Twins,St. Louis Cardinals,Joe Ryan,657746,R,27.1,10,28,3.07,.211,.603
+2026-06-13,St. Louis Cardinals,Minnesota Twins,Kyle Leahy,681517,R,24.0,15,15,4.42,.289,.807
+2026-06-13,Los Angeles Angels,Tampa Bay Rays,Sam Aldegheri,691951,L,11.3,3,8,2.25,.244,.670
+2026-06-13,Tampa Bay Rays,Los Angeles Angels,Shane McClanahan,663556,L,22.299999999999997,10,25,2.85,.202,.563
+2026-06-13,Athletics,Colorado Rockies,Gage Jump,695611,L,18.1,5,13,2.45,.234,.567
+2026-06-13,San Francisco Giants,Chicago Cubs,Landen Roupp,694738,R,27.2,7,31,4.00,.232,.662
+2026-06-13,Chicago Cubs,San Francisco Giants,Javier Assad,665871,R,17.6,16,11,4.73,.231,.668
