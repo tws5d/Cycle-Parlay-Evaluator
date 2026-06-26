@@ -1,19 +1,27 @@
 Date,Team,Opponent,Pitcher Name,MLB ID,Throws,Last 5 IP,Last 5 ER,Last 5 SO,ERA,BAA,OPSa
-2026-06-25,Tampa Bay Rays,Kansas City Royals,Casey Legumina,668984,R,6.4,0,6,3.45,.297,.763
-2026-06-25,Kansas City Royals,Tampa Bay Rays,Seth Lugo,607625,R,30.4,4,28,3.69,.269,.751
-2026-06-25,Pittsburgh Pirates,Seattle Mariners,Bubba Chandler,696149,R,23.299999999999997,13,21,4.62,.213,.700
-2026-06-25,Seattle Mariners,Pittsburgh Pirates,Bryce Miller,682243,R,26.3,4,29,1.58,.170,.519
-2026-06-25,San Francisco Giants,Athletics,Landen Roupp,694738,R,27.2,7,31,4.15,.237,.685
-2026-06-25,Athletics,San Francisco Giants,Jeffrey Springs,605488,L,29.200000000000003,11,27,5.55,.262,.838
-2026-06-25,Detroit Tigers,Houston Astros,Troy Melton,675512,R,31.2,9,19,2.56,.186,.637
-2026-06-25,Houston Astros,Detroit Tigers,Tatsuya Imai,837227,R,15.7,16,21,6.15,.230,.725
-2026-06-25,Washington Nationals,Philadelphia Phillies,Cade Cavalli,676917,R,18.5,9,18,4.07,.279,.736
-2026-06-25,Philadelphia Phillies,Washington Nationals,Cristopher Sánchez,650911,L,28.1,5,39,1.80,.234,.609
-2026-06-25,Toronto Blue Jays,Texas Rangers,Kevin Gausman,592332,R,28.1,8,35,4.04,.239,.679
-2026-06-25,Texas Rangers,Toronto Blue Jays,MacKenzie Gore,669022,L,25.3,12,35,4.07,.226,.684
-2026-06-25,New York Mets,Chicago Cubs,Freddy Peralta,642547,R,25.5,12,28,4.83,.254,.755
-2026-06-25,Chicago Cubs,New York Mets,Matthew Boyd,571510,L,22.6,16,31,6.00,.266,.714
-2026-06-25,Boston Red Sox,New York Yankees,Connelly Early,813349,L,24.299999999999997,8,24,3.64,.237,.732
-2026-06-25,New York Yankees,Boston Red Sox,Cam Schlittler,693645,R,27.2,6,36,1.71,.194,.527
-2026-06-25,St. Louis Cardinals,Arizona Diamondbacks,Michael McGreevy,700241,R,26.4,10,15,3.35,.243,.697
-2026-06-25,Arizona Diamondbacks,St. Louis Cardinals,Zac Gallen,668678,R,25.2,10,14,6.10,.317,.869
+2026-06-26,Detroit Tigers,Houston Astros,Keider Montero,672456,R,26.3,12,23,3.68,.213,.622
+2026-06-26,Houston Astros,Detroit Tigers,Spencer Arrighetti,681293,R,28.2,6,30,3.13,.206,.631
+2026-06-26,Pittsburgh Pirates,Cincinnati Reds,Paul Skenes,694973,R,21.3,8,23,2.86,.199,.588
+2026-06-26,Cincinnati Reds,Pittsburgh Pirates,Andrew Abbott,671096,L,23.499999999999996,16,15,3.83,.251,.720
+2026-06-26,Baltimore Orioles,Washington Nationals,Trevor Rogers,669432,L,28.2,13,25,5.30,.262,.746
+2026-06-26,Washington Nationals,Baltimore Orioles,Andrew Alvarez,674841,L,15.2,7,17,3.34,.264,.728
+2026-06-26,Toronto Blue Jays,Texas Rangers,Patrick Corbin,571578,L,23.5,10,20,4.73,.295,.817
+2026-06-26,Texas Rangers,Toronto Blue Jays,Nathan Eovaldi,543135,R,26.2,15,29,4.24,.246,.733
+2026-06-26,Cleveland Guardians,Seattle Mariners,Joey Cantillo,676282,L,23.7,9,30,4.05,.251,.749
+2026-06-26,Seattle Mariners,Cleveland Guardians,Luis Castillo,622491,R,22.4,13,23,5.22,.264,.761
+2026-06-26,Tampa Bay Rays,Arizona Diamondbacks,Nick Martinez,607259,R,29.299999999999997,7,20,2.73,.253,.684
+2026-06-26,Arizona Diamondbacks,Tampa Bay Rays,Zac Gallen,668678,R,25.2,10,14,6.10,.317,.869
+2026-06-26,Philadelphia Phillies,New York Mets,Zack Wheeler,554430,R,31.200000000000003,7,30,2.11,.176,.563
+2026-06-26,Boston Red Sox,New York Yankees,Payton Tolle,801139,L,30.2,7,30,3.08,.218,.624
+2026-06-26,New York Yankees,Boston Red Sox,Will Warren,701542,R,23.7,7,31,3.45,.254,.705
+2026-06-26,Milwaukee Brewers,Chicago Cubs,Jacob Misiorowski,694819,R,26.200000000000003,9,42,1.45,.146,.414
+2026-06-26,Chicago Cubs,Milwaukee Brewers,Colin Rea,607067,R,23.3,8,20,4.99,.267,.767
+2026-06-27,Minnesota Twins,Colorado Rockies,Taj Bradley,671737,R,27.2,5,34,4.11,.235,.720
+2026-06-27,Colorado Rockies,Minnesota Twins,Tomoyuki Sugano,608372,R,25.4,10,19,4.31,.262,.795
+2026-06-27,St. Louis Cardinals,Miami Marlins,Michael McGreevy,700241,R,26.4,10,15,3.35,.243,.697
+2026-06-27,Miami Marlins,St. Louis Cardinals,Max Meyer,676974,R,24.299999999999997,11,28,2.80,.210,.622
+2026-06-27,Los Angeles Angels,Athletics,Walbert Ureña,700712,R,15.4,7,17,2.41,.212,.638
+2026-06-27,Athletics,Los Angeles Angels,J.T. Ginn,669372,R,15.4,6,11,3.16,.217,.642
+2026-06-27,San Diego Padres,Los Angeles Dodgers,Walker Buehler,621111,R,19.4,13,20,3.96,.259,.686
+2026-06-27,Los Angeles Dodgers,San Diego Padres,Roki Sasaki,808963,R,22.2,16,22,4.76,.241,.761
+2026-06-27,Atlanta Braves,San Francisco Giants,Reynaldo López,625643,R,21.2,9,20,3.50,.236,.718
