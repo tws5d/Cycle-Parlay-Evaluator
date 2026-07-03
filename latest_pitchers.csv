@@ -1,19 +1,26 @@
 Date,Team,Opponent,Pitcher Name,MLB ID,Throws,Last 5 IP,Last 5 ER,Last 5 SO,ERA,BAA,OPSa
-2026-07-02,Philadelphia Phillies,Pittsburgh Pirates,Alan Rangel,660604,R,12.0,6,13,4.50,.250,.690
-2026-07-02,Pittsburgh Pirates,Philadelphia Phillies,Jared Jones,683003,R,20.1,13,21,5.76,.270,.820
-2026-07-02,Milwaukee Brewers,Cincinnati Reds,Jacob Misiorowski,694819,R,26.200000000000003,9,42,1.45,.144,.420
-2026-07-02,Cincinnati Reds,Milwaukee Brewers,Chase Burns,695505,R,27.3,8,30,2.36,.208,.626
-2026-07-02,Colorado Rockies,Miami Marlins,Michael Lorenzen,547179,R,15.5,15,13,6.83,.338,.928
-2026-07-02,Miami Marlins,Colorado Rockies,Ryan Gusto,687473,R,13.2,11,10,5.06,.278,.743
-2026-07-02,Cleveland Guardians,Chicago White Sox,Slade Cecconi,677944,R,24.2,17,20,4.18,.269,.741
-2026-07-02,Chicago White Sox,Cleveland Guardians,Davis Martin,663436,R,31.1,7,26,3.00,.247,.667
-2026-07-02,Atlanta Braves,St. Louis Cardinals,Hurston Waldrep,694462,R,2.0,0,3,0.00,.250,.750
-2026-07-02,St. Louis Cardinals,Atlanta Braves,Dustin May,669160,R,24.200000000000003,16,20,4.30,.250,.683
-2026-07-02,Kansas City Royals,Tampa Bay Rays,Stephen Kolek,663568,R,30.299999999999997,12,19,4.15,.255,.735
-2026-07-02,Tampa Bay Rays,Kansas City Royals,Ian Seymour,693855,L,4.300000000000001,6,5,4.32,.207,.678
-2026-07-03,Texas Rangers,Detroit Tigers,Nathan Eovaldi,543135,R,26.2,15,29,3.95,.243,.715
-2026-07-03,Detroit Tigers,Texas Rangers,Framber Valdez,664285,L,30.0,11,20,4.05,.252,.707
-2026-07-03,Seattle Mariners,Los Angeles Angels,Bryce Miller,682243,R,26.3,4,29,1.97,.178,.548
-2026-07-03,Los Angeles Angels,Seattle Mariners,Walbert Ureña,700712,R,15.4,7,17,3.14,.219,.643
-2026-07-03,Los Angeles Dodgers,San Diego Padres,Roki Sasaki,808963,R,22.2,16,22,4.88,.240,.777
-2026-07-03,San Diego Padres,Los Angeles Dodgers,Randy Vásquez,681190,R,28.2,6,30,4.44,.288,.838
+2026-07-03,Chicago Cubs,St. Louis Cardinals,David Peterson,656849,L,22.4,14,22,5.86,.289,.787
+2026-07-03,St. Louis Cardinals,Chicago Cubs,Andre Pallante,669467,R,25.1,12,20,3.83,.246,.685
+2026-07-03,Washington Nationals,Pittsburgh Pirates,Foster Griffin,656492,L,26.2,10,22,2.93,.210,.645
+2026-07-03,Pittsburgh Pirates,Washington Nationals,Mitch Keller,656605,R,29.0,9,19,4.87,.250,.709
+2026-07-03,New York Yankees,Minnesota Twins,Gerrit Cole,543037,R,27.299999999999997,8,24,4.06,.245,.746
+2026-07-03,Minnesota Twins,New York Yankees,Mike Paredes,702474,R,18.6,9,11,4.26,.240,.742
+2026-07-03,Cincinnati Reds,Baltimore Orioles,Brady Singer,663903,R,23.2,14,16,5.12,.294,.883
+2026-07-03,Baltimore Orioles,Cincinnati Reds,Trevor Rogers,669432,L,28.2,13,25,4.99,.258,.731
+2026-07-03,Cleveland Guardians,Chicago White Sox,Gavin Williams,668909,R,29.2,7,40,3.81,.225,.696
+2026-07-03,Chicago White Sox,Cleveland Guardians,Anthony Kay,641743,L,18.9,13,13,4.50,.264,.786
+2026-07-03,Atlanta Braves,New York Mets,Grant Holmes,656550,R,25.4,10,21,3.96,.233,.734
+2026-07-03,New York Mets,Atlanta Braves,Christian Scott,681035,R,18.5,9,25,3.20,.229,.703
+2026-07-04,Colorado Rockies,San Francisco Giants,Ryan Feltner,663372,R,19.3,14,17,4.42,.231,.737
+2026-07-04,Houston Astros,Tampa Bay Rays,Spencer Arrighetti,681293,R,28.2,6,30,4.00,.215,.680
+2026-07-04,Tampa Bay Rays,Houston Astros,Nick Martinez,607259,R,29.299999999999997,7,20,2.66,.253,.687
+2026-07-04,Los Angeles Angels,Boston Red Sox,Reid Detmers,672282,L,27.5,13,31,3.88,.206,.593
+2026-07-04,Boston Red Sox,Los Angeles Angels,Jake Bennett,687562,L,26.2,11,22,3.27,.239,.606
+2026-07-04,Athletics,Miami Marlins,Jack Perkins,678022,R,8.4,4,12,6.00,.252,.730
+2026-07-04,Miami Marlins,Athletics,Tyler Phillips,663969,R,10.2,1,12,3.02,.228,.680
+2026-07-04,Arizona Diamondbacks,Milwaukee Brewers,Jose Cabrera,703615,R,10.0,4,7,3.60,.263,.791
+2026-07-04,Milwaukee Brewers,Arizona Diamondbacks,Kyle Harrison,690986,L,23.2,6,30,2.57,.213,.622
+2026-07-04,Los Angeles Dodgers,San Diego Padres,Shohei Ohtani,660271,R,30.0,2,34,1.58,.171,.496
+2026-07-04,San Diego Padres,Los Angeles Dodgers,Michael King,650633,R,27.2,7,26,3.55,.217,.648
+2026-07-04,Seattle Mariners,Toronto Blue Jays,Luis Castillo,622491,R,22.4,13,23,4.93,.259,.740
+2026-07-04,Toronto Blue Jays,Seattle Mariners,Dylan Cease,656302,R,25.2,6,44,3.02,.207,.589
