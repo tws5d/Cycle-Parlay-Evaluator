@@ -1,17 +1,26 @@
 Date,Team,Opponent,Pitcher Name,MLB ID,Throws,Last 5 IP,Last 5 ER,Last 5 SO,ERA,BAA,OPSa
-2026-07-06,Kansas City Royals,Philadelphia Phillies,Noah Cameron,702070,L,25.4,15,23,4.95,.277,.767
-2026-07-06,Philadelphia Phillies,Kansas City Royals,Cristopher Sánchez,650911,L,28.1,5,39,2.00,.232,.605
-2026-07-06,Tampa Bay Rays,New York Yankees,Griffin Jax,643377,R,3.3,5,1,3.45,.252,.746
-2026-07-06,New York Yankees,Tampa Bay Rays,Cam Schlittler,693645,R,27.2,6,36,2.08,.206,.587
-2026-07-06,Washington Nationals,Houston Astros,Miles Mikolas,571945,R,19.2,20,15,5.44,.275,.787
-2026-07-06,Houston Astros,Washington Nationals,Mike Burrows,681347,R,25.499999999999996,20,25,5.58,.285,.845
-2026-07-06,Atlanta Braves,New York Mets,Reynaldo López,625643,R,21.2,9,20,3.31,.232,.699
-2026-07-06,New York Mets,Atlanta Braves,Freddy Peralta,642547,R,25.5,12,28,4.81,.257,.757
-2026-07-06,St. Louis Cardinals,Milwaukee Brewers,Dustin May,669160,R,24.200000000000003,16,20,4.80,.261,.707
-2026-07-06,Milwaukee Brewers,St. Louis Cardinals,Shane Drohan,675660,L,12.299999999999999,6,10,3.12,.241,.672
-2026-07-07,San Diego Padres,Arizona Diamondbacks,Walker Buehler,621111,R,19.4,13,20,4.61,.261,.726
-2026-07-07,Arizona Diamondbacks,San Diego Padres,Brandon Pfaadt,694297,R,25.299999999999997,16,19,5.40,.259,.813
-2026-07-07,San Francisco Giants,Toronto Blue Jays,Landen Roupp,694738,R,27.2,7,31,4.55,.245,.708
-2026-07-07,Toronto Blue Jays,San Francisco Giants,Kevin Gausman,592332,R,28.1,8,35,4.19,.247,.711
-2026-07-07,Los Angeles Dodgers,Colorado Rockies,Eric Lauer,641778,L,22.2,17,19,4.84,.243,.770
-2026-07-07,Colorado Rockies,Los Angeles Dodgers,Kyle Freeland,607536,L,20.2,8,17,7.25,.318,.922
+2026-07-07,Milwaukee Brewers,St. Louis Cardinals,Jacob Misiorowski,694819,R,26.200000000000003,9,42,1.47,.150,.441
+2026-07-07,Baltimore Orioles,Chicago Cubs,Shane Baz,669358,R,27.4,16,23,4.19,.259,.744
+2026-07-07,Chicago Cubs,Baltimore Orioles,Matthew Boyd,571510,L,22.6,16,31,5.08,.276,.764
+2026-07-07,Detroit Tigers,Athletics,Tarik Skubal,669373,L,29.4,7,33,3.15,.216,.631
+2026-07-07,Athletics,Detroit Tigers,J.T. Ginn,669372,R,15.4,6,11,3.04,.217,.651
+2026-07-07,Pittsburgh Pirates,Atlanta Braves,Paul Skenes,694973,R,21.3,8,23,3.62,.211,.623
+2026-07-07,Atlanta Braves,Pittsburgh Pirates,Hurston Waldrep,694462,R,7.1,3,7,3.68,.250,.739
+2026-07-07,Miami Marlins,Seattle Mariners,Max Meyer,676974,R,24.299999999999997,11,28,2.53,.205,.618
+2026-07-07,Tampa Bay Rays,New York Yankees,Ian Seymour,693855,L,4.300000000000001,6,5,4.02,.199,.659
+2026-07-07,New York Yankees,Tampa Bay Rays,Will Warren,701542,R,23.7,7,31,3.73,.257,.722
+2026-07-07,Washington Nationals,Houston Astros,Andrew Alvarez,674841,L,15.2,7,17,3.05,.261,.722
+2026-07-07,Houston Astros,Washington Nationals,Tatsuya Imai,837227,R,15.7,16,21,6.14,.228,.739
+2026-07-07,Kansas City Royals,New York Mets,Seth Lugo,607625,R,30.4,4,28,4.20,.278,.795
+2026-07-07,Cincinnati Reds,Philadelphia Phillies,Andrew Abbott,671096,L,23.499999999999996,16,15,3.88,.253,.741
+2026-07-07,Minnesota Twins,Cleveland Guardians,Taj Bradley,671737,R,27.2,5,34,3.86,.226,.694
+2026-07-07,Cleveland Guardians,Minnesota Twins,Joey Cantillo,676282,L,23.7,9,30,3.86,.240,.729
+2026-07-07,Chicago White Sox,Boston Red Sox,Noah Schultz,702273,L,24.3,13,23,5.86,.209,.729
+2026-07-07,Boston Red Sox,Chicago White Sox,Payton Tolle,801139,L,30.2,7,30,3.39,.216,.640
+2026-07-08,Texas Rangers,Los Angeles Angels,Jacob deGrom,594798,R,24.4,6,35,3.48,.209,.625
+2026-07-08,Los Angeles Angels,Texas Rangers,José Soriano,667755,R,32.2,1,39,3.42,.225,.661
+2026-07-08,San Diego Padres,Arizona Diamondbacks,Germán Márquez,608566,R,24.2,12,17,5.79,.268,.860
+2026-07-08,Arizona Diamondbacks,San Diego Padres,Zac Gallen,668678,R,25.2,10,14,6.36,.307,.869
+2026-07-08,San Francisco Giants,Toronto Blue Jays,Trevor McDonald,686790,R,27.6,14,27,4.42,.236,.668
+2026-07-08,Los Angeles Dodgers,Colorado Rockies,Justin Wrobleski,680736,L,30.0,5,15,2.80,.217,.585
+2026-07-08,Colorado Rockies,Los Angeles Dodgers,Michael Lorenzen,547179,R,15.5,15,13,6.91,.335,.928
