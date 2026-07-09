@@ -1,30 +1,25 @@
 Date,Team,Opponent,Pitcher Name,MLB ID,Throws,Last 5 IP,Last 5 ER,Last 5 SO,ERA,BAA,OPSa
-2026-07-08,San Francisco Giants,Toronto Blue Jays,Logan Webb,657277,R,30.0,17,27,3.66,.241,.652
-2026-07-08,Toronto Blue Jays,San Francisco Giants,Dylan Cease,656302,R,25.2,6,44,2.79,.201,.572
-2026-07-08,Baltimore Orioles,Chicago Cubs,Dean Kremer,665152,R,17.0,6,20,3.18,.194,.699
-2026-07-08,Chicago Cubs,Baltimore Orioles,Colin Rea,607067,R,23.3,8,20,4.74,.269,.778
-2026-07-08,Detroit Tigers,Athletics,Troy Melton,675512,R,31.2,9,19,2.05,.162,.553
-2026-07-08,Athletics,Detroit Tigers,Jeffrey Springs,605488,L,29.200000000000003,11,27,5.79,.262,.840
-2026-07-08,Pittsburgh Pirates,Atlanta Braves,Jared Jones,683003,R,20.1,13,21,5.28,.254,.785
-2026-07-08,Atlanta Braves,Pittsburgh Pirates,Grant Holmes,656550,R,25.4,10,21,3.83,.233,.732
-2026-07-08,Miami Marlins,Seattle Mariners,Tyler Phillips,663969,R,10.2,1,12,3.52,.240,.714
-2026-07-08,Seattle Mariners,Miami Marlins,George Kirby,669923,R,32.4,11,27,3.81,.279,.732
-2026-07-08,Tampa Bay Rays,New York Yankees,Shane McClanahan,663556,L,22.299999999999997,10,25,3.05,.217,.611
-2026-07-08,New York Yankees,Tampa Bay Rays,Gerrit Cole,543037,R,27.299999999999997,8,24,4.01,.246,.753
-2026-07-08,Washington Nationals,Houston Astros,Foster Griffin,656492,L,26.2,10,22,2.87,.210,.643
-2026-07-08,Houston Astros,Washington Nationals,Spencer Arrighetti,681293,R,28.2,6,30,3.81,.208,.666
-2026-07-08,New York Mets,Kansas City Royals,Christian Scott,681035,R,18.5,9,25,3.49,.223,.718
-2026-07-08,Kansas City Royals,New York Mets,Steven Cruz,674444,R,4.300000000000001,8,7,5.08,.234,.810
-2026-07-08,Cincinnati Reds,Philadelphia Phillies,Chase Burns,695505,R,27.3,8,30,2.40,.207,.628
-2026-07-08,Minnesota Twins,Cleveland Guardians,Connor Prielipp,687570,L,25.0,8,29,4.96,.262,.736
-2026-07-08,Cleveland Guardians,Minnesota Twins,Slade Cecconi,677944,R,24.2,17,20,4.44,.276,.765
-2026-07-08,Chicago White Sox,Boston Red Sox,Davis Martin,663436,R,31.1,7,26,3.08,.254,.688
-2026-07-08,Boston Red Sox,Chicago White Sox,Jake Bennett,687562,L,26.2,11,22,3.10,.228,.580
-2026-07-08,St. Louis Cardinals,Milwaukee Brewers,Michael McGreevy,700241,R,26.4,10,15,3.12,.237,.675
-2026-07-08,Milwaukee Brewers,St. Louis Cardinals,Kyle Harrison,690986,L,23.2,6,30,2.82,.220,.631
-2026-07-09,Texas Rangers,Los Angeles Angels,MacKenzie Gore,669022,L,25.3,12,35,4.31,.229,.680
-2026-07-09,Los Angeles Angels,Texas Rangers,Walbert Ureña,700712,R,15.4,7,17,3.03,.209,.627
-2026-07-09,Los Angeles Dodgers,Colorado Rockies,Roki Sasaki,808963,R,22.2,16,22,5.40,.251,.830
-2026-07-09,Colorado Rockies,Los Angeles Dodgers,Gabriel Hughes,687312,R,3.0,0,1,0.00,.200,.473
-2026-07-09,San Diego Padres,Arizona Diamondbacks,Michael King,650633,R,27.2,7,26,3.52,.213,.632
-2026-07-09,Arizona Diamondbacks,San Diego Padres,Jose Cabrera,703615,R,13.1,7,10,4.73,.296,.867
+2026-07-09,Pittsburgh Pirates,Atlanta Braves,Mitch Keller,656605,R,29.0,9,19,5.02,.254,.737
+2026-07-09,Atlanta Braves,Pittsburgh Pirates,Bryce Elder,693821,R,28.599999999999998,5,29,4.01,.241,.674
+2026-07-09,New York Mets,Kansas City Royals,Sean Manaea,640455,L,15.3,8,12,4.76,.258,.770
+2026-07-09,Kansas City Royals,New York Mets,Michael Wacha,608379,R,32.1,9,28,3.45,.239,.701
+2026-07-09,Tampa Bay Rays,New York Yankees,Drew Rasmussen,656876,R,25.2,7,26,2.78,.197,.564
+2026-07-09,Baltimore Orioles,Chicago Cubs,Trevor Rogers,669432,L,28.2,13,25,4.70,.251,.716
+2026-07-09,Chicago Cubs,Baltimore Orioles,David Peterson,656849,L,22.4,14,22,6.75,.300,.819
+2026-07-09,Minnesota Twins,Cleveland Guardians,Bailey Ober,641927,R,25.299999999999997,12,24,4.59,.243,.741
+2026-07-09,Cleveland Guardians,Minnesota Twins,Gavin Williams,668909,R,29.2,7,40,3.89,.228,.702
+2026-07-09,Chicago White Sox,Boston Red Sox,Anthony Kay,641743,L,18.9,13,13,4.29,.258,.771
+2026-07-09,Boston Red Sox,Chicago White Sox,Patrick Sandoval,663776,L,0.0,0,0,,,
+2026-07-09,Detroit Tigers,Athletics,Framber Valdez,664285,L,30.0,11,20,4.29,.260,.723
+2026-07-09,Athletics,Detroit Tigers,Jack Perkins,678022,R,8.4,4,12,6.75,.264,.770
+2026-07-09,Miami Marlins,Seattle Mariners,Janson Junk,676083,R,26.299999999999997,11,17,4.80,.273,.752
+2026-07-09,Seattle Mariners,Miami Marlins,Bryce Miller,682243,R,26.3,4,29,1.71,.166,.497
+2026-07-09,Cincinnati Reds,Philadelphia Phillies,Brady Singer,663903,R,23.2,14,16,5.03,.289,.881
+2026-07-09,Philadelphia Phillies,Cincinnati Reds,Jesús Luzardo,666200,L,25.7,21,33,3.75,.249,.682
+2026-07-09,St. Louis Cardinals,Milwaukee Brewers,Andre Pallante,669467,R,25.1,12,20,3.60,.245,.678
+2026-07-09,Milwaukee Brewers,St. Louis Cardinals,Logan Henderson,701656,R,23.0,7,30,2.74,.214,.612
+2026-07-10,Texas Rangers,Los Angeles Angels,Nathan Eovaldi,543135,R,26.2,15,29,4.02,.245,.728
+2026-07-10,Los Angeles Angels,Texas Rangers,Reid Detmers,672282,L,27.5,13,31,4.13,.213,.617
+2026-07-10,San Diego Padres,Arizona Diamondbacks,Griffin Canning,656288,R,21.5,19,24,6.71,.269,.810
+2026-07-10,Arizona Diamondbacks,San Diego Padres,Merrill Kelly,518876,R,25.299999999999997,22,20,5.71,.291,.888
+2026-07-10,Colorado Rockies,San Francisco Giants,Ryan Feltner,663372,R,19.3,14,17,4.27,.233,.729
